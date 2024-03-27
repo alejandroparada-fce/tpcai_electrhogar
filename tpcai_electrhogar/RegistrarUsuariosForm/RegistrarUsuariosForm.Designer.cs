@@ -42,20 +42,21 @@
             this.textBoxDNI = new System.Windows.Forms.TextBox();
             this.comboBoxPerfil = new System.Windows.Forms.ComboBox();
             this.textBoxNombreUsuario = new System.Windows.Forms.TextBox();
-            this.lblNombreError = new System.Windows.Forms.Label();
-            this.lblApellidoError = new System.Windows.Forms.Label();
-            this.lblDNIError = new System.Windows.Forms.Label();
-            this.lblDireccionError = new System.Windows.Forms.Label();
-            this.lblTelefonoError = new System.Windows.Forms.Label();
-            this.lblMailError = new System.Windows.Forms.Label();
-            this.lblUsuarioError = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.lblDNI = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblMail = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCrearUsuario
             // 
-            this.btnCrearUsuario.Location = new System.Drawing.Point(392, 383);
+            this.btnCrearUsuario.Location = new System.Drawing.Point(382, 401);
             this.btnCrearUsuario.Name = "btnCrearUsuario";
             this.btnCrearUsuario.Size = new System.Drawing.Size(100, 23);
             this.btnCrearUsuario.TabIndex = 0;
@@ -93,7 +94,6 @@
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(173, 14);
             this.textBoxNombre.TabIndex = 2;
-            this.textBoxNombre.Text = "Nombre";
             // 
             // textBoxApellido
             // 
@@ -103,7 +103,6 @@
             this.textBoxApellido.Name = "textBoxApellido";
             this.textBoxApellido.Size = new System.Drawing.Size(173, 14);
             this.textBoxApellido.TabIndex = 3;
-            this.textBoxApellido.Text = "Apellido";
             // 
             // textBoxDirección
             // 
@@ -114,7 +113,6 @@
             this.textBoxDirección.Name = "textBoxDirección";
             this.textBoxDirección.Size = new System.Drawing.Size(403, 14);
             this.textBoxDirección.TabIndex = 4;
-            this.textBoxDirección.Text = "Dirección";
             // 
             // textBoxTelefono
             // 
@@ -125,7 +123,6 @@
             this.textBoxTelefono.Name = "textBoxTelefono";
             this.textBoxTelefono.Size = new System.Drawing.Size(403, 14);
             this.textBoxTelefono.TabIndex = 5;
-            this.textBoxTelefono.Text = "Teléfono";
             // 
             // textBoxMail
             // 
@@ -136,7 +133,6 @@
             this.textBoxMail.Name = "textBoxMail";
             this.textBoxMail.Size = new System.Drawing.Size(403, 14);
             this.textBoxMail.TabIndex = 6;
-            this.textBoxMail.Text = "Correo Elecrónico";
             // 
             // dateTimePicker1
             // 
@@ -170,7 +166,6 @@
             this.textBoxDNI.Name = "textBoxDNI";
             this.textBoxDNI.Size = new System.Drawing.Size(403, 14);
             this.textBoxDNI.TabIndex = 10;
-            this.textBoxDNI.Text = "DNI";
             // 
             // comboBoxPerfil
             // 
@@ -195,77 +190,93 @@
             this.textBoxNombreUsuario.Name = "textBoxNombreUsuario";
             this.textBoxNombreUsuario.Size = new System.Drawing.Size(403, 14);
             this.textBoxNombreUsuario.TabIndex = 12;
-            this.textBoxNombreUsuario.Text = "Nombre de usuario";
             // 
-            // lblNombreError
+            // lblNombre
             // 
-            this.lblNombreError.AutoSize = true;
-            this.lblNombreError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblNombreError.Location = new System.Drawing.Point(237, 39);
-            this.lblNombreError.Name = "lblNombreError";
-            this.lblNombreError.Size = new System.Drawing.Size(0, 13);
-            this.lblNombreError.TabIndex = 13;
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.Transparent;
+            this.lblNombre.Location = new System.Drawing.Point(237, 39);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(44, 13);
+            this.lblNombre.TabIndex = 13;
+            this.lblNombre.Text = "Nombre";
             // 
-            // lblApellidoError
+            // lblApellido
             // 
-            this.lblApellidoError.AutoSize = true;
-            this.lblApellidoError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellidoError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblApellidoError.Location = new System.Drawing.Point(467, 39);
-            this.lblApellidoError.Name = "lblApellidoError";
-            this.lblApellidoError.Size = new System.Drawing.Size(0, 13);
-            this.lblApellidoError.TabIndex = 14;
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.ForeColor = System.Drawing.Color.Transparent;
+            this.lblApellido.Location = new System.Drawing.Point(467, 39);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(44, 13);
+            this.lblApellido.TabIndex = 14;
+            this.lblApellido.Text = "Apellido";
             // 
-            // lblDNIError
+            // lblDNI
             // 
-            this.lblDNIError.AutoSize = true;
-            this.lblDNIError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDNIError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblDNIError.Location = new System.Drawing.Point(237, 80);
-            this.lblDNIError.Name = "lblDNIError";
-            this.lblDNIError.Size = new System.Drawing.Size(0, 13);
-            this.lblDNIError.TabIndex = 15;
+            this.lblDNI.AutoSize = true;
+            this.lblDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDNI.ForeColor = System.Drawing.Color.Transparent;
+            this.lblDNI.Location = new System.Drawing.Point(237, 80);
+            this.lblDNI.Name = "lblDNI";
+            this.lblDNI.Size = new System.Drawing.Size(26, 13);
+            this.lblDNI.TabIndex = 15;
+            this.lblDNI.Text = "DNI";
             // 
-            // lblDireccionError
+            // lblDireccion
             // 
-            this.lblDireccionError.AutoSize = true;
-            this.lblDireccionError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccionError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblDireccionError.Location = new System.Drawing.Point(237, 172);
-            this.lblDireccionError.Name = "lblDireccionError";
-            this.lblDireccionError.Size = new System.Drawing.Size(0, 13);
-            this.lblDireccionError.TabIndex = 16;
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.ForeColor = System.Drawing.Color.Transparent;
+            this.lblDireccion.Location = new System.Drawing.Point(237, 172);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(52, 13);
+            this.lblDireccion.TabIndex = 16;
+            this.lblDireccion.Text = "Dirección";
             // 
-            // lblTelefonoError
+            // lblTelefono
             // 
-            this.lblTelefonoError.AutoSize = true;
-            this.lblTelefonoError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefonoError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblTelefonoError.Location = new System.Drawing.Point(237, 215);
-            this.lblTelefonoError.Name = "lblTelefonoError";
-            this.lblTelefonoError.Size = new System.Drawing.Size(0, 13);
-            this.lblTelefonoError.TabIndex = 17;
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.ForeColor = System.Drawing.Color.Transparent;
+            this.lblTelefono.Location = new System.Drawing.Point(237, 215);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(49, 13);
+            this.lblTelefono.TabIndex = 17;
+            this.lblTelefono.Text = "Teléfono";
             // 
-            // lblMailError
+            // lblMail
             // 
-            this.lblMailError.AutoSize = true;
-            this.lblMailError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMailError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblMailError.Location = new System.Drawing.Point(237, 257);
-            this.lblMailError.Name = "lblMailError";
-            this.lblMailError.Size = new System.Drawing.Size(0, 13);
-            this.lblMailError.TabIndex = 18;
+            this.lblMail.AutoSize = true;
+            this.lblMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMail.ForeColor = System.Drawing.Color.Transparent;
+            this.lblMail.Location = new System.Drawing.Point(237, 257);
+            this.lblMail.Name = "lblMail";
+            this.lblMail.Size = new System.Drawing.Size(94, 13);
+            this.lblMail.TabIndex = 18;
+            this.lblMail.Text = "Correo Electrónico";
             // 
-            // lblUsuarioError
+            // lblUsuario
             // 
-            this.lblUsuarioError.AutoSize = true;
-            this.lblUsuarioError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarioError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblUsuarioError.Location = new System.Drawing.Point(237, 300);
-            this.lblUsuarioError.Name = "lblUsuarioError";
-            this.lblUsuarioError.Size = new System.Drawing.Size(0, 13);
-            this.lblUsuarioError.TabIndex = 19;
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.Transparent;
+            this.lblUsuario.Location = new System.Drawing.Point(237, 300);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(98, 13);
+            this.lblUsuario.TabIndex = 19;
+            this.lblUsuario.Text = "Nombre de Usuario";
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblError.Location = new System.Drawing.Point(237, 369);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 20;
             // 
             // RegistrarUsuariosForm
             // 
@@ -273,13 +284,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(99)))), ((int)(((byte)(196)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblUsuarioError);
-            this.Controls.Add(this.lblMailError);
-            this.Controls.Add(this.lblTelefonoError);
-            this.Controls.Add(this.lblDireccionError);
-            this.Controls.Add(this.lblDNIError);
-            this.Controls.Add(this.lblApellidoError);
-            this.Controls.Add(this.lblNombreError);
+            this.Controls.Add(this.lblError);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.lblMail);
+            this.Controls.Add(this.lblTelefono);
+            this.Controls.Add(this.lblDireccion);
+            this.Controls.Add(this.lblDNI);
+            this.Controls.Add(this.lblApellido);
+            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.textBoxNombreUsuario);
             this.Controls.Add(this.comboBoxPerfil);
             this.Controls.Add(this.textBoxDNI);
@@ -319,13 +331,14 @@
         private System.Windows.Forms.TextBox textBoxDNI;
         private System.Windows.Forms.ComboBox comboBoxPerfil;
         private System.Windows.Forms.TextBox textBoxNombreUsuario;
-        private System.Windows.Forms.Label lblNombreError;
-        private System.Windows.Forms.Label lblApellidoError;
-        private System.Windows.Forms.Label lblDNIError;
-        private System.Windows.Forms.Label lblDireccionError;
-        private System.Windows.Forms.Label lblTelefonoError;
-        private System.Windows.Forms.Label lblMailError;
-        private System.Windows.Forms.Label lblUsuarioError;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.Label lblDNI;
+        private System.Windows.Forms.Label lblDireccion;
+        private System.Windows.Forms.Label lblTelefono;
+        private System.Windows.Forms.Label lblMail;
+        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblError;
     }
 }
 

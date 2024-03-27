@@ -12,13 +12,15 @@ namespace tpcai_electrhogar
 {
     public partial class RegistrarUsuariosForm : Form
     {
+        private string mensajeError;
+
         /*Se usa como convención para el nombre de formularios describir
-        la función del mismo + "Form"
-        Apariencia/BackColor: 77; 99; 196 (RGB)
-        Estilo De ventana/Opacity: 95 %
-        Textbox: se sacan bordes, se cambia fuente a verdana y se usa itálica.
-        Se agrega panel dockeado a la izquierda.
-        */
+la función del mismo + "Form"
+Apariencia/BackColor: 77; 99; 196 (RGB)
+Estilo De ventana/Opacity: 95 %
+Textbox: se sacan bordes, se cambia fuente a verdana y se usa itálica.
+Se agrega panel dockeado a la izquierda.
+*/
         public RegistrarUsuariosForm()
         {
             InitializeComponent();
@@ -27,13 +29,9 @@ namespace tpcai_electrhogar
 
         private void btnCrearUsuario_Click(object sender, EventArgs e)
         {
-            lblNombreError.Text = "Error de Nombre";
-            lblApellidoError.Text = "Error de Apellido";
-            lblDNIError.Text = "Error de DNI";
-            lblDireccionError.Text = "Error de Dirección";
-            lblTelefonoError.Text = "Error de teléfono";
-            lblMailError.Text = "Error de Mail";
-            lblUsuarioError.Text = "Error de Usuario";
+            bool valido = Validaciones.ValidaVaciosFormulario(this, out mensajeError);
+
+            lblError.Text = mensajeError;
         }
 
 
