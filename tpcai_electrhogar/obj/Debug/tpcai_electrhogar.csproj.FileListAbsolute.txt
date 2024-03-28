@@ -28,3 +28,5 @@ C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpca
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.exe.config
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.exe
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.pdb
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.LoginForm.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.ModulosForm.resources

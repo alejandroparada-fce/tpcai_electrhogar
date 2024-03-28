@@ -16,7 +16,7 @@ namespace tpcai_electrhogar
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RegistrarUsuariosForm());
+            Application.Run(new LoginForm());
         }
     }
 }
