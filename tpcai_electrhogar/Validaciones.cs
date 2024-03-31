@@ -60,19 +60,50 @@ namespace tpcai_electrhogar
 
 
         //Valida cantidad de caracteres en cadenas de texto
-        public static bool ValidarCadena(string ingreso, int? minCaracteres, int? maxCaracteres, out string mensajeError)
+        public static bool ValidarCadena(string ingreso, string campo, int? minCaracteres, int? maxCaracteres, out string mensajeError)
         {
             if (minCaracteres.HasValue && (ingreso == null || ingreso.Length < minCaracteres))
             {
-                mensajeError = $"Debe ingresar al menos {minCaracteres} caracteres";
+                mensajeError = $"El campo {campo} debe tener al menos {minCaracteres} caracteres";
                 return false;
             }
 
             if (maxCaracteres.HasValue && ingreso.Length > maxCaracteres)
             {
-                mensajeError = $"Debe ser menor o igual a {maxCaracteres} caracteres";
+                mensajeError = $"El campo {campo} debe ser menor o igual a {maxCaracteres} caracteres";
                 return false;
             }
+
+            mensajeError = null;
+            return true;
+
+        }
+
+        public static bool ValidarEntero(string ingreso, string campo, int? minimo, int? maximo, out int valor, out string mensajeError)
+        {
+            //Valida que sea un número
+            var valido = int.TryParse(ingreso, out valor);
+            if (!valido)
+            {
+
+                mensajeError = $"El campo {campo} debe contener un número entero.";
+                return false;
+            }
+
+            //valida el número mínimo
+            if (minimo.HasValue && valor < minimo.Value)
+            {
+                mensajeError = $"El campo {campo} debe contener un número mayor o igual a {minimo}";
+                return false;
+            }
+
+            //valida el número máximo
+            if (maximo.HasValue && valor > maximo.Value)
+            {
+                mensajeError = $"Ingrese un número menor o igual a {maximo} para el campo {campo}.";
+                return false;
+            }
+
 
             mensajeError = null;
             return true;
@@ -80,14 +111,14 @@ namespace tpcai_electrhogar
         }
 
         //Valida que el nombre de usuario no contenga el nombre y apellido de la persona
-        private static bool ValidarPatronUsuario(string nombre, string apellido, string usuario, out string mensajeError) 
+        public static bool ValidarPatronUsuario(string nombre, string apellido, string usuario, out string mensajeError) 
         {
-            Regex rgNombre = new Regex(nombre);
-            Regex rgApellido = new Regex(apellido);
+            Regex rgNombre = new Regex(nombre, RegexOptions.IgnoreCase);
+            Regex rgApellido = new Regex(apellido, RegexOptions.IgnoreCase);
 
-            if(rgNombre.IsMatch(usuario)|| rgApellido.IsMatch(usuario))
+            if(rgNombre.IsMatch(usuario) || rgApellido.IsMatch(usuario))
             {
-                mensajeError = "El usuario no debe contener el nombre ni el apellido";
+                mensajeError = "El 'Nombre de Usuario' no debe contener el nombre ni el apellido";
                 return false;
             }
 
@@ -95,13 +126,13 @@ namespace tpcai_electrhogar
             return true;
         }
 
-        //Valida usuario
-        public static bool ValidarUsuario(string ingreso, int? minCaracteres, int? maxCaracteres, string nombre, string apellido, string usuario, out string mensajeError)
+        
+        public static bool ValidarUsuario(string ingreso, string campoUsuario,  int? minCaracteres, int? maxCaracteres, string nombre, string apellido, string usuario, out string mensajeError)
         {
             string mensajeError1;
             string mensajeError2;
 
-            bool ValCadena = ValidarCadena(ingreso, minCaracteres, maxCaracteres, out mensajeError1);
+            bool ValCadena = ValidarCadena(ingreso, campoUsuario,  minCaracteres, maxCaracteres, out mensajeError1);
             bool ValidPatUsr = ValidarPatronUsuario(nombre, apellido, usuario, out mensajeError2);
             
             if(!ValCadena||!ValidPatUsr)
@@ -113,6 +144,7 @@ namespace tpcai_electrhogar
             mensajeError = null;
             return true;
         } 
+        
 
         //Valida requisito de mayúsculas y números en contraseña
         private static bool ValidarReqContraseña(string contraseñaIngresada, out string mensajeError)
@@ -146,12 +178,12 @@ namespace tpcai_electrhogar
 
 
         //Valida contraseña
-        public static bool ValidarContraseña(string ingreso, int? minCaracteres, int? maxCaracteres, out string mensajeError)
+        public static bool ValidarContraseña(string ingreso, string campoContraseña, int? minCaracteres, int? maxCaracteres, out string mensajeError)
         {
             string mensajeError1;
             string mensajeError2;
 
-            bool CadenaContraseña = ValidarCadena(ingreso, minCaracteres, maxCaracteres, out mensajeError1);
+            bool CadenaContraseña = ValidarCadena(ingreso, campoContraseña, minCaracteres, maxCaracteres, out mensajeError1);
             bool MayusNumContraseña = ValidarReqContraseña(ingreso, out mensajeError2);
 
             if (!CadenaContraseña|| !MayusNumContraseña)

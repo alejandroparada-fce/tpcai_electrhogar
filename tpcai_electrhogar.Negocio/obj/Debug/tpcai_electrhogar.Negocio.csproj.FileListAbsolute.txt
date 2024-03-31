@@ -1,0 +1,9 @@
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Negocio.dll
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Negocio.pdb
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Datos.dll
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Datos.pdb
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.CopyComplete
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.dll
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.pdb

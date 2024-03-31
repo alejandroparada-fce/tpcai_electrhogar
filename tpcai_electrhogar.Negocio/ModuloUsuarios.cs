@@ -8,7 +8,7 @@ using tpcai_electrhogar.Datos;
 
 namespace tpcai_electrhogar.Negocio
 {
-    internal class ModuloUsuarios
+    public static class ModuloUsuarios
     {
         public static bool AltaUsuario(string nombre, string apellido, int dni, DateTime fechaNacimiento, string direccion,
             string telefono, string correoElectronico, string nombreUsuario, string contraseña,

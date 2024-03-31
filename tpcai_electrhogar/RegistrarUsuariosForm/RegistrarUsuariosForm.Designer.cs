@@ -37,7 +37,7 @@
             this.textBoxDirección = new System.Windows.Forms.TextBox();
             this.textBoxTelefono = new System.Windows.Forms.TextBox();
             this.textBoxMail = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateNacimiento = new System.Windows.Forms.DateTimePicker();
             this.lblFechaNacimiento = new System.Windows.Forms.Label();
             this.textBoxDNI = new System.Windows.Forms.TextBox();
             this.comboBoxPerfil = new System.Windows.Forms.ComboBox();
@@ -56,7 +56,7 @@
             // 
             // btnCrearUsuario
             // 
-            this.btnCrearUsuario.Location = new System.Drawing.Point(382, 401);
+            this.btnCrearUsuario.Location = new System.Drawing.Point(382, 369);
             this.btnCrearUsuario.Name = "btnCrearUsuario";
             this.btnCrearUsuario.Size = new System.Drawing.Size(100, 23);
             this.btnCrearUsuario.TabIndex = 0;
@@ -71,7 +71,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(194, 450);
+            this.panel1.Size = new System.Drawing.Size(194, 541);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
@@ -134,17 +134,17 @@
             this.textBoxMail.Size = new System.Drawing.Size(403, 14);
             this.textBoxMail.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dateNacimiento
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(382, 107);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2024, 3, 23, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(261, 21);
-            this.dateTimePicker1.TabIndex = 8;
-            this.dateTimePicker1.Value = new System.DateTime(2024, 3, 23, 0, 0, 0, 0);
+            this.dateNacimiento.CalendarFont = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateNacimiento.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateNacimiento.Location = new System.Drawing.Point(382, 107);
+            this.dateNacimiento.MaxDate = new System.DateTime(2024, 3, 23, 0, 0, 0, 0);
+            this.dateNacimiento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dateNacimiento.Name = "dateNacimiento";
+            this.dateNacimiento.Size = new System.Drawing.Size(261, 21);
+            this.dateNacimiento.TabIndex = 8;
+            this.dateNacimiento.Value = new System.DateTime(2024, 3, 23, 0, 0, 0, 0);
             // 
             // lblFechaNacimiento
             // 
@@ -172,9 +172,9 @@
             this.comboBoxPerfil.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxPerfil.FormattingEnabled = true;
             this.comboBoxPerfil.Items.AddRange(new object[] {
-            "Administrador",
+            "Vendedor",
             "Supervisior",
-            "Vendedor"});
+            "Administrador"});
             this.comboBoxPerfil.Location = new System.Drawing.Point(240, 324);
             this.comboBoxPerfil.Name = "comboBoxPerfil";
             this.comboBoxPerfil.Size = new System.Drawing.Size(403, 21);
@@ -273,7 +273,7 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblError.Location = new System.Drawing.Point(237, 369);
+            this.lblError.Location = new System.Drawing.Point(237, 413);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 20;
@@ -283,7 +283,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(99)))), ((int)(((byte)(196)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(784, 541);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.lblMail);
@@ -296,7 +296,7 @@
             this.Controls.Add(this.comboBoxPerfil);
             this.Controls.Add(this.textBoxDNI);
             this.Controls.Add(this.lblFechaNacimiento);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateNacimiento);
             this.Controls.Add(this.textBoxMail);
             this.Controls.Add(this.textBoxTelefono);
             this.Controls.Add(this.textBoxDirección);
@@ -309,6 +309,7 @@
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de usuarios";
+            this.Load += new System.EventHandler(this.RegistrarUsuariosForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -326,7 +327,7 @@
         private System.Windows.Forms.TextBox textBoxDirección;
         private System.Windows.Forms.TextBox textBoxTelefono;
         private System.Windows.Forms.TextBox textBoxMail;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateNacimiento;
         private System.Windows.Forms.Label lblFechaNacimiento;
         private System.Windows.Forms.TextBox textBoxDNI;
         private System.Windows.Forms.ComboBox comboBoxPerfil;
