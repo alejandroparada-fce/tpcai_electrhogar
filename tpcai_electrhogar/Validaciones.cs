@@ -40,7 +40,10 @@ namespace tpcai_electrhogar
 
 
                 }
-                catch { }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
 
             mensajeError = mensajeError1 + '\n' + mensajeError2;
