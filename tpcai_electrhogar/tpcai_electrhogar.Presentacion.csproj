@@ -52,10 +52,10 @@
     <Compile Include="LoginForm\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModulosForm.cs">
+    <Compile Include="ModulosForm\ModulosForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModulosForm.Designer.cs">
+    <Compile Include="ModulosForm\ModulosForm.Designer.cs">
       <DependentUpon>ModulosForm.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrarUsuariosForm\RegistrarUsuariosForm.cs">
@@ -70,7 +70,7 @@
     <EmbeddedResource Include="LoginForm\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModulosForm.resx">
+    <EmbeddedResource Include="ModulosForm\ModulosForm.resx">
       <DependentUpon>ModulosForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarUsuariosForm\RegistrarUsuariosForm.resx">
@@ -104,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Electro-Hogar-80x102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tpcai_electrhogar.Negocio\tpcai_electrhogar.Negocio.csproj">
+      <Project>{e84d9e14-e211-426e-b60f-0156e20e804e}</Project>
+      <Name>tpcai_electrhogar.Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

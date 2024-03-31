@@ -1,0 +1,6 @@
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\bin\Debug\tpcai_electrhogar.Datos.dll
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\bin\Debug\tpcai_electrhogar.Datos.pdb
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.dll
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.pdb
