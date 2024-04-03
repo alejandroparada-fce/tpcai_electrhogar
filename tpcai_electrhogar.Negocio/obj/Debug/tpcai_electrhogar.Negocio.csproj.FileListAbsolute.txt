@@ -7,3 +7,12 @@ C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\De
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.CopyComplete
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.dll
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.pdb
+C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Negocio.dll
+C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Negocio.pdb
+C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Datos.dll
+C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Datos.pdb
+C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.AssemblyReference.cache
+C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.CopyComplete
+C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.dll
+C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.pdb

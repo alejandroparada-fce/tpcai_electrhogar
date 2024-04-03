@@ -23,5 +23,12 @@ namespace tpcai_electrhogar
             RegistrarUsuariosForm registrarUsuariosForm = new RegistrarUsuariosForm();
             registrarUsuariosForm.Show();
         }
+
+        private void cambiarpassword_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CambiarContrasenaForm cambiarContrasenaForm = new CambiarContrasenaForm();
+            cambiarContrasenaForm.Show();
+        }
     }
 }
