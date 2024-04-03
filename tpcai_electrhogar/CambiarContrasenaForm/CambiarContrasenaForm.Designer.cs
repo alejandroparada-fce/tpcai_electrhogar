@@ -78,7 +78,7 @@
             // 
             // ContraseñaActual
             // 
-            this.ContraseñaActual.Location = new System.Drawing.Point(300, 24);
+            this.ContraseñaActual.Location = new System.Drawing.Point(317, 24);
             this.ContraseñaActual.Name = "ContraseñaActual";
             this.ContraseñaActual.Size = new System.Drawing.Size(216, 20);
             this.ContraseñaActual.TabIndex = 4;
@@ -107,27 +107,33 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(200, 31);
+            this.label1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(200, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
+            this.label1.Size = new System.Drawing.Size(111, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Contraseña Actual";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(198, 63);
+            this.label2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(199, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 13);
+            this.label2.Size = new System.Drawing.Size(112, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Contraseña Nueva";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(196, 103);
+            this.label3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Window;
+            this.label3.Location = new System.Drawing.Point(194, 103);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 13);
+            this.label3.Size = new System.Drawing.Size(117, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "Repetir Contraseña";
             // 
@@ -142,14 +148,14 @@
             // 
             // RepetirContrasena
             // 
-            this.RepetirContrasena.Location = new System.Drawing.Point(300, 100);
+            this.RepetirContrasena.Location = new System.Drawing.Point(317, 100);
             this.RepetirContrasena.Name = "RepetirContrasena";
             this.RepetirContrasena.Size = new System.Drawing.Size(216, 20);
             this.RepetirContrasena.TabIndex = 12;
             // 
             // ContrasenaNueva
             // 
-            this.ContrasenaNueva.Location = new System.Drawing.Point(300, 63);
+            this.ContrasenaNueva.Location = new System.Drawing.Point(317, 63);
             this.ContrasenaNueva.Name = "ContrasenaNueva";
             this.ContrasenaNueva.Size = new System.Drawing.Size(216, 20);
             this.ContrasenaNueva.TabIndex = 13;
