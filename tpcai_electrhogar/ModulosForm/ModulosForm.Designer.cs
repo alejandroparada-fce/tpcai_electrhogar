@@ -32,6 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cambiarpassword = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,12 +68,23 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // cambiarpassword
+            // 
+            this.cambiarpassword.Location = new System.Drawing.Point(190, 13);
+            this.cambiarpassword.Name = "cambiarpassword";
+            this.cambiarpassword.Size = new System.Drawing.Size(134, 23);
+            this.cambiarpassword.TabIndex = 2;
+            this.cambiarpassword.Text = "Cambiar Contraseña";
+            this.cambiarpassword.UseVisualStyleBackColor = true;
+            this.cambiarpassword.Click += new System.EventHandler(this.cambiarpassword_Click);
+            // 
             // ModulosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(99)))), ((int)(((byte)(196)))));
             this.ClientSize = new System.Drawing.Size(584, 261);
+            this.Controls.Add(this.cambiarpassword);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -89,5 +101,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button cambiarpassword;
     }
 }
