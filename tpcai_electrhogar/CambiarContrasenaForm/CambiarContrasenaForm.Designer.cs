@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ContraseñaActual = new System.Windows.Forms.TextBox();
+            this.ContrasenaActual = new System.Windows.Forms.TextBox();
             this.cancelarContrasena = new System.Windows.Forms.Button();
             this.GuardarContrasena = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -76,13 +76,13 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // ContraseñaActual
+            // ContrasenaActual
             // 
-            this.ContraseñaActual.Location = new System.Drawing.Point(300, 24);
-            this.ContraseñaActual.Name = "ContraseñaActual";
-            this.ContraseñaActual.Size = new System.Drawing.Size(216, 20);
-            this.ContraseñaActual.TabIndex = 4;
-            this.ContraseñaActual.TextChanged += new System.EventHandler(this.ContraseñaActual_TextChanged);
+            this.ContrasenaActual.Location = new System.Drawing.Point(300, 24);
+            this.ContrasenaActual.Name = "ContrasenaActual";
+            this.ContrasenaActual.Size = new System.Drawing.Size(216, 20);
+            this.ContrasenaActual.TabIndex = 4;
+            this.ContrasenaActual.TextChanged += new System.EventHandler(this.ContraseñaActual_TextChanged);
             // 
             // cancelarContrasena
             // 
@@ -159,7 +159,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(99)))), ((int)(((byte)(196)))));
-            this.ClientSize = new System.Drawing.Size(584, 261);
+            this.ClientSize = new System.Drawing.Size(664, 261);
             this.Controls.Add(this.ContrasenaNueva);
             this.Controls.Add(this.RepetirContrasena);
             this.Controls.Add(this.lblError);
@@ -168,7 +168,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.GuardarContrasena);
             this.Controls.Add(this.cancelarContrasena);
-            this.Controls.Add(this.ContraseñaActual);
+            this.Controls.Add(this.ContrasenaActual);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -188,7 +188,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox ContraseñaActual;
+        private System.Windows.Forms.TextBox ContrasenaActual;
         private System.Windows.Forms.Button cancelarContrasena;
         private System.Windows.Forms.Button GuardarContrasena;
         private System.Windows.Forms.Label label1;

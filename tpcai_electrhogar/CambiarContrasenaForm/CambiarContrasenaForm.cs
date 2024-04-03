@@ -38,11 +38,14 @@ namespace tpcai_electrhogar
             string mensajeError = "";
             bool validar1 = Validaciones.ValidarContraseña(ContrasenaNueva.Text, "Nueva Contraseña", 8, 15, out string mensajeError1);
             bool validar2 = RepetirContrasena.Text == ContrasenaNueva.Text;
+            bool validar3 = Validaciones.ValidarContraseña(ContrasenaActual.Text, "Contraseña Actual", 8, 15, out string mensajeError3);
             if (!validar2)
             {
                 mensajeError2 = "Las contraseñas no coinciden.";
             }
-            mensajeError = mensajeError1 + "\n" + mensajeError2;
+            
+            
+            mensajeError = mensajeError1 + "\n" + mensajeError2 + "\n" + mensajeError3;
             lblError.Text = mensajeError;
             //Falta hacer el llamado de logica de negocio para el guardado en base de datos, y el cambio de estado
         }

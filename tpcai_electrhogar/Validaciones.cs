@@ -188,7 +188,7 @@ namespace tpcai_electrhogar
 
             if (!CadenaContraseña|| !MayusNumContraseña)
             {
-                mensajeError = mensajeError1 + "/n" + mensajeError2;
+                mensajeError = mensajeError1 + "\n" + mensajeError2;
                 return false;
             }
 
