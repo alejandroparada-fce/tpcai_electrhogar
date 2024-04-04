@@ -180,6 +180,7 @@
             this.comboBoxPerfil.Size = new System.Drawing.Size(403, 21);
             this.comboBoxPerfil.TabIndex = 11;
             this.comboBoxPerfil.Text = "Perfil";
+            this.comboBoxPerfil.SelectedIndexChanged += new System.EventHandler(this.comboBoxPerfil_SelectedIndexChanged);
             // 
             // textBoxNombreUsuario
             // 

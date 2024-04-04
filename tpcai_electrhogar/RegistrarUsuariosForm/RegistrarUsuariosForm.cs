@@ -34,6 +34,18 @@ Se agrega panel dockeado a la izquierda.
             lblError.Text = mensajeError;
         }
 
+<<<<<<< Updated upstream
 
+=======
+        private void RegistrarUsuariosForm_Load(object sender, EventArgs e)
+        {
+            comboBoxPerfil.SelectedIndex = 0;
+        }
+
+        private void comboBoxPerfil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> Stashed changes
     }
 }

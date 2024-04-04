@@ -46,6 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream:tpcai_electrhogar/tpcai_electrhogar.csproj
+=======
+    <Compile Include="BajaUsuarioForm\BajaUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BajaUsuarioForm\BajaUsuarioForm.Designer.cs">
+      <DependentUpon>BajaUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambiarContrasenaForm\CambiarContrasenaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambiarContrasenaForm\CambiarContrasenaForm.Designer.cs">
+      <DependentUpon>CambiarContrasenaForm.cs</DependentUpon>
+    </Compile>
+>>>>>>> Stashed changes:tpcai_electrhogar/tpcai_electrhogar.Presentacion.csproj
     <Compile Include="LoginForm\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +82,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validaciones.cs" />
+<<<<<<< Updated upstream:tpcai_electrhogar/tpcai_electrhogar.csproj
+=======
+    <EmbeddedResource Include="BajaUsuarioForm\BajaUsuarioForm.resx">
+      <DependentUpon>BajaUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambiarContrasenaForm\CambiarContrasenaForm.resx">
+      <DependentUpon>CambiarContrasenaForm.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> Stashed changes:tpcai_electrhogar/tpcai_electrhogar.Presentacion.csproj
     <EmbeddedResource Include="LoginForm\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
