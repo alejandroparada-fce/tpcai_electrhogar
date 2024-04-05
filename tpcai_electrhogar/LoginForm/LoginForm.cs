@@ -40,7 +40,7 @@ namespace tpcai_electrhogar
             }
            else  if (usuarioBloqueado)
             {
-                lblError.Text = "El usuario ha fallado tres veces en autenticarse. Usuario blooqueado.";
+                lblError.Text = "El usuario ha fallado tres veces en autenticarse. Usuario bloqueado.";
             }
             else if (!UsuarioAutenticado)
             {
