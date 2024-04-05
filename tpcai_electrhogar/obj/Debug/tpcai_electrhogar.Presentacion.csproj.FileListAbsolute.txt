@@ -15,6 +15,8 @@ C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpca
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.CopyComplete
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.exe
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.pdb
+<<<<<<< Updated upstream
+=======
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.AssemblyReference.cache
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.SuggestedBindingRedirects.cache
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.CambiarContrasenaForm.resources
@@ -34,3 +36,5 @@ C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar\bi
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.Negocio.pdb
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.Datos.pdb
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.CopyComplete
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.CambiarContrasenaForm.resources
+>>>>>>> Stashed changes

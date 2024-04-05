@@ -36,6 +36,7 @@
             this.lblContraseña = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblError = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -107,12 +108,22 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblError.Location = new System.Drawing.Point(215, 174);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 6;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(99)))), ((int)(((byte)(196)))));
             this.ClientSize = new System.Drawing.Size(584, 261);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
@@ -138,5 +149,6 @@
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblError;
     }
 }

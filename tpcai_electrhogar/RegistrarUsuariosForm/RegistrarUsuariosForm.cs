@@ -68,9 +68,5 @@ Se agrega panel dockeado a la izquierda.
 
         }
 
-        private void RegistrarUsuariosForm_Load(object sender, EventArgs e)
-        {
-            comboBoxPerfil.SelectedIndex = 0;
-        }
     }
 }
