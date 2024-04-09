@@ -162,7 +162,7 @@ namespace tpcai_electrhogar
             //Se chequea que tenga un número
             if (!numeros.IsMatch(contraseñaIngresada))
             {
-                mensajeError += "Se requiere al menos un número.";
+                mensajeError += "\n" + "Se requiere al menos un número.";
             }
 
             //Si no hay errores se retorna verdadero
@@ -188,7 +188,7 @@ namespace tpcai_electrhogar
 
             if (!CadenaContraseña|| !MayusNumContraseña)
             {
-                mensajeError = mensajeError1 + "/n" + mensajeError2;
+                mensajeError = mensajeError1 + "\n" + mensajeError2;
                 return false;
             }
 

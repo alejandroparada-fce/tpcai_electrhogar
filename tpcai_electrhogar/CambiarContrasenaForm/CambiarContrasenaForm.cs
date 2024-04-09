@@ -17,10 +17,6 @@ namespace tpcai_electrhogar
             InitializeComponent();
         }
        
-        private void CambiarContrasenaForm_Load(object sender, EventArgs e)
-        {
-
-        }
         private void ContraseñaActual_TextChanged(object sender, EventArgs e)
         {
             //Hacer validacion con la contraseña temporal cuando tenga la base de datos
@@ -36,7 +32,7 @@ namespace tpcai_electrhogar
         {
             string mensajeError2 = "";
             string mensajeError = "";
-            bool validar1 = Validaciones.ValidarContraseña(ContrasenaNueva.Text, "Nueva Contraseña", 8, 15, out string mensajeError1);
+            bool validar1 = Validaciones.ValidarContraseña(ContrasenaNueva.Text, "'Contraseña Nueva'", 8, 15, out string mensajeError1);
             bool validar2 = RepetirContrasena.Text == ContrasenaNueva.Text;
             if (!validar2)
             {
