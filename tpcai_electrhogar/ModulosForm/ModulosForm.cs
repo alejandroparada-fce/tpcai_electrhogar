@@ -30,5 +30,6 @@ namespace tpcai_electrhogar
             CambiarContrasenaForm cambiarContrasenaForm = new CambiarContrasenaForm();
             cambiarContrasenaForm.Show();
         }
+
     }
 }

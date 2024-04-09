@@ -33,13 +33,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cambiarpassword = new System.Windows.Forms.Button();
+            this.btnBajaUsuarios = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(324, 63);
+            this.button1.Location = new System.Drawing.Point(242, 35);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 34);
             this.button1.TabIndex = 0;
@@ -70,7 +71,7 @@
             // 
             // cambiarpassword
             // 
-            this.cambiarpassword.Location = new System.Drawing.Point(190, 13);
+            this.cambiarpassword.Location = new System.Drawing.Point(313, 194);
             this.cambiarpassword.Name = "cambiarpassword";
             this.cambiarpassword.Size = new System.Drawing.Size(134, 23);
             this.cambiarpassword.TabIndex = 2;
@@ -78,12 +79,22 @@
             this.cambiarpassword.UseVisualStyleBackColor = true;
             this.cambiarpassword.Click += new System.EventHandler(this.cambiarpassword_Click);
             // 
+            // btnBajaUsuarios
+            // 
+            this.btnBajaUsuarios.Location = new System.Drawing.Point(413, 35);
+            this.btnBajaUsuarios.Name = "btnBajaUsuarios";
+            this.btnBajaUsuarios.Size = new System.Drawing.Size(106, 34);
+            this.btnBajaUsuarios.TabIndex = 3;
+            this.btnBajaUsuarios.Text = "Baja de Usuarios";
+            this.btnBajaUsuarios.UseVisualStyleBackColor = true;
+            // 
             // ModulosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(99)))), ((int)(((byte)(196)))));
             this.ClientSize = new System.Drawing.Size(584, 261);
+            this.Controls.Add(this.btnBajaUsuarios);
             this.Controls.Add(this.cambiarpassword);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
@@ -102,5 +113,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button cambiarpassword;
+        private System.Windows.Forms.Button btnBajaUsuarios;
     }
 }
