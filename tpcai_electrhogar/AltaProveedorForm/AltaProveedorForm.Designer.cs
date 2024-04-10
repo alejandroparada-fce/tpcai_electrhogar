@@ -45,6 +45,7 @@
             this.checkBoxInformatica = new System.Windows.Forms.CheckBox();
             this.checkBoxSmartTv = new System.Windows.Forms.CheckBox();
             this.btnAgregarProveedor = new System.Windows.Forms.Button();
+            this.lblError = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -56,46 +57,52 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.ForeColor = System.Drawing.SystemColors.Window;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(183, 450);
+            this.panel1.Size = new System.Drawing.Size(214, 450);
             this.panel1.TabIndex = 3;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox2.Location = new System.Drawing.Point(33, 92);
+            this.pictureBox2.Location = new System.Drawing.Point(38, 92);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(108, 115);
+            this.pictureBox2.Size = new System.Drawing.Size(126, 115);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // textBoxNombre
             // 
-            this.textBoxNombre.Location = new System.Drawing.Point(386, 42);
+            this.textBoxNombre.Location = new System.Drawing.Point(450, 42);
+            this.textBoxNombre.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(151, 20);
+            this.textBoxNombre.Size = new System.Drawing.Size(176, 21);
             this.textBoxNombre.TabIndex = 4;
             // 
             // textBoxApellido
             // 
-            this.textBoxApellido.Location = new System.Drawing.Point(386, 92);
+            this.textBoxApellido.Location = new System.Drawing.Point(450, 92);
+            this.textBoxApellido.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxApellido.Name = "textBoxApellido";
-            this.textBoxApellido.Size = new System.Drawing.Size(151, 20);
+            this.textBoxApellido.Size = new System.Drawing.Size(176, 21);
             this.textBoxApellido.TabIndex = 5;
             // 
             // textBoxMail
             // 
-            this.textBoxMail.Location = new System.Drawing.Point(386, 143);
+            this.textBoxMail.Location = new System.Drawing.Point(450, 143);
+            this.textBoxMail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxMail.Name = "textBoxMail";
-            this.textBoxMail.Size = new System.Drawing.Size(151, 20);
+            this.textBoxMail.Size = new System.Drawing.Size(176, 21);
             this.textBoxMail.TabIndex = 6;
             // 
             // textBoxCUIT
             // 
-            this.textBoxCUIT.Location = new System.Drawing.Point(386, 194);
+            this.textBoxCUIT.Location = new System.Drawing.Point(450, 194);
+            this.textBoxCUIT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxCUIT.Name = "textBoxCUIT";
-            this.textBoxCUIT.Size = new System.Drawing.Size(151, 20);
+            this.textBoxCUIT.Size = new System.Drawing.Size(176, 21);
             this.textBoxCUIT.TabIndex = 7;
             // 
             // lblNombre
@@ -103,7 +110,8 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblNombre.Location = new System.Drawing.Point(298, 49);
+            this.lblNombre.Location = new System.Drawing.Point(348, 49);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(52, 13);
             this.lblNombre.TabIndex = 9;
@@ -114,7 +122,8 @@
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblApellido.Location = new System.Drawing.Point(298, 95);
+            this.lblApellido.Location = new System.Drawing.Point(348, 95);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(52, 13);
             this.lblApellido.TabIndex = 10;
@@ -125,7 +134,8 @@
             this.lblCUIT.AutoSize = true;
             this.lblCUIT.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCUIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblCUIT.Location = new System.Drawing.Point(298, 146);
+            this.lblCUIT.Location = new System.Drawing.Point(348, 146);
+            this.lblCUIT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCUIT.Name = "lblCUIT";
             this.lblCUIT.Size = new System.Drawing.Size(35, 13);
             this.lblCUIT.TabIndex = 11;
@@ -136,7 +146,8 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblEmail.Location = new System.Drawing.Point(298, 197);
+            this.lblEmail.Location = new System.Drawing.Point(348, 197);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(38, 13);
             this.lblEmail.TabIndex = 12;
@@ -147,7 +158,8 @@
             this.checkBoxAudio.AutoSize = true;
             this.checkBoxAudio.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAudio.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBoxAudio.Location = new System.Drawing.Point(227, 269);
+            this.checkBoxAudio.Location = new System.Drawing.Point(265, 269);
+            this.checkBoxAudio.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBoxAudio.Name = "checkBoxAudio";
             this.checkBoxAudio.Size = new System.Drawing.Size(58, 17);
             this.checkBoxAudio.TabIndex = 13;
@@ -159,7 +171,8 @@
             this.checkBoxCelulares.AutoSize = true;
             this.checkBoxCelulares.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxCelulares.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBoxCelulares.Location = new System.Drawing.Point(301, 269);
+            this.checkBoxCelulares.Location = new System.Drawing.Point(351, 269);
+            this.checkBoxCelulares.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBoxCelulares.Name = "checkBoxCelulares";
             this.checkBoxCelulares.Size = new System.Drawing.Size(79, 17);
             this.checkBoxCelulares.TabIndex = 14;
@@ -171,7 +184,8 @@
             this.checkBoxElectroHogar.AutoSize = true;
             this.checkBoxElectroHogar.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxElectroHogar.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBoxElectroHogar.Location = new System.Drawing.Point(386, 269);
+            this.checkBoxElectroHogar.Location = new System.Drawing.Point(450, 269);
+            this.checkBoxElectroHogar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBoxElectroHogar.Name = "checkBoxElectroHogar";
             this.checkBoxElectroHogar.Size = new System.Drawing.Size(103, 17);
             this.checkBoxElectroHogar.TabIndex = 15;
@@ -183,7 +197,8 @@
             this.checkBoxInformatica.AutoSize = true;
             this.checkBoxInformatica.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxInformatica.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBoxInformatica.Location = new System.Drawing.Point(508, 269);
+            this.checkBoxInformatica.Location = new System.Drawing.Point(593, 269);
+            this.checkBoxInformatica.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBoxInformatica.Name = "checkBoxInformatica";
             this.checkBoxInformatica.Size = new System.Drawing.Size(92, 17);
             this.checkBoxInformatica.TabIndex = 16;
@@ -195,7 +210,8 @@
             this.checkBoxSmartTv.AutoSize = true;
             this.checkBoxSmartTv.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxSmartTv.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBoxSmartTv.Location = new System.Drawing.Point(619, 269);
+            this.checkBoxSmartTv.Location = new System.Drawing.Point(722, 269);
+            this.checkBoxSmartTv.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.checkBoxSmartTv.Name = "checkBoxSmartTv";
             this.checkBoxSmartTv.Size = new System.Drawing.Size(78, 17);
             this.checkBoxSmartTv.TabIndex = 17;
@@ -204,19 +220,32 @@
             // 
             // btnAgregarProveedor
             // 
-            this.btnAgregarProveedor.Location = new System.Drawing.Point(398, 323);
+            this.btnAgregarProveedor.Location = new System.Drawing.Point(464, 323);
+            this.btnAgregarProveedor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAgregarProveedor.Name = "btnAgregarProveedor";
-            this.btnAgregarProveedor.Size = new System.Drawing.Size(125, 23);
+            this.btnAgregarProveedor.Size = new System.Drawing.Size(146, 23);
             this.btnAgregarProveedor.TabIndex = 18;
             this.btnAgregarProveedor.Text = "Agregar Proveedor";
             this.btnAgregarProveedor.UseVisualStyleBackColor = true;
+            this.btnAgregarProveedor.Click += new System.EventHandler(this.btnAgregarProveedor_Click);
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblError.Location = new System.Drawing.Point(265, 379);
+            this.lblError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 19;
             // 
             // AltaProveedorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(99)))), ((int)(((byte)(196)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(933, 450);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnAgregarProveedor);
             this.Controls.Add(this.checkBoxSmartTv);
             this.Controls.Add(this.checkBoxInformatica);
@@ -232,7 +261,9 @@
             this.Controls.Add(this.textBoxApellido);
             this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "AltaProveedorForm";
             this.Opacity = 0.95D;
             this.Text = "Alta de proveedores";
@@ -261,5 +292,6 @@
         private System.Windows.Forms.CheckBox checkBoxInformatica;
         private System.Windows.Forms.CheckBox checkBoxSmartTv;
         private System.Windows.Forms.Button btnAgregarProveedor;
+        private System.Windows.Forms.Label lblError;
     }
 }
