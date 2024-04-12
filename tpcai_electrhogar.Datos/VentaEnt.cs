@@ -24,16 +24,16 @@ namespace tpcai_electrhogar.Datos
         public int Estado { get { return _estado; } set { _estado = value; } }
         public Guid IdUsuario { get {  return _idUsuario; } set { _idUsuario = value; } }
 
-        public VentaEnt(Guid IdCliente, Guid IdProducto, int Cantidad, DateTime FechaAlta, 
-            int Estado, Guid IdUsuario)
+        public VentaEnt(Guid idCliente, Guid idProducto, int cantidad, DateTime fechaAlta, 
+            int estado, Guid idUsuario)
         {
             _id = Guid.NewGuid();
-            _idCliente = IdCliente;
-            _idProducto = IdProducto;
-            _cantidad = Cantidad;
-            _fechaAlta = FechaAlta;
-            _estado = Estado;
-            _idUsuario = IdUsuario;
+            _idCliente = idCliente;
+            _idProducto = idProducto;
+            _cantidad = cantidad;
+            _fechaAlta = fechaAlta;
+            _estado = estado;
+            _idUsuario = idUsuario;
 
         }
 
