@@ -16,3 +16,14 @@ C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Ne
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.CopyComplete
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.dll
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.pdb
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Negocio.dll
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Negocio.pdb
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\Persistencia.dll
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Datos.dll
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\Persistencia.pdb
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Datos.pdb
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.AssemblyReference.cache
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.CoreCompileInputs.cache
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_el.543FFB23.Up2Date
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.dll
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.pdb
