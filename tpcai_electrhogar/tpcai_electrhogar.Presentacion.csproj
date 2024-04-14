@@ -181,6 +181,10 @@
     <None Include="Resources\Electro-Hogar-80x102.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\tpcai_electrhogar.Datos\tpcai_electrhogar.Datos.csproj">
+      <Project>{b6df6f44-246f-4fa6-850c-74508604c966}</Project>
+      <Name>tpcai_electrhogar.Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\tpcai_electrhogar.Negocio\tpcai_electrhogar.Negocio.csproj">
       <Project>{e84d9e14-e211-426e-b60f-0156e20e804e}</Project>
       <Name>tpcai_electrhogar.Negocio</Name>

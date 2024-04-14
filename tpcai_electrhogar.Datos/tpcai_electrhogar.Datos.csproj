@@ -51,5 +51,11 @@
     <Compile Include="UsuarioEnt.cs" />
     <Compile Include="VentaEnt.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj">
+      <Project>{1672fdc7-c7a1-48e3-81f2-d8bf3df0e5d5}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
