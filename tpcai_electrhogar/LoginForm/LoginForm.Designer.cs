@@ -74,7 +74,7 @@
             // 
             this.lblError.AutoSize = true;
             this.lblError.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblError.Location = new System.Drawing.Point(215, 174);
+            this.lblError.Location = new System.Drawing.Point(441, 165);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 6;
@@ -161,11 +161,11 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(430, 8);
+            this.lblTitle.Location = new System.Drawing.Point(437, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(112, 39);
+            this.lblTitle.Size = new System.Drawing.Size(109, 38);
             this.lblTitle.TabIndex = 70;
             this.lblTitle.Text = "Log In";
             // 
@@ -207,6 +207,7 @@
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Ingresar";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
             // LoginForm
             // 

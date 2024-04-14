@@ -22,7 +22,7 @@ namespace tpcai_electrhogar
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")] private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")] private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
             //this.Hide();
             //ModulosForm modulos = new ModulosForm();
@@ -34,15 +34,15 @@ namespace tpcai_electrhogar
             bool cambioContraseña = ModuloLogueo.CambioContraseña();
             bool usuarioBloqueado = ModuloLogueo.ChequearBloqueo(txtUsuario.Text);
 
-            if(txtUsuario.Text == "" || txtUsuario.Text == "")
+            if (txtUsuario.Text == "" || txtUsuario.Text == "")
             {
                 lblError.Text = "Debe ingresar un usuario y una contraseña";
-            }            
-            else if(!UsuarioPresente)
+            }
+            else if (!UsuarioPresente)
             {
                 lblError.Text = "No se encontró el usuario";
             }
-           else  if (usuarioBloqueado)
+            else if (usuarioBloqueado)
             {
                 lblError.Text = "El usuario ha fallado tres veces en autenticarse. Usuario bloqueado.";
             }
@@ -50,13 +50,13 @@ namespace tpcai_electrhogar
             {
                 lblError.Text = "Contraseña errónea";
             }
-            else if(cambioContraseña)
+            else if (cambioContraseña)
             {
                 this.Hide();
                 CambiarContrasenaForm cambiocontraseñaform = new CambiarContrasenaForm();
                 cambiocontraseñaform.Show();
             }
-            else if(!cambioContraseña & UsuarioAutenticado)
+            else if (!cambioContraseña & UsuarioAutenticado)
             {
                 this.Hide();
                 ModulosForm modulosForm = new ModulosForm();
@@ -123,5 +123,7 @@ namespace tpcai_electrhogar
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        
     }
 }
