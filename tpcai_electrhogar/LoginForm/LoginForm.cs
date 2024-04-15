@@ -28,13 +28,13 @@ namespace tpcai_electrhogar
             //ModulosForm modulos = new ModulosForm();
             //modulos.Show();
 
-            ModuloLogueo.Loguearse(txtUsuario.Text, txtUsuario.Text, "CAI20241");
+            ModuloLogueo.Loguearse(txtUsuario.Text, txtPass.Text, "CAI20241");
             bool UsuarioPresente = ModuloLogueo.ExisteUsuario();
             bool UsuarioAutenticado = ModuloLogueo.Autenticado();
             bool cambioContraseña = ModuloLogueo.CambioContraseña();
             bool usuarioBloqueado = ModuloLogueo.ChequearBloqueo(txtUsuario.Text);
 
-            if (txtUsuario.Text == "" || txtUsuario.Text == "")
+            if (txtUsuario.Text == "Usuario" || txtUsuario.Text == "Contraseña")
             {
                 lblError.Text = "Debe ingresar un usuario y una contraseña";
             }
@@ -124,6 +124,6 @@ namespace tpcai_electrhogar
             this.WindowState = FormWindowState.Minimized;
         }
 
-        
+
     }
 }

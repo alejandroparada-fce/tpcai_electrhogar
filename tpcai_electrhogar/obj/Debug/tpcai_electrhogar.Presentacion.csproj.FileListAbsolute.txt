@@ -1,6 +1,4 @@
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.exe.config
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.exe.manifest
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.application
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.exe
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.pdb
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.Negocio.dll
@@ -15,8 +13,6 @@ C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpca
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Properties.Resources.resources
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.GenerateResource.cache
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.exe.manifest
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.application
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.CopyComplete
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.exe
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.pdb
@@ -44,3 +40,5 @@ C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\t
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.Datos.pdb
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.Negocio.pdb
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_el.43DB8F70.Up2Date
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.AgregarProductoForm.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.VentaForm.resources
