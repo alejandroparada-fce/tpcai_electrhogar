@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 
 namespace tpcai_electrhogar
 {
@@ -18,13 +17,10 @@ namespace tpcai_electrhogar
             InitializeComponent();
         }
 
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")] private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")] private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
-
-        private void ContraseñaActual_TextChanged(object sender, EventArgs e)
-        {
-            //Hacer validacion con la contraseña temporal cuando tenga la base de datos
-        }
+        //private void ContraseñaActual_TextChanged(object sender, EventArgs e)
+        //{
+        //    //Hacer validacion con la contraseña temporal cuando tenga la base de datos
+        //}
 
         private void btnCancelarContrasena_Click(object sender, EventArgs e)
         {
@@ -33,12 +29,27 @@ namespace tpcai_electrhogar
             modulosForm.Show();
         }
 
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            FormUtils.SalirAplicacion();
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            FormUtils.MaximizarFormulario(this);
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            FormUtils.MinimizarFormulario(this);
+        }
+
         private void btnGuardarContrasena_Click(object sender, EventArgs e)
         {
             string mensajeError2 = "";
             string mensajeError = "";
-            bool validar1 = Validaciones.ValidarContraseña(ContrasenaNueva.Text, "'Contraseña Nueva'", 8, 15, out string mensajeError1);
-            bool validar2 = RepetirContrasena.Text == ContrasenaNueva.Text;
+            bool validar1 = Validaciones.ValidarContraseña(contrasenaNueva.Text, "'Contraseña Nueva'", 8, 15, out string mensajeError1);
+            bool validar2 = repetirContrasena.Text == contrasenaNueva.Text;
             if (!validar2)
             {
                 mensajeError2 = "Las contraseñas no coinciden.";
@@ -48,86 +59,34 @@ namespace tpcai_electrhogar
             //Falta hacer el llamado de logica de negocio para el guardado en base de datos, y el cambio de estado
         }
 
-        private void txtPass_Enter(object sender, EventArgs e)
+        private void contrasenaActual_Enter(object sender, EventArgs e)
         {
-            if (txtPass.Text == "Contraseña Actual")
-            {
-                txtPass.Text = "";
-                txtPass.ForeColor = Color.LightGray;
-                txtPass.UseSystemPasswordChar = true;
-            }
+            FormUtils.LimpiarCampoContrasena(this, contrasenaActual, "Contraseña Actual");
         }
 
-        private void txtPass_Leave(object sender, EventArgs e)
+        private void contrasenaActual_Leave(object sender, EventArgs e)
         {
-            if (txtPass.Text == "")
-            {
-                txtPass.Text = "Contraseña Actual";
-                txtPass.ForeColor = Color.DimGray;
-                txtPass.UseSystemPasswordChar = false;
-            }
+            FormUtils.LimpiarCampoContrasena(this, contrasenaActual, "Contraseña Actual");
         }
 
-        private void ContrasenaNueva_Enter(object sender, EventArgs e)
+        private void contrasenaNueva_Enter_1(object sender, EventArgs e)
         {
-            if (txtPass.Text == "Contraseña Nueva")
-            {
-                txtPass.Text = "";
-                txtPass.ForeColor = Color.LightGray;
-                txtPass.UseSystemPasswordChar = true;
-            }
+            FormUtils.LimpiarCampoContrasena(this, contrasenaNueva, "Contraseña Nueva");
         }
 
-        private void ContrasenaNueva_Leave(object sender, EventArgs e)
+        private void contrasenaNueva_Leave_1(object sender, EventArgs e)
         {
-            if (txtPass.Text == "")
-            {
-                txtPass.Text = "Contraseña Nueva";
-                txtPass.ForeColor = Color.DimGray;
-                txtPass.UseSystemPasswordChar = false;
-            }
+            FormUtils.LimpiarCampoContrasena(this, contrasenaNueva, "Contraseña Nueva");
         }
 
-        private void RepetirContrasena_Enter(object sender, EventArgs e)
+        private void repetirContrasena_Enter_1(object sender, EventArgs e)
         {
-            if (txtPass.Text == "Repetir Contraseña Nueva")
-            {
-                txtPass.Text = "";
-                txtPass.ForeColor = Color.LightGray;
-                txtPass.UseSystemPasswordChar = true;
-            }
+            FormUtils.LimpiarCampoContrasena(this, repetirContrasena, "Repetir Contraseña Nueva");
         }
 
-        private void RepetirContrasena_Leave(object sender, EventArgs e)
+        private void repetirContrasena_Leave_1(object sender, EventArgs e)
         {
-            if (txtPass.Text == "")
-            {
-                txtPass.Text = "Repetir Contraseña Nueva";
-                txtPass.ForeColor = Color.DimGray;
-                txtPass.UseSystemPasswordChar = false;
-            }
-        }
-
-        private void CambiarContrasenaForm_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
+            FormUtils.LimpiarCampoContrasena(this, repetirContrasena, "Repetir Contraseña Nueva");
         }
     }
 }

@@ -87,6 +87,7 @@
     <Compile Include="CambiarContrasenaForm\CambiarContrasenaForm.Designer.cs">
       <DependentUpon>CambiarContrasenaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUtils.cs" />
     <Compile Include="LoginForm\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>

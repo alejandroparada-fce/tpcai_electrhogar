@@ -18,24 +18,14 @@ namespace tpcai_electrhogar
 
         /*Se usa como convención para el nombre de formularios describir
 la función del mismo + "Form"
-Apariencia/BackColor: 77; 99; 196 (RGB)
-Estilo De ventana/Opacity: 95 %
-Textbox: se sacan bordes, se cambia fuente a verdana y se usa itálica.
-Se agrega panel dockeado a la izquierda.
+Apariencia/BackColor: 15,15,15 (RGB)
+Estilo De ventana/Opacity: 90 %
+Textbox: se sacan bordes, se cambia fuente a Century Gothic y se usa tamaño 12.
+Se agrega panel dockeado a la izquierda (RGB 0,122,204).
 */
         public RegistrarUsuariosForm()
         {
             InitializeComponent();
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
         }
 
 
@@ -78,5 +68,29 @@ Se agrega panel dockeado a la izquierda.
 
         }
 
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void RegistrarUsuariosForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            FormUtils.SalirAplicacion();
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            FormUtils.MaximizarFormulario(this);
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            FormUtils.MinimizarFormulario(this);
+        }
     }
 }
