@@ -195,7 +195,7 @@ namespace tpcai_electrhogar
             mensajeError = null;
             return true;
         }
-        public static bool RepeticionContraseña(string contraseña, string contraseñaRepetida, out string mensajeError)
+        public static bool RepetirContraseña(string contraseña, string contraseñaRepetida, out string mensajeError)
         {
             if (!(contraseña == contraseñaRepetida))
             {
