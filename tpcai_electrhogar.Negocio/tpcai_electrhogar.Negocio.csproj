@@ -47,13 +47,9 @@
     <Compile Include="UsuarioNegocio.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PersistenciaWS\PersistenciaWS.csproj">
+    <ProjectReference Include="..\PersistenciaWS\tpcai_electrhogar.PersistenciaWS.csproj">
       <Project>{86F290A9-5103-4035-A69D-681AD4E695AF}</Project>
-      <Name>PersistenciaWS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Persistencia\Persistencia.csproj">
-      <Project>{1672fdc7-c7a1-48e3-81f2-d8bf3df0e5d5}</Project>
-      <Name>Persistencia</Name>
+      <Name>tpcai_electrhogar.PersistenciaWS</Name>
     </ProjectReference>
     <ProjectReference Include="..\tpcai_electrhogar.Datos\tpcai_electrhogar.Datos.csproj">
       <Project>{b6df6f44-246f-4fa6-850c-74508604c966}</Project>

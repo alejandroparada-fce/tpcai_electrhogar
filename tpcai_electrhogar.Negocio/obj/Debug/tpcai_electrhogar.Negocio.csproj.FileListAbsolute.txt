@@ -55,3 +55,7 @@ C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Neg
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.CopyComplete
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.dll
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.pdb
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\PersistenciaWS.dll
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\PersistenciaWS.pdb
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\Newtonsoft.Json.xml

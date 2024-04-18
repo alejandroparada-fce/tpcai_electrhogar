@@ -104,3 +104,11 @@ C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\t
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\Newtonsoft.Json.dll
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\PersistenciaWS.pdb
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\CircularProgressBar.dll
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\WinFormAnimation.dll
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\PersistenciaWS.dll
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\CircularProgressBar.xml
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\PersistenciaWS.pdb
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormBienvenida.resources
