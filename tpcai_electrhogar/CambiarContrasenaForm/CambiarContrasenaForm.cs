@@ -48,10 +48,18 @@ namespace tpcai_electrhogar
             FormUtils.MinimizarFormulario(this);
         }
 
+        private string _username;
+
+        public CambiarContrasenaForm(string username)
+        {
+            InitializeComponent();
+            _username = username;
+        }
+
         private void btnGuardarContrasena_Click(object sender, EventArgs e)
         {
             UsuarioEnt usuarioEnt = new UsuarioEnt();
-            usuarioEnt.Nombre = nombreUsuario.Text;
+            usuarioEnt.Nombre = _username;
             usuarioEnt.Contraseña = contrasenaActual.Text;
             usuarioEnt.ContraseñaNueva = contrasenaNueva.Text;
 
@@ -86,25 +94,24 @@ namespace tpcai_electrhogar
             FormUtils.LimpiarCampoContrasena(this, contrasenaActual, "Contraseña Actual");
         }
 
-        private void contrasenaNueva_Enter_1(object sender, EventArgs e)
+        private void contrasenaNueva_Enter(object sender, EventArgs e)
         {
             FormUtils.LimpiarCampoContrasena(this, contrasenaNueva, "Contraseña Nueva");
         }
 
-        private void contrasenaNueva_Leave_1(object sender, EventArgs e)
+        private void contrasenaNueva_Leave(object sender, EventArgs e)
         {
             FormUtils.LimpiarCampoContrasena(this, contrasenaNueva, "Contraseña Nueva");
         }
 
-        private void repetirContrasena_Enter_1(object sender, EventArgs e)
+        private void repetirContrasena_Enter(object sender, EventArgs e)
         {
             FormUtils.LimpiarCampoContrasena(this, repetirContrasena, "Repetir Contraseña Nueva");
         }
 
-        private void repetirContrasena_Leave_1(object sender, EventArgs e)
+        private void repetirContrasena_Leave(object sender, EventArgs e)
         {
             FormUtils.LimpiarCampoContrasena(this, repetirContrasena, "Repetir Contraseña Nueva");
         }
-   
     }
 }

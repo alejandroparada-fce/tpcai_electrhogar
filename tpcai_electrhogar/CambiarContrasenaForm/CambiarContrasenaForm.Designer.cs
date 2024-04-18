@@ -46,8 +46,6 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.nombreUsuario = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
@@ -96,6 +94,8 @@
             this.contrasenaActual.Size = new System.Drawing.Size(360, 20);
             this.contrasenaActual.TabIndex = 1;
             this.contrasenaActual.Text = "Contraseña Actual";
+            this.contrasenaActual.Enter += new System.EventHandler(this.contrasenaActual_Enter);
+            this.contrasenaActual.Leave += new System.EventHandler(this.contrasenaActual_Leave);
             // 
             // panel3
             // 
@@ -204,7 +204,9 @@
             this.contrasenaNueva.Size = new System.Drawing.Size(360, 20);
             this.contrasenaNueva.TabIndex = 2;
             this.contrasenaNueva.Text = "Contraseña Nueva";
-
+            this.contrasenaNueva.Enter += new System.EventHandler(this.contrasenaNueva_Enter);
+            this.contrasenaNueva.Leave += new System.EventHandler(this.contrasenaNueva_Leave);
+            // 
             // repetirContrasena
             // 
             this.repetirContrasena.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
@@ -216,6 +218,8 @@
             this.repetirContrasena.Size = new System.Drawing.Size(360, 20);
             this.repetirContrasena.TabIndex = 3;
             this.repetirContrasena.Text = "Repetir Contraseña Nueva";
+            this.repetirContrasena.Enter += new System.EventHandler(this.repetirContrasena_Enter);
+            this.repetirContrasena.Leave += new System.EventHandler(this.repetirContrasena_Leave);
             // 
             // btnMaximizar
             // 
@@ -250,35 +254,12 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // nombreUsuario
-            // 
-            this.nombreUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.nombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nombreUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreUsuario.ForeColor = System.Drawing.Color.DimGray;
-            this.nombreUsuario.Location = new System.Drawing.Point(322, 50);
-            this.nombreUsuario.Name = "nombreUsuario";
-            this.nombreUsuario.Size = new System.Drawing.Size(360, 20);
-            this.nombreUsuario.TabIndex = 106;
-            this.nombreUsuario.Text = "Nombre Usuario";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DimGray;
-            this.panel5.Enabled = false;
-            this.panel5.Location = new System.Drawing.Point(322, 87);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(360, 1);
-            this.panel5.TabIndex = 107;
-            // 
             // CambiarContrasenaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 330);
-            this.Controls.Add(this.nombreUsuario);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
@@ -329,7 +310,5 @@
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.TextBox nombreUsuario;
-        private System.Windows.Forms.Panel panel5;
     }
 }

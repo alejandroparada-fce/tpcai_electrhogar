@@ -24,6 +24,9 @@ namespace tpcai_electrhogar
             //ModulosForm modulos = new ModulosForm();
             //modulos.Show();
 
+            // Constructor para enviar la información Nombre de Usuario al CambiarContrasenaForm
+            CambiarContrasenaForm cambiarForm = new CambiarContrasenaForm(txtUsuario.Text);
+
             ModuloLogueo.Loguearse(txtUsuario.Text, txtPass.Text, "CAI20241");
             bool UsuarioPresente = ModuloLogueo.ExisteUsuario();
             bool UsuarioAutenticado = ModuloLogueo.Autenticado();
