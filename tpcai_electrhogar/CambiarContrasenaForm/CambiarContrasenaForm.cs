@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -53,23 +54,24 @@ namespace tpcai_electrhogar
             usuarioEnt.Nombre = nombreUsuario.Text;
             usuarioEnt.Contraseña = contrasenaActual.Text;
             usuarioEnt.ContraseñaNueva = contrasenaNueva.Text;
-            string mensajeError2 = "";
+
             string mensajeError = "";
             bool validar1 = Validaciones.ValidarContraseña(contrasenaNueva.Text, "'Contraseña Nueva'", 8, 15, out string mensajeError1);
-            bool validar2 = repetirContrasena.Text == contrasenaNueva.Text;
-            if (!validar2)
-            {
-                mensajeError2 = "Las contraseñas no coinciden.";
-            }
-            else if (validar1)
-            {
-                mensajeError = mensajeError1 + "\n" + mensajeError2;
+            bool validar2 = Validaciones.RepetirContraseña(contrasenaNueva.Text, repetirContrasena.Text, out string mensajeError2);
+            mensajeError = mensajeError1 + "\n" + mensajeError2;
                 lblError.Text = mensajeError;
-            }
-            else 
+            if (validar1 & validar2)
             {
-                usuarioNegocio.CambiarPassword(usuarioEnt);
-                //usuarioNegocio.ActivarUsuario();
+                try
+                {
+                    usuarioNegocio.CambiarPassword(usuarioEnt);
+                    //usuarioNegocio.ActivarUsuario();
+                    MessageBox.Show("Contraseña cambiada");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
           
         }

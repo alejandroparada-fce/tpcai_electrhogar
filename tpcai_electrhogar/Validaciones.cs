@@ -195,5 +195,15 @@ namespace tpcai_electrhogar
             mensajeError = null;
             return true;
         }
+        public static bool RepeticionContraseña(string contraseña, string contraseñaRepetida, out string mensajeError)
+        {
+            if (!(contraseña == contraseñaRepetida))
+            {
+                mensajeError = "Las contraseñas no coinciden";
+                return false;
+            }
+            mensajeError = null;
+            return true;
+        }
     }
 }
