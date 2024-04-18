@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CambiarContrasenaForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblError = new System.Windows.Forms.Label();
             this.contrasenaActual = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -46,11 +45,12 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,16 +63,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 2;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox2.Location = new System.Drawing.Point(65, 100);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(108, 115);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
             // 
             // lblError
             // 
@@ -136,7 +126,7 @@
             this.btnGuardarContrasena.Location = new System.Drawing.Point(512, 249);
             this.btnGuardarContrasena.Name = "btnGuardarContrasena";
             this.btnGuardarContrasena.Size = new System.Drawing.Size(170, 40);
-            this.btnGuardarContrasena.TabIndex = 0;
+            this.btnGuardarContrasena.TabIndex = 4;
             this.btnGuardarContrasena.Text = "Guardar";
             this.btnGuardarContrasena.UseVisualStyleBackColor = false;
             this.btnGuardarContrasena.Click += new System.EventHandler(this.btnGuardarContrasena_Click);
@@ -164,7 +154,7 @@
             this.btnCancelarContrasena.Location = new System.Drawing.Point(322, 249);
             this.btnCancelarContrasena.Name = "btnCancelarContrasena";
             this.btnCancelarContrasena.Size = new System.Drawing.Size(170, 40);
-            this.btnCancelarContrasena.TabIndex = 100;
+            this.btnCancelarContrasena.TabIndex = 0;
             this.btnCancelarContrasena.Text = "Cancelar";
             this.btnCancelarContrasena.UseVisualStyleBackColor = false;
             this.btnCancelarContrasena.Click += new System.EventHandler(this.btnCancelarContrasena_Click);
@@ -172,6 +162,7 @@
             // lblCredits
             // 
             this.lblCredits.AutoSize = true;
+            this.lblCredits.Enabled = false;
             this.lblCredits.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCredits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblCredits.Location = new System.Drawing.Point(690, 284);
@@ -183,6 +174,7 @@
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
+            this.lblVersion.Enabled = false;
             this.lblVersion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblVersion.Location = new System.Drawing.Point(738, 300);
@@ -200,7 +192,7 @@
             this.contrasenaNueva.Location = new System.Drawing.Point(322, 139);
             this.contrasenaNueva.Name = "contrasenaNueva";
             this.contrasenaNueva.Size = new System.Drawing.Size(360, 20);
-            this.contrasenaNueva.TabIndex = 101;
+            this.contrasenaNueva.TabIndex = 2;
             this.contrasenaNueva.Text = "Contraseña Nueva";
             this.contrasenaNueva.Enter += new System.EventHandler(this.contrasenaNueva_Enter_1);
             this.contrasenaNueva.Leave += new System.EventHandler(this.contrasenaNueva_Leave_1);
@@ -214,7 +206,7 @@
             this.repetirContrasena.Location = new System.Drawing.Point(322, 194);
             this.repetirContrasena.Name = "repetirContrasena";
             this.repetirContrasena.Size = new System.Drawing.Size(360, 20);
-            this.repetirContrasena.TabIndex = 102;
+            this.repetirContrasena.TabIndex = 3;
             this.repetirContrasena.Text = "Repetir Contraseña Nueva";
             this.repetirContrasena.Enter += new System.EventHandler(this.repetirContrasena_Enter_1);
             this.repetirContrasena.Leave += new System.EventHandler(this.repetirContrasena_Leave_1);
@@ -252,6 +244,16 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
+            this.pictureBox2.Location = new System.Drawing.Point(65, 100);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(108, 115);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // CambiarContrasenaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,10 +283,10 @@
             this.Opacity = 0.9D;
             this.Text = "CambiarContrasenaForm";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
