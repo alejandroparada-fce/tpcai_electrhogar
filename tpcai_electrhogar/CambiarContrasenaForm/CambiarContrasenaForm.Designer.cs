@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CambiarContrasenaForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblError = new System.Windows.Forms.Label();
             this.contrasenaActual = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -45,12 +46,13 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.nombreUsuario = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,6 +65,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
+            this.pictureBox2.Location = new System.Drawing.Point(65, 100);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(108, 115);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // lblError
             // 
@@ -79,19 +91,17 @@
             this.contrasenaActual.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.contrasenaActual.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contrasenaActual.ForeColor = System.Drawing.Color.DimGray;
-            this.contrasenaActual.Location = new System.Drawing.Point(322, 84);
+            this.contrasenaActual.Location = new System.Drawing.Point(322, 91);
             this.contrasenaActual.Name = "contrasenaActual";
             this.contrasenaActual.Size = new System.Drawing.Size(360, 20);
             this.contrasenaActual.TabIndex = 1;
             this.contrasenaActual.Text = "Contraseña Actual";
-            this.contrasenaActual.Enter += new System.EventHandler(this.contrasenaActual_Enter);
-            this.contrasenaActual.Leave += new System.EventHandler(this.contrasenaActual_Leave);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DimGray;
             this.panel3.Enabled = false;
-            this.panel3.Location = new System.Drawing.Point(322, 121);
+            this.panel3.Location = new System.Drawing.Point(322, 128);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(360, 1);
             this.panel3.TabIndex = 75;
@@ -100,7 +110,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.Enabled = false;
-            this.panel2.Location = new System.Drawing.Point(322, 176);
+            this.panel2.Location = new System.Drawing.Point(322, 183);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 1);
             this.panel2.TabIndex = 77;
@@ -109,7 +119,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.DimGray;
             this.panel4.Enabled = false;
-            this.panel4.Location = new System.Drawing.Point(322, 231);
+            this.panel4.Location = new System.Drawing.Point(322, 238);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(360, 1);
             this.panel4.TabIndex = 79;
@@ -123,7 +133,7 @@
             this.btnGuardarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarContrasena.ForeColor = System.Drawing.Color.LightGray;
-            this.btnGuardarContrasena.Location = new System.Drawing.Point(512, 249);
+            this.btnGuardarContrasena.Location = new System.Drawing.Point(512, 260);
             this.btnGuardarContrasena.Name = "btnGuardarContrasena";
             this.btnGuardarContrasena.Size = new System.Drawing.Size(170, 40);
             this.btnGuardarContrasena.TabIndex = 4;
@@ -151,7 +161,7 @@
             this.btnCancelarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarContrasena.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarContrasena.Location = new System.Drawing.Point(322, 249);
+            this.btnCancelarContrasena.Location = new System.Drawing.Point(322, 260);
             this.btnCancelarContrasena.Name = "btnCancelarContrasena";
             this.btnCancelarContrasena.Size = new System.Drawing.Size(170, 40);
             this.btnCancelarContrasena.TabIndex = 0;
@@ -189,27 +199,23 @@
             this.contrasenaNueva.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.contrasenaNueva.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contrasenaNueva.ForeColor = System.Drawing.Color.DimGray;
-            this.contrasenaNueva.Location = new System.Drawing.Point(322, 139);
+            this.contrasenaNueva.Location = new System.Drawing.Point(322, 146);
             this.contrasenaNueva.Name = "contrasenaNueva";
             this.contrasenaNueva.Size = new System.Drawing.Size(360, 20);
             this.contrasenaNueva.TabIndex = 2;
             this.contrasenaNueva.Text = "Contraseña Nueva";
-            this.contrasenaNueva.Enter += new System.EventHandler(this.contrasenaNueva_Enter_1);
-            this.contrasenaNueva.Leave += new System.EventHandler(this.contrasenaNueva_Leave_1);
-            // 
+
             // repetirContrasena
             // 
             this.repetirContrasena.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.repetirContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.repetirContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.repetirContrasena.ForeColor = System.Drawing.Color.DimGray;
-            this.repetirContrasena.Location = new System.Drawing.Point(322, 194);
+            this.repetirContrasena.Location = new System.Drawing.Point(322, 201);
             this.repetirContrasena.Name = "repetirContrasena";
             this.repetirContrasena.Size = new System.Drawing.Size(360, 20);
             this.repetirContrasena.TabIndex = 3;
             this.repetirContrasena.Text = "Repetir Contraseña Nueva";
-            this.repetirContrasena.Enter += new System.EventHandler(this.repetirContrasena_Enter_1);
-            this.repetirContrasena.Leave += new System.EventHandler(this.repetirContrasena_Leave_1);
             // 
             // btnMaximizar
             // 
@@ -244,15 +250,26 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // pictureBox2
+            // nombreUsuario
             // 
-            this.pictureBox2.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox2.Location = new System.Drawing.Point(65, 100);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(108, 115);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.nombreUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
+            this.nombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nombreUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreUsuario.ForeColor = System.Drawing.Color.DimGray;
+            this.nombreUsuario.Location = new System.Drawing.Point(322, 50);
+            this.nombreUsuario.Name = "nombreUsuario";
+            this.nombreUsuario.Size = new System.Drawing.Size(360, 20);
+            this.nombreUsuario.TabIndex = 106;
+            this.nombreUsuario.Text = "Nombre Usuario";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DimGray;
+            this.panel5.Enabled = false;
+            this.panel5.Location = new System.Drawing.Point(322, 87);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(360, 1);
+            this.panel5.TabIndex = 107;
             // 
             // CambiarContrasenaForm
             // 
@@ -260,6 +277,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 330);
+            this.Controls.Add(this.nombreUsuario);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
@@ -283,10 +302,10 @@
             this.Opacity = 0.9D;
             this.Text = "CambiarContrasenaForm";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +329,7 @@
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.TextBox nombreUsuario;
+        private System.Windows.Forms.Panel panel5;
     }
 }

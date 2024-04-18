@@ -44,8 +44,13 @@
     <Compile Include="ModuloLogueo.cs" />
     <Compile Include="ModuloUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioNegocio.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PersistenciaWS\PersistenciaWS.csproj">
+      <Project>{86F290A9-5103-4035-A69D-681AD4E695AF}</Project>
+      <Name>PersistenciaWS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Persistencia\Persistencia.csproj">
       <Project>{1672fdc7-c7a1-48e3-81f2-d8bf3df0e5d5}</Project>
       <Name>Persistencia</Name>

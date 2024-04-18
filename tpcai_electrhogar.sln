@@ -6,12 +6,18 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tpcai_electrhogar.Presentacion", "tpcai_electrhogar\tpcai_electrhogar.Presentacion.csproj", "{0E69208E-717F-4D56-B70A-555B5D8CD1B7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tpcai_electrhogar.Negocio", "tpcai_electrhogar.Negocio\tpcai_electrhogar.Negocio.csproj", "{E84D9E14-E211-426E-B60F-0156E20E804E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{86F290A9-5103-4035-A69D-681AD4E695AF} = {86F290A9-5103-4035-A69D-681AD4E695AF}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tpcai_electrhogar.Datos", "tpcai_electrhogar.Datos\tpcai_electrhogar.Datos.csproj", "{B6DF6F44-246F-4FA6-850C-74508604C966}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistencia", "Persistencia\Persistencia.csproj", "{1672FDC7-C7A1-48E3-81F2-D8BF3DF0E5D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistenciaWS", "PersistenciaWS\PersistenciaWS.csproj", "{86F290A9-5103-4035-A69D-681AD4E695AF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B6DF6F44-246F-4FA6-850C-74508604C966} = {B6DF6F44-246F-4FA6-850C-74508604C966}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

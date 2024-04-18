@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tpcai_electrhogar.Datos;
+using tpcai_electrhogar.Negocio;
 
 namespace tpcai_electrhogar
 {
     public partial class CambiarContrasenaForm : Form
     {
+        private UsuarioNegocio usuarioNegocio = new UsuarioNegocio();
         public CambiarContrasenaForm()
         {
             InitializeComponent();
@@ -46,6 +49,10 @@ namespace tpcai_electrhogar
 
         private void btnGuardarContrasena_Click(object sender, EventArgs e)
         {
+            UsuarioEnt usuarioEnt = new UsuarioEnt();
+            usuarioEnt.Nombre = nombreUsuario.Text;
+            usuarioEnt.Contraseña = contrasenaActual.Text;
+            usuarioEnt.ContraseñaNueva = contrasenaNueva.Text;
             string mensajeError2 = "";
             string mensajeError = "";
             bool validar1 = Validaciones.ValidarContraseña(contrasenaNueva.Text, "'Contraseña Nueva'", 8, 15, out string mensajeError1);
@@ -54,9 +61,17 @@ namespace tpcai_electrhogar
             {
                 mensajeError2 = "Las contraseñas no coinciden.";
             }
-            mensajeError = mensajeError1 + "\n" + mensajeError2;
-            lblError.Text = mensajeError;
-            //Falta hacer el llamado de logica de negocio para el guardado en base de datos, y el cambio de estado
+            else if (validar1)
+            {
+                mensajeError = mensajeError1 + "\n" + mensajeError2;
+                lblError.Text = mensajeError;
+            }
+            else 
+            {
+                usuarioNegocio.CambiarPassword(usuarioEnt);
+                //usuarioNegocio.ActivarUsuario();
+            }
+          
         }
 
         private void contrasenaActual_Enter(object sender, EventArgs e)
@@ -88,5 +103,6 @@ namespace tpcai_electrhogar
         {
             FormUtils.LimpiarCampoContrasena(this, repetirContrasena, "Repetir Contraseña Nueva");
         }
+   
     }
 }

@@ -22,7 +22,13 @@ namespace tpcai_electrhogar.Datos
         private int _host;
         private Guid _id;
         private bool _estado;
+        private string _contraseñaNueva;
 
+        public string Nombre { get => _nombreUsuario; set => _nombreUsuario = value; }
+        public string Contraseña { get => _contraseña; set => _contraseña = value; }
+        public string ContraseñaNueva { get => _contraseñaNueva; set => _contraseñaNueva = value; }
+
+        public UsuarioEnt() { }
         public UsuarioEnt(string nombre, string apellido, int dni, DateTime fechaNacimiento, string direccion,
             string telefono, string correoElectronico, string nombreUsuario, string contraseña,
             DateTime fechaAlta, DateTime? fechaBaja, int host, bool estado)
