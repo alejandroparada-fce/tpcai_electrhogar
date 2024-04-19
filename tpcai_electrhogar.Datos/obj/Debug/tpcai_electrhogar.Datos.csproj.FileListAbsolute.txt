@@ -33,10 +33,7 @@ C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\t
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.pdb
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Datos\bin\Debug\tpcai_electrhogar.Datos.dll
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Datos\bin\Debug\tpcai_electrhogar.Datos.pdb
-C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Datos\bin\Debug\Persistencia.dll
-C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Datos\bin\Debug\Persistencia.pdb
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.csproj.AssemblyReference.cache
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.csproj.CoreCompileInputs.cache
-C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.csproj.CopyComplete
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.dll
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.pdb

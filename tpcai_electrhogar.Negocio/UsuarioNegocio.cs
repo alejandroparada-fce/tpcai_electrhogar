@@ -9,16 +9,22 @@ using PersistenciaWS;
 
 namespace tpcai_electrhogar.Negocio
 {
-    public class UsuarioNegocio
+   
+    public static class UsuarioNegocio
     {
-        private UsuarioService usuarioService = new UsuarioService();
+        public static void Prueba()
+        {
+            UsuarioService prueba = new UsuarioService();
+            prueba.prueba();
+        }
+        private static UsuarioService usuarioService = new UsuarioService();
 
-        public void CambiarPassword(UsuarioEnt usuarioEnt)
+        public static void CambiarPassword(UsuarioEnt usuarioEnt)
         {
             usuarioService.CambiarPassword(usuarioEnt);
         }
 
-        public void ActivarUsuario(UsuarioEnt id)
+        public static void ActivarUsuario(UsuarioEnt id)
         {
             usuarioService.ActivarUsuario(id);
         }

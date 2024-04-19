@@ -15,7 +15,7 @@ namespace tpcai_electrhogar
 {
     public partial class CambiarContrasenaForm : Form
     {
-        private UsuarioNegocio usuarioNegocio = new UsuarioNegocio();
+        //private UsuarioNegocio usuarioNegocio = new UsuarioNegocio();
         public CambiarContrasenaForm()
         {
             InitializeComponent();
@@ -72,7 +72,7 @@ namespace tpcai_electrhogar
             {
                 try
                 {
-                    usuarioNegocio.CambiarPassword(usuarioEnt);
+                    //usuarioNegocio.CambiarPassword(usuarioEnt);
                     //usuarioNegocio.ActivarUsuario();
                     MessageBox.Show("Contraseña cambiada");
                 }

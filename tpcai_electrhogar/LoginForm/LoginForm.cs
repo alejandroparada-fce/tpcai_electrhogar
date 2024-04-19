@@ -20,13 +20,14 @@ namespace tpcai_electrhogar
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
+
+
             //this.Hide();
             //ModulosForm modulos = new ModulosForm();
             //modulos.Show();
 
             // Constructor para enviar la información Nombre de Usuario al CambiarContrasenaForm
-            CambiarContrasenaForm cambiarForm = new CambiarContrasenaForm(txtUsuario.Text);
-
+            /*
             ModuloLogueo.Loguearse(txtUsuario.Text, txtPass.Text, "CAI20241");
             bool UsuarioPresente = ModuloLogueo.ExisteUsuario();
             bool UsuarioAutenticado = ModuloLogueo.Autenticado();
@@ -52,7 +53,7 @@ namespace tpcai_electrhogar
             else if (cambioContraseña)
             {
                 this.Hide();
-                CambiarContrasenaForm cambiocontraseñaform = new CambiarContrasenaForm();
+                CambiarContrasenaForm cambiocontraseñaform = new CambiarContrasenaForm(txtUsuario.Text);
                 cambiocontraseñaform.Show();
                 //FormUtils.CambiarFormulario(this, new CambiarContrasenaForm());
             }
@@ -62,6 +63,8 @@ namespace tpcai_electrhogar
                 ModulosForm modulosForm = new ModulosForm();
                 modulosForm.Show();
             }
+            */
+            UsuarioNegocio.Prueba();
         }
 
         private void txtUsuario_Enter_1(object sender, EventArgs e)
