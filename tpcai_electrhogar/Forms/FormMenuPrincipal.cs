@@ -54,7 +54,7 @@ namespace tpcai_electrhogar
         private void btnUsuarioRegistrar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RegistrarUsuariosForm registrarUsuariosForm = new RegistrarUsuariosForm();
+            FormUsuarioRegistrar registrarUsuariosForm = new FormUsuarioRegistrar();
             registrarUsuariosForm.Show();
         }
 

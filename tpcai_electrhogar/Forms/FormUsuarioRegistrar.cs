@@ -12,7 +12,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace tpcai_electrhogar
 {
-    public partial class RegistrarUsuariosForm : Form
+    public partial class FormUsuarioRegistrar : Form
     {
         private string mensajeError;
 
@@ -23,13 +23,13 @@ Estilo De ventana/Opacity: 90 %
 Textbox: se sacan bordes, se cambia fuente a Century Gothic y se usa tamaño 12.
 Se agrega panel dockeado a la izquierda (RGB 0,122,204).
 */
-        public RegistrarUsuariosForm()
+        public FormUsuarioRegistrar()
         {
             InitializeComponent();
         }
 
 
-        private void btnCrearUsuario_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             bool valido1 = Validaciones.ValidarCadena(textBoxNombre.Text, "'Nombre'", 3, 30, out string mensajeError1);
             bool valido2 = Validaciones.ValidarCadena(textBoxApellido.Text, "'Apellido'", 3, 30, out string mensajeError2);
@@ -43,7 +43,7 @@ Se agrega panel dockeado a la izquierda (RGB 0,122,204).
             mensajeError = mensajeError1 + "\n" + mensajeError2 + "\n" + mensajeError3 + "\n" + mensajeError4 + "\n" + mensajeError5 + "\n" + mensajeError6
                 + "\n" + mensajeError7 + "\n" + mensajeError8;
             lblError.Text = mensajeError;
-            
+
             //Sumo 1 para que el valor del indice del combobox coincida con el 
             //de la base de datos.
             int host = comboBoxPerfil.SelectedIndex + 1;
@@ -65,7 +65,6 @@ Se agrega panel dockeado a la izquierda (RGB 0,122,204).
                 }
 
             }
-
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
@@ -92,6 +91,8 @@ Se agrega panel dockeado a la izquierda (RGB 0,122,204).
         {
             FormUtils.MinimizarFormulario(this);
         }
+
+        
     }
     //
 }

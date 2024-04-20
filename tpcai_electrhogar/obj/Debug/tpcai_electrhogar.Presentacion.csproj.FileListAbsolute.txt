@@ -22,7 +22,6 @@ C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\t
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.AgregarProductoForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.AltaProveedorForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.BajaProveedorForm.resources
-C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.RegistrarUsuariosForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Properties.Resources.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.VentaForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.GenerateResource.cache
@@ -112,3 +111,4 @@ C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debu
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormCambiarContrasena.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormMenuPrincipal.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormLogin.resources
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormUsuarioRegistrar.resources

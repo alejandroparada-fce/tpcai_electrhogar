@@ -112,11 +112,11 @@
     <Compile Include="Forms\FormMenuPrincipal.Designer.cs">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrarUsuariosForm\RegistrarUsuariosForm.cs">
+    <Compile Include="Forms\FormUsuarioRegistrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrarUsuariosForm\RegistrarUsuariosForm.Designer.cs">
-      <DependentUpon>RegistrarUsuariosForm.cs</DependentUpon>
+    <Compile Include="Forms\FormUsuarioRegistrar.Designer.cs">
+      <DependentUpon>FormUsuarioRegistrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -148,8 +148,8 @@
     <EmbeddedResource Include="Forms\FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarUsuariosForm\RegistrarUsuariosForm.resx">
-      <DependentUpon>RegistrarUsuariosForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormUsuarioRegistrar.resx">
+      <DependentUpon>FormUsuarioRegistrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -209,6 +209,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AgregarProductoForm\" />
+    <Folder Include="RegistrarUsuariosForm\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
