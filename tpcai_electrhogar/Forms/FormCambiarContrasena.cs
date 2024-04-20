@@ -13,10 +13,10 @@ using tpcai_electrhogar.Negocio;
 
 namespace tpcai_electrhogar
 {
-    public partial class CambiarContrasenaForm : Form
+    public partial class FormCambiarContrasena : Form
     {
         //private UsuarioNegocio usuarioNegocio = new UsuarioNegocio();
-        public CambiarContrasenaForm()
+        public FormCambiarContrasena()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace tpcai_electrhogar
         private void btnCancelarContrasena_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ModulosForm modulosForm = new ModulosForm();
+            FormMenuPrincipal modulosForm = new FormMenuPrincipal();
             modulosForm.Show();
         }
 
@@ -50,7 +50,7 @@ namespace tpcai_electrhogar
 
         private string _username;
 
-        public CambiarContrasenaForm(string username)
+        public FormCambiarContrasena(string username)
         {
             InitializeComponent();
             _username = username;
@@ -112,6 +112,28 @@ namespace tpcai_electrhogar
         private void repetirContrasena_Leave(object sender, EventArgs e)
         {
             FormUtils.LimpiarCampoContrasena(this, repetirContrasena, "Repetir Contraseña Nueva");
+        }
+
+        private void CambiarContrasenaForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void checkMostrarContrasena_CheckedChanged(object sender, EventArgs e)
+        {
+            FormUtils.MostrarContrasena(this, contrasenaActual, checkMostrarContrasena.Checked);
+            FormUtils.MostrarContrasena(this, contrasenaNueva, checkMostrarContrasena.Checked);
+            FormUtils.MostrarContrasena(this, repetirContrasena, checkMostrarContrasena.Checked);
         }
     }
 }

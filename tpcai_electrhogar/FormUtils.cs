@@ -102,6 +102,21 @@ namespace tpcai_electrhogar
                 {
                     textBox.UseSystemPasswordChar = false;
                 }
+            }  
+        }
+
+        public static void MostrarContrasena(Form formulario, Control campo, bool checkbox)
+        {
+            if (campo is TextBox textBox)
+            {
+                if(checkbox)
+                {
+                    textBox.UseSystemPasswordChar = false;
+                }
+                else if (!checkbox)
+                {
+                    textBox.UseSystemPasswordChar = true;
+                }
             }
         }
     }

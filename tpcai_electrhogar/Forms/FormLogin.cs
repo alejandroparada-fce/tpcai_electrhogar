@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using tpcai_electrhogar.Negocio;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace tpcai_electrhogar
 {
-    public partial class LoginForm : Form
+    public partial class FormLogin : Form
     {
-        public LoginForm()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -27,7 +28,7 @@ namespace tpcai_electrhogar
             //modulos.Show();
 
             // Constructor para enviar la información Nombre de Usuario al CambiarContrasenaForm
-            /*
+            
             ModuloLogueo.Loguearse(txtUsuario.Text, txtPass.Text, "CAI20241");
             bool UsuarioPresente = ModuloLogueo.ExisteUsuario();
             bool UsuarioAutenticado = ModuloLogueo.Autenticado();
@@ -53,17 +54,17 @@ namespace tpcai_electrhogar
             else if (cambioContraseña)
             {
                 this.Hide();
-                CambiarContrasenaForm cambiocontraseñaform = new CambiarContrasenaForm(txtUsuario.Text);
+                FormCambiarContrasena cambiocontraseñaform = new FormCambiarContrasena(txtUsuario.Text);
                 cambiocontraseñaform.Show();
                 //FormUtils.CambiarFormulario(this, new CambiarContrasenaForm());
             }
             else if (!cambioContraseña & UsuarioAutenticado)
             {
                 this.Hide();
-                ModulosForm modulosForm = new ModulosForm();
+                FormMenuPrincipal modulosForm = new FormMenuPrincipal();
                 modulosForm.Show();
             }
-            */
+            
             UsuarioNegocio.Prueba();
         }
 
@@ -110,6 +111,16 @@ namespace tpcai_electrhogar
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             FormUtils.SalirAplicacion();
+        }
+
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void checkMostrarContrasena_CheckedChanged(object sender, EventArgs e)
+        {
+            FormUtils.MostrarContrasena(this, txtPass, checkMostrarContrasena.Checked);
         }
     }
 }

@@ -22,9 +22,6 @@ C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\t
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.AgregarProductoForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.AltaProveedorForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.BajaProveedorForm.resources
-C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.CambiarContrasenaForm.resources
-C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.LoginForm.resources
-C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.ModulosForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.RegistrarUsuariosForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Properties.Resources.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.VentaForm.resources
@@ -112,3 +109,6 @@ C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debu
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\PersistenciaWS.pdb
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormBienvenida.resources
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormCambiarContrasena.resources
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormMenuPrincipal.resources
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormLogin.resources

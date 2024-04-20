@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tpcai_electrhogar
 {
-    public partial class ModulosForm : Form
+    public partial class FormMenuPrincipal : Form
     {
-        public ModulosForm()
+        public FormMenuPrincipal()
         {
             InitializeComponent();
         }
@@ -42,6 +42,10 @@ namespace tpcai_electrhogar
             FormUtils.MoverFormulario(this);
         }
 
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
 
         // Botonera para jugar con la navegación de los formularios hechos hasta el momento.
         // Para arrancar desde la botoner y saltear el proceso de login y cambio de contraseña, comentar la linea: "Application.Run(new LoginForm());"
@@ -57,7 +61,7 @@ namespace tpcai_electrhogar
         private void btnCambioContrasena_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CambiarContrasenaForm cambiarContrasenaForm = new CambiarContrasenaForm();
+            FormCambiarContrasena cambiarContrasenaForm = new FormCambiarContrasena();
             cambiarContrasenaForm.Show();
         }
 
@@ -88,5 +92,7 @@ namespace tpcai_electrhogar
            VentaForm ventaForm = new VentaForm();
             ventaForm.Show();
         }
+
+        
     }
 }

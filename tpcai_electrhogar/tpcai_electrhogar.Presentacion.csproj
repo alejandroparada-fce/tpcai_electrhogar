@@ -87,30 +87,30 @@
     <Compile Include="BajaProveedores\BajaProveedorForm.Designer.cs">
       <DependentUpon>BajaProveedorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CambiarContrasenaForm\CambiarContrasenaForm.cs">
+    <Compile Include="Forms\FormCambiarContrasena.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CambiarContrasenaForm\CambiarContrasenaForm.Designer.cs">
-      <DependentUpon>CambiarContrasenaForm.cs</DependentUpon>
+    <Compile Include="Forms\FormCambiarContrasena.Designer.cs">
+      <DependentUpon>FormCambiarContrasena.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBienvenida.cs">
+    <Compile Include="Forms\FormBienvenida.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBienvenida.Designer.cs">
+    <Compile Include="Forms\FormBienvenida.Designer.cs">
       <DependentUpon>FormBienvenida.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUtils.cs" />
-    <Compile Include="LoginForm\LoginForm.cs">
+    <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm\LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModulosForm\ModulosForm.cs">
+    <Compile Include="Forms\FormMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModulosForm\ModulosForm.Designer.cs">
-      <DependentUpon>ModulosForm.cs</DependentUpon>
+    <Compile Include="Forms\FormMenuPrincipal.Designer.cs">
+      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrarUsuariosForm\RegistrarUsuariosForm.cs">
       <SubType>Form</SubType>
@@ -136,17 +136,17 @@
     <EmbeddedResource Include="BajaProveedores\BajaProveedorForm.resx">
       <DependentUpon>BajaProveedorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CambiarContrasenaForm\CambiarContrasenaForm.resx">
-      <DependentUpon>CambiarContrasenaForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormCambiarContrasena.resx">
+      <DependentUpon>FormCambiarContrasena.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBienvenida.resx">
+    <EmbeddedResource Include="Forms\FormBienvenida.resx">
       <DependentUpon>FormBienvenida.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm\LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModulosForm\ModulosForm.resx">
-      <DependentUpon>ModulosForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormMenuPrincipal.resx">
+      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarUsuariosForm\RegistrarUsuariosForm.resx">
       <DependentUpon>RegistrarUsuariosForm.cs</DependentUpon>

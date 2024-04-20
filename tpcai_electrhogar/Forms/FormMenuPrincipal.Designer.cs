@@ -1,6 +1,6 @@
 ﻿namespace tpcai_electrhogar
 {
-    partial class ModulosForm
+    partial class FormMenuPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModulosForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuPrincipal));
             this.btnUsuarioRegistrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnUsuarios = new System.Windows.Forms.Button();
@@ -310,6 +310,7 @@
             this.lblTitle.Size = new System.Drawing.Size(261, 44);
             this.lblTitle.TabIndex = 79;
             this.lblTitle.Text = "Electro Hogar";
+            this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
             // btnVentaRegistrar
             // 
@@ -441,7 +442,7 @@
             this.btnProductoRegistrar.UseVisualStyleBackColor = true;
             this.btnProductoRegistrar.Click += new System.EventHandler(this.btnProductoRegistrar_Click);
             // 
-            // ModulosForm
+            // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -473,7 +474,7 @@
             this.Controls.Add(this.btnUsuarioRegistrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "ModulosForm";
+            this.Name = "FormMenuPrincipal";
             this.Opacity = 0.9D;
             this.Text = "ModulosForm";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ModulosForm_MouseDown);
