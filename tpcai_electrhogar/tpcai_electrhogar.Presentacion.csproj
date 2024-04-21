@@ -69,23 +69,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AgregarProductoForm.cs">
+    <Compile Include="Forms\FormProductoAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AgregarProductoForm.Designer.cs">
-      <DependentUpon>AgregarProductoForm.cs</DependentUpon>
+    <Compile Include="Forms\FormProductoAgregar.Designer.cs">
+      <DependentUpon>FormProductoAgregar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AltaProveedorForm.cs">
+    <Compile Include="Forms\FormProveedorAlta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AltaProveedorForm.Designer.cs">
-      <DependentUpon>AltaProveedorForm.cs</DependentUpon>
+    <Compile Include="Forms\FormProveedorAlta.Designer.cs">
+      <DependentUpon>FormProveedorAlta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BajaProveedorForm.cs">
+    <Compile Include="Forms\FormProveedorBaja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BajaProveedorForm.Designer.cs">
-      <DependentUpon>BajaProveedorForm.cs</DependentUpon>
+    <Compile Include="Forms\FormProveedorBaja.Designer.cs">
+      <DependentUpon>FormProveedorBaja.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormCambiarContrasena.cs">
       <SubType>Form</SubType>
@@ -127,14 +127,14 @@
     <Compile Include="Forms\VentaForm.Designer.cs">
       <DependentUpon>VentaForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\AgregarProductoForm.resx">
-      <DependentUpon>AgregarProductoForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormProductoAgregar.resx">
+      <DependentUpon>FormProductoAgregar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AltaProveedorForm.resx">
-      <DependentUpon>AltaProveedorForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormProveedorAlta.resx">
+      <DependentUpon>FormProveedorAlta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BajaProveedorForm.resx">
-      <DependentUpon>BajaProveedorForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormProveedorBaja.resx">
+      <DependentUpon>FormProveedorBaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormCambiarContrasena.resx">
       <DependentUpon>FormCambiarContrasena.cs</DependentUpon>
