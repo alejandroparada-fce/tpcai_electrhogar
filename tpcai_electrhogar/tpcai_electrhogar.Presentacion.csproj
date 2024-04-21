@@ -69,11 +69,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\FormProductoAgregar.cs">
+    <Compile Include="Forms\FormProductoRegistrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormProductoAgregar.Designer.cs">
-      <DependentUpon>FormProductoAgregar.cs</DependentUpon>
+    <Compile Include="Forms\FormProductoRegistrar.Designer.cs">
+      <DependentUpon>FormProductoRegistrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormProveedorAlta.cs">
       <SubType>Form</SubType>
@@ -99,6 +99,12 @@
     <Compile Include="Forms\FormBienvenida.Designer.cs">
       <DependentUpon>FormBienvenida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormVentaRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVentaRegistrar.Designer.cs">
+      <DependentUpon>FormVentaRegistrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUtils.cs" />
     <Compile Include="Forms\FormLogin.cs">
       <SubType>Form</SubType>
@@ -121,14 +127,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validaciones.cs" />
-    <Compile Include="Forms\VentaForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\VentaForm.Designer.cs">
-      <DependentUpon>VentaForm.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Forms\FormProductoAgregar.resx">
-      <DependentUpon>FormProductoAgregar.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormProductoRegistrar.resx">
+      <DependentUpon>FormProductoRegistrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormProveedorAlta.resx">
       <DependentUpon>FormProveedorAlta.cs</DependentUpon>
@@ -151,6 +151,9 @@
     <EmbeddedResource Include="Forms\FormUsuarioRegistrar.resx">
       <DependentUpon>FormUsuarioRegistrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVentaRegistrar.resx">
+      <DependentUpon>FormVentaRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -161,9 +164,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Forms\VentaForm.resx">
-      <DependentUpon>VentaForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

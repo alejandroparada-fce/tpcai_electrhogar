@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tpcai_electrhogar
 {
-    public partial class FormProductoAgregar : Form
+    public partial class FormProductoRegistrar : Form
     {
-        public FormProductoAgregar()
+        public FormProductoRegistrar()
         {
             InitializeComponent();
         }

@@ -146,9 +146,9 @@
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblTitle.Location = new System.Drawing.Point(437, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(109, 38);
+            this.lblTitle.Size = new System.Drawing.Size(99, 38);
             this.lblTitle.TabIndex = 70;
-            this.lblTitle.Text = "Log In";
+            this.lblTitle.Text = "Login";
             this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
             // txtUsuario

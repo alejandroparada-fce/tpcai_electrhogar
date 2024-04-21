@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace tpcai_electrhogar
+namespace tpcai_electrhogar.Forms
 {
-    public partial class VentaForm : Form
+    public partial class FormVentaRegistrar : Form
     {
-        public VentaForm()
+        public FormVentaRegistrar()
         {
             InitializeComponent();
         }

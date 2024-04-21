@@ -82,14 +82,14 @@ namespace tpcai_electrhogar
         private void btnProductoRegistrar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormProductoAgregar agregarProductoForm = new FormProductoAgregar();
+            FormProductoRegistrar agregarProductoForm = new FormProductoRegistrar();
             agregarProductoForm.Show();
         }
 
         private void btnVentaRegistrar_Click(object sender, EventArgs e)
         {
             this.Hide();
-           VentaForm ventaForm = new VentaForm();
+           VentaRegistrarForm ventaForm = new VentaRegistrarForm();
             ventaForm.Show();
         }
 

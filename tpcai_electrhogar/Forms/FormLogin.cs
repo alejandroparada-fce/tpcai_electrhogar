@@ -122,5 +122,6 @@ namespace tpcai_electrhogar
         {
             FormUtils.MostrarContrasena(this, txtPass, checkMostrarContrasena.Checked);
         }
+
     }
 }
