@@ -70,14 +70,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(194, 688);
+            this.panel1.Size = new System.Drawing.Size(194, 611);
             this.panel1.TabIndex = 100;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 191);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 240);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 129);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -187,7 +187,7 @@
             this.comboBoxPerfil.Location = new System.Drawing.Point(264, 448);
             this.comboBoxPerfil.Name = "comboBoxPerfil";
             this.comboBoxPerfil.Size = new System.Drawing.Size(403, 27);
-            this.comboBoxPerfil.TabIndex = 11;
+            this.comboBoxPerfil.TabIndex = 9;
             this.comboBoxPerfil.Text = "Perfil";
             // 
             // textBoxNombreUsuario
@@ -331,6 +331,7 @@
             this.lblTitle.Size = new System.Drawing.Size(271, 38);
             this.lblTitle.TabIndex = 82;
             this.lblTitle.Text = "Registrar Usuario";
+            this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
             // btnLogin
             // 
@@ -345,7 +346,7 @@
             this.btnLogin.Location = new System.Drawing.Point(286, 497);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(360, 40);
-            this.btnLogin.TabIndex = 83;
+            this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Registrar";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -355,7 +356,7 @@
             this.lblCredits.AutoSize = true;
             this.lblCredits.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCredits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblCredits.Location = new System.Drawing.Point(694, 651);
+            this.lblCredits.Location = new System.Drawing.Point(694, 572);
             this.lblCredits.Name = "lblCredits";
             this.lblCredits.Size = new System.Drawing.Size(78, 16);
             this.lblCredits.TabIndex = 101;
@@ -366,7 +367,7 @@
             this.lblVersion.AutoSize = true;
             this.lblVersion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblVersion.Location = new System.Drawing.Point(742, 667);
+            this.lblVersion.Location = new System.Drawing.Point(742, 588);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(30, 16);
             this.lblVersion.TabIndex = 102;
@@ -377,7 +378,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(784, 688);
+            this.ClientSize = new System.Drawing.Size(784, 611);
             this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.btnLogin);

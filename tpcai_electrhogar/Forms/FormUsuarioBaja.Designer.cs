@@ -40,7 +40,7 @@
             this.lbldUsuario = new System.Windows.Forms.Label();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAgregarProveedor = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -60,36 +60,40 @@
             this.lblTitle.Size = new System.Drawing.Size(207, 38);
             this.lblTitle.TabIndex = 83;
             this.lblTitle.Text = "Baja Usuario";
+            this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
             // btnMaximizar
             // 
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(748, 12);
+            this.btnMaximizar.Location = new System.Drawing.Point(752, 12);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(15, 15);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximizar.TabIndex = 86;
             this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnMinimizar
             // 
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(727, 12);
+            this.btnMinimizar.Location = new System.Drawing.Point(731, 12);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(15, 15);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 85;
             this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnCerrar
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(769, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(773, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(15, 15);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 84;
             this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // lblCredits
             // 
@@ -122,11 +126,12 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(194, 566);
             this.panel1.TabIndex = 105;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 162);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 220);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 129);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -164,25 +169,39 @@
             this.dataGridView1.Size = new System.Drawing.Size(542, 284);
             this.dataGridView1.TabIndex = 108;
             // 
-            // btnAgregarProveedor
+            // btnLogin
             // 
-            this.btnAgregarProveedor.Location = new System.Drawing.Point(655, 436);
-            this.btnAgregarProveedor.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btnAgregarProveedor.Name = "btnAgregarProveedor";
-            this.btnAgregarProveedor.Size = new System.Drawing.Size(108, 32);
-            this.btnAgregarProveedor.TabIndex = 109;
-            this.btnAgregarProveedor.Text = "Borrar Usuario";
-            this.btnAgregarProveedor.UseVisualStyleBackColor = true;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
+            this.btnLogin.Location = new System.Drawing.Point(415, 436);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(167, 40);
+            this.btnLogin.TabIndex = 109;
+            this.btnLogin.Text = "Modificar Usuario";
+            this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(525, 436);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.LightGray;
+            this.button1.Location = new System.Drawing.Point(596, 436);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 32);
+            this.button1.Size = new System.Drawing.Size(167, 40);
             this.button1.TabIndex = 110;
-            this.button1.Text = "Modificar Usuario";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Eliminar Usuario";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // FormUsuarioBaja
             // 
@@ -191,7 +210,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(800, 566);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnAgregarProveedor);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.lbldUsuario);
@@ -205,6 +224,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormUsuarioBaja";
             this.Text = "FormUsuarioBaja";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormUsuarioBaja_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
@@ -229,7 +249,7 @@
         private System.Windows.Forms.Label lbldUsuario;
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnAgregarProveedor;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button button1;
     }
 }

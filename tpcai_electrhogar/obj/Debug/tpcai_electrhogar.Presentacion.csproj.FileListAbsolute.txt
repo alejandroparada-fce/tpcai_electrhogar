@@ -13,11 +13,7 @@ C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpca
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.exe
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.pdb
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.AssemblyReference.cache
-C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.AgregarProductoForm.resources
-C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.AltaProveedorForm.resources
-C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.BajaProveedorForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Properties.Resources.resources
-C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.VentaForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.GenerateResource.cache
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.exe
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.pdb
@@ -123,3 +119,10 @@ C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\Newt
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\CircularProgressBar.xml
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\PersistenciaWS.pdb
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\Newtonsoft.Json.xml
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Forms.FormProductoBaja.resources
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormProductoRegistrar.resources
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormProveedorAlta.resources
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormProveedorBaja.resources
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Forms.FormUsuarioBaja.resources
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Forms.FormVentaRegistrar.resources
+C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.ListadoClientesForm.resources

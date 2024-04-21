@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProductoBaja));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnAgregarProveedor = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.lbldUsuario = new System.Windows.Forms.Label();
@@ -42,6 +40,8 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -57,45 +57,26 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(194, 574);
+            this.panel1.Size = new System.Drawing.Size(250, 574);
             this.panel1.TabIndex = 106;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 162);
+            this.pictureBox1.Location = new System.Drawing.Point(62, 224);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 129);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(527, 439);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 32);
-            this.button1.TabIndex = 121;
-            this.button1.Text = "Modificar Producto";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregarProveedor
-            // 
-            this.btnAgregarProveedor.Location = new System.Drawing.Point(657, 439);
-            this.btnAgregarProveedor.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btnAgregarProveedor.Name = "btnAgregarProveedor";
-            this.btnAgregarProveedor.Size = new System.Drawing.Size(108, 32);
-            this.btnAgregarProveedor.TabIndex = 120;
-            this.btnAgregarProveedor.Text = "Borrar Producto";
-            this.btnAgregarProveedor.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(223, 133);
+            this.dataGridView1.Location = new System.Drawing.Point(283, 133);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(542, 284);
+            this.dataGridView1.Size = new System.Drawing.Size(482, 284);
             this.dataGridView1.TabIndex = 119;
             // 
             // textBoxNombre
@@ -104,7 +85,7 @@
             this.textBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxNombre.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNombre.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBoxNombre.Location = new System.Drawing.Point(321, 90);
+            this.textBoxNombre.Location = new System.Drawing.Point(381, 93);
             this.textBoxNombre.Multiline = true;
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(173, 23);
@@ -115,7 +96,7 @@
             this.lbldUsuario.AutoSize = true;
             this.lbldUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldUsuario.ForeColor = System.Drawing.Color.Transparent;
-            this.lbldUsuario.Location = new System.Drawing.Point(219, 90);
+            this.lbldUsuario.Location = new System.Drawing.Point(279, 93);
             this.lbldUsuario.Name = "lbldUsuario";
             this.lbldUsuario.Size = new System.Drawing.Size(101, 19);
             this.lbldUsuario.TabIndex = 117;
@@ -152,6 +133,7 @@
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximizar.TabIndex = 114;
             this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnMinimizar
             // 
@@ -162,6 +144,7 @@
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 113;
             this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnCerrar
             // 
@@ -172,6 +155,7 @@
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 112;
             this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // lblTitle
             // 
@@ -183,6 +167,41 @@
             this.lblTitle.Size = new System.Drawing.Size(233, 38);
             this.lblTitle.TabIndex = 111;
             this.lblTitle.Text = "Baja Producto";
+            this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.LightGray;
+            this.button1.Location = new System.Drawing.Point(598, 447);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(167, 40);
+            this.button1.TabIndex = 121;
+            this.button1.Text = "Eliminar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
+            this.btnLogin.Location = new System.Drawing.Point(417, 447);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(167, 40);
+            this.btnLogin.TabIndex = 120;
+            this.btnLogin.Text = "Modificar";
+            this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // FormProductoBaja
             // 
@@ -191,7 +210,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(800, 574);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnAgregarProveedor);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.lbldUsuario);
@@ -205,6 +224,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormProductoBaja";
             this.Text = "FormProductoBaja";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormProductoBaja_MouseDown);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -220,8 +240,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnAgregarProveedor;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.Label lbldUsuario;
@@ -231,5 +249,7 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
     }
 }

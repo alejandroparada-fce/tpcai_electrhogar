@@ -40,11 +40,7 @@
             this.checkBoxElectroHogar = new System.Windows.Forms.CheckBox();
             this.checkBoxInformatica = new System.Windows.Forms.CheckBox();
             this.checkBoxSmartTv = new System.Windows.Forms.CheckBox();
-            this.btnAgregarProveedor = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.textBoxDirección = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -52,6 +48,10 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblCredits = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnMaximizar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
@@ -70,6 +70,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(306, 573);
             this.panel1.TabIndex = 3;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // pictureBox1
             // 
@@ -195,17 +196,6 @@
             this.checkBoxSmartTv.Text = "Smart Tv";
             this.checkBoxSmartTv.UseVisualStyleBackColor = true;
             // 
-            // btnAgregarProveedor
-            // 
-            this.btnAgregarProveedor.Location = new System.Drawing.Point(663, 481);
-            this.btnAgregarProveedor.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.btnAgregarProveedor.Name = "btnAgregarProveedor";
-            this.btnAgregarProveedor.Size = new System.Drawing.Size(209, 34);
-            this.btnAgregarProveedor.TabIndex = 18;
-            this.btnAgregarProveedor.Text = "Agregar Proveedor";
-            this.btnAgregarProveedor.UseVisualStyleBackColor = true;
-            this.btnAgregarProveedor.Click += new System.EventHandler(this.btnAgregarProveedor_Click);
-            // 
             // lblError
             // 
             this.lblError.AutoSize = true;
@@ -215,39 +205,6 @@
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 19);
             this.lblError.TabIndex = 19;
-            // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1070, 18);
-            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(21, 22);
-            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 81;
-            this.btnMaximizar.TabStop = false;
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(1040, 18);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(21, 22);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 80;
-            this.btnMinimizar.TabStop = false;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1100, 18);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(21, 22);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 79;
-            this.btnCerrar.TabStop = false;
             // 
             // textBoxDirección
             // 
@@ -303,6 +260,7 @@
             this.lblTitle.Size = new System.Drawing.Size(316, 38);
             this.lblTitle.TabIndex = 86;
             this.lblTitle.Text = "Registrar Proveedor";
+            this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
             // lblCredits
             // 
@@ -326,12 +284,66 @@
             this.lblVersion.TabIndex = 88;
             this.lblVersion.Text = "v1.0";
             // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
+            this.btnLogin.Location = new System.Drawing.Point(612, 484);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(360, 40);
+            this.btnLogin.TabIndex = 89;
+            this.btnLogin.Text = "Agregar Proveedor";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            // 
+            // btnMaximizar
+            // 
+            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
+            this.btnMaximizar.Location = new System.Drawing.Point(1105, 12);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(15, 15);
+            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMaximizar.TabIndex = 92;
+            this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(1084, 12);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(15, 15);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 91;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(1126, 12);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(15, 15);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 90;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // FormProveedorAlta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(1153, 573);
+            this.Controls.Add(this.btnMaximizar);
+            this.Controls.Add(this.btnMinimizar);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.lblTitle);
@@ -339,11 +351,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBoxDirección);
-            this.Controls.Add(this.btnMaximizar);
-            this.Controls.Add(this.btnMinimizar);
-            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblError);
-            this.Controls.Add(this.btnAgregarProveedor);
             this.Controls.Add(this.checkBoxSmartTv);
             this.Controls.Add(this.checkBoxInformatica);
             this.Controls.Add(this.checkBoxElectroHogar);
@@ -361,6 +369,7 @@
             this.Name = "FormProveedorAlta";
             this.Opacity = 0.95D;
             this.Text = "Alta de proveedores";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormProveedorAlta_MouseDown);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
@@ -383,12 +392,8 @@
         private System.Windows.Forms.CheckBox checkBoxElectroHogar;
         private System.Windows.Forms.CheckBox checkBoxInformatica;
         private System.Windows.Forms.CheckBox checkBoxSmartTv;
-        private System.Windows.Forms.Button btnAgregarProveedor;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox btnMaximizar;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.TextBox textBoxDirección;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
@@ -396,5 +401,9 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblCredits;
         private System.Windows.Forms.Label lblVersion;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.PictureBox btnMaximizar;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }

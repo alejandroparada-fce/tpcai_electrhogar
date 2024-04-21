@@ -77,6 +77,11 @@ Se agrega panel dockeado a la izquierda (RGB 0,122,204).
             FormUtils.MoverFormulario(this);
         }
 
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             FormUtils.SalirAplicacion();
