@@ -28,7 +28,7 @@ namespace tpcai_electrhogar.Datos
         //public string Telefono {  get { return _telefono; } set { _telefono = value; } }
         //public string Email { get { return _email; } set { _email = value; } }
         public DateTime fechaAlta { get { return _fechaAlta;} set { _fechaAlta = value; } }
-        public DateTime fechaNacimiento { get {  return _fechaNacimiento; } set { _fechaAlta = value; } }   
+        public DateTime fechaNacimiento { get {  return _fechaNacimiento; } set { _fechaNacimiento = value; } }   
         public DateTime? fechaBaja { get { return _fechaBaja;} set {  _fechaBaja = value; } }
         //public Guid idUsuario { get { return _idUsuario;} set { _idUsuario = value; } }
         public string host { get { return _host; } set { _host = value; } }
