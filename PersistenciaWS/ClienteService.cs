@@ -40,5 +40,30 @@ namespace PersistenciaWS
 
         }
 
+        public static void AgregarCliente(ClienteAgregarEnt cliente, out string error)
+        {
+            string path = "​/api​/Cliente​/AgregarCliente";
+            error = null;
+            var jsonRequest = JsonConvert.SerializeObject(cliente);
+
+            try
+            {
+                HttpResponseMessage response = WebHelper.Post(path,jsonRequest);
+                
+                if (!response.IsSuccessStatusCode)
+                {
+                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+            }
+
+        }
+
+
+
     }
 }

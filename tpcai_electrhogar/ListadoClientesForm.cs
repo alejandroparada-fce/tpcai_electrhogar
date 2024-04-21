@@ -20,7 +20,7 @@ namespace tpcai_electrhogar
 
         private void ListadoClientesForm_Load(object sender, EventArgs e)
         {
-            dgvClientes.DataSource = ModuloNegocio.ConsultarClientes(out string error);
+            dgvClientes.DataSource = ModuloClientes.ConsultarClientes(out string error);
         }
     }
 }

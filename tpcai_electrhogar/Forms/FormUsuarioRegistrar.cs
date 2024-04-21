@@ -96,6 +96,8 @@ Se agrega panel dockeado a la izquierda (RGB 0,122,204).
         {
             FormUtils.MinimizarFormulario(this);
         }
+
+
     }
     //
 }

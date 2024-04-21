@@ -10,11 +10,11 @@ namespace tpcai_electrhogar.Negocio
 {
     public static class ModuloNegocio
     {
-        public static List<ClienteEnt> ConsultarClientes(out string error)
+        /*public static List<ClienteEnt> ConsultarClientes(out string error)
         {
             List<ClienteEnt> listaClientes = new List<ClienteEnt>();
             listaClientes = ClienteService.ListarClientes(out error);
             return listaClientes;
-        }
+        }*/
     }
 }
