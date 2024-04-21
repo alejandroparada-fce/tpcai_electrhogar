@@ -29,9 +29,7 @@ C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\De
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\Persistencia.pdb
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Negocio.dll
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Negocio.pdb
-C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\Persistencia.dll
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Datos.dll
-C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\Persistencia.pdb
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\bin\Debug\tpcai_electrhogar.Datos.pdb
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.AssemblyReference.cache
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Negocio\obj\Debug\tpcai_electrhogar.Negocio.csproj.CoreCompileInputs.cache

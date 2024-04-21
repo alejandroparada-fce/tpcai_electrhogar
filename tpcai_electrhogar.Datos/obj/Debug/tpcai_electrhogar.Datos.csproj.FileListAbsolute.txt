@@ -15,11 +15,8 @@ C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\bin\Debu
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.csproj.CopyComplete
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\bin\Debug\tpcai_electrhogar.Datos.dll
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\bin\Debug\tpcai_electrhogar.Datos.pdb
-C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\bin\Debug\Persistencia.dll
-C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\bin\Debug\Persistencia.pdb
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.csproj.AssemblyReference.cache
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.csproj.CopyComplete
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.dll
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar.Datos\obj\Debug\tpcai_electrhogar.Datos.pdb
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar.Datos\bin\Debug\tpcai_electrhogar.Datos.dll

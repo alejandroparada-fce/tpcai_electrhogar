@@ -1,6 +1,6 @@
 ﻿namespace tpcai_electrhogar
 {
-    partial class FormUsuarioRegistrar
+    partial class RegistrarUsuariosForm
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsuarioRegistrar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrarUsuariosForm));
+            this.btnCrearUsuario = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
@@ -52,14 +53,23 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnCrearUsuario
+            // 
+            this.btnCrearUsuario.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearUsuario.Location = new System.Drawing.Point(382, 369);
+            this.btnCrearUsuario.Name = "btnCrearUsuario";
+            this.btnCrearUsuario.Size = new System.Drawing.Size(100, 23);
+            this.btnCrearUsuario.TabIndex = 0;
+            this.btnCrearUsuario.Text = "Crear Usuario";
+            this.btnCrearUsuario.UseVisualStyleBackColor = true;
+            this.btnCrearUsuario.Click += new System.EventHandler(this.btnCrearUsuario_Click);
             // 
             // panel1
             // 
@@ -68,14 +78,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(194, 641);
-            this.panel1.TabIndex = 100;
+            this.panel1.Size = new System.Drawing.Size(194, 541);
+            this.panel1.TabIndex = 1;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 191);
+            this.pictureBox1.Location = new System.Drawing.Point(39, 109);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 129);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -88,70 +98,70 @@
             this.textBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxNombre.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNombre.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBoxNombre.Location = new System.Drawing.Point(264, 88);
+            this.textBoxNombre.Location = new System.Drawing.Point(240, 22);
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(173, 14);
-            this.textBoxNombre.TabIndex = 1;
+            this.textBoxNombre.TabIndex = 2;
             // 
             // textBoxApellido
             // 
             this.textBoxApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxApellido.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxApellido.Location = new System.Drawing.Point(494, 88);
+            this.textBoxApellido.Location = new System.Drawing.Point(470, 22);
             this.textBoxApellido.Name = "textBoxApellido";
             this.textBoxApellido.Size = new System.Drawing.Size(173, 14);
-            this.textBoxApellido.TabIndex = 2;
+            this.textBoxApellido.TabIndex = 3;
             // 
             // textBoxDirección
             // 
             this.textBoxDirección.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxDirección.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDirección.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDirección.Location = new System.Drawing.Point(264, 221);
+            this.textBoxDirección.Location = new System.Drawing.Point(240, 155);
             this.textBoxDirección.Name = "textBoxDirección";
             this.textBoxDirección.Size = new System.Drawing.Size(403, 14);
-            this.textBoxDirección.TabIndex = 5;
+            this.textBoxDirección.TabIndex = 4;
             // 
             // textBoxTelefono
             // 
             this.textBoxTelefono.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTelefono.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTelefono.Location = new System.Drawing.Point(264, 264);
+            this.textBoxTelefono.Location = new System.Drawing.Point(240, 198);
             this.textBoxTelefono.Name = "textBoxTelefono";
             this.textBoxTelefono.Size = new System.Drawing.Size(403, 14);
-            this.textBoxTelefono.TabIndex = 6;
+            this.textBoxTelefono.TabIndex = 5;
             // 
             // textBoxMail
             // 
             this.textBoxMail.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxMail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxMail.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMail.Location = new System.Drawing.Point(264, 306);
+            this.textBoxMail.Location = new System.Drawing.Point(240, 240);
             this.textBoxMail.Name = "textBoxMail";
             this.textBoxMail.Size = new System.Drawing.Size(403, 14);
-            this.textBoxMail.TabIndex = 7;
+            this.textBoxMail.TabIndex = 6;
             // 
             // dateNacimiento
             // 
             this.dateNacimiento.CalendarFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateNacimiento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateNacimiento.Location = new System.Drawing.Point(447, 177);
+            this.dateNacimiento.Location = new System.Drawing.Point(382, 107);
             this.dateNacimiento.MaxDate = new System.DateTime(2024, 3, 23, 0, 0, 0, 0);
             this.dateNacimiento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateNacimiento.Name = "dateNacimiento";
-            this.dateNacimiento.Size = new System.Drawing.Size(220, 21);
-            this.dateNacimiento.TabIndex = 4;
+            this.dateNacimiento.Size = new System.Drawing.Size(261, 21);
+            this.dateNacimiento.TabIndex = 8;
             this.dateNacimiento.Value = new System.DateTime(2024, 3, 23, 0, 0, 0, 0);
             // 
             // lblFechaNacimiento
             // 
             this.lblFechaNacimiento.AutoSize = true;
-            this.lblFechaNacimiento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.lblFechaNacimiento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaNacimiento.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(261, 179);
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(237, 113);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
-            this.lblFechaNacimiento.Size = new System.Drawing.Size(180, 19);
+            this.lblFechaNacimiento.Size = new System.Drawing.Size(126, 15);
             this.lblFechaNacimiento.TabIndex = 9;
             this.lblFechaNacimiento.Text = "Fecha de nacimiento";
             // 
@@ -160,23 +170,22 @@
             this.textBoxDNI.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxDNI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDNI.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDNI.Location = new System.Drawing.Point(264, 129);
+            this.textBoxDNI.Location = new System.Drawing.Point(240, 63);
             this.textBoxDNI.Name = "textBoxDNI";
             this.textBoxDNI.Size = new System.Drawing.Size(403, 14);
-            this.textBoxDNI.TabIndex = 3;
+            this.textBoxDNI.TabIndex = 10;
             // 
             // comboBoxPerfil
             // 
-            this.comboBoxPerfil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.comboBoxPerfil.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxPerfil.FormattingEnabled = true;
-            this.comboBoxPerfil.ItemHeight = 19;
             this.comboBoxPerfil.Items.AddRange(new object[] {
             "Vendedor",
             "Supervisior",
             "Administrador"});
-            this.comboBoxPerfil.Location = new System.Drawing.Point(264, 390);
+            this.comboBoxPerfil.Location = new System.Drawing.Point(240, 324);
             this.comboBoxPerfil.Name = "comboBoxPerfil";
-            this.comboBoxPerfil.Size = new System.Drawing.Size(403, 27);
+            this.comboBoxPerfil.Size = new System.Drawing.Size(403, 23);
             this.comboBoxPerfil.TabIndex = 11;
             this.comboBoxPerfil.Text = "Perfil";
             // 
@@ -185,85 +194,85 @@
             this.textBoxNombreUsuario.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxNombreUsuario.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombreUsuario.Location = new System.Drawing.Point(264, 349);
+            this.textBoxNombreUsuario.Location = new System.Drawing.Point(240, 283);
             this.textBoxNombreUsuario.Name = "textBoxNombreUsuario";
             this.textBoxNombreUsuario.Size = new System.Drawing.Size(403, 14);
-            this.textBoxNombreUsuario.TabIndex = 8;
+            this.textBoxNombreUsuario.TabIndex = 12;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Location = new System.Drawing.Point(261, 105);
+            this.lblNombre.Location = new System.Drawing.Point(237, 39);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(73, 19);
+            this.lblNombre.Size = new System.Drawing.Size(51, 15);
             this.lblNombre.TabIndex = 13;
             this.lblNombre.Text = "Nombre";
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.lblApellido.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.ForeColor = System.Drawing.Color.Transparent;
-            this.lblApellido.Location = new System.Drawing.Point(491, 105);
+            this.lblApellido.Location = new System.Drawing.Point(467, 39);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(75, 19);
+            this.lblApellido.Size = new System.Drawing.Size(52, 15);
             this.lblApellido.TabIndex = 14;
             this.lblApellido.Text = "Apellido";
             // 
             // lblDNI
             // 
             this.lblDNI.AutoSize = true;
-            this.lblDNI.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.lblDNI.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDNI.ForeColor = System.Drawing.Color.Transparent;
-            this.lblDNI.Location = new System.Drawing.Point(261, 146);
+            this.lblDNI.Location = new System.Drawing.Point(237, 80);
             this.lblDNI.Name = "lblDNI";
-            this.lblDNI.Size = new System.Drawing.Size(37, 19);
+            this.lblDNI.Size = new System.Drawing.Size(26, 15);
             this.lblDNI.TabIndex = 15;
             this.lblDNI.Text = "DNI";
             // 
             // lblDireccion
             // 
             this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.lblDireccion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.ForeColor = System.Drawing.Color.Transparent;
-            this.lblDireccion.Location = new System.Drawing.Point(261, 238);
+            this.lblDireccion.Location = new System.Drawing.Point(237, 172);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(84, 19);
+            this.lblDireccion.Size = new System.Drawing.Size(60, 15);
             this.lblDireccion.TabIndex = 16;
             this.lblDireccion.Text = "Dirección";
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.lblTelefono.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.ForeColor = System.Drawing.Color.Transparent;
-            this.lblTelefono.Location = new System.Drawing.Point(261, 281);
+            this.lblTelefono.Location = new System.Drawing.Point(237, 215);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(75, 19);
+            this.lblTelefono.Size = new System.Drawing.Size(52, 15);
             this.lblTelefono.TabIndex = 17;
             this.lblTelefono.Text = "Teléfono";
             // 
             // lblMail
             // 
             this.lblMail.AutoSize = true;
-            this.lblMail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.lblMail.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMail.ForeColor = System.Drawing.Color.Transparent;
-            this.lblMail.Location = new System.Drawing.Point(261, 323);
+            this.lblMail.Location = new System.Drawing.Point(237, 257);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(156, 19);
+            this.lblMail.Size = new System.Drawing.Size(110, 15);
             this.lblMail.TabIndex = 18;
             this.lblMail.Text = "Correo Electrónico";
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.Transparent;
-            this.lblUsuario.Location = new System.Drawing.Point(261, 366);
+            this.lblUsuario.Location = new System.Drawing.Point(237, 300);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(157, 19);
+            this.lblUsuario.Size = new System.Drawing.Size(113, 15);
             this.lblUsuario.TabIndex = 19;
             this.lblUsuario.Text = "Nombre de Usuario";
             // 
@@ -272,7 +281,7 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblError.Location = new System.Drawing.Point(261, 517);
+            this.lblError.Location = new System.Drawing.Point(237, 413);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 20;
@@ -310,43 +319,12 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(342, 9);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(271, 38);
-            this.lblTitle.TabIndex = 82;
-            this.lblTitle.Text = "Registrar Usuario";
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(286, 452);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(360, 40);
-            this.btnLogin.TabIndex = 83;
-            this.btnLogin.Text = "Registrar";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // FormUsuarioRegistrar
+            // RegistrarUsuariosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(784, 641);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.lblTitle);
+            this.ClientSize = new System.Drawing.Size(784, 541);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
@@ -369,9 +347,10 @@
             this.Controls.Add(this.textBoxApellido);
             this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnCrearUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormUsuarioRegistrar";
+            this.Name = "RegistrarUsuariosForm";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de usuarios";
@@ -387,6 +366,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnCrearUsuario;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBoxNombre;
@@ -410,8 +391,6 @@
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button btnLogin;
     }
 }
 
