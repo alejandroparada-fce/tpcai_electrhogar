@@ -136,6 +136,12 @@
     <Compile Include="Forms\FormUsuarioRegistrar.Designer.cs">
       <DependentUpon>FormUsuarioRegistrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListadoClientesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoClientesForm.Designer.cs">
+      <DependentUpon>ListadoClientesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validaciones.cs" />
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormVentaRegistrar.resx">
       <DependentUpon>FormVentaRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoClientesForm.resx">
+      <DependentUpon>ListadoClientesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

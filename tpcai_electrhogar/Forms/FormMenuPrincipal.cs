@@ -88,9 +88,9 @@ namespace tpcai_electrhogar
 
         private void btnVentaRegistrar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-           VentaRegistrarForm ventaForm = new VentaRegistrarForm();
-            ventaForm.Show();
+           //this.Hide();
+           //VentaRegistrarForm ventaForm = new VentaRegistrarForm();
+           //ventaForm.Show();
         }
 
         

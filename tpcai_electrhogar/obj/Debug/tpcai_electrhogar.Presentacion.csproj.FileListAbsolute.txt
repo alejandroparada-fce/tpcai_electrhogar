@@ -6,18 +6,12 @@ C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpca
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.Negocio.pdb
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.Datos.pdb
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.AssemblyReference.cache
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.CambiarContrasenaForm.resources
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.LoginForm.resources
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.ModulosForm.resources
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.RegistrarUsuariosForm.resources
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Properties.Resources.resources
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.GenerateResource.cache
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.CopyComplete
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.exe
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.pdb
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.AltaProveedorForm.resources
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.BajaProveedorForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Presentacion.csproj.AssemblyReference.cache
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.AgregarProductoForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.AltaProveedorForm.resources
@@ -36,8 +30,6 @@ C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\t
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.Datos.pdb
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.Negocio.pdb
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_el.43DB8F70.Up2Date
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.AgregarProductoForm.resources
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.VentaForm.resources
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.exe.config
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.exe
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\tpcai_electrhogar.pdb
@@ -112,3 +104,22 @@ C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debu
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormLogin.resources
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormMenuPrincipal.resources
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormUsuarioRegistrar.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Forms.FormProductoBaja.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormProductoRegistrar.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormProveedorAlta.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormProveedorBaja.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormCambiarContrasena.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormBienvenida.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormLogin.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormMenuPrincipal.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Forms.FormUsuarioBaja.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormUsuarioRegistrar.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Forms.FormVentaRegistrar.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.ListadoClientesForm.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\CircularProgressBar.dll
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\WinFormAnimation.dll
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\PersistenciaWS.dll
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\CircularProgressBar.xml
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\PersistenciaWS.pdb
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\bin\Debug\Newtonsoft.Json.xml
