@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -16,10 +17,10 @@ namespace PersistenciaWS
             string path = "/api/Cliente/GetClientes";
             List<ClienteEnt> listadoClientes = new List<ClienteEnt>();
             error = null;
-            HttpResponseMessage response = WebHelper.Get(path);
 
             try
             {
+                HttpResponseMessage response = WebHelper.Get(path);
                 if (!response.IsSuccessStatusCode)
                 {
                     error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
@@ -40,16 +41,15 @@ namespace PersistenciaWS
 
         }
 
-        public static void AgregarCliente(ClienteAgregarEnt cliente, out string error)
+        public static void AgregarCliente(ClienteAgregarEnt cliente, out String error)
         {
-            string path = "​/api​/Cliente​/AgregarCliente";
+            String path = "​/api​/Cliente​/AgregarCliente";
             error = null;
             var jsonRequest = JsonConvert.SerializeObject(cliente);
-
+            
             try
             {
-                HttpResponseMessage response = WebHelper.Post(path,jsonRequest);
-                
+                HttpResponseMessage response = WebHelper.Post(path, jsonRequest);      
                 if (!response.IsSuccessStatusCode)
                 {
                     error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
@@ -63,7 +63,31 @@ namespace PersistenciaWS
 
         }
 
+        public static void AgregarCliente2(ClienteAgregarEnt altaCliente)
+        {
+            String path = "/api/Cliente/AgregarCliente";
 
+            var jsonRequest = JsonConvert.SerializeObject(altaCliente);
 
+            try
+            {
+                HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
+                if (response.IsSuccessStatusCode)
+                {
+                    var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
+                    string respuesta = reader.ReadToEnd();
+                }
+                else
+                {
+                    var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
+                    string respuesta = reader.ReadToEnd();
+                    //Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
+                }
+            }
+            catch (Exception ex)
+            {
+                string error = $"Exception: {ex.Message}";
+            }
+        }
     }
 }

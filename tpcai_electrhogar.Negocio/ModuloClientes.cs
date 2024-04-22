@@ -17,12 +17,13 @@ namespace tpcai_electrhogar.Negocio
             return listaClientes;
         }
 
-        public static void AgregarCliente(Guid idUsuario, string nombre, string apellido, int dni, string direccion, string telefono, string email, string fechaNacimiento, string host, out string error)
+        public static void AgregarCliente(Guid idUsuario, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, string host, out string error)
         {
             ClienteAgregarEnt cliente = new ClienteAgregarEnt(idUsuario, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, host);
             error = null;
 
             ClienteService.AgregarCliente(cliente, out error);
+            //ClienteService.AgregarCliente2(cliente);
         }
 
     }

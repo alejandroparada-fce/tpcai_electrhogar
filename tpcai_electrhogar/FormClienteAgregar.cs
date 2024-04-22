@@ -24,7 +24,7 @@ namespace tpcai_electrhogar
             //Guid clienteGuid = new Guid();
             //Guid idUsuario = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
             //ModuloClientes.AgregarCliente(idUsuario, textBoxNombre.Text, textBoxApellido.Text, int.Parse(textBoxDNI.Text), textBoxDirección.Text, textBoxTelefono.Text, textBoxMail.Text, dateNacimiento.Value, "prueba21-4", out string error);
-            ModuloClientes.AgregarCliente(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), "Juan", "Perez", 40893235, "Ministro Brin", "1212123", "adas@gmail.com", "2000-04-21T22:05:35.048Z", "prueba21 -4", out string error);
+            ModuloClientes.AgregarCliente(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), "Juan", "Suarez", 33333444, "Pedro Lopez", "1212123", "adas@gmail.com", new DateTime(2000, 4, 12), "prueba22-4", out string error);
 
             if (!string.IsNullOrEmpty(error))
             {
