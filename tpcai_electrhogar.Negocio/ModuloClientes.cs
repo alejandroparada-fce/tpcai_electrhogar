@@ -31,5 +31,10 @@ namespace tpcai_electrhogar.Negocio
             ClienteService.ModificarCliente(id, direccion, telefono, email, out error);
         }
 
+        public static void EliminarCliente(Guid id, out string error)
+        {
+            ClienteService.EliminarCliente(id, out error);
+        }
     }
+
 }

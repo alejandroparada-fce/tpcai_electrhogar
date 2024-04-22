@@ -114,5 +114,26 @@ namespace PersistenciaWS
                 error = ex.Message;
             }
         }
+        public static void EliminarCliente(Guid id, out string error)
+        {
+            error = null;
+            String path = "/api/Cliente/BajaCliente?id=" + id;
+
+            try
+            {
+                HttpResponseMessage response = WebHelper.Delete(path);
+                if (!response.IsSuccessStatusCode)
+                {
+                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+            }
+
+
+        }
     }
 }

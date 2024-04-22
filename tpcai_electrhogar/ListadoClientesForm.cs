@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using tpcai_electrhogar.Datos;
 using tpcai_electrhogar.Negocio;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace tpcai_electrhogar
 {
@@ -100,7 +101,40 @@ namespace tpcai_electrhogar
             modulosForm.Show();
         }
 
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ClienteEnt clienteseleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
+            Guid id = clienteseleccionado.id;
 
+            
+            try
+            {
+                ModuloClientes.EliminarCliente(id, out string error);
+                this.Hide();
+                ListadoClientesForm listadoClientesForm = new ListadoClientesForm();
+                listadoClientesForm.Show();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            FormUtils.MinimizarFormulario(this);
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            FormUtils.MaximizarFormulario(this);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            FormUtils.SalirAplicacion();
+        }
     }
     }
 
