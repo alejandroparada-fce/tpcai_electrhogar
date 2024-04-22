@@ -20,8 +20,8 @@ namespace tpcai_electrhogar
             //Application.Run(new FormBienvenida());
             //Application.Run(new FormMenuPrincipal());
             //Application.Run(new FormUsuarioRegistrar());
-            //Application.Run(new ListadoClientesForm());
-            Application.Run(new FormClienteAgregar());
+            Application.Run(new ListadoClientesForm());
+            //Application.Run(new FormClienteAgregar());
         }
     }
 }
