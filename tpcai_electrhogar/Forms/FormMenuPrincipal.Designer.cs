@@ -348,6 +348,7 @@
             this.btnClienteModificar.TabIndex = 83;
             this.btnClienteModificar.Text = "Modificar Cliente";
             this.btnClienteModificar.UseVisualStyleBackColor = true;
+            this.btnClienteModificar.Click += new System.EventHandler(this.btnClienteModificar_Click);
             // 
             // btnVentaDevolucion
             // 

@@ -24,6 +24,11 @@ namespace tpcai_electrhogar.Negocio
 
             ClienteService.AgregarCliente(cliente, out error);
             //ClienteService.AgregarCliente2(cliente);
+
+        }
+        public static void ModificarCliente(Guid id, string direccion, string telefono, string email, out string error)
+        {
+            ClienteService.ModificarCliente(id, direccion, telefono, email, out error);
         }
 
     }

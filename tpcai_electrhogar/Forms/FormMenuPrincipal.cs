@@ -93,6 +93,11 @@ namespace tpcai_electrhogar
            //ventaForm.Show();
         }
 
-        
+        private void btnClienteModificar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ListadoClientesForm listadoClienteForm = new ListadoClientesForm();
+            listadoClienteForm.Show();
+        }
     }
 }

@@ -46,10 +46,10 @@ namespace PersistenciaWS
             String path = "​/api​/Cliente​/AgregarCliente";
             error = null;
             var jsonRequest = JsonConvert.SerializeObject(cliente);
-            
+
             try
             {
-                HttpResponseMessage response = WebHelper.Post(path, jsonRequest);      
+                HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
                 if (!response.IsSuccessStatusCode)
                 {
                     error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
@@ -87,6 +87,31 @@ namespace PersistenciaWS
             catch (Exception ex)
             {
                 string error = $"Exception: {ex.Message}";
+            }
+        }
+        public static void ModificarCliente(Guid id, String direccion, String telefono, String email, out string error)
+        {
+            error = null;
+            String path = "/api/Cliente/PatchCliente";
+            Dictionary<string, string> map = new Dictionary<string, string>();
+            map.Add("id", id.ToString());
+            map.Add("direccion", direccion);
+            map.Add("telefono", telefono);
+            map.Add("email", email);
+            var jsonRequest = JsonConvert.SerializeObject(map);
+
+            try
+            {
+                HttpResponseMessage response = WebHelper.Patch(path, jsonRequest);
+                if (!response.IsSuccessStatusCode)
+                {
+                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
             }
         }
     }
