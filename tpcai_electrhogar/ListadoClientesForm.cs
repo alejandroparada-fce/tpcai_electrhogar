@@ -28,7 +28,7 @@ namespace tpcai_electrhogar
             List<ClienteEnt> listaClientes = ModuloClientes.ConsultarClientes(out string error);
 
 
-            foreach (ClienteEnt c in listaClientes)
+            /*foreach (ClienteEnt c in listaClientes)
             {
                 int rowIndex = dgvClientes.Rows.Add();
                 DataGridViewRow row = dgvClientes.Rows[rowIndex];
@@ -44,8 +44,13 @@ namespace tpcai_electrhogar
                 row.Cells[9].Value = c.fechaBaja;
                 row.Cells[10].Value = c.host;
 
-            }
-            
+            }*/
+            var bindingList = new BindingList<ClienteEnt>(listaClientes);
+            var source = new BindingSource(bindingList, null);
+            dgvClientes.DataSource = source;
+            dgvClientes.Columns["id"].Visible = false;
+            dgvClientes.Columns["fechaBaja"].Visible = false;
+
 
         }
 
@@ -75,6 +80,10 @@ namespace tpcai_electrhogar
                 try
                 {
                     ModuloClientes.ModificarCliente(id, direccion, telefono, email, out string error);
+                    this.Hide();
+                    ListadoClientesForm listadoClientesForm = new ListadoClientesForm();
+                    listadoClientesForm.Show();
+
                 }
                 catch (Exception ex)
                 {
@@ -82,8 +91,6 @@ namespace tpcai_electrhogar
                 }
             }
         }
-
-
 
 
         private void btnCancelarContrasena_Click(object sender, EventArgs e)

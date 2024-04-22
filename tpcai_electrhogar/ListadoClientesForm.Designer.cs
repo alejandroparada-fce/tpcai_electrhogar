@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -44,55 +44,32 @@
             this.emailLbl = new System.Windows.Forms.Label();
             this.emailCambio = new System.Windows.Forms.TextBox();
             this.btnModificarCliente = new System.Windows.Forms.Button();
-            this.HOST = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaBajaCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaAltaCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaNacimientoCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmailCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TelefonoCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DireccionCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DNICliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApellidoCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvClientes
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.dgvClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dgvClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdCliente,
-            this.NombreCliente,
-            this.ApellidoCliente,
-            this.DNICliente,
-            this.DireccionCliente,
-            this.TelefonoCliente,
-            this.EmailCliente,
-            this.FechaNacimientoCliente,
-            this.FechaAltaCliente,
-            this.FechaBajaCliente,
-            this.HOST});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClientes.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvClientes.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvClientes.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvClientes.Location = new System.Drawing.Point(0, 211);
             this.dgvClientes.MultiSelect = false;
@@ -162,7 +139,7 @@
             this.direccionLbl.AutoSize = true;
             this.direccionLbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direccionLbl.ForeColor = System.Drawing.Color.Transparent;
-            this.direccionLbl.Location = new System.Drawing.Point(13, -4);
+            this.direccionLbl.Location = new System.Drawing.Point(17, 10);
             this.direccionLbl.Name = "direccionLbl";
             this.direccionLbl.Size = new System.Drawing.Size(84, 19);
             this.direccionLbl.TabIndex = 84;
@@ -174,7 +151,7 @@
             this.direccionCambio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.direccionCambio.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direccionCambio.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.direccionCambio.Location = new System.Drawing.Point(103, -4);
+            this.direccionCambio.Location = new System.Drawing.Point(107, 10);
             this.direccionCambio.Multiline = true;
             this.direccionCambio.Name = "direccionCambio";
             this.direccionCambio.Size = new System.Drawing.Size(173, 23);
@@ -185,7 +162,7 @@
             this.telefonoLbl.AutoSize = true;
             this.telefonoLbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telefonoLbl.ForeColor = System.Drawing.Color.Transparent;
-            this.telefonoLbl.Location = new System.Drawing.Point(13, 33);
+            this.telefonoLbl.Location = new System.Drawing.Point(17, 47);
             this.telefonoLbl.Name = "telefonoLbl";
             this.telefonoLbl.Size = new System.Drawing.Size(75, 19);
             this.telefonoLbl.TabIndex = 87;
@@ -197,7 +174,7 @@
             this.telefonoCambio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.telefonoCambio.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telefonoCambio.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.telefonoCambio.Location = new System.Drawing.Point(101, 33);
+            this.telefonoCambio.Location = new System.Drawing.Point(105, 47);
             this.telefonoCambio.Multiline = true;
             this.telefonoCambio.Name = "telefonoCambio";
             this.telefonoCambio.Size = new System.Drawing.Size(173, 23);
@@ -208,7 +185,7 @@
             this.emailLbl.AutoSize = true;
             this.emailLbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailLbl.ForeColor = System.Drawing.Color.Transparent;
-            this.emailLbl.Location = new System.Drawing.Point(12, 72);
+            this.emailLbl.Location = new System.Drawing.Point(16, 86);
             this.emailLbl.Name = "emailLbl";
             this.emailLbl.Size = new System.Drawing.Size(53, 19);
             this.emailLbl.TabIndex = 89;
@@ -220,7 +197,7 @@
             this.emailCambio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.emailCambio.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailCambio.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.emailCambio.Location = new System.Drawing.Point(101, 77);
+            this.emailCambio.Location = new System.Drawing.Point(105, 91);
             this.emailCambio.Multiline = true;
             this.emailCambio.Name = "emailCambio";
             this.emailCambio.Size = new System.Drawing.Size(173, 23);
@@ -242,72 +219,6 @@
             this.btnModificarCliente.Text = "Modificar";
             this.btnModificarCliente.UseVisualStyleBackColor = false;
             this.btnModificarCliente.Click += new System.EventHandler(this.btnModificarCliente_Click);
-            // 
-            // HOST
-            // 
-            this.HOST.HeaderText = "Host";
-            this.HOST.Name = "HOST";
-            this.HOST.ReadOnly = true;
-            // 
-            // FechaBajaCliente
-            // 
-            this.FechaBajaCliente.HeaderText = "Fecha de Baja";
-            this.FechaBajaCliente.Name = "FechaBajaCliente";
-            this.FechaBajaCliente.ReadOnly = true;
-            // 
-            // FechaAltaCliente
-            // 
-            this.FechaAltaCliente.HeaderText = "Fecha de Alta";
-            this.FechaAltaCliente.Name = "FechaAltaCliente";
-            this.FechaAltaCliente.ReadOnly = true;
-            // 
-            // FechaNacimientoCliente
-            // 
-            this.FechaNacimientoCliente.HeaderText = "Fecha de Nacimiento";
-            this.FechaNacimientoCliente.Name = "FechaNacimientoCliente";
-            this.FechaNacimientoCliente.ReadOnly = true;
-            // 
-            // EmailCliente
-            // 
-            this.EmailCliente.HeaderText = "Email";
-            this.EmailCliente.Name = "EmailCliente";
-            this.EmailCliente.ReadOnly = true;
-            // 
-            // TelefonoCliente
-            // 
-            this.TelefonoCliente.HeaderText = "Teléfono";
-            this.TelefonoCliente.Name = "TelefonoCliente";
-            this.TelefonoCliente.ReadOnly = true;
-            // 
-            // DireccionCliente
-            // 
-            this.DireccionCliente.HeaderText = "Dirección";
-            this.DireccionCliente.Name = "DireccionCliente";
-            this.DireccionCliente.ReadOnly = true;
-            // 
-            // DNICliente
-            // 
-            this.DNICliente.HeaderText = "DNI";
-            this.DNICliente.Name = "DNICliente";
-            this.DNICliente.ReadOnly = true;
-            // 
-            // ApellidoCliente
-            // 
-            this.ApellidoCliente.HeaderText = "Apellido";
-            this.ApellidoCliente.Name = "ApellidoCliente";
-            this.ApellidoCliente.ReadOnly = true;
-            // 
-            // NombreCliente
-            // 
-            this.NombreCliente.HeaderText = "Nombre";
-            this.NombreCliente.Name = "NombreCliente";
-            this.NombreCliente.ReadOnly = true;
-            // 
-            // IdCliente
-            // 
-            this.IdCliente.HeaderText = "ID";
-            this.IdCliente.Name = "IdCliente";
-            this.IdCliente.ReadOnly = true;
             // 
             // ListadoClientesForm
             // 
@@ -355,16 +266,5 @@
         private System.Windows.Forms.Label emailLbl;
         private System.Windows.Forms.TextBox emailCambio;
         private System.Windows.Forms.Button btnModificarCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ApellidoCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DNICliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DireccionCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TelefonoCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn EmailCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacimientoCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaAltaCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaBajaCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HOST;
     }
 }
