@@ -62,7 +62,7 @@
             this.panel1.ForeColor = System.Drawing.SystemColors.Window;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 330);
+            this.panel1.Size = new System.Drawing.Size(250, 350);
             this.panel1.TabIndex = 2;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
@@ -80,7 +80,7 @@
             // 
             this.lblError.AutoSize = true;
             this.lblError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblError.Location = new System.Drawing.Point(256, 299);
+            this.lblError.Location = new System.Drawing.Point(256, 222);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 0;
@@ -91,7 +91,7 @@
             this.contrasenaActual.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.contrasenaActual.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contrasenaActual.ForeColor = System.Drawing.Color.DimGray;
-            this.contrasenaActual.Location = new System.Drawing.Point(259, 64);
+            this.contrasenaActual.Location = new System.Drawing.Point(259, 60);
             this.contrasenaActual.Name = "contrasenaActual";
             this.contrasenaActual.Size = new System.Drawing.Size(360, 20);
             this.contrasenaActual.TabIndex = 1;
@@ -103,7 +103,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.DimGray;
             this.panel3.Enabled = false;
-            this.panel3.Location = new System.Drawing.Point(259, 101);
+            this.panel3.Location = new System.Drawing.Point(259, 97);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(360, 1);
             this.panel3.TabIndex = 75;
@@ -112,7 +112,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.Enabled = false;
-            this.panel2.Location = new System.Drawing.Point(259, 156);
+            this.panel2.Location = new System.Drawing.Point(259, 152);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 1);
             this.panel2.TabIndex = 77;
@@ -121,7 +121,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.DimGray;
             this.panel4.Enabled = false;
-            this.panel4.Location = new System.Drawing.Point(259, 211);
+            this.panel4.Location = new System.Drawing.Point(259, 207);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(360, 1);
             this.panel4.TabIndex = 79;
@@ -135,7 +135,7 @@
             this.btnGuardarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarContrasena.ForeColor = System.Drawing.Color.LightGray;
-            this.btnGuardarContrasena.Location = new System.Drawing.Point(512, 260);
+            this.btnGuardarContrasena.Location = new System.Drawing.Point(288, 285);
             this.btnGuardarContrasena.Name = "btnGuardarContrasena";
             this.btnGuardarContrasena.Size = new System.Drawing.Size(170, 40);
             this.btnGuardarContrasena.TabIndex = 4;
@@ -164,7 +164,7 @@
             this.btnCancelarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarContrasena.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarContrasena.Location = new System.Drawing.Point(322, 260);
+            this.btnCancelarContrasena.Location = new System.Drawing.Point(491, 285);
             this.btnCancelarContrasena.Name = "btnCancelarContrasena";
             this.btnCancelarContrasena.Size = new System.Drawing.Size(170, 40);
             this.btnCancelarContrasena.TabIndex = 0;
@@ -202,7 +202,7 @@
             this.contrasenaNueva.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.contrasenaNueva.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contrasenaNueva.ForeColor = System.Drawing.Color.DimGray;
-            this.contrasenaNueva.Location = new System.Drawing.Point(259, 119);
+            this.contrasenaNueva.Location = new System.Drawing.Point(259, 115);
             this.contrasenaNueva.Name = "contrasenaNueva";
             this.contrasenaNueva.Size = new System.Drawing.Size(360, 20);
             this.contrasenaNueva.TabIndex = 2;
@@ -216,7 +216,7 @@
             this.repetirContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.repetirContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.repetirContrasena.ForeColor = System.Drawing.Color.DimGray;
-            this.repetirContrasena.Location = new System.Drawing.Point(259, 174);
+            this.repetirContrasena.Location = new System.Drawing.Point(259, 170);
             this.repetirContrasena.Name = "repetirContrasena";
             this.repetirContrasena.Size = new System.Drawing.Size(360, 20);
             this.repetirContrasena.TabIndex = 3;
@@ -275,7 +275,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(780, 330);
+            this.ClientSize = new System.Drawing.Size(780, 350);
             this.Controls.Add(this.checkMostrarContrasena);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);

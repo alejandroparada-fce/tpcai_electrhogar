@@ -63,6 +63,7 @@
             this.btnProductoModificar = new System.Windows.Forms.Button();
             this.btnProductoBaja = new System.Windows.Forms.Button();
             this.btnProductoRegistrar = new System.Windows.Forms.Button();
+            this.cerrarsesionBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,7 +96,7 @@
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 340);
+            this.panel1.Size = new System.Drawing.Size(267, 340);
             this.panel1.TabIndex = 1;
             // 
             // btnUsuarios
@@ -107,7 +108,7 @@
             this.btnUsuarios.ForeColor = System.Drawing.Color.Black;
             this.btnUsuarios.Location = new System.Drawing.Point(0, 300);
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(250, 40);
+            this.btnUsuarios.Size = new System.Drawing.Size(267, 40);
             this.btnUsuarios.TabIndex = 6;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = false;
@@ -121,7 +122,7 @@
             this.btnReportes.ForeColor = System.Drawing.Color.Black;
             this.btnReportes.Location = new System.Drawing.Point(0, 260);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(250, 40);
+            this.btnReportes.Size = new System.Drawing.Size(267, 40);
             this.btnReportes.TabIndex = 5;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = false;
@@ -135,7 +136,7 @@
             this.btnProveedores.ForeColor = System.Drawing.Color.Black;
             this.btnProveedores.Location = new System.Drawing.Point(0, 220);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(250, 40);
+            this.btnProveedores.Size = new System.Drawing.Size(267, 40);
             this.btnProveedores.TabIndex = 4;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = false;
@@ -149,7 +150,7 @@
             this.btnVentas.ForeColor = System.Drawing.Color.Black;
             this.btnVentas.Location = new System.Drawing.Point(0, 180);
             this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(250, 40);
+            this.btnVentas.Size = new System.Drawing.Size(267, 40);
             this.btnVentas.TabIndex = 3;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.UseVisualStyleBackColor = false;
@@ -163,7 +164,7 @@
             this.btnClientes.ForeColor = System.Drawing.Color.Black;
             this.btnClientes.Location = new System.Drawing.Point(0, 140);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(250, 40);
+            this.btnClientes.Size = new System.Drawing.Size(267, 40);
             this.btnClientes.TabIndex = 2;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = false;
@@ -177,20 +178,22 @@
             this.btnProductos.ForeColor = System.Drawing.Color.Black;
             this.btnProductos.Location = new System.Drawing.Point(0, 100);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(250, 40);
+            this.btnProductos.Size = new System.Drawing.Size(267, 40);
             this.btnProductos.TabIndex = 1;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.cerrarsesionBtn);
             this.panel2.Controls.Add(this.txtNombreUsuario);
             this.panel2.Controls.Add(this.lblUsuario);
             this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.btnCambioContrasena);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 100);
+            this.panel2.Size = new System.Drawing.Size(267, 100);
             this.panel2.TabIndex = 0;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
@@ -219,7 +222,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(54, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -228,12 +231,16 @@
             // 
             // btnCambioContrasena
             // 
-            this.btnCambioContrasena.Location = new System.Drawing.Point(403, 292);
+            this.btnCambioContrasena.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCambioContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCambioContrasena.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCambioContrasena.ForeColor = System.Drawing.Color.Black;
+            this.btnCambioContrasena.Location = new System.Drawing.Point(3, 67);
             this.btnCambioContrasena.Name = "btnCambioContrasena";
-            this.btnCambioContrasena.Size = new System.Drawing.Size(134, 23);
+            this.btnCambioContrasena.Size = new System.Drawing.Size(126, 27);
             this.btnCambioContrasena.TabIndex = 2;
-            this.btnCambioContrasena.Text = "Cambiar Contraseña";
-            this.btnCambioContrasena.UseVisualStyleBackColor = true;
+            this.btnCambioContrasena.Text = "Cambiar contraseña";
+            this.btnCambioContrasena.UseVisualStyleBackColor = false;
             this.btnCambioContrasena.Click += new System.EventHandler(this.btnCambioContrasena_Click);
             // 
             // btnUsuarioBaja
@@ -305,7 +312,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(256, 9);
+            this.lblTitle.Location = new System.Drawing.Point(274, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(261, 44);
             this.lblTitle.TabIndex = 79;
@@ -443,6 +450,20 @@
             this.btnProductoRegistrar.UseVisualStyleBackColor = true;
             this.btnProductoRegistrar.Click += new System.EventHandler(this.btnProductoRegistrar_Click);
             // 
+            // cerrarsesionBtn
+            // 
+            this.cerrarsesionBtn.BackColor = System.Drawing.Color.Gainsboro;
+            this.cerrarsesionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cerrarsesionBtn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cerrarsesionBtn.ForeColor = System.Drawing.Color.Black;
+            this.cerrarsesionBtn.Location = new System.Drawing.Point(135, 67);
+            this.cerrarsesionBtn.Name = "cerrarsesionBtn";
+            this.cerrarsesionBtn.Size = new System.Drawing.Size(126, 27);
+            this.cerrarsesionBtn.TabIndex = 7;
+            this.cerrarsesionBtn.Text = "Cerrar sesión";
+            this.cerrarsesionBtn.UseVisualStyleBackColor = false;
+            this.cerrarsesionBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,7 +491,6 @@
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnUsuarioBaja);
-            this.Controls.Add(this.btnCambioContrasena);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnUsuarioRegistrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -527,5 +547,6 @@
         private System.Windows.Forms.Button btnProductoModificar;
         private System.Windows.Forms.Button btnProductoBaja;
         private System.Windows.Forms.Button btnProductoRegistrar;
+        private System.Windows.Forms.Button cerrarsesionBtn;
     }
 }

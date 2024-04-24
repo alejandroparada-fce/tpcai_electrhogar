@@ -46,6 +46,7 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.btnCancelarContrasena = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -237,12 +238,29 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(395, 298);
+            this.btnLogin.Location = new System.Drawing.Point(236, 299);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(167, 40);
             this.btnLogin.TabIndex = 95;
             this.btnLogin.Text = "Registrar";
             this.btnLogin.UseVisualStyleBackColor = false;
+            // 
+            // btnCancelarContrasena
+            // 
+            this.btnCancelarContrasena.BackColor = System.Drawing.Color.Red;
+            this.btnCancelarContrasena.FlatAppearance.BorderSize = 0;
+            this.btnCancelarContrasena.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnCancelarContrasena.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCancelarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarContrasena.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelarContrasena.Location = new System.Drawing.Point(454, 299);
+            this.btnCancelarContrasena.Name = "btnCancelarContrasena";
+            this.btnCancelarContrasena.Size = new System.Drawing.Size(167, 40);
+            this.btnCancelarContrasena.TabIndex = 96;
+            this.btnCancelarContrasena.Text = "Cancelar";
+            this.btnCancelarContrasena.UseVisualStyleBackColor = false;
+            this.btnCancelarContrasena.Click += new System.EventHandler(this.btnCancelarContrasena_Click);
             // 
             // FormProductoRegistrar
             // 
@@ -250,6 +268,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(693, 409);
+            this.Controls.Add(this.btnCancelarContrasena);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
@@ -304,5 +323,6 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnCancelarContrasena;
     }
 }

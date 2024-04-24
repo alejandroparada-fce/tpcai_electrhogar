@@ -42,6 +42,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnLogin = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnCancelarContrasena = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -203,12 +204,30 @@
             this.button1.Text = "Eliminar Usuario";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // btnCancelarContrasena
+            // 
+            this.btnCancelarContrasena.BackColor = System.Drawing.Color.Red;
+            this.btnCancelarContrasena.FlatAppearance.BorderSize = 0;
+            this.btnCancelarContrasena.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnCancelarContrasena.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCancelarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarContrasena.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelarContrasena.Location = new System.Drawing.Point(653, 81);
+            this.btnCancelarContrasena.Name = "btnCancelarContrasena";
+            this.btnCancelarContrasena.Size = new System.Drawing.Size(110, 30);
+            this.btnCancelarContrasena.TabIndex = 111;
+            this.btnCancelarContrasena.Text = "Cancelar";
+            this.btnCancelarContrasena.UseVisualStyleBackColor = false;
+            this.btnCancelarContrasena.Click += new System.EventHandler(this.btnCancelarContrasena_Click);
+            // 
             // FormUsuarioBaja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(800, 566);
+            this.Controls.Add(this.btnCancelarContrasena);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.dataGridView1);
@@ -251,5 +270,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancelarContrasena;
     }
 }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsuarioRegistrar));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxApellido = new System.Windows.Forms.TextBox();
             this.textBoxDirección = new System.Windows.Forms.TextBox();
@@ -55,12 +56,12 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCancelarContrasena = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -73,6 +74,16 @@
             this.panel1.Size = new System.Drawing.Size(194, 611);
             this.panel1.TabIndex = 100;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
+            this.pictureBox1.Location = new System.Drawing.Point(31, 240);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(118, 129);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // textBoxNombre
             // 
@@ -300,9 +311,9 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(286, 497);
+            this.btnLogin.Location = new System.Drawing.Point(265, 498);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(360, 40);
+            this.btnLogin.Size = new System.Drawing.Size(153, 40);
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Registrar";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -363,15 +374,22 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // pictureBox1
+            // btnCancelarContrasena
             // 
-            this.pictureBox1.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 240);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(118, 129);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btnCancelarContrasena.BackColor = System.Drawing.Color.Red;
+            this.btnCancelarContrasena.FlatAppearance.BorderSize = 0;
+            this.btnCancelarContrasena.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnCancelarContrasena.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCancelarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarContrasena.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelarContrasena.Location = new System.Drawing.Point(512, 498);
+            this.btnCancelarContrasena.Name = "btnCancelarContrasena";
+            this.btnCancelarContrasena.Size = new System.Drawing.Size(153, 40);
+            this.btnCancelarContrasena.TabIndex = 124;
+            this.btnCancelarContrasena.Text = "Cancelar";
+            this.btnCancelarContrasena.UseVisualStyleBackColor = false;
+            this.btnCancelarContrasena.Click += new System.EventHandler(this.btnCancelarContrasena_Click);
             // 
             // FormUsuarioRegistrar
             // 
@@ -379,6 +397,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(784, 611);
+            this.Controls.Add(this.btnCancelarContrasena);
             this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.btnLogin);
@@ -413,10 +432,10 @@
             this.Text = "Registro de usuarios";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RegistrarUsuariosForm_MouseDown);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -450,6 +469,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label lblCredits;
         private System.Windows.Forms.Label lblVersion;
+        private System.Windows.Forms.Button btnCancelarContrasena;
     }
 }
 

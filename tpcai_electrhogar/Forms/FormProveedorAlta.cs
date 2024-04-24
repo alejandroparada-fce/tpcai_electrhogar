@@ -60,5 +60,12 @@ namespace tpcai_electrhogar
         {
             FormUtils.SalirAplicacion();
         }
+
+        private void btnCancelarContrasena_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormMenuPrincipal modulosForm = new FormMenuPrincipal();
+            modulosForm.Show();
+        }
     }
 }
