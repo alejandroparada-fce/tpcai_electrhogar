@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClienteListar));
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
@@ -51,6 +50,7 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.ejemploBtn = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -90,20 +90,12 @@
             this.dgvClientes.TabIndex = 25;
             this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(697, 170);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 1;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(591, 170);
+            this.textBox1.Location = new System.Drawing.Point(535, 170);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(115, 28);
             this.textBox1.TabIndex = 2;
             // 
             // btnCancelar
@@ -115,7 +107,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(11, 176);
+            this.btnCancelar.Location = new System.Drawing.Point(57, 175);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(262, 30);
             this.btnCancelar.TabIndex = 3;
@@ -138,22 +130,23 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(262, 9);
+            this.lblTitle.Location = new System.Drawing.Point(251, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(282, 38);
             this.lblTitle.TabIndex = 85;
             this.lblTitle.Text = "Modificar Cliente";
+            this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
             // direccionLbl
             // 
             this.direccionLbl.AutoSize = true;
             this.direccionLbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direccionLbl.ForeColor = System.Drawing.Color.Transparent;
-            this.direccionLbl.Location = new System.Drawing.Point(10, 56);
+            this.direccionLbl.Location = new System.Drawing.Point(9, 60);
             this.direccionLbl.Name = "direccionLbl";
             this.direccionLbl.Size = new System.Drawing.Size(84, 19);
             this.direccionLbl.TabIndex = 84;
-            this.direccionLbl.Text = "Direccion";
+            this.direccionLbl.Text = "Dirección";
             // 
             // direccionCambio
             // 
@@ -161,10 +154,10 @@
             this.direccionCambio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.direccionCambio.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direccionCambio.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.direccionCambio.Location = new System.Drawing.Point(98, 56);
+            this.direccionCambio.Location = new System.Drawing.Point(99, 56);
             this.direccionCambio.Multiline = true;
             this.direccionCambio.Name = "direccionCambio";
-            this.direccionCambio.Size = new System.Drawing.Size(175, 23);
+            this.direccionCambio.Size = new System.Drawing.Size(175, 28);
             this.direccionCambio.TabIndex = 83;
             // 
             // telefonoLbl
@@ -172,11 +165,11 @@
             this.telefonoLbl.AutoSize = true;
             this.telefonoLbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telefonoLbl.ForeColor = System.Drawing.Color.Transparent;
-            this.telefonoLbl.Location = new System.Drawing.Point(10, 93);
+            this.telefonoLbl.Location = new System.Drawing.Point(18, 98);
             this.telefonoLbl.Name = "telefonoLbl";
             this.telefonoLbl.Size = new System.Drawing.Size(75, 19);
             this.telefonoLbl.TabIndex = 87;
-            this.telefonoLbl.Text = "Telefono";
+            this.telefonoLbl.Text = "Teléfono";
             // 
             // telefonoCambio
             // 
@@ -184,10 +177,10 @@
             this.telefonoCambio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.telefonoCambio.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telefonoCambio.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.telefonoCambio.Location = new System.Drawing.Point(98, 93);
+            this.telefonoCambio.Location = new System.Drawing.Point(99, 94);
             this.telefonoCambio.Multiline = true;
             this.telefonoCambio.Name = "telefonoCambio";
-            this.telefonoCambio.Size = new System.Drawing.Size(175, 23);
+            this.telefonoCambio.Size = new System.Drawing.Size(175, 28);
             this.telefonoCambio.TabIndex = 86;
             // 
             // emailLbl
@@ -195,7 +188,7 @@
             this.emailLbl.AutoSize = true;
             this.emailLbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailLbl.ForeColor = System.Drawing.Color.Transparent;
-            this.emailLbl.Location = new System.Drawing.Point(12, 132);
+            this.emailLbl.Location = new System.Drawing.Point(40, 136);
             this.emailLbl.Name = "emailLbl";
             this.emailLbl.Size = new System.Drawing.Size(53, 19);
             this.emailLbl.TabIndex = 89;
@@ -207,10 +200,10 @@
             this.emailCambio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.emailCambio.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailCambio.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.emailCambio.Location = new System.Drawing.Point(98, 132);
+            this.emailCambio.Location = new System.Drawing.Point(99, 132);
             this.emailCambio.Multiline = true;
             this.emailCambio.Name = "emailCambio";
-            this.emailCambio.Size = new System.Drawing.Size(175, 23);
+            this.emailCambio.Size = new System.Drawing.Size(175, 28);
             this.emailCambio.TabIndex = 88;
             // 
             // btnModificarCliente
@@ -222,7 +215,7 @@
             this.btnModificarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarCliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarCliente.ForeColor = System.Drawing.Color.LightGray;
-            this.btnModificarCliente.Location = new System.Drawing.Point(306, 132);
+            this.btnModificarCliente.Location = new System.Drawing.Point(280, 131);
             this.btnModificarCliente.Name = "btnModificarCliente";
             this.btnModificarCliente.Size = new System.Drawing.Size(121, 28);
             this.btnModificarCliente.TabIndex = 90;
@@ -239,7 +232,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAgregar.Location = new System.Drawing.Point(306, 56);
+            this.btnAgregar.Location = new System.Drawing.Point(280, 55);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(121, 28);
             this.btnAgregar.TabIndex = 91;
@@ -255,7 +248,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnEliminar.Location = new System.Drawing.Point(306, 93);
+            this.btnEliminar.Location = new System.Drawing.Point(280, 93);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(121, 28);
             this.btnEliminar.TabIndex = 92;
@@ -266,7 +259,7 @@
             // btnMaximizar
             // 
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(732, 10);
+            this.btnMaximizar.Location = new System.Drawing.Point(736, 9);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(15, 15);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -277,7 +270,7 @@
             // btnMinimizar
             // 
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(711, 10);
+            this.btnMinimizar.Location = new System.Drawing.Point(715, 9);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(15, 15);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -288,7 +281,7 @@
             // btnCerrar
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(753, 10);
+            this.btnCerrar.Location = new System.Drawing.Point(757, 9);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(15, 15);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -305,20 +298,36 @@
             this.ejemploBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ejemploBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ejemploBtn.ForeColor = System.Drawing.Color.LightGray;
-            this.ejemploBtn.Location = new System.Drawing.Point(503, 83);
+            this.ejemploBtn.Location = new System.Drawing.Point(449, 94);
             this.ejemploBtn.Name = "ejemploBtn";
             this.ejemploBtn.Size = new System.Drawing.Size(121, 28);
             this.ejemploBtn.TabIndex = 109;
             this.ejemploBtn.Text = "Ejemplo";
             this.ejemploBtn.UseVisualStyleBackColor = false;
-
             // 
-            // ListadoClientesForm
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnBuscar.Location = new System.Drawing.Point(656, 170);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(121, 28);
+            this.btnBuscar.TabIndex = 110;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // FormClienteListar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(784, 361);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.ejemploBtn);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
@@ -336,13 +345,13 @@
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.dgvClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ListadoClientesForm";
+            this.Name = "FormClienteListar";
             this.Opacity = 0.9D;
             this.Text = "ListadoClientesForm";
             this.Load += new System.EventHandler(this.ListadoClientesForm_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormClienteListar_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
@@ -355,7 +364,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvClientes;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button modificarCliente_Click;
@@ -374,5 +382,6 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Button ejemploBtn;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

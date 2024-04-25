@@ -68,7 +68,7 @@ namespace tpcai_electrhogar
         private void btnProveedorRegistrar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormProveedorAlta altaProveedorForm = new FormProveedorAlta();
+            FormProveedorRegistrar altaProveedorForm = new FormProveedorRegistrar();
             altaProveedorForm.Show();
         }
 

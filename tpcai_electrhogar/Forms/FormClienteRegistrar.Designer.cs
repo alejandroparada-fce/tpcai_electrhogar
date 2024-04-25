@@ -1,6 +1,6 @@
 ﻿namespace tpcai_electrhogar
 {
-    partial class FormClienteAgregar
+    partial class FormClienteRegistrar
     {
         /// <summary>
         /// Required designer variable.

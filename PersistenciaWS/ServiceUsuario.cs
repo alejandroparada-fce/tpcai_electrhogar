@@ -12,7 +12,7 @@ using tpcai_electrhogar.Datos;
 
 namespace PersistenciaWS
 {
-    public class UsuarioService
+    public class ServiceUsuario
     {
         public void CambiarPassword(UsuarioEnt usuarioEnt)
         {

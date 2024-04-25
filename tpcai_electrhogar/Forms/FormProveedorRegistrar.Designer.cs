@@ -1,6 +1,6 @@
 ﻿namespace tpcai_electrhogar
 {
-    partial class FormProveedorAlta
+    partial class FormProveedorRegistrar
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProveedorAlta));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProveedorRegistrar));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -76,7 +76,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox1.Location = new System.Drawing.Point(61, 163);
+            this.pictureBox1.Location = new System.Drawing.Point(61, 192);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(169, 189);
@@ -89,7 +89,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblNombre.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblNombre.Location = new System.Drawing.Point(497, 117);
+            this.lblNombre.Location = new System.Drawing.Point(505, 117);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(73, 19);
@@ -101,7 +101,7 @@
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblApellido.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblApellido.Location = new System.Drawing.Point(497, 189);
+            this.lblApellido.Location = new System.Drawing.Point(503, 190);
             this.lblApellido.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(75, 19);
@@ -113,7 +113,7 @@
             this.lblCUIT.AutoSize = true;
             this.lblCUIT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblCUIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblCUIT.Location = new System.Drawing.Point(497, 261);
+            this.lblCUIT.Location = new System.Drawing.Point(536, 263);
             this.lblCUIT.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblCUIT.Name = "lblCUIT";
             this.lblCUIT.Size = new System.Drawing.Size(42, 19);
@@ -125,7 +125,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblEmail.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblEmail.Location = new System.Drawing.Point(497, 333);
+            this.lblEmail.Location = new System.Drawing.Point(525, 336);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(53, 19);
@@ -256,7 +256,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(556, 18);
+            this.lblTitle.Location = new System.Drawing.Point(609, 12);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(316, 38);
             this.lblTitle.TabIndex = 86;
@@ -295,7 +295,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(501, 489);
+            this.btnLogin.Location = new System.Drawing.Point(817, 489);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(197, 40);
             this.btnLogin.TabIndex = 89;
@@ -344,7 +344,7 @@
             this.btnCancelarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarContrasena.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarContrasena.Location = new System.Drawing.Point(793, 489);
+            this.btnCancelarContrasena.Location = new System.Drawing.Point(565, 489);
             this.btnCancelarContrasena.Name = "btnCancelarContrasena";
             this.btnCancelarContrasena.Size = new System.Drawing.Size(197, 40);
             this.btnCancelarContrasena.TabIndex = 124;
@@ -352,7 +352,7 @@
             this.btnCancelarContrasena.UseVisualStyleBackColor = false;
             this.btnCancelarContrasena.Click += new System.EventHandler(this.btnCancelarContrasena_Click);
             // 
-            // FormProveedorAlta
+            // FormProveedorRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -385,7 +385,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.Name = "FormProveedorAlta";
+            this.Name = "FormProveedorRegistrar";
             this.Opacity = 0.95D;
             this.Text = "Alta de proveedores";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormProveedorAlta_MouseDown);

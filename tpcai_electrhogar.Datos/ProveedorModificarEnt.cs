@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace tpcai_electrhogar.Datos
 {
-    public class ProveedorEnt
+    public class ProveedorModificarEnt
     {
         //Atributos
         private Guid _id;
@@ -32,15 +32,13 @@ namespace tpcai_electrhogar.Datos
 
 
         //Constructor para todos los atributos
-        public ProveedorEnt(string nombre, DateTime fechaAlta, DateTime? fechaBaja, string cuit, string email, string apellido)
+        public ProveedorModificarEnt(string nombre, string apellido, string email, string cuit)
         {
             Id = Guid.NewGuid();
             Nombre = nombre;
-            FechaAlta = fechaAlta;
-            FechaBaja = fechaBaja;
-            CUIT = cuit;
-            Email = email;
             Apellido = apellido;
+            Email = email; 
+            CUIT = cuit;
         }
     }
 }

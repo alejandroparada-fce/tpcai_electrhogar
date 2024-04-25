@@ -14,10 +14,10 @@ namespace tpcai_electrhogar.Negocio
     {
         public static void Prueba()
         {
-            UsuarioService prueba = new UsuarioService();
+            ServiceUsuario prueba = new ServiceUsuario();
             prueba.prueba();
         }
-        private static UsuarioService usuarioService = new UsuarioService();
+        private static ServiceUsuario usuarioService = new ServiceUsuario();
 
         public static void CambiarPassword(UsuarioEnt usuarioEnt)
         {

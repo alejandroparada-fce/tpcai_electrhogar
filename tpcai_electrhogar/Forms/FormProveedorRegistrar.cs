@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace tpcai_electrhogar
 {
-    public partial class FormProveedorAlta : Form
+    public partial class FormProveedorRegistrar : Form
     {
-        public FormProveedorAlta()
+        public FormProveedorRegistrar()
         {
             InitializeComponent();
         }

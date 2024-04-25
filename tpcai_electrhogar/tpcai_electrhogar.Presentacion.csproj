@@ -69,16 +69,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormClienteAgregar.cs">
+    <Compile Include="Forms\FormClienteAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormClienteAgregar.Designer.cs">
+    <Compile Include="Forms\FormClienteAgregar.Designer.cs">
       <DependentUpon>FormClienteAgregar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormConfirmacion.cs">
+    <Compile Include="Forms\FormConfirmacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormConfirmacion.Designer.cs">
+    <Compile Include="Forms\FormConfirmacion.Designer.cs">
       <DependentUpon>FormConfirmacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormProductoBaja.cs">
@@ -148,19 +148,19 @@
     <Compile Include="Forms\FormUsuarioRegistrar.Designer.cs">
       <DependentUpon>FormUsuarioRegistrar.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListadoClientesForm.cs">
+    <Compile Include="Forms\FormClienteListar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListadoClientesForm.Designer.cs">
-      <DependentUpon>ListadoClientesForm.cs</DependentUpon>
+    <Compile Include="Forms\FormClienteListar.Designer.cs">
+      <DependentUpon>FormClienteListar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validaciones.cs" />
-    <EmbeddedResource Include="FormClienteAgregar.resx">
+    <EmbeddedResource Include="Forms\FormClienteAgregar.resx">
       <DependentUpon>FormClienteAgregar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormConfirmacion.resx">
+    <EmbeddedResource Include="Forms\FormConfirmacion.resx">
       <DependentUpon>FormConfirmacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormProductoBaja.resx">
@@ -196,8 +196,8 @@
     <EmbeddedResource Include="Forms\FormVentaRegistrar.resx">
       <DependentUpon>FormVentaRegistrar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListadoClientesForm.resx">
-      <DependentUpon>ListadoClientesForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormClienteListar.resx">
+      <DependentUpon>FormClienteListar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -13,7 +13,7 @@ namespace tpcai_electrhogar.Negocio
         public static List<ClienteEnt> ConsultarClientes(out string error)
         {
             List<ClienteEnt> listaClientes = new List<ClienteEnt>();
-            listaClientes = ClienteService.ListarClientes(out error);
+            listaClientes = ServiceCliente.ListarClientes(out error);
             return listaClientes;
         }
 
@@ -22,18 +22,18 @@ namespace tpcai_electrhogar.Negocio
             ClienteAgregarEnt cliente = new ClienteAgregarEnt(idUsuario, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, host);
             error = null;
 
-            ClienteService.AgregarCliente(cliente, out error);
+            ServiceCliente.AgregarCliente(cliente, out error);
             //ClienteService.AgregarCliente2(cliente);
 
         }
         public static void ModificarCliente(Guid id, string direccion, string telefono, string email, out string error)
         {
-            ClienteService.ModificarCliente(id, direccion, telefono, email, out error);
+            ServiceCliente.ModificarCliente(id, direccion, telefono, email, out error);
         }
 
         public static void EliminarCliente(Guid id, out string error)
         {
-            ClienteService.EliminarCliente(id, out error);
+            ServiceCliente.EliminarCliente(id, out error);
         }
     }
 

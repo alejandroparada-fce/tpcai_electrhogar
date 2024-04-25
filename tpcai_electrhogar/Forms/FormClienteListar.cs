@@ -138,7 +138,15 @@ namespace tpcai_electrhogar
             FormUtils.SalirAplicacion();
         }
 
+        private void FormClienteListar_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
 
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
     }
     }
 

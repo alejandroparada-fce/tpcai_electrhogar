@@ -10,7 +10,7 @@ using tpcai_electrhogar.Datos;
 
 namespace PersistenciaWS
 {
-    public static class ClienteService
+    public static class ServiceCliente
     {
         public static List<ClienteEnt> ListarClientes(out string error)
         {

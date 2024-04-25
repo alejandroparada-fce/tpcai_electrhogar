@@ -66,7 +66,7 @@
             // 
             this.pictureBox1.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
             this.pictureBox1.InitialImage = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox1.Location = new System.Drawing.Point(79, 110);
+            this.pictureBox1.Location = new System.Drawing.Point(79, 117);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(78, 96);
             this.pictureBox1.TabIndex = 0;

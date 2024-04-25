@@ -22,16 +22,15 @@ namespace tpcai_electrhogar
             idSeleccionado = id;
         }
 
-        private void cancelarBtn_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormClienteListar listadoClientesForm = new FormClienteListar();
             listadoClientesForm.Show();
         }
 
-        private void confirmarBtn_Click(object sender, EventArgs e)
+        private void btnConfirmar_Click(object sender, EventArgs e)
         {
-
             Guid id = idSeleccionado;
             try
             {
@@ -43,6 +42,16 @@ namespace tpcai_electrhogar
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void FormConfirmacion_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
         }
     }
 }

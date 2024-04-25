@@ -11,9 +11,9 @@ using tpcai_electrhogar.Negocio;
 
 namespace tpcai_electrhogar
 {
-    public partial class FormClienteAgregar : Form
+    public partial class FormClienteRegistrar : Form
     {
-        public FormClienteAgregar()
+        public FormClienteRegistrar()
         {
             InitializeComponent();
         }
