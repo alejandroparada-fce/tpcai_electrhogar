@@ -25,7 +25,7 @@ namespace tpcai_electrhogar
         private void cancelarBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ListadoClientesForm listadoClientesForm = new ListadoClientesForm();
+            FormClienteListar listadoClientesForm = new FormClienteListar();
             listadoClientesForm.Show();
         }
 

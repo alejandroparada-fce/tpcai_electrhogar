@@ -96,7 +96,7 @@ namespace tpcai_electrhogar
         private void btnClienteModificar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ListadoClientesForm listadoClienteForm = new ListadoClientesForm();
+            FormClienteListar listadoClienteForm = new FormClienteListar();
             listadoClienteForm.Show();
         }
 

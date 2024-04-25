@@ -15,9 +15,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace tpcai_electrhogar
 {
-    public partial class ListadoClientesForm : Form
+    public partial class FormClienteListar : Form
     {
-        public ListadoClientesForm()
+        public FormClienteListar()
         {
             InitializeComponent();
         }
@@ -90,7 +90,7 @@ namespace tpcai_electrhogar
                 {
                     ModuloClientes.ModificarCliente(id, direccion, telefono, email, out string error);
                     this.Hide();
-                    ListadoClientesForm listadoClientesForm = new ListadoClientesForm();
+                    FormClienteListar listadoClientesForm = new FormClienteListar();
                     listadoClientesForm.Show();
 
                 }
@@ -117,7 +117,7 @@ namespace tpcai_electrhogar
                 FormConfirmacion formConfirmacion = new FormConfirmacion(id);
                 formConfirmacion.ShowDialog();
                 this.Hide();
-                ListadoClientesForm listadoClientesForm = new ListadoClientesForm();
+                FormClienteListar listadoClientesForm = new FormClienteListar();
                 listadoClientesForm.Show();
 
 
