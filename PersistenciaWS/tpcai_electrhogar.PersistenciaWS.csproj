@@ -44,8 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClienteService.cs" />
-    <Compile Include="UsuarioService.cs" />
+    <Compile Include="ServiceProveedor.cs" />
+    <Compile Include="ServiceCliente.cs" />
+    <Compile Include="ServiceUsuario.cs" />
     <Compile Include="Utilidades\WebHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
