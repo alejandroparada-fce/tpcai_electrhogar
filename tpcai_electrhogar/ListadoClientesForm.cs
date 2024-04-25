@@ -114,19 +114,13 @@ namespace tpcai_electrhogar
             ClienteEnt clienteseleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
             Guid id = clienteseleccionado.id;
 
-            
-            try
-            {
-                ModuloClientes.EliminarCliente(id, out string error);
+                FormConfirmacion formConfirmacion = new FormConfirmacion(id);
+                formConfirmacion.ShowDialog();
                 this.Hide();
                 ListadoClientesForm listadoClientesForm = new ListadoClientesForm();
                 listadoClientesForm.Show();
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -143,6 +137,8 @@ namespace tpcai_electrhogar
         {
             FormUtils.SalirAplicacion();
         }
+
+
     }
     }
 

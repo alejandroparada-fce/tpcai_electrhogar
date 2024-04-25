@@ -50,6 +50,7 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.ejemploBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -295,12 +296,30 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // ejemploBtn
+            // 
+            this.ejemploBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.ejemploBtn.FlatAppearance.BorderSize = 0;
+            this.ejemploBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.ejemploBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ejemploBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ejemploBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ejemploBtn.ForeColor = System.Drawing.Color.LightGray;
+            this.ejemploBtn.Location = new System.Drawing.Point(503, 83);
+            this.ejemploBtn.Name = "ejemploBtn";
+            this.ejemploBtn.Size = new System.Drawing.Size(121, 28);
+            this.ejemploBtn.TabIndex = 109;
+            this.ejemploBtn.Text = "Ejemplo";
+            this.ejemploBtn.UseVisualStyleBackColor = false;
+
+            // 
             // ListadoClientesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(784, 361);
+            this.Controls.Add(this.ejemploBtn);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
@@ -354,5 +373,6 @@
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.Button ejemploBtn;
     }
 }
