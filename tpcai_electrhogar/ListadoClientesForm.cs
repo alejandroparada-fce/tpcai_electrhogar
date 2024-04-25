@@ -51,7 +51,15 @@ namespace tpcai_electrhogar
             dgvClientes.DataSource = source;
             dgvClientes.Columns["id"].Visible = false;
             dgvClientes.Columns["fechaBaja"].Visible = false;
-
+            dgvClientes.Columns[0].HeaderText = "Nombre";
+            dgvClientes.Columns[1].HeaderText = "Apellido";
+            dgvClientes.Columns[2].HeaderText = "Fecha de Alta";
+            dgvClientes.Columns[3].HeaderText = "Fecha de Nacimiento";
+            dgvClientes.Columns[5].HeaderText = "Host";
+            dgvClientes.Columns[6].HeaderText = "DNI";
+            dgvClientes.Columns[8].HeaderText = "Dirección";
+            dgvClientes.Columns[9].HeaderText = "Teléfono";
+            dgvClientes.Columns[10].HeaderText = "Email";
 
         }
 
