@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,16 @@ namespace tpcai_electrhogar
 {
     public partial class FormMenuPrincipal : Form
     {
+        private string _username;
         public FormMenuPrincipal()
         {
             InitializeComponent();
+        }
+        public FormMenuPrincipal(string username)
+        {
+            InitializeComponent();
+            _username = username;
+            lblUsername.Text = _username;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -107,5 +115,6 @@ namespace tpcai_electrhogar
             FormLogin formLogin = new FormLogin();
             formLogin.Show();
         }
+
     }
 }

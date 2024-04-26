@@ -38,7 +38,8 @@
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtNombreUsuario = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.cerrarsesionBtn = new System.Windows.Forms.Button();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCambioContrasena = new System.Windows.Forms.Button();
@@ -63,7 +64,6 @@
             this.btnProductoModificar = new System.Windows.Forms.Button();
             this.btnProductoBaja = new System.Windows.Forms.Button();
             this.btnProductoRegistrar = new System.Windows.Forms.Button();
-            this.cerrarsesionBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -185,8 +185,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lblUsername);
             this.panel2.Controls.Add(this.cerrarsesionBtn);
-            this.panel2.Controls.Add(this.txtNombreUsuario);
             this.panel2.Controls.Add(this.lblUsuario);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btnCambioContrasena);
@@ -197,16 +197,29 @@
             this.panel2.TabIndex = 0;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
-            // txtNombreUsuario
+            // lblUsername
             // 
-            this.txtNombreUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.txtNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombreUsuario.Enabled = false;
-            this.txtNombreUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreUsuario.Location = new System.Drawing.Point(76, 43);
-            this.txtNombreUsuario.Name = "txtNombreUsuario";
-            this.txtNombreUsuario.Size = new System.Drawing.Size(160, 20);
-            this.txtNombreUsuario.TabIndex = 6;
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.ForeColor = System.Drawing.Color.Black;
+            this.lblUsername.Location = new System.Drawing.Point(147, 15);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(0, 16);
+            this.lblUsername.TabIndex = 8;
+            // 
+            // cerrarsesionBtn
+            // 
+            this.cerrarsesionBtn.BackColor = System.Drawing.Color.Gainsboro;
+            this.cerrarsesionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cerrarsesionBtn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cerrarsesionBtn.ForeColor = System.Drawing.Color.Black;
+            this.cerrarsesionBtn.Location = new System.Drawing.Point(135, 67);
+            this.cerrarsesionBtn.Name = "cerrarsesionBtn";
+            this.cerrarsesionBtn.Size = new System.Drawing.Size(126, 27);
+            this.cerrarsesionBtn.TabIndex = 7;
+            this.cerrarsesionBtn.Text = "Cerrar sesión";
+            this.cerrarsesionBtn.UseVisualStyleBackColor = false;
+            this.cerrarsesionBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblUsuario
             // 
@@ -450,20 +463,6 @@
             this.btnProductoRegistrar.UseVisualStyleBackColor = true;
             this.btnProductoRegistrar.Click += new System.EventHandler(this.btnProductoRegistrar_Click);
             // 
-            // cerrarsesionBtn
-            // 
-            this.cerrarsesionBtn.BackColor = System.Drawing.Color.Gainsboro;
-            this.cerrarsesionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cerrarsesionBtn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cerrarsesionBtn.ForeColor = System.Drawing.Color.Black;
-            this.cerrarsesionBtn.Location = new System.Drawing.Point(135, 67);
-            this.cerrarsesionBtn.Name = "cerrarsesionBtn";
-            this.cerrarsesionBtn.Size = new System.Drawing.Size(126, 27);
-            this.cerrarsesionBtn.TabIndex = 7;
-            this.cerrarsesionBtn.Text = "Cerrar sesión";
-            this.cerrarsesionBtn.UseVisualStyleBackColor = false;
-            this.cerrarsesionBtn.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -519,7 +518,6 @@
         private System.Windows.Forms.Button btnUsuarioBaja;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnProductos;
-        private System.Windows.Forms.TextBox txtNombreUsuario;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnUsuarios;
@@ -548,5 +546,6 @@
         private System.Windows.Forms.Button btnProductoBaja;
         private System.Windows.Forms.Button btnProductoRegistrar;
         private System.Windows.Forms.Button cerrarsesionBtn;
+        private System.Windows.Forms.Label lblUsername;
     }
 }
