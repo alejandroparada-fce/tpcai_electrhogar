@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,14 +23,17 @@ namespace tpcai_electrhogar
             idSeleccionado = id;
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void FormConfirmacion_MouseDown(object sender, MouseEventArgs e)
         {
-            this.Hide();
-            FormClienteListar listadoClientesForm = new FormClienteListar();
-            listadoClientesForm.Show();
+            FormUtils.MoverFormulario(this);
         }
 
-        private void btnConfirmar_Click(object sender, EventArgs e)
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void btnConfirmar_Click_1(object sender, EventArgs e)
         {
             Guid id = idSeleccionado;
             try
@@ -44,14 +48,11 @@ namespace tpcai_electrhogar
             }
         }
 
-        private void FormConfirmacion_MouseDown(object sender, MouseEventArgs e)
+        private void btnCancelar_Click_1(object sender, EventArgs e)
         {
-            FormUtils.MoverFormulario(this);
-        }
-
-        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
-        {
-            FormUtils.MoverFormulario(this);
+            this.Hide();
+            FormClienteListar listadoClientesForm = new FormClienteListar();
+            listadoClientesForm.Show();
         }
     }
 }

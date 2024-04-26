@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tpcai_electrhogar.Datos;
+using tpcai_electrhogar.Negocio;
 
 namespace tpcai_electrhogar
 {
@@ -61,11 +63,27 @@ namespace tpcai_electrhogar
             FormUtils.SalirAplicacion();
         }
 
-        private void btnCancelarContrasena_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormMenuPrincipal modulosForm = new FormMenuPrincipal();
             modulosForm.Show();
         }
-    }
+
+        // FormConfirmacion pide parametro
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            //FormConfirmacion formConfirmacion = new FormConfirmacion(id);
+            //formConfirmacion.Show();
+            ModuloProveedor.ProveedorAgregar(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), "Paquito", "Navarro", "paquito@navarro.com", "20-25555454-0", out string error);
+            if (!string.IsNullOrEmpty(error))
+            {
+                MessageBox.Show(error);
+            }
+        }
+
+
+        
+           
+}
 }

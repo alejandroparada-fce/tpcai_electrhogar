@@ -69,6 +69,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormProveedorListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProveedorListar.Designer.cs">
+      <DependentUpon>FormProveedorListar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormClienteRegistrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validaciones.cs" />
+    <EmbeddedResource Include="Forms\FormProveedorListar.resx">
+      <DependentUpon>FormProveedorListar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormClienteRegistrar.resx">
       <DependentUpon>FormClienteRegistrar.cs</DependentUpon>
     </EmbeddedResource>

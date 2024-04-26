@@ -23,13 +23,12 @@ namespace tpcai_electrhogar.Negocio
             ServiceProveedor.ProveedorEliminar(id, out error);
         }
 
-        public static void ProveedorAgregar(Guid idUsuario, string nombre, DateTime fechaAlta, DateTime? fechaBaja, string cuit, string email, string apellido, out string error)
+        public static void ProveedorAgregar(Guid idUsuario, string nombre, string apellido, string email,  string cuit, out string error)
         {
-            ProveedorEnt proveedor = new ProveedorEnt(nombre, fechaAlta, fechaBaja, cuit, email, apellido);
+            ProveedorAgregarEnt proveedor = new ProveedorAgregarEnt(idUsuario, nombre, apellido, email, cuit);
             error = null;
 
             ServiceProveedor.ProveedorAgregar(proveedor, out error);
-
         }
 
         public static void ProveedorReactivar(Guid id, out string error)
@@ -37,9 +36,9 @@ namespace tpcai_electrhogar.Negocio
             ServiceProveedor.ProveedorReactivar(id, out error);
         }
 
-        public static void ProveedorModificar(Guid id, string nombre, string apellido, string email, string cuit, out string error)
+        public static void ProveedorModificar(Guid id, Guid idUsuario, string nombre, string apellido, string email, string cuit, out string error)
         {
-            ServiceProveedor.ProveedorModificar(id, nombre, apellido, email, cuit, out error);
+            ServiceProveedor.ProveedorModificar(id, idUsuario, nombre, apellido, email, cuit, out error);
             
 
         }

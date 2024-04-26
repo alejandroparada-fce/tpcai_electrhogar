@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProveedorEnt.cs" />
     <Compile Include="ClienteAgregarEnt.cs" />
     <Compile Include="ClienteBaseEnt.cs" />
     <Compile Include="ClienteEnt.cs" />
@@ -50,7 +51,7 @@
     <Compile Include="LoginEnt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedorModificarEnt.cs" />
-    <Compile Include="ProveedorEnt.cs" />
+    <Compile Include="ProveedorAgregarEnt.cs" />
     <Compile Include="UsuarioEnt.cs" />
     <Compile Include="VentaEnt.cs" />
   </ItemGroup>

@@ -135,7 +135,7 @@
             this.btnGuardarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarContrasena.ForeColor = System.Drawing.Color.LightGray;
-            this.btnGuardarContrasena.Location = new System.Drawing.Point(288, 285);
+            this.btnGuardarContrasena.Location = new System.Drawing.Point(461, 278);
             this.btnGuardarContrasena.Name = "btnGuardarContrasena";
             this.btnGuardarContrasena.Size = new System.Drawing.Size(170, 40);
             this.btnGuardarContrasena.TabIndex = 4;
@@ -164,7 +164,7 @@
             this.btnCancelarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarContrasena.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarContrasena.Location = new System.Drawing.Point(491, 285);
+            this.btnCancelarContrasena.Location = new System.Drawing.Point(272, 278);
             this.btnCancelarContrasena.Name = "btnCancelarContrasena";
             this.btnCancelarContrasena.Size = new System.Drawing.Size(170, 40);
             this.btnCancelarContrasena.TabIndex = 0;

@@ -33,7 +33,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
-            this.lblCUIT = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.checkBoxAudio = new System.Windows.Forms.CheckBox();
             this.checkBoxCelulares = new System.Windows.Forms.CheckBox();
@@ -41,18 +40,19 @@
             this.checkBoxInformatica = new System.Windows.Forms.CheckBox();
             this.checkBoxSmartTv = new System.Windows.Forms.CheckBox();
             this.lblError = new System.Windows.Forms.Label();
-            this.textBoxDirección = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCUIT = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txnApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblCredits = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.btnCancelarContrasena = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.lblCUIT = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
@@ -87,48 +87,36 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.lblNombre.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblNombre.Location = new System.Drawing.Point(505, 117);
+            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblNombre.Location = new System.Drawing.Point(504, 115);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(73, 19);
+            this.lblNombre.Size = new System.Drawing.Size(74, 21);
             this.lblNombre.TabIndex = 9;
             this.lblNombre.Text = "Nombre";
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.lblApellido.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblApellido.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblApellido.Location = new System.Drawing.Point(503, 190);
             this.lblApellido.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(75, 19);
+            this.lblApellido.Size = new System.Drawing.Size(76, 21);
             this.lblApellido.TabIndex = 10;
             this.lblApellido.Text = "Apellido";
-            // 
-            // lblCUIT
-            // 
-            this.lblCUIT.AutoSize = true;
-            this.lblCUIT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.lblCUIT.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblCUIT.Location = new System.Drawing.Point(536, 263);
-            this.lblCUIT.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblCUIT.Name = "lblCUIT";
-            this.lblCUIT.Size = new System.Drawing.Size(42, 19);
-            this.lblCUIT.TabIndex = 11;
-            this.lblCUIT.Text = "CUIT";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.lblEmail.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblEmail.Location = new System.Drawing.Point(525, 336);
+            this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblEmail.Location = new System.Drawing.Point(525, 263);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(53, 19);
+            this.lblEmail.Size = new System.Drawing.Size(52, 21);
             this.lblEmail.TabIndex = 12;
             this.lblEmail.Text = "Email";
             // 
@@ -207,49 +195,49 @@
             this.lblError.Size = new System.Drawing.Size(0, 19);
             this.lblError.TabIndex = 19;
             // 
-            // textBoxDirección
+            // txtCUIT
             // 
-            this.textBoxDirección.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxDirección.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxDirección.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDirección.Location = new System.Drawing.Point(587, 332);
-            this.textBoxDirección.Multiline = true;
-            this.textBoxDirección.Name = "textBoxDirección";
-            this.textBoxDirección.Size = new System.Drawing.Size(403, 23);
-            this.textBoxDirección.TabIndex = 82;
+            this.txtCUIT.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCUIT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCUIT.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCUIT.Location = new System.Drawing.Point(587, 332);
+            this.txtCUIT.Multiline = true;
+            this.txtCUIT.Name = "txtCUIT";
+            this.txtCUIT.Size = new System.Drawing.Size(403, 23);
+            this.txtCUIT.TabIndex = 82;
             // 
-            // textBox1
+            // txtEmail
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(587, 259);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(403, 23);
-            this.textBox1.TabIndex = 83;
+            this.txtEmail.BackColor = System.Drawing.SystemColors.Window;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(587, 259);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(403, 23);
+            this.txtEmail.TabIndex = 83;
             // 
-            // textBox2
+            // txnApellido
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(587, 186);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(403, 23);
-            this.textBox2.TabIndex = 84;
+            this.txnApellido.BackColor = System.Drawing.SystemColors.Window;
+            this.txnApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txnApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txnApellido.Location = new System.Drawing.Point(587, 186);
+            this.txnApellido.Multiline = true;
+            this.txnApellido.Name = "txnApellido";
+            this.txnApellido.Size = new System.Drawing.Size(403, 23);
+            this.txnApellido.TabIndex = 84;
             // 
-            // textBox3
+            // txtNombre
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(587, 113);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(403, 23);
-            this.textBox3.TabIndex = 85;
+            this.txtNombre.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(587, 113);
+            this.txtNombre.Multiline = true;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(403, 23);
+            this.txtNombre.TabIndex = 85;
             // 
             // lblTitle
             // 
@@ -285,22 +273,23 @@
             this.lblVersion.TabIndex = 88;
             this.lblVersion.Text = "v1.0";
             // 
-            // btnLogin
+            // btnAgregar
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(817, 489);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(197, 40);
-            this.btnLogin.TabIndex = 89;
-            this.btnLogin.Text = "Agregar Proveedor";
-            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnAgregar.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAgregar.Location = new System.Drawing.Point(817, 489);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(197, 40);
+            this.btnAgregar.TabIndex = 89;
+            this.btnAgregar.Text = "Agregar Proveedor";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnMaximizar
             // 
@@ -335,22 +324,34 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // btnCancelarContrasena
+            // btnCancelar
             // 
-            this.btnCancelarContrasena.BackColor = System.Drawing.Color.Red;
-            this.btnCancelarContrasena.FlatAppearance.BorderSize = 0;
-            this.btnCancelarContrasena.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnCancelarContrasena.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCancelarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarContrasena.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarContrasena.Location = new System.Drawing.Point(565, 489);
-            this.btnCancelarContrasena.Name = "btnCancelarContrasena";
-            this.btnCancelarContrasena.Size = new System.Drawing.Size(197, 40);
-            this.btnCancelarContrasena.TabIndex = 124;
-            this.btnCancelarContrasena.Text = "Cancelar";
-            this.btnCancelarContrasena.UseVisualStyleBackColor = false;
-            this.btnCancelarContrasena.Click += new System.EventHandler(this.btnCancelarContrasena_Click);
+            this.btnCancelar.BackColor = System.Drawing.Color.Red;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelar.Location = new System.Drawing.Point(565, 489);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(197, 40);
+            this.btnCancelar.TabIndex = 124;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // lblCUIT
+            // 
+            this.lblCUIT.AutoSize = true;
+            this.lblCUIT.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUIT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblCUIT.Location = new System.Drawing.Point(536, 336);
+            this.lblCUIT.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblCUIT.Name = "lblCUIT";
+            this.lblCUIT.Size = new System.Drawing.Size(43, 21);
+            this.lblCUIT.TabIndex = 125;
+            this.lblCUIT.Text = "CUIT";
             // 
             // FormProveedorRegistrar
             // 
@@ -358,18 +359,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(1153, 573);
-            this.Controls.Add(this.btnCancelarContrasena);
+            this.Controls.Add(this.lblCUIT);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBoxDirección);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txnApellido);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtCUIT);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.checkBoxSmartTv);
             this.Controls.Add(this.checkBoxInformatica);
@@ -377,7 +379,6 @@
             this.Controls.Add(this.checkBoxCelulares);
             this.Controls.Add(this.checkBoxAudio);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblCUIT);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.panel1);
@@ -404,7 +405,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblApellido;
-        private System.Windows.Forms.Label lblCUIT;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.CheckBox checkBoxAudio;
         private System.Windows.Forms.CheckBox checkBoxCelulares;
@@ -413,17 +413,18 @@
         private System.Windows.Forms.CheckBox checkBoxSmartTv;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBoxDirección;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCUIT;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txnApellido;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblCredits;
         private System.Windows.Forms.Label lblVersion;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.Button btnCancelarContrasena;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label lblCUIT;
     }
 }

@@ -215,9 +215,9 @@
             this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(251, 350);
+            this.btnLogin.Location = new System.Drawing.Point(468, 350);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(153, 40);
             this.btnLogin.TabIndex = 35;
@@ -254,7 +254,7 @@
             this.btnCancelarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarContrasena.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarContrasena.Location = new System.Drawing.Point(501, 350);
+            this.btnCancelarContrasena.Location = new System.Drawing.Point(271, 350);
             this.btnCancelarContrasena.Name = "btnCancelarContrasena";
             this.btnCancelarContrasena.Size = new System.Drawing.Size(153, 40);
             this.btnCancelarContrasena.TabIndex = 123;
@@ -262,7 +262,7 @@
             this.btnCancelarContrasena.UseVisualStyleBackColor = false;
             this.btnCancelarContrasena.Click += new System.EventHandler(this.btnCancelarContrasena_Click);
             // 
-            // FormClienteAgregar
+            // FormClienteRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -286,7 +286,7 @@
             this.Controls.Add(this.textBoxApellido);
             this.Controls.Add(this.textBoxNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormClienteAgregar";
+            this.Name = "FormClienteRegistrar";
             this.Opacity = 0.9D;
             this.Text = "FormClienteAgregar";
             this.panel1.ResumeLayout(false);

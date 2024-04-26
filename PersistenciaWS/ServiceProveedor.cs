@@ -63,11 +63,11 @@ namespace PersistenciaWS
 
         }
 
-        public static void ProveedorAgregar(ProveedorEnt cliente, out String error)
+        public static void ProveedorAgregar(ProveedorAgregarEnt proveedor, out String error)
         {
-            String path = "​/api​/Proveedor​/AgregarProveedor";
+            String path = "​/api/Proveedor/AgregarProveedor";
             error = null;
-            var jsonRequest = JsonConvert.SerializeObject(cliente);
+            var jsonRequest = JsonConvert.SerializeObject(proveedor);
 
             try
             {
@@ -105,12 +105,13 @@ namespace PersistenciaWS
             }
         }
 
-        public static void ProveedorModificar(Guid id, String nombre, String apellido, String email, String cuit, out string error)
+        public static void ProveedorModificar(Guid id, Guid idUsuario, String nombre, String apellido, String email, String cuit, out string error)
         {
             error = null;
             String path = "/api/Proveedor/ModificarProveedor";
             Dictionary<string, string> map = new Dictionary<string, string>();
             map.Add("id", id.ToString());
+            map.Add("idUsuario", idUsuario.ToString());
             map.Add("nombre", nombre);
             map.Add("apellido", apellido);
             map.Add("email", email);
