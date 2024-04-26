@@ -61,7 +61,7 @@ namespace tpcai_electrhogar
             else if (!cambioContraseña & UsuarioAutenticado)
             {
                 this.Hide();
-                FormMenuPrincipal modulosForm = new FormMenuPrincipal();
+                FormMenuPrincipal modulosForm = new FormMenuPrincipal(txtUsuario.Text);
                 modulosForm.Show();
             }
             
