@@ -200,10 +200,11 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.Black;
-            this.lblUsername.Location = new System.Drawing.Point(73, 40);
+            this.lblUsername.Location = new System.Drawing.Point(147, 15);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(0, 13);
+            this.lblUsername.Size = new System.Drawing.Size(0, 16);
             this.lblUsername.TabIndex = 8;
             // 
             // cerrarsesionBtn
