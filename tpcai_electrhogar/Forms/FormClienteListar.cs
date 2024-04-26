@@ -20,10 +20,18 @@ namespace tpcai_electrhogar
         public FormClienteListar()
         {
             InitializeComponent();
+            FiltrarLista();
         }
         private string mensajeError;
 
-        private void ListadoClientesForm_Load(object sender, EventArgs e)
+        private void FiltrarLista()
+        {
+            List<ClienteEnt> listaClientes = ObtenerListaClientes();
+            string host = "Grupo 6";
+            List<ClienteEnt> clientesFiltrados = listaClientes.Where(p => p.host == host).ToList();
+            MostrarClientesFiltrados(clientesFiltrados);
+        }
+        private List<ClienteEnt> ObtenerListaClientes()
         {
             //dgvClientes.DataSource = ModuloClientes.ConsultarClientes(out string error);
             List<ClienteEnt> listaClientes = ModuloClientes.ConsultarClientes(out string error);
@@ -60,7 +68,12 @@ namespace tpcai_electrhogar
             dgvClientes.Columns[8].HeaderText = "Dirección";
             dgvClientes.Columns[9].HeaderText = "Teléfono";
             dgvClientes.Columns[10].HeaderText = "Email";
-
+            return listaClientes;
+        }
+        private void MostrarClientesFiltrados(List<ClienteEnt> listaClientes)
+        {
+            dgvClientes.Rows.Clear();
+            dgvClientes.DataSource = listaClientes;
         }
 
         private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)

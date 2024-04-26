@@ -353,7 +353,6 @@
             this.Name = "FormClienteListar";
             this.Opacity = 0.9D;
             this.Text = "ListadoClientesForm";
-            this.Load += new System.EventHandler(this.ListadoClientesForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormClienteListar_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
