@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PersistenciaWS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,20 +11,22 @@ namespace tpcai_electrhogar.Negocio
 {
     public static class ModuloUsuarios
     {
-        public static bool AltaUsuario(string nombre, string apellido, int dni, DateTime fechaNacimiento, string direccion,
-            string telefono, string correoElectronico, string nombreUsuario, string contraseña,
-            DateTime fechaAlta, DateTime? fechaBaja, int host)
+        public static void AltaUsuario(Guid idUsuario, int host, string nombre, string apellido, int dni,
+            string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, string contraseña, out string error)
         {
+            error = null;
+            UsuarioAgregarEnt usuario = new UsuarioAgregarEnt(idUsuario, host, nombre, apellido, dni, direccion, telefono, email,
+                fechaNacimiento, nombreUsuario, contraseña);
             
-            UsuarioEnt usuario = new UsuarioEnt(nombre, apellido, dni, fechaNacimiento, direccion, telefono, correoElectronico,
-                nombreUsuario, contraseña, fechaAlta, null, host, false);
-
-            return usuario.ValidaUsuario();
+            ServiceUsuario.AgregarUsuario(usuario, out error);
         }
+            
 
+        /*
         public static void BajaUsuario(UsuarioEnt usuario)
         {
             usuario.BajaUsuario();
         }
+        */
     }
 }

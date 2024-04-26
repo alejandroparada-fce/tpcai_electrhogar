@@ -12,9 +12,30 @@ using tpcai_electrhogar.Datos;
 
 namespace PersistenciaWS
 {
-    public class ServiceUsuario
+    public static class ServiceUsuario
     {
-        public void CambiarPassword(UsuarioEnt usuarioEnt)
+        public static void AgregarUsuario(UsuarioAgregarEnt usuario, out String error)
+        {
+            String path = "​/api​/Cliente​/AgregarUsuario";
+            error = null;
+            var jsonRequest = JsonConvert.SerializeObject(usuario);
+
+            try
+            {
+                HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
+                if (!response.IsSuccessStatusCode)
+                {
+                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+            }
+
+        }
+        public static void CambiarPassword(UsuarioEnt usuarioEnt)
         {
             String path = "/api/Usuario/CambiarContraseña";
             Dictionary<string, string> map = new Dictionary<string, string>();
@@ -42,7 +63,7 @@ namespace PersistenciaWS
                 Console.WriteLine($"Exception: {ex.Message}");
             }
         }
-        public void ActivarUsuario(UsuarioEnt id)
+        public static void ActivarUsuario(UsuarioEnt id)
         {
             String path = "/api/Usuario/ReactivarUsuario";
             Dictionary<string, string> map = new Dictionary<string, string>();
@@ -69,7 +90,7 @@ namespace PersistenciaWS
                 Console.WriteLine($"Exception: {ex.Message}");
             }
         }
-        public void prueba()
+        public static void prueba()
         {
             String path = "/api/Cliente/PatchCliente";
             Dictionary<string, string> map = new Dictionary<string, string>();
