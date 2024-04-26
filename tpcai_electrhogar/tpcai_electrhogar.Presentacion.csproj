@@ -87,11 +87,11 @@
     <Compile Include="Forms\FormConfirmacion.Designer.cs">
       <DependentUpon>FormConfirmacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormProductoBaja.cs">
+    <Compile Include="Forms\FormAdmProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormProductoBaja.Designer.cs">
-      <DependentUpon>FormProductoBaja.cs</DependentUpon>
+    <Compile Include="Forms\FormAdmProductos.Designer.cs">
+      <DependentUpon>FormAdmProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormProductoRegistrar.cs">
       <SubType>Form</SubType>
@@ -172,8 +172,8 @@
     <EmbeddedResource Include="Forms\FormConfirmacion.resx">
       <DependentUpon>FormConfirmacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormProductoBaja.resx">
-      <DependentUpon>FormProductoBaja.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormAdmProductos.resx">
+      <DependentUpon>FormAdmProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormProductoRegistrar.resx">
       <DependentUpon>FormProductoRegistrar.cs</DependentUpon>

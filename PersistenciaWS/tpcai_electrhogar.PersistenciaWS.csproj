@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ServiceProducto.cs" />
     <Compile Include="ServiceProveedor.cs" />
     <Compile Include="ServiceCliente.cs" />
     <Compile Include="ServiceUsuario.cs" />

@@ -33,27 +33,7 @@ namespace tpcai_electrhogar
         }
         private List<ClienteEnt> ObtenerListaClientes()
         {
-            //dgvClientes.DataSource = ModuloClientes.ConsultarClientes(out string error);
             List<ClienteEnt> listaClientes = ModuloClientes.ConsultarClientes(out string error);
-
-
-            /*foreach (ClienteEnt c in listaClientes)
-            {
-                int rowIndex = dgvClientes.Rows.Add();
-                DataGridViewRow row = dgvClientes.Rows[rowIndex];
-                row.Cells[0].Value = c.id;
-                row.Cells[1].Value = c.nombre;
-                row.Cells[2].Value = c.apellido;
-                row.Cells[3].Value = c.dni;
-                row.Cells[4].Value = c.direccion;
-                row.Cells[5].Value = c.telefono;
-                row.Cells[6].Value = c.email;
-                row.Cells[7].Value = c.fechaNacimiento;
-                row.Cells[8].Value = c.fechaAlta;
-                row.Cells[9].Value = c.fechaBaja;
-                row.Cells[10].Value = c.host;
-
-            }*/
             var bindingList = new BindingList<ClienteEnt>(listaClientes);
             var source = new BindingSource(bindingList, null);
             dgvClientes.DataSource = source;

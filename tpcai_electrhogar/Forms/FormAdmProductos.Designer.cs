@@ -1,6 +1,6 @@
 ﻿namespace tpcai_electrhogar.Forms
 {
-    partial class FormProductoBaja
+    partial class FormAdmProductos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProductoBaja));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmProductos));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.dgvProductos = new System.Windows.Forms.DataGridView();
+            this.categoria = new System.Windows.Forms.TextBox();
             this.lbldUsuario = new System.Windows.Forms.Label();
             this.lblCredits = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
@@ -42,9 +42,13 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.cargarProductosBtn = new System.Windows.Forms.Button();
+            this.TraerProductosCategoria = new System.Windows.Forms.Button();
+            this.lblError = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -71,36 +75,37 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // dataGridView1
+            // dgvProductos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(283, 133);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(482, 284);
-            this.dataGridView1.TabIndex = 119;
+            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductos.Location = new System.Drawing.Point(283, 133);
+            this.dgvProductos.Name = "dgvProductos";
+            this.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProductos.Size = new System.Drawing.Size(482, 284);
+            this.dgvProductos.TabIndex = 119;
             // 
-            // textBoxNombre
+            // categoria
             // 
-            this.textBoxNombre.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxNombre.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombre.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBoxNombre.Location = new System.Drawing.Point(381, 93);
-            this.textBoxNombre.Multiline = true;
-            this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(173, 23);
-            this.textBoxNombre.TabIndex = 118;
+            this.categoria.BackColor = System.Drawing.SystemColors.Window;
+            this.categoria.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.categoria.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoria.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.categoria.Location = new System.Drawing.Point(400, 67);
+            this.categoria.Multiline = true;
+            this.categoria.Name = "categoria";
+            this.categoria.Size = new System.Drawing.Size(173, 23);
+            this.categoria.TabIndex = 118;
             // 
             // lbldUsuario
             // 
             this.lbldUsuario.AutoSize = true;
             this.lbldUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldUsuario.ForeColor = System.Drawing.Color.Transparent;
-            this.lbldUsuario.Location = new System.Drawing.Point(279, 93);
+            this.lbldUsuario.Location = new System.Drawing.Point(282, 67);
             this.lbldUsuario.Name = "lbldUsuario";
-            this.lbldUsuario.Size = new System.Drawing.Size(101, 19);
+            this.lbldUsuario.Size = new System.Drawing.Size(112, 19);
             this.lbldUsuario.TabIndex = 117;
-            this.lbldUsuario.Text = "ID Producto";
+            this.lbldUsuario.Text = "ID Categoria";
             // 
             // lblCredits
             // 
@@ -162,11 +167,11 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(377, 15);
+            this.lblTitle.Location = new System.Drawing.Point(332, 15);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(233, 38);
+            this.lblTitle.Size = new System.Drawing.Size(353, 38);
             this.lblTitle.TabIndex = 111;
-            this.lblTitle.Text = "Baja Producto";
+            this.lblTitle.Text = "Administrar Productos";
             this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
             // button1
@@ -179,7 +184,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(598, 447);
+            this.button1.Location = new System.Drawing.Point(531, 452);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 40);
             this.button1.TabIndex = 121;
@@ -196,12 +201,58 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(417, 447);
+            this.btnLogin.Location = new System.Drawing.Point(358, 452);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(167, 40);
             this.btnLogin.TabIndex = 120;
             this.btnLogin.Text = "Modificar";
             this.btnLogin.UseVisualStyleBackColor = false;
+            // 
+            // cargarProductosBtn
+            // 
+            this.cargarProductosBtn.Location = new System.Drawing.Point(286, 423);
+            this.cargarProductosBtn.Name = "cargarProductosBtn";
+            this.cargarProductosBtn.Size = new System.Drawing.Size(105, 23);
+            this.cargarProductosBtn.TabIndex = 122;
+            this.cargarProductosBtn.Text = "Cargar Productos";
+            this.cargarProductosBtn.UseVisualStyleBackColor = true;
+            this.cargarProductosBtn.Click += new System.EventHandler(this.cargarProductosBtn_Click);
+            // 
+            // TraerProductosCategoria
+            // 
+            this.TraerProductosCategoria.Location = new System.Drawing.Point(579, 67);
+            this.TraerProductosCategoria.Name = "TraerProductosCategoria";
+            this.TraerProductosCategoria.Size = new System.Drawing.Size(106, 23);
+            this.TraerProductosCategoria.TabIndex = 123;
+            this.TraerProductosCategoria.Text = "Traer Productos";
+            this.TraerProductosCategoria.UseVisualStyleBackColor = true;
+            this.TraerProductosCategoria.Click += new System.EventHandler(this.TraerProductosCategoria_Click);
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblError.Location = new System.Drawing.Point(283, 101);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.TabIndex = 124;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Red;
+            this.btnCancelar.FlatAppearance.BorderSize = 0;
+            this.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelar.Location = new System.Drawing.Point(358, 512);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(340, 40);
+            this.btnCancelar.TabIndex = 125;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // FormProductoBaja
             // 
@@ -209,10 +260,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(800, 574);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.lblError);
+            this.Controls.Add(this.TraerProductosCategoria);
+            this.Controls.Add(this.cargarProductosBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBoxNombre);
+            this.Controls.Add(this.dgvProductos);
+            this.Controls.Add(this.categoria);
             this.Controls.Add(this.lbldUsuario);
             this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.lblVersion);
@@ -227,7 +282,7 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormProductoBaja_MouseDown);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
@@ -240,8 +295,8 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBoxNombre;
+        private System.Windows.Forms.DataGridView dgvProductos;
+        private System.Windows.Forms.TextBox categoria;
         private System.Windows.Forms.Label lbldUsuario;
         private System.Windows.Forms.Label lblCredits;
         private System.Windows.Forms.Label lblVersion;
@@ -251,5 +306,9 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button cargarProductosBtn;
+        private System.Windows.Forms.Button TraerProductosCategoria;
+        private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

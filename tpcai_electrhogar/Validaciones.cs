@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Configuration;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -205,5 +206,16 @@ namespace tpcai_electrhogar
             mensajeError = null;
             return true;
         }
+        public static bool Categorias(int numero, out string mensajeError)
+        {
+            if (!(numero == 1 || numero == 2 || numero == 3 || numero == 4 || numero == 5))
+            {
+                mensajeError = "La Categoria debe ser un numero entre el 1 y el 5";
+                return false;
+            }
+            mensajeError = null;
+            return true;
+        }
     }
+
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tpcai_electrhogar.Forms;
 
 namespace tpcai_electrhogar
 {
@@ -116,5 +117,11 @@ namespace tpcai_electrhogar
             formLogin.Show();
         }
 
+        private void btnProductoBaja_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAdmProductos formProductoBaja = new FormAdmProductos();
+            formProductoBaja.Show();
+        }
     }
 }

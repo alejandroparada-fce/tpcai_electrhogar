@@ -61,7 +61,6 @@
             this.btnReporteProductoMasVendidoPorCategoria = new System.Windows.Forms.Button();
             this.btnReporteVentasPorVendedor = new System.Windows.Forms.Button();
             this.btnReporteStock = new System.Windows.Forms.Button();
-            this.btnProductoModificar = new System.Windows.Forms.Button();
             this.btnProductoBaja = new System.Windows.Forms.Button();
             this.btnProductoRegistrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -435,23 +434,15 @@
             this.btnReporteStock.Text = "Reporte Stock Critico";
             this.btnReporteStock.UseVisualStyleBackColor = true;
             // 
-            // btnProductoModificar
-            // 
-            this.btnProductoModificar.Location = new System.Drawing.Point(609, 156);
-            this.btnProductoModificar.Name = "btnProductoModificar";
-            this.btnProductoModificar.Size = new System.Drawing.Size(106, 34);
-            this.btnProductoModificar.TabIndex = 93;
-            this.btnProductoModificar.Text = "Modificar Producto";
-            this.btnProductoModificar.UseVisualStyleBackColor = true;
-            // 
             // btnProductoBaja
             // 
             this.btnProductoBaja.Location = new System.Drawing.Point(609, 116);
             this.btnProductoBaja.Name = "btnProductoBaja";
             this.btnProductoBaja.Size = new System.Drawing.Size(106, 34);
             this.btnProductoBaja.TabIndex = 92;
-            this.btnProductoBaja.Text = "Baja Producto";
+            this.btnProductoBaja.Text = "Administrar Producto";
             this.btnProductoBaja.UseVisualStyleBackColor = true;
+            this.btnProductoBaja.Click += new System.EventHandler(this.btnProductoBaja_Click);
             // 
             // btnProductoRegistrar
             // 
@@ -469,7 +460,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 340);
-            this.Controls.Add(this.btnProductoModificar);
             this.Controls.Add(this.btnProductoBaja);
             this.Controls.Add(this.btnProductoRegistrar);
             this.Controls.Add(this.btnReporteProductoMasVendidoPorCategoria);
@@ -542,7 +532,6 @@
         private System.Windows.Forms.Button btnReporteProductoMasVendidoPorCategoria;
         private System.Windows.Forms.Button btnReporteVentasPorVendedor;
         private System.Windows.Forms.Button btnReporteStock;
-        private System.Windows.Forms.Button btnProductoModificar;
         private System.Windows.Forms.Button btnProductoBaja;
         private System.Windows.Forms.Button btnProductoRegistrar;
         private System.Windows.Forms.Button cerrarsesionBtn;
