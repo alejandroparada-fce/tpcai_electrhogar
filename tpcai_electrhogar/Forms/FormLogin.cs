@@ -65,7 +65,7 @@ namespace tpcai_electrhogar
                 modulosForm.Show();
             }
             
-            UsuarioNegocio.Prueba();
+            //UsuarioNegocio.Prueba();
         }
 
         private void txtUsuario_Enter_1(object sender, EventArgs e)

@@ -12,6 +12,7 @@ namespace tpcai_electrhogar.Negocio
    
     public static class UsuarioNegocio
     {
+        /*
         public static void Prueba()
         {
             ServiceUsuario prueba = new ServiceUsuario();
@@ -28,6 +29,7 @@ namespace tpcai_electrhogar.Negocio
         {
             usuarioService.ActivarUsuario(id);
         }
+        */
     }
 }
         
