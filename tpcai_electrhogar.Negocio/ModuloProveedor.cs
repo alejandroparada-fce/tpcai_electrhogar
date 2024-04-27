@@ -11,11 +11,13 @@ namespace tpcai_electrhogar.Negocio
 {
     public static class ModuloProveedor
     {
+        public static string idUsuario = "70b37dc1-8fde-4840-be47-9ababd0ee7e5";
+
         public static List<ProveedorEnt> ProveedorListar(out string error)
         {
-            List<ProveedorEnt> proveedoresListar = new List<ProveedorEnt>();
-            proveedoresListar = ServiceProveedor.ProveedorListar(out error);
-            return proveedoresListar;
+            List<ProveedorEnt> proveedorListar = new List<ProveedorEnt>();
+            proveedorListar = ServiceProveedor.ProveedorListar(out error);
+            return proveedorListar;
         }
 
         public static void ProveedorEliminar(Guid id, out string error)
@@ -23,7 +25,7 @@ namespace tpcai_electrhogar.Negocio
             ServiceProveedor.ProveedorEliminar(id, out error);
         }
 
-        public static void ProveedorAgregar(Guid idUsuario, string nombre, string apellido, string email,  string cuit, out string error)
+        public static void ProveedorAgregar(string nombre, string apellido, string email,  string cuit, out string error)
         {
             ProveedorAgregarEnt proveedor = new ProveedorAgregarEnt(idUsuario, nombre, apellido, email, cuit);
             error = null;

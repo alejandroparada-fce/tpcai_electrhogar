@@ -9,7 +9,7 @@ namespace tpcai_electrhogar.Datos
     public class ProveedorAgregarEnt
     {
         //Atributos
-        private Guid _idUsuario;
+        private string _idUsuario;
         private string _nombre;
         private string _apellido;
         private string _email;
@@ -17,7 +17,7 @@ namespace tpcai_electrhogar.Datos
 
 
         //Propiedades
-        public Guid IdUsuario { get { return _idUsuario; } set { _idUsuario = value; } }
+        public string IdUsuario { get { return _idUsuario; } set { _idUsuario = value; } }
         public string Nombre { get { return _nombre; } set { _nombre = value; } }
         public string Apellido { get { return _apellido; } set { _apellido = value; } }
         public string Email { get { return _email; } set { _email = value; } }
@@ -25,7 +25,7 @@ namespace tpcai_electrhogar.Datos
 
 
         //Constructor para todos los atributos
-        public ProveedorAgregarEnt(Guid IdUsuario, string nombre, string apellido, string email, string cuit)
+        public ProveedorAgregarEnt(string IdUsuario, string nombre, string apellido, string email, string cuit)
         {
             this.IdUsuario = IdUsuario;
             this.Nombre = nombre;

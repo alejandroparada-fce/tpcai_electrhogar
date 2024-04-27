@@ -23,27 +23,35 @@ namespace tpcai_electrhogar
         }
         private string mensajeError;
 
-        private void ListadoClientesForm_Load(object sender, EventArgs e)
-        {
-            //dgvClientes.DataSource = ModuloClientes.ConsultarClientes(out string error);
-            List<ProveedorEnt> listaProveedor = ModuloProveedor.ProveedorListar(out string error);
 
+        private List<ProveedorEnt> ObtenerListaProveedor()
+        {
+            List<ProveedorEnt> listaProveedor = ModuloProveedor.ProveedorListar(out string error);
             var bindingList = new BindingList<ProveedorEnt>(listaProveedor);
             var source = new BindingSource(bindingList, null);
-            dgvProveedores.DataSource = source;
-            dgvProveedores.Columns["id"].Visible = false;
-            dgvProveedores.Columns[1].HeaderText = "Nombre";
-            dgvProveedores.Columns[2].HeaderText = "Apellido";
-            dgvProveedores.Columns[3].HeaderText = "Email";
-            dgvProveedores.Columns[4].HeaderText = "CUIT"; 
-            dgvProveedores.Columns[5].HeaderText = "Fecha Alta";
-            dgvProveedores.Columns[6].HeaderText = "Fecha Baja";
+            dgvProveedor.DataSource = source;
+            dgvProveedor.Columns["id"].Visible = false;
+            dgvProveedor.Columns["fechaBaja"].Visible = false;
+            dgvProveedor.Columns[1].HeaderText = "Nombre";
+            dgvProveedor.Columns[2].HeaderText = "Apellido";
+            dgvProveedor.Columns[3].HeaderText = "Email";
+            dgvProveedor.Columns[4].HeaderText = "CUIT";
+            dgvProveedor.Columns[5].HeaderText = "Fecha Alta";
+            return listaProveedor;
         }
 
+        private void dgvProveedor_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ProveedorEnt proveedorSeleccionado = (ProveedorEnt)dgvProveedor.Rows[dgvProveedor.CurrentCell.RowIndex].DataBoundItem;
+            txtNombre.Text = proveedorSeleccionado.Nombre;
+            txtApellido.Text = proveedorSeleccionado.Apellido;
+            txtEmail.Text = proveedorSeleccionado.Email;
+            txtCUIT.Text = proveedorSeleccionado.CUIT;
+        }
 
         private void btnModificarCliente_Click(object sender, EventArgs e)
         {
-            ClienteEnt clienteSeleccionado = (ClienteEnt)dgvProveedores.Rows[dgvProveedores.CurrentCell.RowIndex].DataBoundItem;
+            ClienteEnt clienteSeleccionado = (ClienteEnt)dgvProveedor.Rows[dgvProveedor.CurrentCell.RowIndex].DataBoundItem;
 
             Guid id = clienteSeleccionado.id;
             String direccion = txtNombre.Text;
@@ -82,7 +90,7 @@ namespace tpcai_electrhogar
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            ClienteEnt clienteseleccionado = (ClienteEnt)dgvProveedores.Rows[dgvProveedores.CurrentCell.RowIndex].DataBoundItem;
+            ClienteEnt clienteseleccionado = (ClienteEnt)dgvProveedor.Rows[dgvProveedor.CurrentCell.RowIndex].DataBoundItem;
             Guid id = clienteseleccionado.id;
 
                 FormConfirmacion formConfirmacion = new FormConfirmacion(id);
@@ -118,15 +126,6 @@ namespace tpcai_electrhogar
         {
             FormUtils.MoverFormulario(this);
         }
-
-        private void dgvProveedores_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            ProveedorEnt proveedorSeleccionado = (ProveedorEnt)dgvProveedores.Rows[dgvProveedores.CurrentCell.RowIndex].DataBoundItem;
-            txtNombre.Text = proveedorSeleccionado.Nombre;
-            txtApellido.Text = proveedorSeleccionado.Apellido;
-            txtEmail.Text = proveedorSeleccionado.Email;
-            txtCUIT.Text = proveedorSeleccionado.CUIT;
-        }
     }
-    }
+}
 

@@ -19,20 +19,6 @@ namespace tpcai_electrhogar
             InitializeComponent();
         }
 
-        private void btnAgregarProveedor_Click(object sender, EventArgs e)
-        {
-            //Errores Comentados
-            //string mensajeError;
-            //bool valido1 = Validaciones.ValidarCadena(textBoxNombre.Text, "'Nombre'", 3, 30, out string mensajeError1);
-            //bool valido2 = Validaciones.ValidarCadena(textBoxApellido.Text, "'Apellido'", 3, 30, out string mensajeError2);
-            //bool valido3 = Validaciones.ValidarEntero(textBoxCUIT.Text, "'CUIT'", 1000000, 100000000, out int DNI, out string mensajeError3);
-            //bool valido4 = Validaciones.ValidarCadena(textBoxMail.Text, "'EMAIL", 3, 30, out string mensajeError4);
-
-            //mensajeError = mensajeError1 + "\n" + mensajeError2 + "\n" + mensajeError3 + "\n" + mensajeError4;
-
-            //lblError.Text = mensajeError;
-        }
-
         private void FormProveedorAlta_MouseDown(object sender, MouseEventArgs e)
         {
             FormUtils.MoverFormulario(this);
@@ -70,20 +56,47 @@ namespace tpcai_electrhogar
             modulosForm.Show();
         }
 
+        private string mensajeError;
         // FormConfirmacion pide parametro
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             //FormConfirmacion formConfirmacion = new FormConfirmacion(id);
             //formConfirmacion.Show();
-            ModuloProveedor.ProveedorAgregar(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), "Paquito", "Navarro", "paquito@navarro.com", "20-25555454-0", out string error);
-            if (!string.IsNullOrEmpty(error))
+            bool valido1 = Validaciones.ValidarCadena(txtNombre.Text, "'Nombre'", 3, 30, out string mensajeError1);
+            bool valido2 = Validaciones.ValidarCadena(txtApellido.Text, "'Apellido'", 3, 30, out string mensajeError2);
+            bool valido3 = Validaciones.ValidarCadena(txtEmail.Text, "'Correo Electrónico'", 3, 30, out string mensajeError3);
+            bool valido4 = Validaciones.ValidarCadena(txtCUIT.Text, "'CUIT'", 11, 16, out string mensajeError4);
+
+
+
+            mensajeError = mensajeError1 + "\n" + mensajeError2 + "\n" + mensajeError3 + "\n" + mensajeError4;
+            lblError.Text = mensajeError;
+
+            if (valido1 & valido2 & valido3 & valido4)
             {
-                MessageBox.Show(error);
+                String nombre = txtNombre.Text;
+                String apellido = txtApellido.Text;
+                String email = txtEmail.Text;
+                String cuit = txtCUIT.Text;
+
+                try
+                {
+                    ModuloProveedor.ProveedorAgregar(nombre, apellido, email, cuit, out string error);
+
+                    if (!string.IsNullOrEmpty(error))
+                    {
+                        MessageBox.Show(error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Proveedor Agregado");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
-
-
-        
-           
-}
+    }
 }

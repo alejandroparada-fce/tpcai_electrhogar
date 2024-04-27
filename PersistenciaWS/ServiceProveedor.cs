@@ -15,7 +15,8 @@ namespace PersistenciaWS
         public static List<ProveedorEnt> ProveedorListar(out string error)
         {
             string path = "/api/Proveedor/TraerProveedor";
-            List<ProveedorEnt> proveedorListar = new List<ProveedorEnt>();
+            //string path = "/api/Proveedor/TraerProveedor";
+            List<ProveedorEnt> proveedorLista = new List<ProveedorEnt>();
             error = null;
 
             try
@@ -28,8 +29,8 @@ namespace PersistenciaWS
                 else
                 {
                     var contentStream = response.Content.ReadAsStringAsync().Result;
-                    proveedorListar = JsonConvert.DeserializeObject<List<ProveedorEnt>>(contentStream);
-                    return proveedorListar;
+                    proveedorLista = JsonConvert.DeserializeObject<List<ProveedorEnt>>(contentStream);
+                    return proveedorLista;
                 }
             }
             catch (Exception ex)
@@ -37,7 +38,7 @@ namespace PersistenciaWS
                 error = ex.Message;
             }
 
-            return proveedorListar;
+            return proveedorLista;
 
         }
 
@@ -63,9 +64,10 @@ namespace PersistenciaWS
 
         }
 
-        public static void ProveedorAgregar(ProveedorAgregarEnt proveedor, out String error)
+        public static void ProveedorAgregar(ProveedorAgregarEnt proveedor, out string error)
         {
-            String path = "​/api/Proveedor/AgregarProveedor";
+            String path = "/api/Proveedor/AgregarProveedor";
+            //String path = "​/api/Proveedor/AgregarProveedor";
             error = null;
             var jsonRequest = JsonConvert.SerializeObject(proveedor);
 

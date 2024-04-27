@@ -42,7 +42,7 @@
             this.lblError = new System.Windows.Forms.Label();
             this.txtCUIT = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txnApellido = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblCredits = new System.Windows.Forms.Label();
@@ -204,7 +204,7 @@
             this.txtCUIT.Multiline = true;
             this.txtCUIT.Name = "txtCUIT";
             this.txtCUIT.Size = new System.Drawing.Size(403, 23);
-            this.txtCUIT.TabIndex = 82;
+            this.txtCUIT.TabIndex = 4;
             // 
             // txtEmail
             // 
@@ -215,18 +215,18 @@
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(403, 23);
-            this.txtEmail.TabIndex = 83;
+            this.txtEmail.TabIndex = 3;
             // 
-            // txnApellido
+            // txtApellido
             // 
-            this.txnApellido.BackColor = System.Drawing.SystemColors.Window;
-            this.txnApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txnApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txnApellido.Location = new System.Drawing.Point(587, 186);
-            this.txnApellido.Multiline = true;
-            this.txnApellido.Name = "txnApellido";
-            this.txnApellido.Size = new System.Drawing.Size(403, 23);
-            this.txnApellido.TabIndex = 84;
+            this.txtApellido.BackColor = System.Drawing.SystemColors.Window;
+            this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.Location = new System.Drawing.Point(587, 186);
+            this.txtApellido.Multiline = true;
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(403, 23);
+            this.txtApellido.TabIndex = 2;
             // 
             // txtNombre
             // 
@@ -237,7 +237,7 @@
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(403, 23);
-            this.txtNombre.TabIndex = 85;
+            this.txtNombre.TabIndex = 1;
             // 
             // lblTitle
             // 
@@ -286,7 +286,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(817, 489);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(197, 40);
-            this.btnAgregar.TabIndex = 89;
+            this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Agregar Proveedor";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -336,7 +336,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(565, 489);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(197, 40);
-            this.btnCancelar.TabIndex = 124;
+            this.btnCancelar.TabIndex = 0;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -369,7 +369,7 @@
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txnApellido);
+            this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtCUIT);
             this.Controls.Add(this.lblError);
@@ -415,7 +415,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtCUIT;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txnApellido;
+        private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblCredits;
