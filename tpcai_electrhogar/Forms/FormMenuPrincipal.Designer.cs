@@ -61,7 +61,6 @@
             this.btnReporteVentasPorVendedor = new System.Windows.Forms.Button();
             this.btnReporteStock = new System.Windows.Forms.Button();
             this.btnProductoBaja = new System.Windows.Forms.Button();
-            this.btnProductoRegistrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,12 +71,13 @@
             // 
             // btnUsuarioRegistrar
             // 
-            this.btnUsuarioRegistrar.Location = new System.Drawing.Point(273, 76);
+            this.btnUsuarioRegistrar.Location = new System.Drawing.Point(393, 76);
             this.btnUsuarioRegistrar.Name = "btnUsuarioRegistrar";
-            this.btnUsuarioRegistrar.Size = new System.Drawing.Size(106, 34);
+            this.btnUsuarioRegistrar.Size = new System.Drawing.Size(230, 34);
             this.btnUsuarioRegistrar.TabIndex = 0;
             this.btnUsuarioRegistrar.Text = "Registrar Usuario";
             this.btnUsuarioRegistrar.UseVisualStyleBackColor = true;
+            this.btnUsuarioRegistrar.Visible = false;
             this.btnUsuarioRegistrar.Click += new System.EventHandler(this.btnUsuarioRegistrar_Click);
             // 
             // panel1
@@ -110,6 +110,7 @@
             this.btnUsuarios.TabIndex = 6;
             this.btnUsuarios.Text = "Usuarios";
             this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
             // btnReportes
             // 
@@ -124,6 +125,7 @@
             this.btnReportes.TabIndex = 5;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnProveedores
             // 
@@ -138,6 +140,7 @@
             this.btnProveedores.TabIndex = 4;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = false;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // btnVentas
             // 
@@ -152,6 +155,7 @@
             this.btnVentas.TabIndex = 3;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.UseVisualStyleBackColor = false;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // btnClientes
             // 
@@ -166,6 +170,7 @@
             this.btnClientes.TabIndex = 2;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // btnProductos
             // 
@@ -180,6 +185,7 @@
             this.btnProductos.TabIndex = 1;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = false;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // panel2
             // 
@@ -256,12 +262,13 @@
             // 
             // btnUsuarioBaja
             // 
-            this.btnUsuarioBaja.Location = new System.Drawing.Point(273, 116);
+            this.btnUsuarioBaja.Location = new System.Drawing.Point(393, 140);
             this.btnUsuarioBaja.Name = "btnUsuarioBaja";
-            this.btnUsuarioBaja.Size = new System.Drawing.Size(106, 34);
+            this.btnUsuarioBaja.Size = new System.Drawing.Size(230, 34);
             this.btnUsuarioBaja.TabIndex = 3;
             this.btnUsuarioBaja.Text = "Baja Usuario";
             this.btnUsuarioBaja.UseVisualStyleBackColor = true;
+            this.btnUsuarioBaja.Visible = false;
             // 
             // btnMaximizar
             // 
@@ -332,117 +339,118 @@
             // 
             // btnVentaRegistrar
             // 
-            this.btnVentaRegistrar.Location = new System.Drawing.Point(385, 76);
+            this.btnVentaRegistrar.Location = new System.Drawing.Point(393, 76);
             this.btnVentaRegistrar.Name = "btnVentaRegistrar";
-            this.btnVentaRegistrar.Size = new System.Drawing.Size(106, 34);
+            this.btnVentaRegistrar.Size = new System.Drawing.Size(230, 34);
             this.btnVentaRegistrar.TabIndex = 80;
             this.btnVentaRegistrar.Text = "Registrar Venta";
             this.btnVentaRegistrar.UseVisualStyleBackColor = true;
+            this.btnVentaRegistrar.Visible = false;
             this.btnVentaRegistrar.Click += new System.EventHandler(this.btnVentaRegistrar_Click);
             // 
             // btnUsuarioModificar
             // 
-            this.btnUsuarioModificar.Location = new System.Drawing.Point(273, 156);
+            this.btnUsuarioModificar.Location = new System.Drawing.Point(393, 209);
             this.btnUsuarioModificar.Name = "btnUsuarioModificar";
-            this.btnUsuarioModificar.Size = new System.Drawing.Size(106, 34);
+            this.btnUsuarioModificar.Size = new System.Drawing.Size(230, 34);
             this.btnUsuarioModificar.TabIndex = 81;
             this.btnUsuarioModificar.Text = "Modificar Usuario";
             this.btnUsuarioModificar.UseVisualStyleBackColor = true;
+            this.btnUsuarioModificar.Visible = false;
             // 
             // btnClienteModificar
             // 
-            this.btnClienteModificar.Location = new System.Drawing.Point(273, 196);
+            this.btnClienteModificar.Location = new System.Drawing.Point(393, 75);
             this.btnClienteModificar.Name = "btnClienteModificar";
-            this.btnClienteModificar.Size = new System.Drawing.Size(106, 34);
+            this.btnClienteModificar.Size = new System.Drawing.Size(230, 34);
             this.btnClienteModificar.TabIndex = 83;
             this.btnClienteModificar.Text = "Administrar Cliente";
             this.btnClienteModificar.UseVisualStyleBackColor = true;
+            this.btnClienteModificar.Visible = false;
             this.btnClienteModificar.Click += new System.EventHandler(this.btnClienteModificar_Click);
             // 
             // btnVentaDevolucion
             // 
-            this.btnVentaDevolucion.Location = new System.Drawing.Point(385, 116);
+            this.btnVentaDevolucion.Location = new System.Drawing.Point(393, 140);
             this.btnVentaDevolucion.Name = "btnVentaDevolucion";
-            this.btnVentaDevolucion.Size = new System.Drawing.Size(106, 34);
+            this.btnVentaDevolucion.Size = new System.Drawing.Size(230, 34);
             this.btnVentaDevolucion.TabIndex = 84;
             this.btnVentaDevolucion.Text = "Devolución Venta";
             this.btnVentaDevolucion.UseVisualStyleBackColor = true;
+            this.btnVentaDevolucion.Visible = false;
             // 
             // btnProveedorModificar
             // 
-            this.btnProveedorModificar.Location = new System.Drawing.Point(385, 236);
+            this.btnProveedorModificar.Location = new System.Drawing.Point(393, 209);
             this.btnProveedorModificar.Name = "btnProveedorModificar";
-            this.btnProveedorModificar.Size = new System.Drawing.Size(106, 34);
+            this.btnProveedorModificar.Size = new System.Drawing.Size(230, 34);
             this.btnProveedorModificar.TabIndex = 87;
             this.btnProveedorModificar.Text = "Modificar Proveedor";
             this.btnProveedorModificar.UseVisualStyleBackColor = true;
+            this.btnProveedorModificar.Visible = false;
             // 
             // btnProveedorBaja
             // 
-            this.btnProveedorBaja.Location = new System.Drawing.Point(385, 196);
+            this.btnProveedorBaja.Location = new System.Drawing.Point(393, 140);
             this.btnProveedorBaja.Name = "btnProveedorBaja";
-            this.btnProveedorBaja.Size = new System.Drawing.Size(106, 34);
+            this.btnProveedorBaja.Size = new System.Drawing.Size(230, 34);
             this.btnProveedorBaja.TabIndex = 86;
             this.btnProveedorBaja.Text = "Baja Proveedor";
             this.btnProveedorBaja.UseVisualStyleBackColor = true;
+            this.btnProveedorBaja.Visible = false;
             this.btnProveedorBaja.Click += new System.EventHandler(this.btnProveedorBaja_Click);
             // 
             // btnProveedorRegistrar
             // 
-            this.btnProveedorRegistrar.Location = new System.Drawing.Point(385, 156);
+            this.btnProveedorRegistrar.Location = new System.Drawing.Point(393, 75);
             this.btnProveedorRegistrar.Name = "btnProveedorRegistrar";
-            this.btnProveedorRegistrar.Size = new System.Drawing.Size(106, 34);
+            this.btnProveedorRegistrar.Size = new System.Drawing.Size(230, 34);
             this.btnProveedorRegistrar.TabIndex = 85;
             this.btnProveedorRegistrar.Text = "Registrar Proveedor";
             this.btnProveedorRegistrar.UseVisualStyleBackColor = true;
+            this.btnProveedorRegistrar.Visible = false;
             this.btnProveedorRegistrar.Click += new System.EventHandler(this.btnProveedorRegistrar_Click);
             // 
             // btnReporteProductoMasVendidoPorCategoria
             // 
-            this.btnReporteProductoMasVendidoPorCategoria.Location = new System.Drawing.Point(497, 156);
+            this.btnReporteProductoMasVendidoPorCategoria.Location = new System.Drawing.Point(393, 209);
             this.btnReporteProductoMasVendidoPorCategoria.Name = "btnReporteProductoMasVendidoPorCategoria";
-            this.btnReporteProductoMasVendidoPorCategoria.Size = new System.Drawing.Size(106, 51);
+            this.btnReporteProductoMasVendidoPorCategoria.Size = new System.Drawing.Size(230, 51);
             this.btnReporteProductoMasVendidoPorCategoria.TabIndex = 90;
             this.btnReporteProductoMasVendidoPorCategoria.Text = "Reporte Producto Mas Vendido Por Categoria";
             this.btnReporteProductoMasVendidoPorCategoria.UseVisualStyleBackColor = true;
+            this.btnReporteProductoMasVendidoPorCategoria.Visible = false;
             // 
             // btnReporteVentasPorVendedor
             // 
-            this.btnReporteVentasPorVendedor.Location = new System.Drawing.Point(497, 116);
+            this.btnReporteVentasPorVendedor.Location = new System.Drawing.Point(393, 140);
             this.btnReporteVentasPorVendedor.Name = "btnReporteVentasPorVendedor";
-            this.btnReporteVentasPorVendedor.Size = new System.Drawing.Size(106, 34);
+            this.btnReporteVentasPorVendedor.Size = new System.Drawing.Size(230, 34);
             this.btnReporteVentasPorVendedor.TabIndex = 89;
             this.btnReporteVentasPorVendedor.Text = "Reporte Ventas por Vendedor";
             this.btnReporteVentasPorVendedor.UseVisualStyleBackColor = true;
+            this.btnReporteVentasPorVendedor.Visible = false;
             // 
             // btnReporteStock
             // 
-            this.btnReporteStock.Location = new System.Drawing.Point(497, 76);
+            this.btnReporteStock.Location = new System.Drawing.Point(393, 75);
             this.btnReporteStock.Name = "btnReporteStock";
-            this.btnReporteStock.Size = new System.Drawing.Size(106, 34);
+            this.btnReporteStock.Size = new System.Drawing.Size(230, 34);
             this.btnReporteStock.TabIndex = 88;
             this.btnReporteStock.Text = "Reporte Stock Critico";
             this.btnReporteStock.UseVisualStyleBackColor = true;
+            this.btnReporteStock.Visible = false;
             // 
             // btnProductoBaja
             // 
-            this.btnProductoBaja.Location = new System.Drawing.Point(609, 116);
+            this.btnProductoBaja.Location = new System.Drawing.Point(393, 76);
             this.btnProductoBaja.Name = "btnProductoBaja";
-            this.btnProductoBaja.Size = new System.Drawing.Size(106, 34);
+            this.btnProductoBaja.Size = new System.Drawing.Size(230, 34);
             this.btnProductoBaja.TabIndex = 92;
             this.btnProductoBaja.Text = "Administrar Producto";
             this.btnProductoBaja.UseVisualStyleBackColor = true;
+            this.btnProductoBaja.Visible = false;
             this.btnProductoBaja.Click += new System.EventHandler(this.btnProductoBaja_Click);
-            // 
-            // btnProductoRegistrar
-            // 
-            this.btnProductoRegistrar.Location = new System.Drawing.Point(609, 76);
-            this.btnProductoRegistrar.Name = "btnProductoRegistrar";
-            this.btnProductoRegistrar.Size = new System.Drawing.Size(106, 34);
-            this.btnProductoRegistrar.TabIndex = 91;
-            this.btnProductoRegistrar.Text = "Registrar Producto";
-            this.btnProductoRegistrar.UseVisualStyleBackColor = true;
-            this.btnProductoRegistrar.Click += new System.EventHandler(this.btnProductoRegistrar_Click);
             // 
             // FormMenuPrincipal
             // 
@@ -451,7 +459,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 340);
             this.Controls.Add(this.btnProductoBaja);
-            this.Controls.Add(this.btnProductoRegistrar);
             this.Controls.Add(this.btnReporteProductoMasVendidoPorCategoria);
             this.Controls.Add(this.btnReporteVentasPorVendedor);
             this.Controls.Add(this.btnReporteStock);
@@ -521,7 +528,6 @@
         private System.Windows.Forms.Button btnReporteVentasPorVendedor;
         private System.Windows.Forms.Button btnReporteStock;
         private System.Windows.Forms.Button btnProductoBaja;
-        private System.Windows.Forms.Button btnProductoRegistrar;
         private System.Windows.Forms.Button cerrarsesionBtn;
         private System.Windows.Forms.Label lblUsername;
     }

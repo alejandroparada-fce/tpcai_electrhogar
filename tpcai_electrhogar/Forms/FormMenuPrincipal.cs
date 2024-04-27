@@ -123,5 +123,107 @@ namespace tpcai_electrhogar
             FormAdmProductos formProductoBaja = new FormAdmProductos();
             formProductoBaja.Show();
         }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            btnUsuarioBaja.Visible = false;
+            btnUsuarioModificar.Visible = false;
+            btnUsuarioRegistrar.Visible = false;
+            btnReporteStock.Visible = false;
+            btnReporteProductoMasVendidoPorCategoria.Visible = false;
+            btnReporteVentasPorVendedor.Visible = false;
+            btnProveedorRegistrar.Visible = false;
+            btnProveedorModificar.Visible = false;
+            btnProveedorBaja.Visible = false;
+            btnProductoBaja.Visible = true;
+            btnClienteModificar.Visible = false;
+            btnVentaRegistrar.Visible = false;
+            btnVentaDevolucion.Visible = false;
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            btnUsuarioBaja.Visible = false;
+            btnUsuarioModificar.Visible = false;
+            btnUsuarioRegistrar.Visible = false;
+            btnReporteStock.Visible = false;
+            btnReporteProductoMasVendidoPorCategoria.Visible = false;
+            btnReporteVentasPorVendedor.Visible = false;
+            btnProveedorRegistrar.Visible = false;
+            btnProveedorModificar.Visible = false;
+            btnProveedorBaja.Visible = false;
+            btnProductoBaja.Visible = false;
+            btnClienteModificar.Visible = true;
+            btnVentaRegistrar.Visible = false;
+            btnVentaDevolucion.Visible = false;
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            btnUsuarioBaja.Visible = false;
+            btnUsuarioModificar.Visible = false;
+            btnUsuarioRegistrar.Visible = false;
+            btnReporteStock.Visible = false;
+            btnReporteProductoMasVendidoPorCategoria.Visible = false;
+            btnReporteVentasPorVendedor.Visible = false;
+            btnProveedorRegistrar.Visible = false;
+            btnProveedorModificar.Visible = false;
+            btnProveedorBaja.Visible = false;
+            btnProductoBaja.Visible = false;
+            btnClienteModificar.Visible = false;
+            btnVentaRegistrar.Visible = true;
+            btnVentaDevolucion.Visible = true;
+        }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            btnUsuarioBaja.Visible = false;
+            btnUsuarioModificar.Visible = false;
+            btnUsuarioRegistrar.Visible = false;
+            btnReporteStock.Visible = false;
+            btnReporteProductoMasVendidoPorCategoria.Visible = false;
+            btnReporteVentasPorVendedor.Visible = false;
+            btnProveedorRegistrar.Visible = true;
+            btnProveedorModificar.Visible = true;
+            btnProveedorBaja.Visible = true;
+            btnProductoBaja.Visible = false;
+            btnClienteModificar.Visible = false;
+            btnVentaRegistrar.Visible = false;
+            btnVentaDevolucion.Visible = false;
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            btnUsuarioBaja.Visible = false;
+            btnUsuarioModificar.Visible = false;
+            btnUsuarioRegistrar.Visible = false;
+            btnReporteStock.Visible = true;
+            btnReporteProductoMasVendidoPorCategoria.Visible = true;
+            btnReporteVentasPorVendedor.Visible = true;
+            btnProveedorRegistrar.Visible = false;
+            btnProveedorModificar.Visible = false;
+            btnProveedorBaja.Visible = false;
+            btnProductoBaja.Visible = false;
+            btnClienteModificar.Visible = false;
+            btnVentaRegistrar.Visible = false;
+            btnVentaDevolucion.Visible = false;
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            btnUsuarioBaja.Visible = true;
+            btnUsuarioModificar.Visible = true;
+            btnUsuarioRegistrar.Visible = true;
+            btnReporteStock.Visible = false;
+            btnReporteProductoMasVendidoPorCategoria.Visible = false;
+            btnReporteVentasPorVendedor.Visible = false;
+            btnProveedorRegistrar.Visible = false;
+            btnProveedorModificar.Visible = false;
+            btnProveedorBaja.Visible = false;
+            btnProductoBaja.Visible = false;
+            btnClienteModificar.Visible = false;
+            btnVentaRegistrar.Visible = false;
+            btnVentaDevolucion.Visible = false;
+        }
     }
 }
