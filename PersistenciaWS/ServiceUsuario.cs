@@ -16,7 +16,7 @@ namespace PersistenciaWS
     {
         public static void AgregarUsuario(UsuarioAgregarEnt usuario, out String error)
         {
-            String path = "​/api​/Cliente​/AgregarUsuario";
+            String path = "/api/Usuario/AgregarUsuario";
             error = null;
             var jsonRequest = JsonConvert.SerializeObject(usuario);
 
