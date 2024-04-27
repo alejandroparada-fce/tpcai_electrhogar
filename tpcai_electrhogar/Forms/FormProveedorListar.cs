@@ -20,6 +20,7 @@ namespace tpcai_electrhogar
         public FormProveedorListar()
         {
             InitializeComponent();
+            ObtenerListaProveedor();
         }
         private string mensajeError;
 
@@ -31,12 +32,12 @@ namespace tpcai_electrhogar
             var source = new BindingSource(bindingList, null);
             dgvProveedor.DataSource = source;
             dgvProveedor.Columns["id"].Visible = false;
-            dgvProveedor.Columns["fechaBaja"].Visible = false;
+            //dgvProveedor.Columns["fechaBaja"].Visible = false;
             dgvProveedor.Columns[1].HeaderText = "Nombre";
             dgvProveedor.Columns[2].HeaderText = "Apellido";
             dgvProveedor.Columns[3].HeaderText = "Email";
             dgvProveedor.Columns[4].HeaderText = "CUIT";
-            dgvProveedor.Columns[5].HeaderText = "Fecha Alta";
+            //dgvProveedor.Columns[5].HeaderText = "Fecha Alta";
             return listaProveedor;
         }
 

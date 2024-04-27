@@ -14,8 +14,7 @@ namespace PersistenciaWS
 
         public static List<ProveedorEnt> ProveedorListar(out string error)
         {
-            string path = "/api/Proveedor/TraerProveedor";
-            //string path = "/api/Proveedor/TraerProveedor";
+            string path = "/api/Proveedor/TraerProveedores";
             List<ProveedorEnt> proveedorLista = new List<ProveedorEnt>();
             error = null;
 

@@ -51,8 +51,8 @@ namespace tpcai_electrhogar
         private void btnCancelarContrasena_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormAdmProductos formAdmProductos = new FormAdmProductos();
-            formAdmProductos.Show();
+            //FormAdmProductos formAdmProductos = new FormAdmProductos();
+            //formAdmProductos.Show();
         }
     }
 }
