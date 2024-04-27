@@ -52,43 +52,18 @@ namespace PersistenciaWS
                 HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
                 if (!response.IsSuccessStatusCode)
                 {
-                    //error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
                 }
 
             }
             catch (Exception ex)
             {
-               // error = ex.Message;
+                error = ex.Message;
             }
 
         }
 
-        public static void AgregarCliente2(ClienteAgregarEnt altaCliente)
-        {
-            String path = "/api/Cliente/AgregarCliente";
-
-            var jsonRequest = JsonConvert.SerializeObject(altaCliente);
-
-            try
-            {
-                HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
-                if (response.IsSuccessStatusCode)
-                {
-                    var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
-                    string respuesta = reader.ReadToEnd();
-                }
-                else
-                {
-                    var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
-                    string respuesta = reader.ReadToEnd();
-                    //Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
-                }
-            }
-            catch (Exception ex)
-            {
-                string error = $"Exception: {ex.Message}";
-            }
-        }
+        
         public static void ModificarCliente(Guid id, String direccion, String telefono, String email, out string error)
         {
             error = null;
