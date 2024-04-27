@@ -93,14 +93,19 @@ namespace PersistenciaWS
 
         }
 
-        public static void EliminarProducto(Guid id, String idUsuario, out string error)
+        public static void EliminarProducto(Guid id, Guid idUsuario2, out string error)
         {
             error = null;
-            String path = "/api/Producto/BajaProducto?id=" + id +idUsuario;
-            //No se como agregar la id usuario al path, tirar error
+            String path = "/api/Producto/BajaProducto";
+            Dictionary<String, Guid> map = new Dictionary<string, Guid>();
+            map.Add("id", id);
+            map.Add("idUsuario", idUsuario2);
+
+            var jsonRequest = JsonConvert.SerializeObject(map);
+
             try
             {
-                HttpResponseMessage response = WebHelper.Delete(path);
+                HttpResponseMessage response = WebHelper.DeleteWithBody(path, jsonRequest);
                 if (!response.IsSuccessStatusCode)
                 {
                     error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
@@ -111,8 +116,6 @@ namespace PersistenciaWS
             {
                 error = ex.Message;
             }
-
-
         }
     }
 }

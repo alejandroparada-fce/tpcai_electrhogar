@@ -11,6 +11,7 @@ namespace tpcai_electrhogar.Negocio
     public static class ModuloProducto
     {
         public static string idUsuario = "70b37dc1-8fde-4840-be47-9ababd0ee7e5";
+        public static Guid idUsuario2 = new Guid ("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
         public static List<ProductoEnt> ConsultarProductos(out string error)
         {
             List<ProductoEnt> listaProductos = new List<ProductoEnt>();
@@ -30,7 +31,7 @@ namespace tpcai_electrhogar.Negocio
         }
         public static void EliminarProducto(Guid id, out string error)
         {
-            ServiceProducto.EliminarProducto(id, idUsuario, out error);
+            ServiceProducto.EliminarProducto(id, idUsuario2, out error);
         }
     }
 }
