@@ -5,11 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using tpcai_electrhogar.Datos;
 using PersistenciaWS;
+using System.Runtime.CompilerServices;
 
 namespace tpcai_electrhogar.Negocio
 {
     public static class ModuloClientes
     {
+        public static string idUsuario = "70b37dc1-8fde-4840-be47-9ababd0ee7e5";
+        public static String host = "Grupo 6";
         public static List<ClienteEnt> ConsultarClientes(out string error)
         {
             List<ClienteEnt> listaClientes = new List<ClienteEnt>();
@@ -17,13 +20,12 @@ namespace tpcai_electrhogar.Negocio
             return listaClientes;
         }
 
-        public static void AgregarCliente(Guid idUsuario, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, string host, out string error)
+        public static void AgregarCliente( string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, out string error)
         {
+           
             ClienteAgregarEnt cliente = new ClienteAgregarEnt(idUsuario, nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, host);
             error = null;
-
             ServiceCliente.AgregarCliente(cliente, out error);
-            //ClienteService.AgregarCliente2(cliente);
 
         }
         public static void ModificarCliente(Guid id, string direccion, string telefono, string email, out string error)

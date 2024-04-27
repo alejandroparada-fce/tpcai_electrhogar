@@ -19,11 +19,11 @@ namespace tpcai_electrhogar
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormLogin());
             //Application.Run(new FormBienvenida());
-            //Application.Run(new FormMenuPrincipal());
-            Application.Run(new FormUsuarioRegistrar());
+            Application.Run(new FormMenuPrincipal());
+            //Application.Run(new FormUsuarioRegistrar());
             //Application.Run(new FormClienteListar());
             //Application.Run(new FormProveedorListar());
-            //Application.Run(new FormClienteAgregar());
+            //Application.Run(new FormClienteRegistrar());
             //Application.Run(new FormProveedorRegistrar());
             //Application.Run(new FormAdmProductos());
         }

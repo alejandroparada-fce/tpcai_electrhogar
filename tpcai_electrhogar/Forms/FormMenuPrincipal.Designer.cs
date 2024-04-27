@@ -52,7 +52,6 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnVentaRegistrar = new System.Windows.Forms.Button();
             this.btnUsuarioModificar = new System.Windows.Forms.Button();
-            this.btnClienteRegistrar = new System.Windows.Forms.Button();
             this.btnClienteModificar = new System.Windows.Forms.Button();
             this.btnVentaDevolucion = new System.Windows.Forms.Button();
             this.btnProveedorModificar = new System.Windows.Forms.Button();
@@ -350,22 +349,13 @@
             this.btnUsuarioModificar.Text = "Modificar Usuario";
             this.btnUsuarioModificar.UseVisualStyleBackColor = true;
             // 
-            // btnClienteRegistrar
-            // 
-            this.btnClienteRegistrar.Location = new System.Drawing.Point(273, 196);
-            this.btnClienteRegistrar.Name = "btnClienteRegistrar";
-            this.btnClienteRegistrar.Size = new System.Drawing.Size(106, 34);
-            this.btnClienteRegistrar.TabIndex = 82;
-            this.btnClienteRegistrar.Text = "Registrar Cliente";
-            this.btnClienteRegistrar.UseVisualStyleBackColor = true;
-            // 
             // btnClienteModificar
             // 
-            this.btnClienteModificar.Location = new System.Drawing.Point(273, 236);
+            this.btnClienteModificar.Location = new System.Drawing.Point(273, 196);
             this.btnClienteModificar.Name = "btnClienteModificar";
             this.btnClienteModificar.Size = new System.Drawing.Size(106, 34);
             this.btnClienteModificar.TabIndex = 83;
-            this.btnClienteModificar.Text = "Modificar Cliente";
+            this.btnClienteModificar.Text = "Administrar Cliente";
             this.btnClienteModificar.UseVisualStyleBackColor = true;
             this.btnClienteModificar.Click += new System.EventHandler(this.btnClienteModificar_Click);
             // 
@@ -470,7 +460,6 @@
             this.Controls.Add(this.btnProveedorRegistrar);
             this.Controls.Add(this.btnVentaDevolucion);
             this.Controls.Add(this.btnClienteModificar);
-            this.Controls.Add(this.btnClienteRegistrar);
             this.Controls.Add(this.btnUsuarioModificar);
             this.Controls.Add(this.btnVentaRegistrar);
             this.Controls.Add(this.lblTitle);
@@ -523,7 +512,6 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnVentaRegistrar;
         private System.Windows.Forms.Button btnUsuarioModificar;
-        private System.Windows.Forms.Button btnClienteRegistrar;
         private System.Windows.Forms.Button btnClienteModificar;
         private System.Windows.Forms.Button btnVentaDevolucion;
         private System.Windows.Forms.Button btnProveedorModificar;

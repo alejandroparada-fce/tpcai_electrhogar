@@ -140,6 +140,12 @@ namespace tpcai_electrhogar
         {
             FormUtils.MoverFormulario(this);
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FormClienteRegistrar formClienteRegistrar = new FormClienteRegistrar();
+            formClienteRegistrar.ShowDialog();
+        }
     }
     }
 

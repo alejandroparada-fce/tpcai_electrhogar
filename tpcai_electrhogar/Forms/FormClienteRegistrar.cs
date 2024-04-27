@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace tpcai_electrhogar
 {
     public partial class FormClienteRegistrar : Form
     {
+        private string mensajeError;
         public FormClienteRegistrar()
         {
             InitializeComponent();
@@ -21,15 +23,47 @@ namespace tpcai_electrhogar
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
-            //Guid clienteGuid = new Guid();
-            //Guid idUsuario = Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
-            //ModuloClientes.AgregarCliente(idUsuario, textBoxNombre.Text, textBoxApellido.Text, int.Parse(textBoxDNI.Text), textBoxDirección.Text, textBoxTelefono.Text, textBoxMail.Text, dateNacimiento.Value, "prueba21-4", out string error);
-            ModuloClientes.AgregarCliente(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), "Juan", "Suarez", 33333444, "Pedro Lopez", "1212123", "adas@gmail.com", new DateTime(2000, 4, 12), "prueba22-4", out string error);
+            bool valido1 = Validaciones.ValidarCadena(textBoxNombre.Text, "'Nombre'", 3, 30, out string mensajeError1);
+            bool valido2 = Validaciones.ValidarCadena(textBoxApellido.Text, "'Apellido'", 3, 30, out string mensajeError2);
+            bool valido3 = Validaciones.ValidarEntero(textBoxDNI.Text, "'DNI'", 1000000, 100000000, out int DNI, out string mensajeError3);
+            bool valido4 = Validaciones.ValidarCadena(textBoxDirección.Text, "'Dirección'", 3, 30, out string mensajeError4);
+            bool valido5 = Validaciones.ValidarCadena(textBoxTelefono.Text, "'Teléfono'", 3, 30, out string mensajeError5);
+            bool valido6 = Validaciones.ValidarCadena(textBoxMail.Text, "'Correo Electrónico'", 3, 30, out string mensajeError6);
 
-            if (!string.IsNullOrEmpty(error))
+
+            mensajeError = mensajeError1 + "\n" + mensajeError2 + "\n" + mensajeError3 + "\n" + mensajeError4 + "\n" + mensajeError5 + "\n" + mensajeError6;
+            lblError.Text = mensajeError;
+
+            if (valido1 & valido2 & valido3 & valido4 & valido5 & valido6)
             {
-                MessageBox.Show(error);
+                String nombre = textBoxNombre.Text;
+                String apellido = textBoxApellido.Text;
+                int dni = Int32.Parse(textBoxDNI.Text);
+                String direccion = textBoxDirección.Text;
+                String telefono = textBoxTelefono.Text;
+                String email = textBoxMail.Text;
+                DateTime fechaNacimiento = dateNacimiento.Value;
+                
+                try
+                {
+                    ModuloClientes.AgregarCliente(nombre,apellido,dni,direccion,telefono,email,fechaNacimiento, out string error);
+
+                    if (!string.IsNullOrEmpty(error))
+                    {
+                        MessageBox.Show(error);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cliente Creado");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
             }
+
         }
 
         private void btnCancelarContrasena_Click(object sender, EventArgs e)

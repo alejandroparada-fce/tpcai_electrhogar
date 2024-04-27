@@ -41,7 +41,7 @@ namespace PersistenciaWS
 
         }
 
-        public static void AgregarCliente(ClienteAgregarEnt cliente, out String error)
+        public static void AgregarCliente(ClienteAgregarEnt cliente, out string error)
         {
             String path = "​/api​/Cliente​/AgregarCliente";
             error = null;
@@ -52,13 +52,13 @@ namespace PersistenciaWS
                 HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
                 if (!response.IsSuccessStatusCode)
                 {
-                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                    //error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
                 }
 
             }
             catch (Exception ex)
             {
-                error = ex.Message;
+               // error = ex.Message;
             }
 
         }
