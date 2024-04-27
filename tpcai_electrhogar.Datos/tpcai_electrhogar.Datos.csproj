@@ -53,6 +53,7 @@
     <Compile Include="ProveedorModificarEnt.cs" />
     <Compile Include="ProveedorAgregarEnt.cs" />
     <Compile Include="UsuarioAgregarEnt.cs" />
+    <Compile Include="UsuarioConsultaEnt.cs" />
     <Compile Include="UsuarioEnt.cs" />
     <Compile Include="VentaEnt.cs" />
   </ItemGroup>

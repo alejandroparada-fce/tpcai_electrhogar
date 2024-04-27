@@ -35,6 +35,35 @@ namespace PersistenciaWS
             }
 
         }
+
+        public static List<UsuarioConsultaEnt> ListarUsuarios(Guid idUsuario, out string error)
+        {
+            List<UsuarioConsultaEnt> listadoUsuarios = new List<UsuarioConsultaEnt>();
+            string path = "/api/Usuario/TraerUsuariosActivos?id=";
+            error = null;
+
+            try
+            {
+                HttpResponseMessage response = WebHelper.Get(path + idUsuario);
+                if (!response.IsSuccessStatusCode)
+                {
+                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                }
+                else
+                {
+                    var contentStream = response.Content.ReadAsStringAsync().Result;
+                    listadoUsuarios = JsonConvert.DeserializeObject<List<UsuarioConsultaEnt>>(contentStream);
+                    return listadoUsuarios;
+                }
+            }
+            catch(Exception ex)
+            {
+                error = ex.Message;
+            }
+            return listadoUsuarios;
+
+        }
+
         public static void CambiarPassword(UsuarioEnt usuarioEnt)
         {
             String path = "/api/Usuario/CambiarContraseña";
@@ -89,6 +118,33 @@ namespace PersistenciaWS
             {
                 Console.WriteLine($"Exception: {ex.Message}");
             }
+        }
+
+        public static void EliminarUsuario(Guid id, Guid idUsuario, out string error)
+        {
+            error = null;
+            String path = "/api/Usuario/BajaUsuario";
+            Dictionary<String, Guid> map = new Dictionary<string, Guid>();
+            map.Add("id", id);
+            map.Add("idUsuario", idUsuario);
+
+            var jsonRequest = JsonConvert.SerializeObject(map);
+
+            try
+            {
+                HttpResponseMessage response = WebHelper.DeleteWithBody(path, jsonRequest);
+                if (!response.IsSuccessStatusCode)
+                {
+                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+            }
+
+
         }
         public static void prueba()
         {
