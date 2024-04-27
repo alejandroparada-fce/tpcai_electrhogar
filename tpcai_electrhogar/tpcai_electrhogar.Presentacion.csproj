@@ -166,11 +166,11 @@
     <Compile Include="Forms\FormClienteListar.Designer.cs">
       <DependentUpon>FormClienteListar.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListarBuscarUsuarios.cs">
+    <Compile Include="ListarBuscarUsuariosForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListarBuscarUsuarios.Designer.cs">
-      <DependentUpon>ListarBuscarUsuarios.cs</DependentUpon>
+    <Compile Include="ListarBuscarUsuariosForm.Designer.cs">
+      <DependentUpon>ListarBuscarUsuariosForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -223,8 +223,8 @@
     <EmbeddedResource Include="Forms\FormClienteListar.resx">
       <DependentUpon>FormClienteListar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListarBuscarUsuarios.resx">
-      <DependentUpon>ListarBuscarUsuarios.cs</DependentUpon>
+    <EmbeddedResource Include="ListarBuscarUsuariosForm.resx">
+      <DependentUpon>ListarBuscarUsuariosForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿namespace tpcai_electrhogar
 {
-    partial class ListarBuscarUsuarios
+    partial class ListarBuscarUsuariosForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListarBuscarUsuarios));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListarBuscarUsuariosForm));
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -65,7 +65,7 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnBuscar.Location = new System.Drawing.Point(656, 166);
+            this.btnBuscar.Location = new System.Drawing.Point(513, 162);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(121, 28);
             this.btnBuscar.TabIndex = 128;
@@ -81,7 +81,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnEliminar.Location = new System.Drawing.Point(280, 89);
+            this.btnEliminar.Location = new System.Drawing.Point(258, 89);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(121, 28);
             this.btnEliminar.TabIndex = 124;
@@ -97,7 +97,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAgregar.Location = new System.Drawing.Point(280, 51);
+            this.btnAgregar.Location = new System.Drawing.Point(258, 51);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(121, 28);
             this.btnAgregar.TabIndex = 123;
@@ -113,7 +113,7 @@
             this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificarUsuario.ForeColor = System.Drawing.Color.LightGray;
-            this.btnModificarUsuario.Location = new System.Drawing.Point(280, 127);
+            this.btnModificarUsuario.Location = new System.Drawing.Point(258, 127);
             this.btnModificarUsuario.Name = "btnModificarUsuario";
             this.btnModificarUsuario.Size = new System.Drawing.Size(121, 28);
             this.btnModificarUsuario.TabIndex = 122;
@@ -140,7 +140,7 @@
             this.emailCambio.Location = new System.Drawing.Point(99, 128);
             this.emailCambio.Multiline = true;
             this.emailCambio.Name = "emailCambio";
-            this.emailCambio.Size = new System.Drawing.Size(175, 28);
+            this.emailCambio.Size = new System.Drawing.Size(147, 28);
             this.emailCambio.TabIndex = 120;
             // 
             // telefonoLbl
@@ -163,7 +163,7 @@
             this.telefonoCambio.Location = new System.Drawing.Point(99, 90);
             this.telefonoCambio.Multiline = true;
             this.telefonoCambio.Name = "telefonoCambio";
-            this.telefonoCambio.Size = new System.Drawing.Size(175, 28);
+            this.telefonoCambio.Size = new System.Drawing.Size(147, 28);
             this.telefonoCambio.TabIndex = 118;
             // 
             // lblTitle
@@ -171,7 +171,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(251, 5);
+            this.lblTitle.Location = new System.Drawing.Point(202, 5);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(241, 38);
             this.lblTitle.TabIndex = 117;
@@ -197,7 +197,7 @@
             this.direccionCambio.Location = new System.Drawing.Point(99, 52);
             this.direccionCambio.Multiline = true;
             this.direccionCambio.Name = "direccionCambio";
-            this.direccionCambio.Size = new System.Drawing.Size(175, 28);
+            this.direccionCambio.Size = new System.Drawing.Size(147, 28);
             this.direccionCambio.TabIndex = 115;
             // 
             // lblError
@@ -219,9 +219,9 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(57, 171);
+            this.btnCancelar.Location = new System.Drawing.Point(13, 165);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(262, 30);
+            this.btnCancelar.Size = new System.Drawing.Size(233, 30);
             this.btnCancelar.TabIndex = 112;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -230,7 +230,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox1.Location = new System.Drawing.Point(535, 166);
+            this.textBox1.Location = new System.Drawing.Point(389, 162);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(115, 28);
@@ -266,45 +266,48 @@
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.ReadOnly = true;
             this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsuarios.Size = new System.Drawing.Size(768, 150);
+            this.dgvUsuarios.Size = new System.Drawing.Size(646, 150);
             this.dgvUsuarios.TabIndex = 114;
             // 
             // btnMaximizar
             // 
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(736, 5);
+            this.btnMaximizar.Location = new System.Drawing.Point(595, 5);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(15, 15);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMaximizar.TabIndex = 127;
             this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
             // btnMinimizar
             // 
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(715, 5);
+            this.btnMinimizar.Location = new System.Drawing.Point(574, 5);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(15, 15);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 126;
             this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // btnCerrar
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(757, 5);
+            this.btnCerrar.Location = new System.Drawing.Point(619, 5);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(15, 15);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 125;
             this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // ListarBuscarUsuarios
+            // ListarBuscarUsuariosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(768, 365);
+            this.ClientSize = new System.Drawing.Size(646, 365);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
@@ -323,8 +326,10 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dgvUsuarios);
-            this.Name = "ListarBuscarUsuarios";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ListarBuscarUsuariosForm";
             this.Text = "ListarBuscarUsuarios";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ListarBuscarUsuarios_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();

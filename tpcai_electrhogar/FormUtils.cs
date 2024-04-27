@@ -119,5 +119,13 @@ namespace tpcai_electrhogar
                 }
             }
         }
+        //Ajusta las columnas de un DataGridView para que ocupen todo el espacio
+        public static void AjustarFilas(DataGridView dgv)
+        {
+            for (int index = 0; index < dgv.Columns.Count; index++)
+            {
+                dgv.Columns[index].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+        }
     }
 }
