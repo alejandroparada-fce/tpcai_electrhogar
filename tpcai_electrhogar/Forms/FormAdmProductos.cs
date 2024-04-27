@@ -120,11 +120,51 @@ namespace tpcai_electrhogar.Forms
             List<ProductoEnt> listaProductosCategoria = ObtenerListaProductosCategoria();
         }
 
+        private void dgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ProductoEnt productoSeleccionado = (ProductoEnt)dgvProductos.Rows[dgvProductos.CurrentCell.RowIndex].DataBoundItem;
+            int stock = productoSeleccionado.Stock;
+            double precio = productoSeleccionado.Precio;
+
+        }
+
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormMenuPrincipal modulosForm = new FormMenuPrincipal();
             modulosForm.Show();
+        }
+
+        private void AgregarBtn_Click(object sender, EventArgs e)
+        {
+            FormProductoRegistrar formProductoRegistrar = new FormProductoRegistrar();
+            formProductoRegistrar.ShowDialog();
+        }
+
+        private void modificarBtn_Click(object sender, EventArgs e)
+        {
+            ProductoEnt productoseleccionado = (ProductoEnt)dgvProductos.Rows[dgvProductos.CurrentCell.RowIndex].DataBoundItem;
+            Guid id = productoseleccionado.Id;
+            FormModificarProducto formModificarProducto = new FormModificarProducto(id);
+            formModificarProducto.ShowDialog();
+        }
+
+        private void eliminarBtn_Click(object sender, EventArgs e)
+        {
+            ProductoEnt productoseleccionado = (ProductoEnt)dgvProductos.Rows[dgvProductos.CurrentCell.RowIndex].DataBoundItem;
+            Guid id = productoseleccionado.Id;
+            try
+            {
+                ModuloProducto.EliminarProducto(id, out string error);
+                this.Hide();
+                FormAdmProductos formAdmProductos = new FormAdmProductos();
+                formAdmProductos.Show();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

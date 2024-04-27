@@ -40,12 +40,13 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.eliminarBtn = new System.Windows.Forms.Button();
+            this.modificarBtn = new System.Windows.Forms.Button();
             this.cargarProductosBtn = new System.Windows.Forms.Button();
             this.TraerProductosCategoria = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.AgregarBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -83,6 +84,7 @@
             this.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProductos.Size = new System.Drawing.Size(482, 284);
             this.dgvProductos.TabIndex = 119;
+            this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
             // 
             // categoria
             // 
@@ -174,39 +176,41 @@
             this.lblTitle.Text = "Administrar Productos";
             this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
-            // button1
+            // eliminarBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(531, 452);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 40);
-            this.button1.TabIndex = 121;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.eliminarBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.eliminarBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.eliminarBtn.FlatAppearance.BorderSize = 0;
+            this.eliminarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.eliminarBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.eliminarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eliminarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eliminarBtn.ForeColor = System.Drawing.Color.LightGray;
+            this.eliminarBtn.Location = new System.Drawing.Point(625, 452);
+            this.eliminarBtn.Name = "eliminarBtn";
+            this.eliminarBtn.Size = new System.Drawing.Size(140, 40);
+            this.eliminarBtn.TabIndex = 121;
+            this.eliminarBtn.Text = "Eliminar";
+            this.eliminarBtn.UseVisualStyleBackColor = false;
+            this.eliminarBtn.Click += new System.EventHandler(this.eliminarBtn_Click);
             // 
-            // btnLogin
+            // modificarBtn
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(358, 452);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(167, 40);
-            this.btnLogin.TabIndex = 120;
-            this.btnLogin.Text = "Modificar";
-            this.btnLogin.UseVisualStyleBackColor = false;
+            this.modificarBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.modificarBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.modificarBtn.FlatAppearance.BorderSize = 0;
+            this.modificarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.modificarBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.modificarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modificarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modificarBtn.ForeColor = System.Drawing.Color.LightGray;
+            this.modificarBtn.Location = new System.Drawing.Point(456, 452);
+            this.modificarBtn.Name = "modificarBtn";
+            this.modificarBtn.Size = new System.Drawing.Size(140, 40);
+            this.modificarBtn.TabIndex = 120;
+            this.modificarBtn.Text = "Modificar";
+            this.modificarBtn.UseVisualStyleBackColor = false;
+            this.modificarBtn.Click += new System.EventHandler(this.modificarBtn_Click);
             // 
             // cargarProductosBtn
             // 
@@ -254,18 +258,37 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // FormProductoBaja
+            // AgregarBtn
+            // 
+            this.AgregarBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.AgregarBtn.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.AgregarBtn.FlatAppearance.BorderSize = 0;
+            this.AgregarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.AgregarBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AgregarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AgregarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgregarBtn.ForeColor = System.Drawing.Color.LightGray;
+            this.AgregarBtn.Location = new System.Drawing.Point(286, 452);
+            this.AgregarBtn.Name = "AgregarBtn";
+            this.AgregarBtn.Size = new System.Drawing.Size(140, 40);
+            this.AgregarBtn.TabIndex = 126;
+            this.AgregarBtn.Text = "Agregar";
+            this.AgregarBtn.UseVisualStyleBackColor = false;
+            this.AgregarBtn.Click += new System.EventHandler(this.AgregarBtn_Click);
+            // 
+            // FormAdmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(800, 574);
+            this.Controls.Add(this.AgregarBtn);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.TraerProductosCategoria);
             this.Controls.Add(this.cargarProductosBtn);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.eliminarBtn);
+            this.Controls.Add(this.modificarBtn);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.categoria);
             this.Controls.Add(this.lbldUsuario);
@@ -277,7 +300,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormProductoBaja";
+            this.Name = "FormAdmProductos";
             this.Text = "FormProductoBaja";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormProductoBaja_MouseDown);
             this.panel1.ResumeLayout(false);
@@ -304,11 +327,12 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button eliminarBtn;
+        private System.Windows.Forms.Button modificarBtn;
         private System.Windows.Forms.Button cargarProductosBtn;
         private System.Windows.Forms.Button TraerProductosCategoria;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button AgregarBtn;
     }
 }

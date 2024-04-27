@@ -79,6 +79,36 @@ namespace tpcai_electrhogar
             return true;
 
         }
+        public static bool ValidarEnteroDouble(string ingreso, string campo, int? minimo, int? maximo, out double valor, out string mensajeError)
+        {
+            //Valida que sea un número
+            var valido = double.TryParse(ingreso, out valor);
+            if (!valido)
+            {
+
+                mensajeError = $"El campo {campo} debe contener un número entero.";
+                return false;
+            }
+
+            //valida el número mínimo
+            if (minimo.HasValue && valor < minimo.Value)
+            {
+                mensajeError = $"El campo {campo} debe contener un número mayor o igual a {minimo}";
+                return false;
+            }
+
+            //valida el número máximo
+            if (maximo.HasValue && valor > maximo.Value)
+            {
+                mensajeError = $"Ingrese un número menor o igual a {maximo} para el campo {campo}.";
+                return false;
+            }
+
+
+            mensajeError = null;
+            return true;
+
+        }
 
         public static bool ValidarEntero(string ingreso, string campo, int? minimo, int? maximo, out int valor, out string mensajeError)
         {

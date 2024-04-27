@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tpcai_electrhogar.Forms;
 
 namespace tpcai_electrhogar
 {
@@ -50,8 +51,8 @@ namespace tpcai_electrhogar
         private void btnCancelarContrasena_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormMenuPrincipal modulosForm = new FormMenuPrincipal();
-            modulosForm.Show();
+            FormAdmProductos formAdmProductos = new FormAdmProductos();
+            formAdmProductos.Show();
         }
     }
 }
