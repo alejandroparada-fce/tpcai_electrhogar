@@ -97,9 +97,9 @@ namespace tpcai_electrhogar
 
         private void btnVentaRegistrar_Click(object sender, EventArgs e)
         {
-           //this.Hide();
-           //VentaRegistrarForm ventaForm = new VentaRegistrarForm();
-           //ventaForm.Show();
+           this.Hide();
+           FormVentaRegistrar formVentaRegistrar = new FormVentaRegistrar();
+           formVentaRegistrar.Show();
         }
 
         private void btnClienteModificar_Click(object sender, EventArgs e)
@@ -122,6 +122,12 @@ namespace tpcai_electrhogar
             this.Hide();
             FormAdmProductos formProductoBaja = new FormAdmProductos();
             formProductoBaja.Show();
+        }
+        private void btnVentaDevolucion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormVentaDevolucion formVentaDevolucion = new FormVentaDevolucion();
+            formVentaDevolucion.Show();
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
@@ -225,6 +231,12 @@ namespace tpcai_electrhogar
             btnVentaRegistrar.Visible = false;
             btnVentaDevolucion.Visible = false;
         }
+
+       
+
+        // private void btnReporteVentasPorVendedor_Click(object sender, EventArgs e)
+
+
 
     }
 }

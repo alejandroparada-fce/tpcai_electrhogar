@@ -360,7 +360,7 @@
             // 
             // btnClienteModificar
             // 
-            this.btnClienteModificar.Location = new System.Drawing.Point(393, 75);
+            this.btnClienteModificar.Location = new System.Drawing.Point(393, 76);
             this.btnClienteModificar.Name = "btnClienteModificar";
             this.btnClienteModificar.Size = new System.Drawing.Size(230, 34);
             this.btnClienteModificar.TabIndex = 83;
@@ -378,6 +378,7 @@
             this.btnVentaDevolucion.Text = "Devolución Venta";
             this.btnVentaDevolucion.UseVisualStyleBackColor = true;
             this.btnVentaDevolucion.Visible = false;
+            this.btnVentaDevolucion.Click += new System.EventHandler(this.btnVentaDevolucion_Click);
             // 
             // btnProveedorModificar
             // 
@@ -402,7 +403,7 @@
             // 
             // btnProveedorRegistrar
             // 
-            this.btnProveedorRegistrar.Location = new System.Drawing.Point(393, 75);
+            this.btnProveedorRegistrar.Location = new System.Drawing.Point(393, 76);
             this.btnProveedorRegistrar.Name = "btnProveedorRegistrar";
             this.btnProveedorRegistrar.Size = new System.Drawing.Size(230, 34);
             this.btnProveedorRegistrar.TabIndex = 85;
@@ -433,7 +434,7 @@
             // 
             // btnReporteStock
             // 
-            this.btnReporteStock.Location = new System.Drawing.Point(393, 75);
+            this.btnReporteStock.Location = new System.Drawing.Point(393, 76);
             this.btnReporteStock.Name = "btnReporteStock";
             this.btnReporteStock.Size = new System.Drawing.Size(230, 34);
             this.btnReporteStock.TabIndex = 88;

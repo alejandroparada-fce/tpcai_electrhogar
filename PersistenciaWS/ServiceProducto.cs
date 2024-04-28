@@ -117,5 +117,26 @@ namespace PersistenciaWS
                 error = ex.Message;
             }
         }
+        public static void AgregarProducto(ProductoAgregarEnt producto, out string error)
+        {
+            String path = "/api/Producto/AgregarProducto";
+            error = null;
+            var jsonRequest = JsonConvert.SerializeObject(producto);
+            
+            try
+            {
+                HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
+                if (!response.IsSuccessStatusCode)
+                {
+                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+            }
+
+        }
     }
 }

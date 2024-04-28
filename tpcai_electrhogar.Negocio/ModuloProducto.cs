@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using tpcai_electrhogar.Datos;
 using PersistenciaWS;
+using System.Net;
 
 namespace tpcai_electrhogar.Negocio
 {
@@ -33,5 +34,12 @@ namespace tpcai_electrhogar.Negocio
         {
             ServiceProducto.EliminarProducto(id, idUsuario2, out error);
         }
+        public static void AgregarProducto(int idCategoria, Guid idProveedor, string nombre, double precio, int stock, out string error)
+        {
+            ProductoAgregarEnt producto = new ProductoAgregarEnt(idCategoria, idUsuario2, idProveedor, nombre, precio, stock);
+            error = null;
+            ServiceProducto.AgregarProducto(producto, out error);
+        }
     }
+
 }
