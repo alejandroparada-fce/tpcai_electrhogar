@@ -54,7 +54,7 @@ namespace tpcai_electrhogar
             else if (cambioContraseña)
             {
                 this.Hide();
-                FormCambiarContrasena cambiocontraseñaform = new FormCambiarContrasena(txtUsuario.Text);
+                FormCambiarContrasena cambiocontraseñaform = new FormCambiarContrasena(txtUsuario.Text, txtPass.Text);
                 cambiocontraseñaform.Show();
                 //FormUtils.CambiarFormulario(this, new CambiarContrasenaForm());
             }

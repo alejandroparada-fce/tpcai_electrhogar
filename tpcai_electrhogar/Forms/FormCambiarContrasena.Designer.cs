@@ -32,8 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblError = new System.Windows.Forms.Label();
-            this.contrasenaActual = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnGuardarContrasena = new System.Windows.Forms.Button();
@@ -85,34 +83,11 @@
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 0;
             // 
-            // contrasenaActual
-            // 
-            this.contrasenaActual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.contrasenaActual.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.contrasenaActual.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contrasenaActual.ForeColor = System.Drawing.Color.DimGray;
-            this.contrasenaActual.Location = new System.Drawing.Point(259, 60);
-            this.contrasenaActual.Name = "contrasenaActual";
-            this.contrasenaActual.Size = new System.Drawing.Size(360, 20);
-            this.contrasenaActual.TabIndex = 1;
-            this.contrasenaActual.Text = "Contraseña Actual";
-            this.contrasenaActual.Enter += new System.EventHandler(this.contrasenaActual_Enter);
-            this.contrasenaActual.Leave += new System.EventHandler(this.contrasenaActual_Leave);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DimGray;
-            this.panel3.Enabled = false;
-            this.panel3.Location = new System.Drawing.Point(259, 97);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(360, 1);
-            this.panel3.TabIndex = 75;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.Enabled = false;
-            this.panel2.Location = new System.Drawing.Point(259, 152);
+            this.panel2.Location = new System.Drawing.Point(256, 120);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 1);
             this.panel2.TabIndex = 77;
@@ -202,7 +177,7 @@
             this.contrasenaNueva.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.contrasenaNueva.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contrasenaNueva.ForeColor = System.Drawing.Color.DimGray;
-            this.contrasenaNueva.Location = new System.Drawing.Point(259, 115);
+            this.contrasenaNueva.Location = new System.Drawing.Point(256, 83);
             this.contrasenaNueva.Name = "contrasenaNueva";
             this.contrasenaNueva.Size = new System.Drawing.Size(360, 20);
             this.contrasenaNueva.TabIndex = 2;
@@ -289,8 +264,6 @@
             this.Controls.Add(this.btnGuardarContrasena);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.contrasenaActual);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -314,8 +287,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblError;
-        private System.Windows.Forms.TextBox contrasenaActual;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnGuardarContrasena;

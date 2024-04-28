@@ -27,7 +27,10 @@ namespace tpcai_electrhogar.Negocio
             listaUsuarios = ServiceUsuario.ListarUsuarios(idUsuario, out error);
             return listaUsuarios;
         }
-
+        public static void CambiarPassword(UsuarioEnt usuarioEnt)
+        {
+            ServiceUsuario.CambiarPassword(usuarioEnt);
+        }
 
         /*
         public static void BajaUsuario(UsuarioEnt usuario)

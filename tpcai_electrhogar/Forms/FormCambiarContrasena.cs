@@ -21,17 +21,6 @@ namespace tpcai_electrhogar
             InitializeComponent();
         }
 
-        //private void ContraseñaActual_TextChanged(object sender, EventArgs e)
-        //{
-        //    //Hacer validacion con la contraseña temporal cuando tenga la base de datos
-        //}
-
-        private void btnCancelarContrasena_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormMenuPrincipal modulosForm = new FormMenuPrincipal(_username);
-            modulosForm.Show();
-        }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
@@ -49,18 +38,19 @@ namespace tpcai_electrhogar
         }
 
         private string _username;
+        private string _password;
 
-        public FormCambiarContrasena(string username)
+        public FormCambiarContrasena(string username, string contraseña)
         {
             InitializeComponent();
             _username = username;
+            _password = contraseña;
         }
-
         private void btnGuardarContrasena_Click(object sender, EventArgs e)
         {
             UsuarioEnt usuarioEnt = new UsuarioEnt();
             usuarioEnt.Nombre = _username;
-            usuarioEnt.Contraseña = contrasenaActual.Text;
+            usuarioEnt.Contraseña = _password;
             usuarioEnt.ContraseñaNueva = contrasenaNueva.Text;
 
             string mensajeError = "";
@@ -72,7 +62,7 @@ namespace tpcai_electrhogar
             {
                 try
                 {
-                    //usuarioNegocio.CambiarPassword(usuarioEnt);
+                    ModuloUsuarios.CambiarPassword(usuarioEnt);
                     //usuarioNegocio.ActivarUsuario();
                     MessageBox.Show("Contraseña cambiada");
                 }
@@ -84,15 +74,14 @@ namespace tpcai_electrhogar
           
         }
 
-        private void contrasenaActual_Enter(object sender, EventArgs e)
+        private void btnCancelarContrasena_Click(object sender, EventArgs e)
         {
-            FormUtils.LimpiarCampoContrasena(this, contrasenaActual, "Contraseña Actual");
+            this.Hide();
+            FormMenuPrincipal modulosForm = new FormMenuPrincipal(_username);
+            modulosForm.Show();
         }
 
-        private void contrasenaActual_Leave(object sender, EventArgs e)
-        {
-            FormUtils.LimpiarCampoContrasena(this, contrasenaActual, "Contraseña Actual");
-        }
+        
 
         private void contrasenaNueva_Enter(object sender, EventArgs e)
         {
@@ -131,9 +120,9 @@ namespace tpcai_electrhogar
 
         private void checkMostrarContrasena_CheckedChanged(object sender, EventArgs e)
         {
-            FormUtils.MostrarContrasena(this, contrasenaActual, checkMostrarContrasena.Checked);
             FormUtils.MostrarContrasena(this, contrasenaNueva, checkMostrarContrasena.Checked);
             FormUtils.MostrarContrasena(this, repetirContrasena, checkMostrarContrasena.Checked);
         }
+
     }
 }
