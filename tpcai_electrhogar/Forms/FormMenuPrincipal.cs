@@ -225,5 +225,6 @@ namespace tpcai_electrhogar
             btnVentaRegistrar.Visible = false;
             btnVentaDevolucion.Visible = false;
         }
+
     }
 }

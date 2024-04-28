@@ -40,7 +40,7 @@ namespace PersistenciaWS
             return listadoClientes;
 
         }
-
+        // Revisar error caracteres invisibles
         public static void AgregarCliente(ClienteAgregarEnt cliente, out string error)
         {
             String path = "​/api​/Cliente​/AgregarCliente";

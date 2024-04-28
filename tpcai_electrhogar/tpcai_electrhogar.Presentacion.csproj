@@ -69,6 +69,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportes.Designer.cs">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormModificarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,9 +178,18 @@
     <Compile Include="Forms\FormUsuarioBuscarListar.Designer.cs">
       <DependentUpon>FormUsuarioBuscarListar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormVentaDevolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormVentaDevolucion.Designer.cs">
+      <DependentUpon>FormVentaDevolucion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validaciones.cs" />
+    <EmbeddedResource Include="FormReportes.resx">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormModificarProducto.resx">
       <DependentUpon>FormModificarProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormUsuarioBuscarListar.resx">
       <DependentUpon>FormUsuarioBuscarListar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormVentaDevolucion.resx">
+      <DependentUpon>FormVentaDevolucion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

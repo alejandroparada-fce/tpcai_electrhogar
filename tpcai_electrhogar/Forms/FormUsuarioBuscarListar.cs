@@ -47,5 +47,9 @@ namespace tpcai_electrhogar
             FormUtils.MoverFormulario(this);
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            FormUtils.SalirAplicacion();
+        }
     }
 }
