@@ -41,9 +41,9 @@ namespace PersistenciaWS
 
         }
         // Revisar error caracteres invisibles
-        public static void AgregarCliente(ClienteAgregarEnt cliente, out string error)
+        public static void AgregarCliente(ClienteAgregarEnt cliente, out String error)
         {
-            String path = "​/api​/Cliente​/AgregarCliente";
+            String path = "/api/Cliente/AgregarCliente";
             error = null;
             var jsonRequest = JsonConvert.SerializeObject(cliente);
 
@@ -63,7 +63,7 @@ namespace PersistenciaWS
 
         }
 
-        
+
         public static void ModificarCliente(Guid id, String direccion, String telefono, String email, out string error)
         {
             error = null;

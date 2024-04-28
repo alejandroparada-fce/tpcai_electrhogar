@@ -152,3 +152,5 @@ C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debu
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormClienteListar.resources
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormUsuarioBuscarListar.resources
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormVentaDevolucion.resources
+C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormUsuarioBuscarListar.resources
+C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormVentaDevolucion.resources
