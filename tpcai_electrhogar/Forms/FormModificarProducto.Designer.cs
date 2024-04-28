@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormModificarProducto));
             this.stockLbl = new System.Windows.Forms.Label();
             this.stockCambio = new System.Windows.Forms.TextBox();
             this.precioLbl = new System.Windows.Forms.Label();
@@ -142,6 +143,7 @@
             this.Controls.Add(this.precioLbl);
             this.Controls.Add(this.precioCambio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormModificarProducto";
             this.Opacity = 0.9D;
             this.Text = "FormModificarProducto";

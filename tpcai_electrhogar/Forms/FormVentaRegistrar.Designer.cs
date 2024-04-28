@@ -402,6 +402,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormVentaRegistrar";
             this.Text = "FormVentaRegistrar";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormVentaRegistrar_MouseDown);

@@ -241,6 +241,7 @@
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormUsuarioBaja";
             this.Text = "FormUsuarioBaja";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormUsuarioBaja_MouseDown);

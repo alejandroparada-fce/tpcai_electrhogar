@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClienteRegistrar));
             this.lblMail = new System.Windows.Forms.Label();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblDireccion = new System.Windows.Forms.Label();
@@ -298,6 +299,7 @@
             this.Controls.Add(this.textBoxApellido);
             this.Controls.Add(this.textBoxNombre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormClienteRegistrar";
             this.Opacity = 0.9D;
             this.Text = "FormClienteAgregar";

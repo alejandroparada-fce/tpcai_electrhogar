@@ -11,9 +11,9 @@ using tpcai_electrhogar.Negocio;
 
 namespace tpcai_electrhogar
 {
-    public partial class ListarBuscarUsuariosForm : Form
+    public partial class FormUsuarioBuscarListar : Form
     {
-        public ListarBuscarUsuariosForm()
+        public FormUsuarioBuscarListar()
         {
             InitializeComponent();
   
