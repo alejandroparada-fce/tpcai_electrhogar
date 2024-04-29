@@ -269,6 +269,7 @@
             this.btnUsuarioBaja.Text = "Baja Usuario";
             this.btnUsuarioBaja.UseVisualStyleBackColor = true;
             this.btnUsuarioBaja.Visible = false;
+            this.btnUsuarioBaja.Click += new System.EventHandler(this.btnUsuarioBaja_Click);
             // 
             // btnMaximizar
             // 

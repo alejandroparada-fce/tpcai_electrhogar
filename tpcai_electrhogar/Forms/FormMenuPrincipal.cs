@@ -130,6 +130,14 @@ namespace tpcai_electrhogar
             formVentaDevolucion.Show();
         }
 
+        private void btnUsuarioBaja_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormUsuarioBuscarBaja formUsuarioBuscarBaja = new FormUsuarioBuscarBaja();
+            formUsuarioBuscarBaja.Show();
+ 
+        }
+
         private void btnProductos_Click(object sender, EventArgs e)
         {
             btnUsuarioBaja.Visible = false;
@@ -231,6 +239,8 @@ namespace tpcai_electrhogar
             btnVentaRegistrar.Visible = false;
             btnVentaDevolucion.Visible = false;
         }
+
+
 
 
 
