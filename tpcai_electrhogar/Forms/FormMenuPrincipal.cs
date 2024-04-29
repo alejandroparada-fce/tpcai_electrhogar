@@ -232,7 +232,8 @@ namespace tpcai_electrhogar
             btnVentaDevolucion.Visible = false;
         }
 
-       
+
+
 
         // private void btnReporteVentasPorVendedor_Click(object sender, EventArgs e)
 

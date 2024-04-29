@@ -139,7 +139,6 @@ C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpca
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormClienteListar.resources
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Forms.FormModificarProducto.resources
 C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Forms.FormModificarProducto.resources
-C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.ListarBuscarUsuariosForm.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Forms.FormModificarProducto.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.Forms.FormAdmProductos.resources
 C:\Users\aleap\OneDrive - Económicas - UBA\Documents\GitHub\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.ListarBuscarUsuariosForm.resources
@@ -154,3 +153,5 @@ C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debu
 C:\Users\Administrator\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormVentaDevolucion.resources
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormUsuarioBuscarListar.resources
 C:\Users\facuu\OneDrive\Documentos\GitHub\tpcai_electrhoga\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormVentaDevolucion.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormVentaDevolucion.resources
+C:\Users\Usuario\source\repos\tpcai_electrhogar\tpcai_electrhogar\obj\Debug\tpcai_electrhogar.FormUsuarioBuscarBaja.resources
