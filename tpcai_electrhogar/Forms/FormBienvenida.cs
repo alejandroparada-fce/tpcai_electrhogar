@@ -49,8 +49,11 @@ namespace tpcai_electrhogar
             if(this.Opacity == 0)
             {
                 timer2.Stop();
-                this.Close();
+                this.Hide();
+                FormMenuPrincipal modulosForm = new FormMenuPrincipal();
+                modulosForm.Show();
             }
+  
         }
 
         

@@ -19,10 +19,15 @@ namespace tpcai_electrhogar
             InitializeComponent();
         }
 
+
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
 
+            this.Hide();
+            FormBienvenida formBienvenida = new FormBienvenida();
+            formBienvenida.Show();
 
+            /*
             //this.Hide();
             //ModulosForm modulos = new ModulosForm();
             //modulos.Show();
@@ -66,6 +71,8 @@ namespace tpcai_electrhogar
             }
             
             //UsuarioNegocio.Prueba();
+
+            */
         }
 
         private void txtUsuario_Enter_1(object sender, EventArgs e)
