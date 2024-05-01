@@ -15,6 +15,7 @@ namespace tpcai_electrhogar.Negocio
         public static List<string> LogueosFallidos = new List<string>();
         //public LoginEnt = Loguearse(usuario, contraseña, contraseñaDefault);
 
+
         public static void Loguearse(string usuario, string contraseña, string contraseñaDefault)
         {
             LoginEnt logueoAux = new LoginEnt(usuario, contraseña, contraseñaDefault);
@@ -29,6 +30,7 @@ namespace tpcai_electrhogar.Negocio
             }
 
         }
+        
 
         public static bool ExisteUsuario()
         {
