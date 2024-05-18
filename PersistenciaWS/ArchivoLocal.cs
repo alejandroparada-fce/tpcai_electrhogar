@@ -41,6 +41,24 @@ namespace PersistenciaWS
 
         }
 
+        //Agregar usuario
+        public static void AgregarUsuario(IntentoFallidoEnt intento)
+        {
+            intentosFallidos.Add(intento);
+        }
+
+        //Chequear si el usuario está lockeado
+        public static bool ChequearBloqueo(string usuario)
+        {
+            int conteo = intentosFallidos.Count(x => x.NombreUsuario == usuario);
+
+            if (conteo >= 3)
+            {
+                return true;
+            }
+            return false;
+        }
+
         //Grabar intentos falllidos a un archivo serializando una lista
         public static void GrabarIntentosFallidos()
         {

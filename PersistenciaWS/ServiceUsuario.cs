@@ -147,9 +147,9 @@ namespace PersistenciaWS
 
         }
 
-        public static string Autenticacion(string nombreUsuario, string contraseña)
+        public static bool Autenticacion(string nombreUsuario, string contraseña, out string respuesta)
         {
-            string respuesta = null;
+            respuesta = null;
             String path = "/api/Usuario/AgregarUsuario";
             Dictionary<string, string> map = new Dictionary<string, string>();
             map.Add("nombreUsuario", nombreUsuario);
@@ -158,23 +158,29 @@ namespace PersistenciaWS
 
             try
             {
-                HttpResponseMessage response = WebHelper.DeleteWithBody(path, jsonRequest);
+                HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
                 if (!response.IsSuccessStatusCode)
                 {
-                    return respuesta = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                    respuesta = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                    return false;
                 }
                 var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
 
                 respuesta = reader.ReadToEnd();
 
-                return respuesta;
+                if (!Guid.TryParse(respuesta, out Guid resultado))
+                {
+                    return false;
+                }
+
+                return true;
 
             }
             catch (Exception ex)
             {
                 respuesta = ex.Message;
             }
-            return respuesta;
+            return false;
 
         }
         public static void prueba()
