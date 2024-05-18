@@ -146,6 +146,37 @@ namespace PersistenciaWS
 
 
         }
+
+        public static string Autenticacion(string nombreUsuario, string contraseña)
+        {
+            string respuesta = null;
+            String path = "/api/Usuario/AgregarUsuario";
+            Dictionary<string, string> map = new Dictionary<string, string>();
+            map.Add("nombreUsuario", nombreUsuario);
+            map.Add("contraseña", contraseña);
+            var jsonRequest = JsonConvert.SerializeObject(map);
+
+            try
+            {
+                HttpResponseMessage response = WebHelper.DeleteWithBody(path, jsonRequest);
+                if (!response.IsSuccessStatusCode)
+                {
+                    return respuesta = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                }
+                var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
+
+                respuesta = reader.ReadToEnd();
+
+                return respuesta;
+
+            }
+            catch (Exception ex)
+            {
+                respuesta = ex.Message;
+            }
+            return respuesta;
+
+        }
         public static void prueba()
         {
             String path = "/api/Cliente/PatchCliente";
