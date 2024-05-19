@@ -43,14 +43,12 @@
             this.lblDni = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
-            this.lblDireccion = new System.Windows.Forms.Label();
             this.lblPromocion = new System.Windows.Forms.Label();
             this.lblTotalAPagar = new System.Windows.Forms.Label();
             this.lblDescuento = new System.Windows.Forms.Label();
-            this.textBoxID = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtDNI = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -60,12 +58,15 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -152,7 +153,7 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblFecha.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblFecha.Location = new System.Drawing.Point(640, 72);
+            this.lblFecha.Location = new System.Drawing.Point(236, 459);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(58, 19);
             this.lblFecha.TabIndex = 101;
@@ -164,7 +165,7 @@
             this.dateNacimiento.CustomFormat = "";
             this.dateNacimiento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNacimiento.Location = new System.Drawing.Point(704, 71);
+            this.dateNacimiento.Location = new System.Drawing.Point(300, 458);
             this.dateNacimiento.MaxDate = new System.DateTime(2024, 3, 23, 0, 0, 0, 0);
             this.dateNacimiento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateNacimiento.Name = "dateNacimiento";
@@ -177,7 +178,7 @@
             this.lblDni.AutoSize = true;
             this.lblDni.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblDni.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblDni.Location = new System.Drawing.Point(246, 106);
+            this.lblDni.Location = new System.Drawing.Point(659, 157);
             this.lblDni.Name = "lblDni";
             this.lblDni.Size = new System.Drawing.Size(37, 19);
             this.lblDni.TabIndex = 103;
@@ -188,7 +189,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblNombre.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblNombre.Location = new System.Drawing.Point(246, 72);
+            this.lblNombre.Location = new System.Drawing.Point(258, 158);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(73, 19);
             this.lblNombre.TabIndex = 104;
@@ -199,22 +200,11 @@
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblApellido.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblApellido.Location = new System.Drawing.Point(451, 71);
+            this.lblApellido.Location = new System.Drawing.Point(463, 157);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(75, 19);
             this.lblApellido.TabIndex = 105;
             this.lblApellido.Text = "Apellido";
-            // 
-            // lblDireccion
-            // 
-            this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.lblDireccion.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblDireccion.Location = new System.Drawing.Point(246, 142);
-            this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(84, 19);
-            this.lblDireccion.TabIndex = 106;
-            this.lblDireccion.Text = "Dirección";
             // 
             // lblPromocion
             // 
@@ -249,33 +239,26 @@
             this.lblDescuento.TabIndex = 109;
             this.lblDescuento.Text = "Descuento: ";
             // 
-            // textBoxID
+            // txtNombre
             // 
-            this.textBoxID.Location = new System.Drawing.Point(345, 73);
-            this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(100, 20);
-            this.textBoxID.TabIndex = 110;
+            this.txtNombre.Location = new System.Drawing.Point(357, 159);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 110;
             // 
-            // textBox1
+            // txtApellido
             // 
-            this.textBox1.Location = new System.Drawing.Point(526, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 111;
+            this.txtApellido.Location = new System.Drawing.Point(538, 158);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(100, 20);
+            this.txtApellido.TabIndex = 111;
             // 
-            // textBox2
+            // txtDNI
             // 
-            this.textBox2.Location = new System.Drawing.Point(345, 108);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 112;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(345, 141);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 113;
+            this.txtDNI.Location = new System.Drawing.Point(702, 157);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(100, 20);
+            this.txtDNI.TabIndex = 112;
             // 
             // textBox4
             // 
@@ -370,12 +353,36 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // lblCliente
+            // 
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.lblCliente.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblCliente.Location = new System.Drawing.Point(246, 70);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(68, 19);
+            this.lblCliente.TabIndex = 124;
+            this.lblCliente.Text = "Cliente";
+            // 
+            // dgvClientes
+            // 
+            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.Location = new System.Drawing.Point(345, 53);
+            this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.ReadOnly = true;
+            this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvClientes.Size = new System.Drawing.Size(366, 85);
+            this.dgvClientes.TabIndex = 125;
+            this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
+            // 
             // FormVentaRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(868, 553);
+            this.Controls.Add(this.dgvClientes);
+            this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
@@ -385,14 +392,12 @@
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBoxID);
+            this.Controls.Add(this.txtDNI);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblDescuento);
             this.Controls.Add(this.lblTotalAPagar);
             this.Controls.Add(this.lblPromocion);
-            this.Controls.Add(this.lblDireccion);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblDni);
@@ -412,6 +417,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -433,14 +439,12 @@
         private System.Windows.Forms.Label lblDni;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblApellido;
-        private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.Label lblPromocion;
         private System.Windows.Forms.Label lblTotalAPagar;
         private System.Windows.Forms.Label lblDescuento;
-        private System.Windows.Forms.TextBox textBoxID;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtDNI;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
@@ -450,5 +454,7 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label lblCliente;
+        private System.Windows.Forms.DataGridView dgvClientes;
     }
 }
