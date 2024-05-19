@@ -58,7 +58,7 @@
     <Compile Include="UsuarioAgregarEnt.cs" />
     <Compile Include="UsuarioConsultaEnt.cs" />
     <Compile Include="UsuarioEnt.cs" />
-    <Compile Include="VentaEnt.cs" />
+    <Compile Include="VentaClienteEnt.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
