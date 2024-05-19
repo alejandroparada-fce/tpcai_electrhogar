@@ -106,5 +106,12 @@ namespace tpcai_electrhogar.Forms
             txtApellido.Text = clienteSeleccionado.apellido;
             txtDNI.Text = clienteSeleccionado.dni.ToString();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FormAgregarProducto formAgregarProducto = new FormAgregarProducto();
+            formAgregarProducto.ShowDialog();
+
+        }
     }
 }
