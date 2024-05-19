@@ -33,31 +33,36 @@ namespace tpcai_electrhogar.Negocio
             List<UsuarioConsultaEnt> usuarios = ServiceUsuario.ListarUsuarios(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), out string error);
             bool existeUsuario = usuarios.Any(x => x.nombreUsuario == usuario);
             bool bloqueo = ArchivoLocal.ChequearBloqueo(usuario);
+            bool expirado = ArchivoLocal.ChequearVencimiento(usuario);
             bool resultado = ServiceUsuario.Autenticacion(usuario, contraseña, out string respuesta);
 
-            //Se chequea que exista el usuario, si esta bloqueado y si la contraseña coincide con la default
+            //Se chequea que exista el usuario, si esta bloqueado, si está vencido y si la contraseña coincide con la default
             if (!existeUsuario)
             {
                
-                return -1;
+                return 0;
             }
             else if (bloqueo)
             {
-                return 0;
+                return 1;
+            }
+            else if (expirado)
+            {
+                return 2;
             }
             else if(resultado && (contraseña == contraseñaDefault))
             {
-                return 1;
+                return 3;
             }
             else if (resultado && (contraseña != contraseñaDefault))
             {
-                return 2;
+                return 4;
             }
             else
             {
                 IntentoFallidoEnt intento = new IntentoFallidoEnt(usuario);
                 ArchivoLocal.AgregarUsuario(intento);
-                return 3;
+                return 5;
             }
 
         }

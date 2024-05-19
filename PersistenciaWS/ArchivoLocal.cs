@@ -59,6 +59,17 @@ namespace PersistenciaWS
             return false;
         }
 
+        //Chequear si el usuario tiene vencida la contraseña
+        public static bool ChequearVencimiento(string usuario)
+        {
+            bool cambioExpirado = cambiosContraseña.Any(x => x.NombreUsuario == usuario && x.Fecha <= DateTime.Now.Date.Subtract(TimeSpan.FromDays(30)));
+            if (cambioExpirado )
+            {
+                return true;
+            }
+            return false;
+        }
+
         //Grabar intentos falllidos a un archivo serializando una lista
         public static void GrabarIntentosFallidos()
         {
