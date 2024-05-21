@@ -12,8 +12,8 @@ namespace tpcai_electrhogar.Negocio
     public static class ModuloLogueo
 
     {
-        public static LoginEnt logueo;
-        public static List<string> LogueosFallidos = new List<string>();
+        public static UsuarioConsultaEnt UsuarioAuntenticado = new UsuarioConsultaEnt();
+        //public static List<string> LogueosFallidos = new List<string>();
         //public LoginEnt = Loguearse(usuario, contraseña, contraseñaDefault);
 
 
@@ -56,18 +56,21 @@ namespace tpcai_electrhogar.Negocio
             }
             else if (resultado && (contraseña != contraseñaDefault))
             {
+                UsuarioAuntenticado = usuarios.Find(x => x.nombreUsuario == usuario);
                 return 4;
             }
             else
             {
                 IntentoFallidoEnt intento = new IntentoFallidoEnt(usuario);
                 ArchivoLocal.AgregarUsuario(intento);
+                ArchivoLocal.GrabarIntentosFallidos();
                 return 5;
             }
 
         }
         
 
+        /*
         public static bool ExisteUsuario()
         {
 
@@ -106,5 +109,7 @@ namespace tpcai_electrhogar.Negocio
 
 
         }
+
+        */
     }
 }

@@ -15,17 +15,47 @@ namespace tpcai_electrhogar
     public partial class FormMenuPrincipal : Form
     {
         private string _username;
+        private int _autorizacion;
+
         public FormMenuPrincipal()
         {
             InitializeComponent();
         }
-        public FormMenuPrincipal(string username)
+        public FormMenuPrincipal(string username, int autorizacion)
         {
             InitializeComponent();
             _username = username;
             lblUsername.Text = _username;
+            _autorizacion = autorizacion;
+
+            switch (_autorizacion)
+            {
+                //Se deshabilitan botones para los vendedores
+                case 1:
+                   btnUsuarios.Enabled = false;
+                   btnProductos.Enabled = false;
+                   btnProveedores.Enabled = false;
+                   btnReporteProductoMasVendidoPorCategoria.Enabled = false;
+                   btnReporteStock.Enabled = false;
+                   btnVentaDevolucion.Enabled = false;
+                   break;
+                //Se deshabilitan botones para Supervidores
+                case 2:
+                   btnUsuarios.Enabled = false;
+                   btnProveedores.Enabled = false;
+                   btnVentaRegistrar.Enabled = false;
+                   break;
+                //Se deshabilitan botones para Administradores
+                case 3:
+                   btnVentas.Enabled = false;
+                   break;
+            }
         }
 
+        public string Username { get { return _username; } set { _username = value; } }
+        public int Autorizacion { get { return _autorizacion;  } set {  _autorizacion = value; } }
+
+        
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             FormUtils.SalirAplicacion();

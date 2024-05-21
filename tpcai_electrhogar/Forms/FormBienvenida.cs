@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tpcai_electrhogar.Negocio;
 
 namespace tpcai_electrhogar
 {
@@ -50,7 +51,8 @@ namespace tpcai_electrhogar
             {
                 timer2.Stop();
                 this.Hide();
-                FormMenuPrincipal modulosForm = new FormMenuPrincipal();
+                FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
+    ModuloLogueo.UsuarioAuntenticado.host);
                 modulosForm.Show();
             }
   

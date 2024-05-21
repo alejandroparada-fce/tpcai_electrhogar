@@ -22,11 +22,53 @@ namespace tpcai_electrhogar
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
+            int estadoAutenticacion = ModuloLogueo.Loguearse(txtUsuario.Text, txtPass.Text, "CAI20241");
 
+            /*
             this.Hide();
             FormBienvenida formBienvenida = new FormBienvenida();
             formBienvenida.Show();
+            */
+            
 
+            switch (estadoAutenticacion)
+            {
+                case 0:
+                    if (txtUsuario.Text == "Usuario" || txtUsuario.Text == "")
+                    {
+                        lblError.Text = "Debe ingresar un usuario";
+                    }
+                    else
+                    {
+                        lblError.Text = "No se encontró al usuario";
+                    }
+                    break;
+                case 1:
+                    lblError.Text = "El usuario ha sido bloqueado";
+                    break;
+                case 2:
+                    FormUtils.CambiarFormulario(this, new FormCambiarContrasena());
+                    break;
+                case 3:
+                    FormUtils.CambiarFormulario(this, new FormCambiarContrasena());
+                    break;
+                case 4:
+                    FormUtils.CambiarFormulario(this, new FormBienvenida());
+                    break;
+                case 5:
+                    if (txtPass.Text == "Contraseña" || txtPass.Text == "")
+                    {
+                        lblError.Text = "Debe ingresar una contraseña";
+                    }
+                    else
+                    {
+                        lblError.Text = "Contraseña invalida";
+                    }
+                    break;
+                default:
+                    lblError.Text = "Debe ingresar un usuario y una contraseña";
+                    break;
+            }
             /*
             //this.Hide();
             //ModulosForm modulos = new ModulosForm();

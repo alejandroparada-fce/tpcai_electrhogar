@@ -150,7 +150,7 @@ namespace PersistenciaWS
         public static bool Autenticacion(string nombreUsuario, string contraseña, out string respuesta)
         {
             respuesta = null;
-            String path = "/api/Usuario/AgregarUsuario";
+            String path = "/api/Usuario/Login";
             Dictionary<string, string> map = new Dictionary<string, string>();
             map.Add("nombreUsuario", nombreUsuario);
             map.Add("contraseña", contraseña);
@@ -167,11 +167,6 @@ namespace PersistenciaWS
                 var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
 
                 respuesta = reader.ReadToEnd();
-
-                if (!Guid.TryParse(respuesta, out Guid resultado))
-                {
-                    return false;
-                }
 
                 return true;
 
