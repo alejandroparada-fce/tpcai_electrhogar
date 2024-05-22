@@ -54,7 +54,7 @@
             this.btnUsuarioModificar = new System.Windows.Forms.Button();
             this.btnClienteModificar = new System.Windows.Forms.Button();
             this.btnVentaDevolucion = new System.Windows.Forms.Button();
-            this.btnProveedorModificar = new System.Windows.Forms.Button();
+            this.btnProveedorListar = new System.Windows.Forms.Button();
             this.btnProveedorBaja = new System.Windows.Forms.Button();
             this.btnProveedorRegistrar = new System.Windows.Forms.Button();
             this.btnReporteProductoMasVendidoPorCategoria = new System.Windows.Forms.Button();
@@ -381,15 +381,16 @@
             this.btnVentaDevolucion.Visible = false;
             this.btnVentaDevolucion.Click += new System.EventHandler(this.btnVentaDevolucion_Click);
             // 
-            // btnProveedorModificar
+            // btnProveedorListar
             // 
-            this.btnProveedorModificar.Location = new System.Drawing.Point(393, 209);
-            this.btnProveedorModificar.Name = "btnProveedorModificar";
-            this.btnProveedorModificar.Size = new System.Drawing.Size(230, 34);
-            this.btnProveedorModificar.TabIndex = 87;
-            this.btnProveedorModificar.Text = "Modificar Proveedor";
-            this.btnProveedorModificar.UseVisualStyleBackColor = true;
-            this.btnProveedorModificar.Visible = false;
+            this.btnProveedorListar.Location = new System.Drawing.Point(393, 209);
+            this.btnProveedorListar.Name = "btnProveedorListar";
+            this.btnProveedorListar.Size = new System.Drawing.Size(230, 34);
+            this.btnProveedorListar.TabIndex = 87;
+            this.btnProveedorListar.Text = "Listar Proveedor";
+            this.btnProveedorListar.UseVisualStyleBackColor = true;
+            this.btnProveedorListar.Visible = false;
+            this.btnProveedorListar.Click += new System.EventHandler(this.btnProveedorListar_Click);
             // 
             // btnProveedorBaja
             // 
@@ -415,7 +416,7 @@
             // 
             // btnReporteProductoMasVendidoPorCategoria
             // 
-            this.btnReporteProductoMasVendidoPorCategoria.Location = new System.Drawing.Point(393, 209);
+            this.btnReporteProductoMasVendidoPorCategoria.Location = new System.Drawing.Point(393, 201);
             this.btnReporteProductoMasVendidoPorCategoria.Name = "btnReporteProductoMasVendidoPorCategoria";
             this.btnReporteProductoMasVendidoPorCategoria.Size = new System.Drawing.Size(230, 51);
             this.btnReporteProductoMasVendidoPorCategoria.TabIndex = 90;
@@ -464,7 +465,7 @@
             this.Controls.Add(this.btnReporteProductoMasVendidoPorCategoria);
             this.Controls.Add(this.btnReporteVentasPorVendedor);
             this.Controls.Add(this.btnReporteStock);
-            this.Controls.Add(this.btnProveedorModificar);
+            this.Controls.Add(this.btnProveedorListar);
             this.Controls.Add(this.btnProveedorBaja);
             this.Controls.Add(this.btnProveedorRegistrar);
             this.Controls.Add(this.btnVentaDevolucion);
@@ -523,7 +524,7 @@
         private System.Windows.Forms.Button btnUsuarioModificar;
         private System.Windows.Forms.Button btnClienteModificar;
         private System.Windows.Forms.Button btnVentaDevolucion;
-        private System.Windows.Forms.Button btnProveedorModificar;
+        private System.Windows.Forms.Button btnProveedorListar;
         private System.Windows.Forms.Button btnProveedorBaja;
         private System.Windows.Forms.Button btnProveedorRegistrar;
         private System.Windows.Forms.Button btnReporteProductoMasVendidoPorCategoria;

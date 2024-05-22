@@ -41,28 +41,6 @@ namespace PersistenciaWS
 
         }
 
-        public static void ProveedorEliminar(Guid id, out string error)
-        {
-            error = null;
-            String path = "/api/Proveedor/BajaProveedor?id=" + id;
-
-            try
-            {
-                HttpResponseMessage response = WebHelper.Delete(path);
-                if (!response.IsSuccessStatusCode)
-                {
-                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
-                }
-
-            }
-            catch (Exception ex)
-            {
-                error = ex.Message;
-            }
-
-
-        }
-
         public static void ProveedorAgregar(ProveedorAgregarEnt proveedor, out string error)
         {
             String path = "/api/Proveedor/AgregarProveedor";
@@ -86,14 +64,19 @@ namespace PersistenciaWS
 
         }
 
-        public static void ProveedorReactivar(Guid id, out string error)
+        public static void ProveedorBaja(Guid id, Guid idUsuarioProveedor, out string error)
         {
             error = null;
-            String path = "/api/Proveedor/ReactivarProveedor?id=" + id;
+            String path = "/api/Proveedor/BajaProveedor?id=";
+            Dictionary<String, Guid> map = new Dictionary<string, Guid>();
+            map.Add("id", id);
+            map.Add("idUsuario", idUsuarioProveedor);
+
+            var jsonRequest = JsonConvert.SerializeObject(map);
 
             try
             {
-                HttpResponseMessage response = WebHelper.Delete(path);
+                HttpResponseMessage response = WebHelper.DeleteWithBody(path, jsonRequest);
                 if (!response.IsSuccessStatusCode)
                 {
                     error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
@@ -106,13 +89,38 @@ namespace PersistenciaWS
             }
         }
 
-        public static void ProveedorModificar(Guid id, Guid idUsuario, String nombre, String apellido, String email, String cuit, out string error)
+        public static void ProveedorReactivar(Guid id, Guid idUsuarioProveedor, out string error)
+        {
+            error = null;
+            String path = "/api/Proveedor/ReactivarProveedor";
+            Dictionary<String, Guid> map = new Dictionary<string, Guid>();
+            map.Add("id", id);
+            map.Add("idUsuario", idUsuarioProveedor);
+
+            var jsonRequest = JsonConvert.SerializeObject(map);
+
+            try
+            {
+                HttpResponseMessage response = WebHelper.DeleteWithBody(path, jsonRequest);
+                if (!response.IsSuccessStatusCode)
+                {
+                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+            }
+        }
+
+        public static void ProveedorModificar(Guid id, Guid idUsuarioProveedor, String nombre, String apellido, String email, String cuit, out string error)
         {
             error = null;
             String path = "/api/Proveedor/ModificarProveedor";
             Dictionary<string, string> map = new Dictionary<string, string>();
             map.Add("id", id.ToString());
-            map.Add("idUsuario", idUsuario.ToString());
+            map.Add("idUsuario", idUsuarioProveedor.ToString());
             map.Add("nombre", nombre);
             map.Add("apellido", apellido);
             map.Add("email", email);

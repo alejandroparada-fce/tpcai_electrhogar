@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using tpcai_electrhogar.Datos;
+using tpcai_electrhogar.Forms;
+using tpcai_electrhogar.Negocio;
 
 namespace tpcai_electrhogar
 {
@@ -53,5 +56,7 @@ namespace tpcai_electrhogar
             FormMenuPrincipal modulosForm = new FormMenuPrincipal();
             modulosForm.Show();
         }
+
+
     }
 }

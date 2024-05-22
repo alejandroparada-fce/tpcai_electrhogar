@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using tpcai_electrhogar.Datos;
+using tpcai_electrhogar.Forms;
 using tpcai_electrhogar.Negocio;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -23,6 +24,9 @@ namespace tpcai_electrhogar
             ObtenerListaProveedor();
         }
         private string mensajeError;
+
+        public static Guid idUsuario = new Guid("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
+        public static Guid idUsuarioProveedor = new Guid("8fc1b7c9-a59b-46b2-af97-1ac9d9b48773");
 
 
         private List<ProveedorEnt> ObtenerListaProveedor()
@@ -91,16 +95,28 @@ namespace tpcai_electrhogar
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            ClienteEnt clienteseleccionado = (ClienteEnt)dgvProveedor.Rows[dgvProveedor.CurrentCell.RowIndex].DataBoundItem;
-            Guid id = clienteseleccionado.id;
+            ModuloProveedor.ProveedorBaja(idUsuario, idUsuarioProveedor, out string error);
+            //ProveedorEnt proveedorseleccionado = (ProveedorEnt)dgvProveedor.Rows[dgvProveedor.CurrentCell.RowIndex].DataBoundItem;
+            //Guid id = proveedorseleccionado.id;
+            //
+            //try
+            //{
+            //    ModuloProducto.EliminarProducto(id, out string error);
+            //    this.Hide();
+            //    FormAdmProductos formAdmProductos = new FormAdmProductos();
+            //    formAdmProductos.Show();
+            //
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
 
-                FormConfirmacion formConfirmacion = new FormConfirmacion(id);
-                formConfirmacion.ShowDialog();
-                this.Hide();
-                FormProveedorListar listadoClientesForm = new FormProveedorListar();
-                listadoClientesForm.Show();
-
-
+            //FormConfirmacion formConfirmacion = new FormConfirmacion(id);
+            //formConfirmacion.ShowDialog();
+            //this.Hide();
+            //FormProveedorListar listadoClientesForm = new FormProveedorListar();
+            //listadoClientesForm.Show();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
