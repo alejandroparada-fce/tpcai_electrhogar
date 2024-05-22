@@ -77,7 +77,8 @@ namespace tpcai_electrhogar
         private void btnCancelarContrasena_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormMenuPrincipal modulosForm = new FormMenuPrincipal(_username, ModuloLogueo.UsuarioAuntenticado.host);
+            FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
+ModuloLogueo.UsuarioAuntenticado.host);
             modulosForm.Show();
         }
 
