@@ -50,7 +50,8 @@ namespace tpcai_electrhogar.Forms
         private void btnCancelarContrasena_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormMenuPrincipal modulosForm = new FormMenuPrincipal();
+            FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
+ModuloLogueo.UsuarioAuntenticado.host);
             modulosForm.Show();
         }
     }
