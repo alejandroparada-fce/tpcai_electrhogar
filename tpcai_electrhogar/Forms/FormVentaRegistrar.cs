@@ -112,7 +112,8 @@ ModuloLogueo.UsuarioAuntenticado.host);
         {
             FormAgregarProducto formAgregarProducto = new FormAgregarProducto();
             formAgregarProducto.ShowDialog();
-
+            object[] fila1 = { };
+            dgvProductos.Rows.Add(fila1);
         }
     }
 }

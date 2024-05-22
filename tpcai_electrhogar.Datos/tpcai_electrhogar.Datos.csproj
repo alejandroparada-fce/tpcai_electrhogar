@@ -46,6 +46,7 @@
     <Compile Include="CambioContraseñaEnt.cs" />
     <Compile Include="IntentoFallidoEnt.cs" />
     <Compile Include="ProductoAgregarEnt.cs" />
+    <Compile Include="ProductoVentaEnt.cs" />
     <Compile Include="ProveedorEnt.cs" />
     <Compile Include="ClienteAgregarEnt.cs" />
     <Compile Include="ClienteBaseEnt.cs" />

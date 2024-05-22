@@ -140,6 +140,16 @@ namespace tpcai_electrhogar
             return true;
 
         }
+        public static bool CantidadMinima(int cantidad, int stock, out string mensajeError)
+        {
+            if (cantidad > stock)
+            {
+                mensajeError = "La cantidad ingresada supera al stock del producto";
+                return false;
+            }
+            mensajeError = null;
+            return true;
+        }
 
         //Valida que el nombre de usuario no contenga el nombre y apellido de la persona
         public static bool ValidarPatronUsuario(string nombre, string apellido, string usuario, out string mensajeError) 
