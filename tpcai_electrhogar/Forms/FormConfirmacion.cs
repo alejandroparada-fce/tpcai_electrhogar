@@ -51,9 +51,6 @@ namespace tpcai_electrhogar
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-ModuloLogueo.UsuarioAuntenticado.host);
-            modulosForm.Show();
         }
     }
 }
