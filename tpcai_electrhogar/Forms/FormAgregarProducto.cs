@@ -44,9 +44,6 @@ namespace tpcai_electrhogar.Forms
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-ModuloLogueo.UsuarioAuntenticado.host);
-            modulosForm.Show();
         }
 
         private void dgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
