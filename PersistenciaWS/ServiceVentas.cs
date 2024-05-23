@@ -63,5 +63,27 @@ namespace PersistenciaWS
                 error = ex.Message;
             }
         }
+
+        public static void AgregarVenta(AltaVenta venta, out string error)
+        {
+            error = null;
+            String path = "/api/Venta/AgregarVenta";          
+            var jsonRequest = JsonConvert.SerializeObject(venta);
+
+            try
+            {
+                HttpResponseMessage response = WebHelper.Post(path, jsonRequest);
+                if (!response.IsSuccessStatusCode)
+                {
+                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                }
+
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+            }
+        }
+        
     }
 }

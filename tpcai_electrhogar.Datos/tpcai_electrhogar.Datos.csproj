@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AltaVenta.cs" />
     <Compile Include="CambioContraseñaEnt.cs" />
     <Compile Include="IntentoFallidoEnt.cs" />
     <Compile Include="ProductoAgregarEnt.cs" />

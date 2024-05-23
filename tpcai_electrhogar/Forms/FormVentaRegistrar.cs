@@ -47,6 +47,10 @@ namespace tpcai_electrhogar.Forms
 
         }
 
+        public static string idUsuario = "d62f7493-c1aa-4183-ad87-a3a41c77629d";
+         
+           
+
         private void FiltrarLista()
         {
             List<ClienteEnt> listaClientes = ObtenerListaClientes();
@@ -217,5 +221,26 @@ ModuloLogueo.UsuarioAuntenticado.host);
             }
         }
 
+        private void btnRealizarVenta_Click(object sender, EventArgs e)
+        {
+            ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
+            Guid idCliente = clienteSeleccionado.id;
+            Guid.TryParse(idUsuario, out Guid idUsuario2);
+
+            foreach (DataGridViewRow row in dgvProductos.Rows)
+            { 
+                var idProd = row.Cells[0].Value?.ToString();
+                var cantidadProd = row.Cells[4].Value?.ToString();
+                Guid.TryParse(idProd, out Guid idProducto);
+                int.TryParse(cantidadProd, out int cantidad);
+                AltaVenta venta = new AltaVenta();
+                venta.idCliente = clienteSeleccionado.id;
+                venta.idUsuario = idUsuario2;
+                venta.idProducto = idProducto;
+                venta.Cantidad = cantidad;
+
+                ModuloVentas.AgregarVenta(venta , out string error);
+            }
+        }
     }
 }

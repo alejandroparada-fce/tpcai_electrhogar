@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using tpcai_electrhogar.Datos;
 using PersistenciaWS;
 using System.Runtime.CompilerServices;
+using System.IO;
 
 namespace tpcai_electrhogar.Negocio
 {
@@ -23,6 +24,11 @@ namespace tpcai_electrhogar.Negocio
         public static void DevolverVentas(Guid id, out string error)
         {
             ServiceVentas.DevolverVentas(id, idUsuario, out error);
+        }
+
+        public static void AgregarVenta(AltaVenta venta, out string error)
+        {
+            ServiceVentas.AgregarVenta(venta , out error);
         }
     }
 

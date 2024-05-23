@@ -412,6 +412,7 @@
             this.btnRealizarVenta.TabIndex = 132;
             this.btnRealizarVenta.Text = "Comprar";
             this.btnRealizarVenta.UseVisualStyleBackColor = false;
+            this.btnRealizarVenta.Click += new System.EventHandler(this.btnRealizarVenta_Click);
             // 
             // checkElectro
             // 
