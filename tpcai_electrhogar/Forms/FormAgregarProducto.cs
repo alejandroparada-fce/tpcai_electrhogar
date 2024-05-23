@@ -63,7 +63,7 @@ namespace tpcai_electrhogar.Forms
             string mensajeError = "";
             ProductoEnt productoSeleccionado = (ProductoEnt)dgvProductos.Rows[dgvProductos.CurrentCell.RowIndex].DataBoundItem;
             int stock = productoSeleccionado.Stock;
-            bool validar1 = Validaciones.ValidarEntero(cantidadNumeric.Text, "'Stock'", -2147483647, 2147483647, out int cantidad, out string mensajeError1);
+            bool validar1 = Validaciones.ValidarEntero(cantidadNumeric.Text, "'Stock'", 1, 2147483647, out int cantidad, out string mensajeError1);
             bool validar2 = Validaciones.CantidadMinima(cantidad, stock, out string mensajeError2);
             mensajeError = mensajeError1 + "\n" + mensajeError2;
             if ((validar1 & validar2) == true)

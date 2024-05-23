@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -113,7 +114,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
         }
 
            public void llenarDataGrid(ProductoVentaEnt producto)
-        {
+        {           
             object[] fila1 = { producto.idProducto, producto.idCategoria, producto.precio, producto.nombre, producto.stock };
             dgvProductos.Rows.Add(fila1);
         }
@@ -124,6 +125,27 @@ ModuloLogueo.UsuarioAuntenticado.host);
            
 
         }
-     
+
+        private void BorrarCelda()
+        {
+            if (dgvProductos.Rows.Count > 1)
+            {
+                foreach (DataGridViewRow row in dgvProductos.SelectedRows)
+                {
+                    dgvProductos.Rows.Remove(row);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila a eliminar.");
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            BorrarCelda();
+        }
+
+
     }
 }
