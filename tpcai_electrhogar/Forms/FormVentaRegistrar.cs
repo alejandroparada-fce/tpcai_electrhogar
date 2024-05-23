@@ -14,6 +14,8 @@ namespace tpcai_electrhogar.Forms
 {
     public partial class FormVentaRegistrar : Form
     {
+
+
         public FormVentaRegistrar()
         {
             InitializeComponent();
@@ -62,7 +64,9 @@ namespace tpcai_electrhogar.Forms
             List<ClienteEnt> listaClientes = ObtenerListaClientes();
         }
 
-            private void FormVentaRegistrar_MouseDown(object sender, MouseEventArgs e)
+
+
+        private void FormVentaRegistrar_MouseDown(object sender, MouseEventArgs e)
         {
             FormUtils.MoverFormulario(this);
         }
@@ -108,12 +112,18 @@ ModuloLogueo.UsuarioAuntenticado.host);
             txtDNI.Text = clienteSeleccionado.dni.ToString();
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+           public void llenarDataGrid(ProductoVentaEnt producto)
         {
-            FormAgregarProducto formAgregarProducto = new FormAgregarProducto();
-            formAgregarProducto.ShowDialog();
-            object[] fila1 = { };
+            object[] fila1 = { producto.idProducto, producto.idCategoria, producto.precio, producto.nombre, producto.stock };
             dgvProductos.Rows.Add(fila1);
         }
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            FormAgregarProducto formAgregarProducto = new FormAgregarProducto(this);
+            formAgregarProducto.ShowDialog();
+           
+
+        }
+     
     }
 }

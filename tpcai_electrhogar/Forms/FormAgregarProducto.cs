@@ -15,10 +15,12 @@ namespace tpcai_electrhogar.Forms
 {
     public partial class FormAgregarProducto : Form
     {
-        public FormAgregarProducto()
+        private FormVentaRegistrar formVentaRegistrar;
+        public FormAgregarProducto(FormVentaRegistrar formVentaRegistrar)
         {
             InitializeComponent();
             CargarLista();
+            this.formVentaRegistrar = formVentaRegistrar;
         }
 
         private List<ProductoEnt> ObtenerListaProductos()
@@ -71,8 +73,9 @@ namespace tpcai_electrhogar.Forms
                 producto.idProducto = productoSeleccionado.Id;
                 producto.nombre = productoSeleccionado.Nombre;
                 producto.precio = productoSeleccionado.Precio;
-                producto.stock = productoSeleccionado.Stock;
-
+                producto.stock = cantidad;
+                formVentaRegistrar.llenarDataGrid(producto);
+                this.Hide();
             }
             else
             {
