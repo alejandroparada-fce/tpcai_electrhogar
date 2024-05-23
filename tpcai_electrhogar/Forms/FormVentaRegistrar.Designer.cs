@@ -38,20 +38,18 @@
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.dateNacimiento = new System.Windows.Forms.DateTimePicker();
             this.lblDni = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
-            this.lblPromocion = new System.Windows.Forms.Label();
+            this.lblMonto = new System.Windows.Forms.Label();
             this.lblTotalAPagar = new System.Windows.Forms.Label();
             this.lblDescuento = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtDNI = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtMontoParcial = new System.Windows.Forms.TextBox();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
+            this.txtMontoTotal = new System.Windows.Forms.TextBox();
             this.lblCredits = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
@@ -62,6 +60,11 @@
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnRealizarVenta = new System.Windows.Forms.Button();
+            this.checkElectro = new System.Windows.Forms.CheckBox();
+            this.checkClienteNuevo = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -106,7 +109,7 @@
             this.Precio,
             this.Nombre,
             this.Cantidad});
-            this.dgvProductos.Location = new System.Drawing.Point(214, 200);
+            this.dgvProductos.Location = new System.Drawing.Point(221, 198);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.ReadOnly = true;
             this.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -118,6 +121,7 @@
             this.Id.HeaderText = "Id";
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
+            this.Id.Visible = false;
             // 
             // idCategoria
             // 
@@ -155,31 +159,6 @@
             this.lblTitle.Text = "Registrar Venta";
             this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.lblFecha.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblFecha.Location = new System.Drawing.Point(236, 459);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(58, 19);
-            this.lblFecha.TabIndex = 101;
-            this.lblFecha.Text = "Fecha";
-            // 
-            // dateNacimiento
-            // 
-            this.dateNacimiento.CalendarFont = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateNacimiento.CustomFormat = "";
-            this.dateNacimiento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNacimiento.Location = new System.Drawing.Point(300, 458);
-            this.dateNacimiento.MaxDate = new System.DateTime(2024, 3, 23, 0, 0, 0, 0);
-            this.dateNacimiento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateNacimiento.Name = "dateNacimiento";
-            this.dateNacimiento.Size = new System.Drawing.Size(90, 21);
-            this.dateNacimiento.TabIndex = 102;
-            this.dateNacimiento.Value = new System.DateTime(2024, 3, 23, 0, 0, 0, 0);
-            // 
             // lblDni
             // 
             this.lblDni.AutoSize = true;
@@ -213,23 +192,23 @@
             this.lblApellido.TabIndex = 105;
             this.lblApellido.Text = "Apellido";
             // 
-            // lblPromocion
+            // lblMonto
             // 
-            this.lblPromocion.AutoSize = true;
-            this.lblPromocion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.lblPromocion.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblPromocion.Location = new System.Drawing.Point(236, 355);
-            this.lblPromocion.Name = "lblPromocion";
-            this.lblPromocion.Size = new System.Drawing.Size(102, 19);
-            this.lblPromocion.TabIndex = 107;
-            this.lblPromocion.Text = "Promoción: ";
+            this.lblMonto.AutoSize = true;
+            this.lblMonto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.lblMonto.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblMonto.Location = new System.Drawing.Point(235, 381);
+            this.lblMonto.Name = "lblMonto";
+            this.lblMonto.Size = new System.Drawing.Size(125, 19);
+            this.lblMonto.TabIndex = 107;
+            this.lblMonto.Text = "Monto Parcial:";
             // 
             // lblTotalAPagar
             // 
             this.lblTotalAPagar.AutoSize = true;
             this.lblTotalAPagar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblTotalAPagar.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblTotalAPagar.Location = new System.Drawing.Point(586, 459);
+            this.lblTotalAPagar.Location = new System.Drawing.Point(235, 463);
             this.lblTotalAPagar.Name = "lblTotalAPagar";
             this.lblTotalAPagar.Size = new System.Drawing.Size(125, 19);
             this.lblTotalAPagar.TabIndex = 108;
@@ -240,7 +219,7 @@
             this.lblDescuento.AutoSize = true;
             this.lblDescuento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblDescuento.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblDescuento.Location = new System.Drawing.Point(235, 395);
+            this.lblDescuento.Location = new System.Drawing.Point(234, 421);
             this.lblDescuento.Name = "lblDescuento";
             this.lblDescuento.Size = new System.Drawing.Size(103, 19);
             this.lblDescuento.TabIndex = 109;
@@ -267,26 +246,26 @@
             this.txtDNI.Size = new System.Drawing.Size(100, 20);
             this.txtDNI.TabIndex = 112;
             // 
-            // textBox4
+            // txtMontoParcial
             // 
-            this.textBox4.Location = new System.Drawing.Point(345, 354);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 114;
+            this.txtMontoParcial.Location = new System.Drawing.Point(366, 383);
+            this.txtMontoParcial.Name = "txtMontoParcial";
+            this.txtMontoParcial.Size = new System.Drawing.Size(100, 20);
+            this.txtMontoParcial.TabIndex = 114;
             // 
-            // textBox5
+            // txtDescuento
             // 
-            this.textBox5.Location = new System.Drawing.Point(345, 394);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 115;
+            this.txtDescuento.Location = new System.Drawing.Point(366, 420);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(100, 20);
+            this.txtDescuento.TabIndex = 115;
             // 
-            // textBox6
+            // txtMontoTotal
             // 
-            this.textBox6.Location = new System.Drawing.Point(717, 461);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 116;
+            this.txtMontoTotal.Location = new System.Drawing.Point(366, 462);
+            this.txtMontoTotal.Name = "txtMontoTotal";
+            this.txtMontoTotal.Size = new System.Drawing.Size(100, 20);
+            this.txtMontoTotal.TabIndex = 116;
             // 
             // lblCredits
             // 
@@ -352,7 +331,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(746, 386);
+            this.btnCancelar.Location = new System.Drawing.Point(516, 498);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(110, 30);
             this.btnCancelar.TabIndex = 122;
@@ -409,7 +388,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminar.Location = new System.Drawing.Point(510, 344);
+            this.btnEliminar.Location = new System.Drawing.Point(495, 344);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(166, 30);
             this.btnEliminar.TabIndex = 131;
@@ -417,12 +396,76 @@
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
+            // btnRealizarVenta
+            // 
+            this.btnRealizarVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnRealizarVenta.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnRealizarVenta.FlatAppearance.BorderSize = 0;
+            this.btnRealizarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnRealizarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRealizarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRealizarVenta.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRealizarVenta.ForeColor = System.Drawing.Color.LightGray;
+            this.btnRealizarVenta.Location = new System.Drawing.Point(650, 498);
+            this.btnRealizarVenta.Name = "btnRealizarVenta";
+            this.btnRealizarVenta.Size = new System.Drawing.Size(110, 30);
+            this.btnRealizarVenta.TabIndex = 132;
+            this.btnRealizarVenta.Text = "Comprar";
+            this.btnRealizarVenta.UseVisualStyleBackColor = false;
+            // 
+            // checkElectro
+            // 
+            this.checkElectro.AutoSize = true;
+            this.checkElectro.BackColor = System.Drawing.Color.Black;
+            this.checkElectro.ForeColor = System.Drawing.Color.Red;
+            this.checkElectro.Location = new System.Drawing.Point(734, 402);
+            this.checkElectro.Name = "checkElectro";
+            this.checkElectro.Size = new System.Drawing.Size(15, 14);
+            this.checkElectro.TabIndex = 133;
+            this.checkElectro.UseVisualStyleBackColor = false;
+            // 
+            // checkClienteNuevo
+            // 
+            this.checkClienteNuevo.AutoSize = true;
+            this.checkClienteNuevo.Location = new System.Drawing.Point(734, 436);
+            this.checkClienteNuevo.Name = "checkClienteNuevo";
+            this.checkClienteNuevo.Size = new System.Drawing.Size(15, 14);
+            this.checkClienteNuevo.TabIndex = 134;
+            this.checkClienteNuevo.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(512, 398);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(201, 19);
+            this.label1.TabIndex = 135;
+            this.label1.Text = "Descuento Electrohogar";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(512, 432);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(211, 19);
+            this.label2.TabIndex = 136;
+            this.label2.Text = "Descuento Cliente Nuevo";
+            // 
             // FormVentaRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(868, 553);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.checkClienteNuevo);
+            this.Controls.Add(this.checkElectro);
+            this.Controls.Add(this.btnRealizarVenta);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvClientes);
@@ -433,20 +476,18 @@
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.lblVersion);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtMontoTotal);
+            this.Controls.Add(this.txtDescuento);
+            this.Controls.Add(this.txtMontoParcial);
             this.Controls.Add(this.txtDNI);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblDescuento);
             this.Controls.Add(this.lblTotalAPagar);
-            this.Controls.Add(this.lblPromocion);
+            this.Controls.Add(this.lblMonto);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblDni);
-            this.Controls.Add(this.dateNacimiento);
-            this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.panel1);
@@ -472,20 +513,18 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.DateTimePicker dateNacimiento;
         private System.Windows.Forms.Label lblDni;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblApellido;
-        private System.Windows.Forms.Label lblPromocion;
+        private System.Windows.Forms.Label lblMonto;
         private System.Windows.Forms.Label lblTotalAPagar;
         private System.Windows.Forms.Label lblDescuento;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtDNI;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtMontoParcial;
+        private System.Windows.Forms.TextBox txtDescuento;
+        private System.Windows.Forms.TextBox txtMontoTotal;
         private System.Windows.Forms.Label lblCredits;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.PictureBox btnMaximizar;
@@ -496,11 +535,16 @@
         private System.Windows.Forms.DataGridView dgvClientes;
         private System.Windows.Forms.Button btnAgregar;
         public System.Windows.Forms.DataGridView dgvProductos;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnRealizarVenta;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn idCategoria;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.CheckBox checkElectro;
+        private System.Windows.Forms.CheckBox checkClienteNuevo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

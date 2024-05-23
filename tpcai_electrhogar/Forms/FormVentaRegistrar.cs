@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -114,9 +115,20 @@ ModuloLogueo.UsuarioAuntenticado.host);
         }
 
            public void llenarDataGrid(ProductoVentaEnt producto)
-        {           
+        {
+            foreach (DataGridViewRow row in dgvProductos.Rows)
+            {
+                if (row.Cells["Id"].Value?.ToString() == producto.idProducto.ToString())
+                {
+                    MessageBox.Show("El producto con este ID ya existe en la lista.", "Valor Duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+
             object[] fila1 = { producto.idProducto, producto.idCategoria, producto.precio, producto.nombre, producto.stock };
             dgvProductos.Rows.Add(fila1);
+            CalcularMonto();
+            TildarOpciones();
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -144,8 +156,66 @@ ModuloLogueo.UsuarioAuntenticado.host);
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             BorrarCelda();
+            CalcularMonto();
+            TildarOpciones();
+           
         }
 
+        private void CalcularMonto()
+        {
+            decimal suma = 0;
+            decimal electroHogar = 0;
+            decimal descuentoElectro = 0;
+            decimal descuentoCliente = 0;
+            decimal montoTotal = 0;
+
+            foreach (DataGridViewRow row in dgvProductos.Rows)
+            {
+                if (row.Cells["Precio"].Value != null && decimal.TryParse(row.Cells["Precio"].Value.ToString(), out decimal valor))
+                    if (row.Cells["Cantidad"].Value != null && decimal.TryParse(row.Cells["Cantidad"].Value.ToString(), out decimal cantidad))
+                {                  
+                        
+                        suma = suma + (valor * cantidad);
+
+                    if (row.Cells["IdCategoria"].Value != null && int.TryParse(row.Cells["IdCategoria"].Value.ToString(), out int categoria))
+                    {
+                        if (categoria == 3)
+
+                        {
+                            electroHogar = electroHogar + (valor * cantidad);
+                        }
+
+                    }
+                }
+            }
+
+            if (electroHogar > 100000)
+            {
+                descuentoElectro = electroHogar * 0.05m;
+            }
+
+            /*if (esClienteNuevo)
+            {
+                descuentocliente = (suma - descuentoelectro) * 0.05m;
+            }*/
+
+            montoTotal = suma - descuentoElectro; //- descuentocliente;
+
+            txtMontoTotal.Text = montoTotal.ToString();
+            txtMontoParcial.Text = suma.ToString();
+            txtDescuento.Text = descuentoElectro.ToString();
+        }
+        private void TildarOpciones()
+        {
+            if (!(txtDescuento.Text == "0"))
+            {
+                checkElectro.Checked = true;
+            }
+            else
+            {
+               checkElectro.Checked = false;
+            }
+        }
 
     }
 }
