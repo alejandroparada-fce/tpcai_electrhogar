@@ -148,7 +148,12 @@ ModuloLogueo.UsuarioAuntenticado.host);
             {
                 foreach (DataGridViewRow row in dgvProductos.SelectedRows)
                 {
-                    dgvProductos.Rows.Remove(row);
+                    
+                    if(!row.IsNewRow)
+                    {
+                        dgvProductos.Rows.Remove(row);
+                    }
+                   
                 }
             }
             else
