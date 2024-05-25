@@ -21,6 +21,7 @@ namespace tpcai_electrhogar.Negocio
             ServiceUsuario.AgregarUsuario(usuario, out error);
         }
 
+
         public static List<UsuarioConsultaEnt> ConsultarUsuarios(Guid idUsuario, out string error)
         {
             List<UsuarioConsultaEnt> listaUsuarios = new List<UsuarioConsultaEnt>();
