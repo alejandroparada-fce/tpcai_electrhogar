@@ -18,7 +18,7 @@ namespace tpcai_electrhogar
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FormLogin());
-            Application.Run(new FormBienvenida());
+            //Application.Run(new FormBienvenida());
             //Application.Run(new FormMenuPrincipal());
             //Application.Run(new FormUsuarioRegistrar());
             //Application.Run(new FormClienteListar());
@@ -31,6 +31,7 @@ namespace tpcai_electrhogar
             //Application.Run(new FormVentaDevolucion());
             //Application.Run(new FormVentaRegistrar());
             //Application.Run(new FormAgregarProducto());
+            Application.Run(new FormReporteVentasPorVendedor());
         }
     }
 }

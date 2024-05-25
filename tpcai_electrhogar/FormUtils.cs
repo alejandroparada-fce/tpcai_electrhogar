@@ -127,5 +127,22 @@ namespace tpcai_electrhogar
                 dgv.Columns[index].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
         }
+
+        //Ajusta las columnas de un DataGridView para que ocupen todo el espacio
+        public static void AjustarFilas(DataGridView dgv)
+        {
+            // Calcula la altura disponible para las filas (altura del DataGridView menos altura de los encabezados)
+            int availableHeight = dgv.ClientSize.Height - dgv.ColumnHeadersHeight;
+
+            // Calcula la altura promedio de las filas
+            int averageRowHeight = availableHeight / dgv.RowCount;
+
+            // Establece la altura de todas las filas para que ocupen el espacio disponible
+            foreach (DataGridViewRow row in dgv.Rows)
+            {
+                row.Height = averageRowHeight;
+            }
+
+        }
     }
 }
