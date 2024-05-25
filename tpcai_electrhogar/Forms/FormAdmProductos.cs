@@ -42,7 +42,7 @@ namespace tpcai_electrhogar.Forms
         }
 
 
-      
+
         private void FormProductoBaja_MouseDown(object sender, MouseEventArgs e)
         {
             FormUtils.MoverFormulario(this);
@@ -81,7 +81,7 @@ namespace tpcai_electrhogar.Forms
         private void TraerProductosCategoria_Click(object sender, EventArgs e)
         {
             string mensajeError = "";
-            
+
             bool validar1 = Validaciones.ValidarEntero(categoria.Text, "categoria", 1, 5, out int idCategoria, out string mensajeError1);
             mensajeError = mensajeError1;
             lblError.Text = mensajeError;
@@ -144,28 +144,53 @@ ModuloLogueo.UsuarioAuntenticado.host);
 
         private void modificarBtn_Click(object sender, EventArgs e)
         {
-            ProductoEnt productoseleccionado = (ProductoEnt)dgvProductos.Rows[dgvProductos.CurrentCell.RowIndex].DataBoundItem;
-            Guid id = productoseleccionado.Id;
-            FormModificarProducto formModificarProducto = new FormModificarProducto(id);
-            formModificarProducto.ShowDialog();
+            if (dgvProductos.SelectedRows.Count > 0)
+            {
+                DataGridViewRow filaSeleccionada = dgvProductos.SelectedRows[0];
+                if (filaSeleccionada != null)
+                {
+                    ProductoEnt productoseleccionado = (ProductoEnt)dgvProductos.Rows[dgvProductos.CurrentCell.RowIndex].DataBoundItem;
+                    Guid id = productoseleccionado.Id;
+                    FormModificarProducto formModificarProducto = new FormModificarProducto(id);
+                    formModificarProducto.ShowDialog();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe de cargar la lista");
+            }
         }
 
         private void eliminarBtn_Click(object sender, EventArgs e)
         {
-            ProductoEnt productoseleccionado = (ProductoEnt)dgvProductos.Rows[dgvProductos.CurrentCell.RowIndex].DataBoundItem;
-            Guid id = productoseleccionado.Id;
-            try
+            if (dgvProductos.SelectedRows.Count > 0)
             {
-                ModuloProducto.EliminarProducto(id, out string error);
-                this.Hide();
-                FormAdmProductos formAdmProductos = new FormAdmProductos();
-                formAdmProductos.Show();
+                DataGridViewRow filaSeleccionada = dgvProductos.SelectedRows[0];
+                if (filaSeleccionada != null)
+                {
+                    ProductoEnt productoseleccionado = (ProductoEnt)dgvProductos.Rows[dgvProductos.CurrentCell.RowIndex].DataBoundItem;
+                    Guid id = productoseleccionado.Id;
+                    try
+                    {
+                        ModuloProducto.EliminarProducto(id, out string error);
+                        this.Hide();
+                        FormAdmProductos formAdmProductos = new FormAdmProductos();
+                        formAdmProductos.Show();
 
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+               
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Debe de cargar la lista");
             }
         }
     }
 }
+    
+
