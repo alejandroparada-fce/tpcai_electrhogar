@@ -116,6 +116,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
             txtNombre.Text = clienteSeleccionado.nombre;
             txtApellido.Text = clienteSeleccionado.apellido;
             txtDNI.Text = clienteSeleccionado.dni.ToString();
+            CalcularMonto();
         }
 
            public void llenarDataGrid(ProductoVentaEnt producto)
@@ -144,7 +145,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
 
         private void BorrarCelda()
         {
-            if (dgvProductos.Rows.Count > 1)
+            if (dgvProductos.Rows.Count > 0)
             {
                 foreach (DataGridViewRow row in dgvProductos.SelectedRows)
                 {
@@ -169,6 +170,11 @@ ModuloLogueo.UsuarioAuntenticado.host);
             TildarOpciones();
            
         }
+        private bool ClienteNuevo(Guid idCliente)
+        {
+            List<VentaClienteEnt> listadoVentasCliente = ModuloVentas.ConsultarVentasCliente(idCliente, out string error);
+            return listadoVentasCliente == null || listadoVentasCliente.Count == 0;
+        }
 
         private void CalcularMonto()
         {
@@ -176,7 +182,12 @@ ModuloLogueo.UsuarioAuntenticado.host);
             decimal electroHogar = 0;
             decimal descuentoElectro = 0;
             decimal descuentoCliente = 0;
-            decimal montoTotal = 0;
+            decimal montoTotal = 0;         
+            ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
+            Guid idCliente = clienteSeleccionado.id;
+            List<VentaClienteEnt> listadoVentasCliente = ModuloVentas.ConsultarVentasCliente(idCliente, out string error);
+
+
 
             foreach (DataGridViewRow row in dgvProductos.Rows)
             {
@@ -203,27 +214,27 @@ ModuloLogueo.UsuarioAuntenticado.host);
                 descuentoElectro = electroHogar * 0.05m;
             }
 
-            /*if (esClienteNuevo)
+            bool clienteNuevo = ClienteNuevo(idCliente);
+            
+            if (clienteNuevo)
             {
-                descuentocliente = (suma - descuentoelectro) * 0.05m;
-            }*/
+                descuentoCliente = (suma - descuentoElectro) * 0.05m;
+            }
 
-            montoTotal = suma - descuentoElectro; //- descuentocliente;
+            montoTotal = suma - descuentoElectro - descuentoCliente;
 
             txtMontoTotal.Text = montoTotal.ToString();
             txtMontoParcial.Text = suma.ToString();
             txtDescuento.Text = descuentoElectro.ToString();
+            txtDescuentoCliente.Text = descuentoCliente.ToString();
+            TildarOpciones();
         }
         private void TildarOpciones()
         {
-            if (!(txtDescuento.Text == "0"))
-            {
-                checkElectro.Checked = true;
-            }
-            else
-            {
-               checkElectro.Checked = false;
-            }
+            checkElectro.Checked = !(txtDescuento.Text == "0");
+
+            
+            checkClienteNuevo.Checked = !(txtDescuentoCliente.Text == "0");
         }
 
         private void btnRealizarVenta_Click(object sender, EventArgs e)

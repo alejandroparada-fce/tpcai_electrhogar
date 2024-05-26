@@ -65,6 +65,8 @@
             this.checkClienteNuevo = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDescuentoCliente = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -208,7 +210,7 @@
             this.lblTotalAPagar.AutoSize = true;
             this.lblTotalAPagar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblTotalAPagar.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblTotalAPagar.Location = new System.Drawing.Point(235, 463);
+            this.lblTotalAPagar.Location = new System.Drawing.Point(235, 498);
             this.lblTotalAPagar.Name = "lblTotalAPagar";
             this.lblTotalAPagar.Size = new System.Drawing.Size(125, 19);
             this.lblTotalAPagar.TabIndex = 108;
@@ -219,11 +221,11 @@
             this.lblDescuento.AutoSize = true;
             this.lblDescuento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblDescuento.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblDescuento.Location = new System.Drawing.Point(234, 421);
+            this.lblDescuento.Location = new System.Drawing.Point(235, 461);
             this.lblDescuento.Name = "lblDescuento";
-            this.lblDescuento.Size = new System.Drawing.Size(103, 19);
+            this.lblDescuento.Size = new System.Drawing.Size(159, 19);
             this.lblDescuento.TabIndex = 109;
-            this.lblDescuento.Text = "Descuento: ";
+            this.lblDescuento.Text = "Descuento cliente:";
             // 
             // txtNombre
             // 
@@ -255,14 +257,14 @@
             // 
             // txtDescuento
             // 
-            this.txtDescuento.Location = new System.Drawing.Point(366, 420);
+            this.txtDescuento.Location = new System.Drawing.Point(400, 420);
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.Size = new System.Drawing.Size(100, 20);
             this.txtDescuento.TabIndex = 115;
             // 
             // txtMontoTotal
             // 
-            this.txtMontoTotal.Location = new System.Drawing.Point(366, 462);
+            this.txtMontoTotal.Location = new System.Drawing.Point(382, 497);
             this.txtMontoTotal.Name = "txtMontoTotal";
             this.txtMontoTotal.Size = new System.Drawing.Size(100, 20);
             this.txtMontoTotal.TabIndex = 116;
@@ -456,12 +458,32 @@
             this.label2.TabIndex = 136;
             this.label2.Text = "Descuento Cliente Nuevo";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.label3.ForeColor = System.Drawing.SystemColors.Window;
+            this.label3.Location = new System.Drawing.Point(235, 418);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(159, 19);
+            this.label3.TabIndex = 137;
+            this.label3.Text = "Descuento Electro:";
+            // 
+            // txtDescuentoCliente
+            // 
+            this.txtDescuentoCliente.Location = new System.Drawing.Point(400, 461);
+            this.txtDescuentoCliente.Name = "txtDescuentoCliente";
+            this.txtDescuentoCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtDescuentoCliente.TabIndex = 138;
+            // 
             // FormVentaRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(868, 553);
+            this.Controls.Add(this.txtDescuentoCliente);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkClienteNuevo);
@@ -547,5 +569,7 @@
         private System.Windows.Forms.CheckBox checkClienteNuevo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtDescuentoCliente;
     }
 }
