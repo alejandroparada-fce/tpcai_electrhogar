@@ -423,6 +423,7 @@
             this.btnReporteProductoMasVendidoPorCategoria.Text = "Reporte Producto Mas Vendido Por Categoria";
             this.btnReporteProductoMasVendidoPorCategoria.UseVisualStyleBackColor = true;
             this.btnReporteProductoMasVendidoPorCategoria.Visible = false;
+            this.btnReporteProductoMasVendidoPorCategoria.Click += new System.EventHandler(this.btnReporteProductoMasVendidoPorCategoria_Click);
             // 
             // btnReporteVentasPorVendedor
             // 
@@ -433,6 +434,7 @@
             this.btnReporteVentasPorVendedor.Text = "Reporte Ventas por Vendedor";
             this.btnReporteVentasPorVendedor.UseVisualStyleBackColor = true;
             this.btnReporteVentasPorVendedor.Visible = false;
+            this.btnReporteVentasPorVendedor.Click += new System.EventHandler(this.btnReporteVentasPorVendedor_Click);
             // 
             // btnReporteStock
             // 

@@ -278,6 +278,20 @@ namespace tpcai_electrhogar
                 FormProveedorListar listarProveedorForm = new FormProveedorListar();
                 listarProveedorForm.Show();
         }
-        // private void btnReporteVentasPorVendedor_Click(object sender, EventArgs e)
+
+        private void btnReporteProductoMasVendidoPorCategoria_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormReporteProductosCategoria reporteProductos = new FormReporteProductosCategoria();
+            reporteProductos.Show();
+        }
+
+        private void btnReporteVentasPorVendedor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormReporteVentasPorVendedor reporteVentasVendedor = new FormReporteVentasPorVendedor();
+            reporteVentasVendedor.Show();
+        }
+        
     }
 }

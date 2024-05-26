@@ -20,7 +20,9 @@ namespace tpcai_electrhogar.Forms
             dgvReporte.DataBindingComplete += DgvReporte_DataBindingComplete;
         }
         
-
+        /*---------------------------------------------------------------------------------------------------------------------------------
+          Con los servicios del web service no se puede elaborar bien este reporte, procedo a generar ventas aleatorias para su elaboracion
+        ----------------------------------------------------------------------------------------------------------------------------------*/
 
         private void cargarGrid()
         {
