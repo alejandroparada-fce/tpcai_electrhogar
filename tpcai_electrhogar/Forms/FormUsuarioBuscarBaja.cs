@@ -26,6 +26,7 @@ namespace tpcai_electrhogar
             dgvUsuarios.Columns[4].HeaderText = "Nombre de Usuario";
             dgvUsuarios.Columns[5].HeaderText = "Host";
             FormUtils.AjustarColumnas(dgvUsuarios);
+            FormUtils.AjustarFilas(dgvUsuarios);
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -108,5 +109,6 @@ ModuloLogueo.UsuarioAuntenticado.host);
                 }
             }
         }
+
     }
 }
