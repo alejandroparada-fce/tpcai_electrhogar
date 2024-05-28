@@ -20,7 +20,7 @@ namespace tpcai_electrhogar.Negocio
             return listaProductos;
         }
 
-        public static List<ProductoEnt> ReporteStockCritico(out string error)
+        public static List<ProductoEnt> ReporteStockCritico(int categoría, out string error)
         {
          
             //Cargo lista de productos
@@ -35,6 +35,32 @@ namespace tpcai_electrhogar.Negocio
             //Se genera lista filtrada por items que tengan un menos de 25% del promedio
             List<ProductoEnt> listaProductosCritico = new List<ProductoEnt>();
             listaProductosCritico = listaProductos.Where(x => x.Stock < puntoCritico).ToList();
+
+            //Según categoría seleccionada se filtra la lista
+            switch (categoría)
+            {
+                case 0:
+                    return listaProductosCritico;
+                    break;
+                case 1:
+                    return listaProductosCritico.Where(x => x.IdCategoria == 1).ToList();
+                    break;
+                case 2:
+                    return listaProductosCritico.Where(x => x.IdCategoria == 2).ToList();
+                    break;
+                case 3:
+                    return listaProductosCritico.Where(x => x.IdCategoria == 3).ToList();
+                    break;
+                case 4:
+                    return listaProductosCritico.Where(x => x.IdCategoria == 4).ToList();
+                    break;
+                case 5:
+                    return listaProductosCritico.Where(x => x.IdCategoria == 5).ToList();
+                    break;
+                default:
+                    return listaProductosCritico;
+                    break;
+            }
             return listaProductosCritico;
         }
 
