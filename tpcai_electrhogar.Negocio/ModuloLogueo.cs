@@ -19,17 +19,7 @@ namespace tpcai_electrhogar.Negocio
 
         public static int Loguearse(string usuario, string contraseña, string contraseñaDefault)
         {
-            /*LoginEnt logueoAux = new LoginEnt(usuario, contraseña, contraseñaDefault);
-            ModuloLogueo.logueo = logueoAux;
-            if (logueo.Autenticado == true )
-            {
-                LogueosFallidos.RemoveAll(u => u == usuario);
-            }
-            else
-            {
-                LogueosFallidos.Add(usuario);
-            }
-            */
+
             List<UsuarioConsultaEnt> usuarios = ServiceUsuario.ListarUsuarios(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), out string error);
             bool existeUsuario = usuarios.Any(x => x.nombreUsuario == usuario);
             bool bloqueo = ArchivoLocal.ChequearBloqueo(usuario);
@@ -52,11 +42,15 @@ namespace tpcai_electrhogar.Negocio
             }
             else if(resultado && (contraseña == contraseñaDefault))
             {
+                ArchivoLocal.BorrarIntentosFallidosUsuario(usuario);
+                ArchivoLocal.GrabarIntentosFallidos();
                 return 3;
             }
             else if (resultado && (contraseña != contraseñaDefault))
             {
                 UsuarioAuntenticado = usuarios.Find(x => x.nombreUsuario == usuario);
+                ArchivoLocal.BorrarIntentosFallidosUsuario(usuario);
+                ArchivoLocal.GrabarIntentosFallidos();
                 return 4;
             }
             else

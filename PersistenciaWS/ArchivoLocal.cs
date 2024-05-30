@@ -70,6 +70,11 @@ namespace PersistenciaWS
             return false;
         }
 
+        //Borra los intentos fallidos para un usuario en particular
+        public static void BorrarIntentosFallidosUsuario(string usuario)
+        {
+            intentosFallidos.RemoveAll(x => x.NombreUsuario == usuario);
+        }
         //Grabar intentos falllidos a un archivo serializando una lista
         public static void GrabarIntentosFallidos()
         {

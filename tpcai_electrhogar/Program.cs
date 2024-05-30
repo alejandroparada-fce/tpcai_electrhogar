@@ -17,7 +17,7 @@ namespace tpcai_electrhogar
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FormLogin());
+            Application.Run(new FormLogin());
             //Application.Run(new FormBienvenida());
             //Application.Run(new FormMenuPrincipal());
             //Application.Run(new FormUsuarioRegistrar());
@@ -33,7 +33,7 @@ namespace tpcai_electrhogar
             //Application.Run(new FormAgregarProducto());
             //Application.Run(new FormReporteVentasPorVendedor());
             //Application.Run(new FormReporteProductosCategoria());
-            Application.Run(new FormStockCritico());
+            //Application.Run(new FormStockCritico());
         }
     }
 }
