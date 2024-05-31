@@ -29,7 +29,7 @@ Se agrega panel dockeado a la izquierda (RGB 0,122,204).
         }
 
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
             bool valido1 = Validaciones.ValidarCadena(textBoxNombre.Text, "'Nombre'", 3, 30, out string mensajeError1);
             bool valido2 = Validaciones.ValidarCadena(textBoxApellido.Text, "'Apellido'", 3, 30, out string mensajeError2);
@@ -62,6 +62,10 @@ Se agrega panel dockeado a la izquierda (RGB 0,122,204).
                     else
                     {
                         MessageBox.Show("Usuario Creado");
+                        this.Hide();
+                        FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
+                        ModuloLogueo.UsuarioAuntenticado.host);
+                        modulosForm.Show();
                     }
                 }
                 catch (Exception ex)
@@ -106,9 +110,9 @@ Se agrega panel dockeado a la izquierda (RGB 0,122,204).
         {
             this.Hide();
             FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-ModuloLogueo.UsuarioAuntenticado.host);
+            ModuloLogueo.UsuarioAuntenticado.host);
             modulosForm.Show();
         }
     }
-    //
+    
 }

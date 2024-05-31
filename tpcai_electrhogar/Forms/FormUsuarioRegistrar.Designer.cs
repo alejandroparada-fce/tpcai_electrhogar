@@ -50,7 +50,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnRegistrarUsuario = new System.Windows.Forms.Button();
             this.lblCredits = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
@@ -301,23 +301,23 @@
             this.lblTitle.Text = "Registrar Usuario";
             this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
-            // btnLogin
+            // btnRegistrarUsuario
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(514, 497);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(153, 40);
-            this.btnLogin.TabIndex = 0;
-            this.btnLogin.Text = "Registrar";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnRegistrarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnRegistrarUsuario.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnRegistrarUsuario.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnRegistrarUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRegistrarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarUsuario.ForeColor = System.Drawing.Color.LightGray;
+            this.btnRegistrarUsuario.Location = new System.Drawing.Point(514, 497);
+            this.btnRegistrarUsuario.Name = "btnRegistrarUsuario";
+            this.btnRegistrarUsuario.Size = new System.Drawing.Size(153, 40);
+            this.btnRegistrarUsuario.TabIndex = 0;
+            this.btnRegistrarUsuario.Text = "Registrar";
+            this.btnRegistrarUsuario.UseVisualStyleBackColor = false;
+            this.btnRegistrarUsuario.Click += new System.EventHandler(this.btnRegistrarUsuario_Click);
             // 
             // lblCredits
             // 
@@ -400,7 +400,7 @@
             this.Controls.Add(this.btnCancelarContrasena);
             this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.lblVersion);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnRegistrarUsuario);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
@@ -466,7 +466,7 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnRegistrarUsuario;
         private System.Windows.Forms.Label lblCredits;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Button btnCancelarContrasena;

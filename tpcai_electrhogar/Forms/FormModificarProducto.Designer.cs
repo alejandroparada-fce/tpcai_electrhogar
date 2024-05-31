@@ -36,6 +36,8 @@
             this.cambiarBtn = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
+            this.lblCredits = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // stockLbl
@@ -94,7 +96,7 @@
             this.cambiarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cambiarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cambiarBtn.ForeColor = System.Drawing.Color.LightGray;
-            this.cambiarBtn.Location = new System.Drawing.Point(222, 167);
+            this.cambiarBtn.Location = new System.Drawing.Point(222, 178);
             this.cambiarBtn.Name = "cambiarBtn";
             this.cambiarBtn.Size = new System.Drawing.Size(140, 40);
             this.cambiarBtn.TabIndex = 127;
@@ -111,7 +113,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(45, 167);
+            this.btnCancelar.Location = new System.Drawing.Point(45, 178);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(139, 40);
             this.btnCancelar.TabIndex = 128;
@@ -129,12 +131,36 @@
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 129;
             // 
+            // lblCredits
+            // 
+            this.lblCredits.AutoSize = true;
+            this.lblCredits.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCredits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblCredits.Location = new System.Drawing.Point(76, 61);
+            this.lblCredits.Name = "lblCredits";
+            this.lblCredits.Size = new System.Drawing.Size(212, 16);
+            this.lblCredits.TabIndex = 130;
+            this.lblCredits.Text = "* Define el nuevo precio del producto";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.label1.Location = new System.Drawing.Point(76, 122);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(314, 16);
+            this.label1.TabIndex = 131;
+            this.label1.Text = "* Incrementa/disminuye stock en base al valor ingresado";
+            // 
             // FormModificarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(407, 251);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.cambiarBtn);
@@ -160,5 +186,7 @@
         private System.Windows.Forms.Button cambiarBtn;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label lblCredits;
+        private System.Windows.Forms.Label label1;
     }
 }

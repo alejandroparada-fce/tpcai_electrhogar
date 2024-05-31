@@ -144,9 +144,11 @@ ModuloLogueo.UsuarioAuntenticado.host);
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormClienteRegistrar formClienteRegistrar = new FormClienteRegistrar();
             formClienteRegistrar.ShowDialog();
         }
+
     }
     }
 

@@ -25,9 +25,6 @@ namespace tpcai_electrhogar.Forms
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-ModuloLogueo.UsuarioAuntenticado.host);
-            modulosForm.Show();
         }
 
         private void cambiarBtn_Click(object sender, EventArgs e)
@@ -48,8 +45,6 @@ ModuloLogueo.UsuarioAuntenticado.host);
                 {
                     ModuloProducto.ModificarProducto(precio, stock , id,  out string error);
                     this.Hide();
-                    FormAdmProductos formAdmProductos = new FormAdmProductos();
-                    formAdmProductos.Show();
                 }
 
                 catch (Exception ex)
