@@ -53,7 +53,7 @@ namespace tpcai_electrhogar
                     FormUtils.CambiarFormulario(this, new FormCambiarContrasena(txtUsuario.Text, txtPass.Text));
                     break;
                 case 4:
-                    FormUtils.CambiarFormulario(this, new FormBienvenida());
+                    FormUtils.CambiarFormulario(this, new FormBienvenida(txtUsuario.Text));
                     break;
                 case 5:
                     if (txtPass.Text == "Contraseña" || txtPass.Text == "")

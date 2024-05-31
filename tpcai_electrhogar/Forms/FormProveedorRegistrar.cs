@@ -91,6 +91,11 @@ ModuloLogueo.UsuarioAuntenticado.host);
                     else
                     {
                         MessageBox.Show("Proveedor Agregado");
+
+                        this.Hide();
+                        FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
+                        ModuloLogueo.UsuarioAuntenticado.host);
+                        modulosForm.Show();
                     }
                 }
                 catch (Exception ex)

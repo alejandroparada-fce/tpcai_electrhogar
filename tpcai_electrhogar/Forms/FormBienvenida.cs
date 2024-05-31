@@ -13,15 +13,17 @@ namespace tpcai_electrhogar
 {
     public partial class FormBienvenida : Form
     {
-        public FormBienvenida()
+        private string _username;
+        public FormBienvenida(string usuario)
         {
             InitializeComponent();
+            _username = usuario;
+            lblUsuario.Text = _username;
         }
 
         // Levanta el formulario con los parametros correspondientes (opacity en 0 para que aparezca y desaparezca con los timers)
         private void FormBienvenida_Load(object sender, EventArgs e)
         {
-            lblUsuario.Text = "Estudiante de CAI";
             this.Opacity = 0;
             circularProgressBar1.Value = 0;
             circularProgressBar1.Minimum = 0;

@@ -34,11 +34,6 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.checkBoxAudio = new System.Windows.Forms.CheckBox();
-            this.checkBoxCelulares = new System.Windows.Forms.CheckBox();
-            this.checkBoxElectroHogar = new System.Windows.Forms.CheckBox();
-            this.checkBoxInformatica = new System.Windows.Forms.CheckBox();
-            this.checkBoxSmartTv = new System.Windows.Forms.CheckBox();
             this.lblError = new System.Windows.Forms.Label();
             this.txtCUIT = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -119,71 +114,6 @@
             this.lblEmail.Size = new System.Drawing.Size(52, 21);
             this.lblEmail.TabIndex = 12;
             this.lblEmail.Text = "Email";
-            // 
-            // checkBoxAudio
-            // 
-            this.checkBoxAudio.AutoSize = true;
-            this.checkBoxAudio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.checkBoxAudio.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBoxAudio.Location = new System.Drawing.Point(379, 421);
-            this.checkBoxAudio.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.checkBoxAudio.Name = "checkBoxAudio";
-            this.checkBoxAudio.Size = new System.Drawing.Size(74, 23);
-            this.checkBoxAudio.TabIndex = 13;
-            this.checkBoxAudio.Text = "Audio";
-            this.checkBoxAudio.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxCelulares
-            // 
-            this.checkBoxCelulares.AutoSize = true;
-            this.checkBoxCelulares.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.checkBoxCelulares.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBoxCelulares.Location = new System.Drawing.Point(499, 421);
-            this.checkBoxCelulares.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.checkBoxCelulares.Name = "checkBoxCelulares";
-            this.checkBoxCelulares.Size = new System.Drawing.Size(100, 23);
-            this.checkBoxCelulares.TabIndex = 14;
-            this.checkBoxCelulares.Text = "Celulares";
-            this.checkBoxCelulares.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxElectroHogar
-            // 
-            this.checkBoxElectroHogar.AutoSize = true;
-            this.checkBoxElectroHogar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.checkBoxElectroHogar.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBoxElectroHogar.Location = new System.Drawing.Point(645, 421);
-            this.checkBoxElectroHogar.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.checkBoxElectroHogar.Name = "checkBoxElectroHogar";
-            this.checkBoxElectroHogar.Size = new System.Drawing.Size(136, 23);
-            this.checkBoxElectroHogar.TabIndex = 15;
-            this.checkBoxElectroHogar.Text = "Electro Hogar";
-            this.checkBoxElectroHogar.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxInformatica
-            // 
-            this.checkBoxInformatica.AutoSize = true;
-            this.checkBoxInformatica.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.checkBoxInformatica.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBoxInformatica.Location = new System.Drawing.Point(827, 421);
-            this.checkBoxInformatica.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.checkBoxInformatica.Name = "checkBoxInformatica";
-            this.checkBoxInformatica.Size = new System.Drawing.Size(123, 23);
-            this.checkBoxInformatica.TabIndex = 16;
-            this.checkBoxInformatica.Text = "Informática";
-            this.checkBoxInformatica.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxSmartTv
-            // 
-            this.checkBoxSmartTv.AutoSize = true;
-            this.checkBoxSmartTv.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
-            this.checkBoxSmartTv.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBoxSmartTv.Location = new System.Drawing.Point(996, 421);
-            this.checkBoxSmartTv.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
-            this.checkBoxSmartTv.Name = "checkBoxSmartTv";
-            this.checkBoxSmartTv.Size = new System.Drawing.Size(95, 23);
-            this.checkBoxSmartTv.TabIndex = 17;
-            this.checkBoxSmartTv.Text = "Smart Tv";
-            this.checkBoxSmartTv.UseVisualStyleBackColor = true;
             // 
             // lblError
             // 
@@ -283,7 +213,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAgregar.Location = new System.Drawing.Point(817, 489);
+            this.btnAgregar.Location = new System.Drawing.Point(819, 442);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(197, 40);
             this.btnAgregar.TabIndex = 5;
@@ -333,7 +263,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(565, 489);
+            this.btnCancelar.Location = new System.Drawing.Point(567, 442);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(197, 40);
             this.btnCancelar.TabIndex = 0;
@@ -373,11 +303,6 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtCUIT);
             this.Controls.Add(this.lblError);
-            this.Controls.Add(this.checkBoxSmartTv);
-            this.Controls.Add(this.checkBoxInformatica);
-            this.Controls.Add(this.checkBoxElectroHogar);
-            this.Controls.Add(this.checkBoxCelulares);
-            this.Controls.Add(this.checkBoxAudio);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
@@ -406,11 +331,6 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.CheckBox checkBoxAudio;
-        private System.Windows.Forms.CheckBox checkBoxCelulares;
-        private System.Windows.Forms.CheckBox checkBoxElectroHogar;
-        private System.Windows.Forms.CheckBox checkBoxInformatica;
-        private System.Windows.Forms.CheckBox checkBoxSmartTv;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtCUIT;
