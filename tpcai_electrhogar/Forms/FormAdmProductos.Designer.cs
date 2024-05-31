@@ -43,10 +43,10 @@
             this.eliminarBtn = new System.Windows.Forms.Button();
             this.modificarBtn = new System.Windows.Forms.Button();
             this.cargarProductosBtn = new System.Windows.Forms.Button();
-            this.TraerProductosCategoria = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.AgregarBtn = new System.Windows.Forms.Button();
+            this.btnTraerProductosCategoria = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -95,7 +95,7 @@
             this.categoria.Location = new System.Drawing.Point(400, 67);
             this.categoria.Multiline = true;
             this.categoria.Name = "categoria";
-            this.categoria.Size = new System.Drawing.Size(173, 23);
+            this.categoria.Size = new System.Drawing.Size(183, 40);
             this.categoria.TabIndex = 118;
             // 
             // lbldUsuario
@@ -103,7 +103,7 @@
             this.lbldUsuario.AutoSize = true;
             this.lbldUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldUsuario.ForeColor = System.Drawing.Color.Transparent;
-            this.lbldUsuario.Location = new System.Drawing.Point(282, 67);
+            this.lbldUsuario.Location = new System.Drawing.Point(279, 78);
             this.lbldUsuario.Name = "lbldUsuario";
             this.lbldUsuario.Size = new System.Drawing.Size(112, 19);
             this.lbldUsuario.TabIndex = 117;
@@ -216,21 +216,11 @@
             // 
             this.cargarProductosBtn.Location = new System.Drawing.Point(286, 423);
             this.cargarProductosBtn.Name = "cargarProductosBtn";
-            this.cargarProductosBtn.Size = new System.Drawing.Size(105, 23);
+            this.cargarProductosBtn.Size = new System.Drawing.Size(164, 23);
             this.cargarProductosBtn.TabIndex = 122;
-            this.cargarProductosBtn.Text = "Cargar Productos";
+            this.cargarProductosBtn.Text = "Cargar todos los productos";
             this.cargarProductosBtn.UseVisualStyleBackColor = true;
             this.cargarProductosBtn.Click += new System.EventHandler(this.cargarProductosBtn_Click);
-            // 
-            // TraerProductosCategoria
-            // 
-            this.TraerProductosCategoria.Location = new System.Drawing.Point(579, 67);
-            this.TraerProductosCategoria.Name = "TraerProductosCategoria";
-            this.TraerProductosCategoria.Size = new System.Drawing.Size(106, 23);
-            this.TraerProductosCategoria.TabIndex = 123;
-            this.TraerProductosCategoria.Text = "Traer Productos";
-            this.TraerProductosCategoria.UseVisualStyleBackColor = true;
-            this.TraerProductosCategoria.Click += new System.EventHandler(this.TraerProductosCategoria_Click);
             // 
             // lblError
             // 
@@ -276,16 +266,34 @@
             this.AgregarBtn.UseVisualStyleBackColor = false;
             this.AgregarBtn.Click += new System.EventHandler(this.AgregarBtn_Click);
             // 
+            // btnTraerProductosCategoria
+            // 
+            this.btnTraerProductosCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnTraerProductosCategoria.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnTraerProductosCategoria.FlatAppearance.BorderSize = 0;
+            this.btnTraerProductosCategoria.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnTraerProductosCategoria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnTraerProductosCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTraerProductosCategoria.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTraerProductosCategoria.ForeColor = System.Drawing.Color.LightGray;
+            this.btnTraerProductosCategoria.Location = new System.Drawing.Point(594, 67);
+            this.btnTraerProductosCategoria.Name = "btnTraerProductosCategoria";
+            this.btnTraerProductosCategoria.Size = new System.Drawing.Size(140, 40);
+            this.btnTraerProductosCategoria.TabIndex = 127;
+            this.btnTraerProductosCategoria.Text = "Traer Productos";
+            this.btnTraerProductosCategoria.UseVisualStyleBackColor = false;
+            this.btnTraerProductosCategoria.Click += new System.EventHandler(this.btnTraerProductosCategoria_Click);
+            // 
             // FormAdmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(800, 574);
+            this.Controls.Add(this.btnTraerProductosCategoria);
             this.Controls.Add(this.AgregarBtn);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblError);
-            this.Controls.Add(this.TraerProductosCategoria);
             this.Controls.Add(this.cargarProductosBtn);
             this.Controls.Add(this.eliminarBtn);
             this.Controls.Add(this.modificarBtn);
@@ -331,9 +339,9 @@
         private System.Windows.Forms.Button eliminarBtn;
         private System.Windows.Forms.Button modificarBtn;
         private System.Windows.Forms.Button cargarProductosBtn;
-        private System.Windows.Forms.Button TraerProductosCategoria;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button AgregarBtn;
+        private System.Windows.Forms.Button btnTraerProductosCategoria;
     }
 }

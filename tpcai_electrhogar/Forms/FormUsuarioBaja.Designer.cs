@@ -101,7 +101,7 @@
             this.lblCredits.AutoSize = true;
             this.lblCredits.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCredits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblCredits.Location = new System.Drawing.Point(710, 524);
+            this.lblCredits.Location = new System.Drawing.Point(710, 525);
             this.lblCredits.Name = "lblCredits";
             this.lblCredits.Size = new System.Drawing.Size(78, 16);
             this.lblCredits.TabIndex = 103;
@@ -112,7 +112,7 @@
             this.lblVersion.AutoSize = true;
             this.lblVersion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblVersion.Location = new System.Drawing.Point(758, 540);
+            this.lblVersion.Location = new System.Drawing.Point(758, 541);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(30, 16);
             this.lblVersion.TabIndex = 104;

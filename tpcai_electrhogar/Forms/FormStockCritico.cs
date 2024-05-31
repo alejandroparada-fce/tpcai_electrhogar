@@ -78,5 +78,10 @@ ModuloLogueo.UsuarioAuntenticado.host);
         {
             FormUtils.SalirAplicacion();
         }
+
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
     }
 }

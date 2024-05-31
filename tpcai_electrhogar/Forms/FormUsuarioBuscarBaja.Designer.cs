@@ -75,6 +75,7 @@
             this.lblTitle.Size = new System.Drawing.Size(241, 38);
             this.lblTitle.TabIndex = 117;
             this.lblTitle.Text = "Buscar Usuario";
+            this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
             // lblError
             // 

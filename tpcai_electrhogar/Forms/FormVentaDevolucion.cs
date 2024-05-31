@@ -136,6 +136,19 @@ ModuloLogueo.UsuarioAuntenticado.host);
             FormUtils.SalirAplicacion();
         }
 
+        private void FormVentaDevolucion_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
 
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
     }
 }

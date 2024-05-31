@@ -42,7 +42,10 @@ namespace tpcai_electrhogar
             dgvProveedor.Columns[3].HeaderText = "Email";
             dgvProveedor.Columns[4].HeaderText = "CUIT";
             //dgvProveedor.Columns[5].HeaderText = "Fecha Alta";
+            FormUtils.AjustarColumnas(dgvProveedor);
+            FormUtils.AjustarFilas(dgvProveedor);
             return listaProveedor;
+            
         }
 
         private void dgvProveedor_CellContentClick(object sender, DataGridViewCellEventArgs e)

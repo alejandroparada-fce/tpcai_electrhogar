@@ -48,11 +48,12 @@
             this.lblReporte.AutoSize = true;
             this.lblReporte.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblReporte.Location = new System.Drawing.Point(272, 65);
+            this.lblReporte.Location = new System.Drawing.Point(230, 65);
             this.lblReporte.Name = "lblReporte";
             this.lblReporte.Size = new System.Drawing.Size(341, 38);
             this.lblReporte.TabIndex = 118;
             this.lblReporte.Text = "Ventas por vendedor";
+            this.lblReporte.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblReporte_MouseDown);
             // 
             // dgvReporteVentas
             // 

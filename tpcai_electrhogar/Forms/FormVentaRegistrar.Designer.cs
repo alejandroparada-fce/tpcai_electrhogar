@@ -92,7 +92,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox2.Location = new System.Drawing.Point(40, 209);
+            this.pictureBox2.Location = new System.Drawing.Point(40, 219);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(116, 115);

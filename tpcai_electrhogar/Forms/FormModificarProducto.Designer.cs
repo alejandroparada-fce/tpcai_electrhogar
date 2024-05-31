@@ -43,7 +43,7 @@
             this.stockLbl.AutoSize = true;
             this.stockLbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stockLbl.ForeColor = System.Drawing.Color.Transparent;
-            this.stockLbl.Location = new System.Drawing.Point(42, 93);
+            this.stockLbl.Location = new System.Drawing.Point(75, 95);
             this.stockLbl.Name = "stockLbl";
             this.stockLbl.Size = new System.Drawing.Size(53, 19);
             this.stockLbl.TabIndex = 93;
@@ -55,7 +55,7 @@
             this.stockCambio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.stockCambio.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stockCambio.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.stockCambio.Location = new System.Drawing.Point(123, 84);
+            this.stockCambio.Location = new System.Drawing.Point(156, 86);
             this.stockCambio.Multiline = true;
             this.stockCambio.Name = "stockCambio";
             this.stockCambio.Size = new System.Drawing.Size(175, 28);
@@ -66,7 +66,7 @@
             this.precioLbl.AutoSize = true;
             this.precioLbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.precioLbl.ForeColor = System.Drawing.Color.Transparent;
-            this.precioLbl.Location = new System.Drawing.Point(42, 37);
+            this.precioLbl.Location = new System.Drawing.Point(75, 39);
             this.precioLbl.Name = "precioLbl";
             this.precioLbl.Size = new System.Drawing.Size(57, 19);
             this.precioLbl.TabIndex = 91;
@@ -78,7 +78,7 @@
             this.precioCambio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.precioCambio.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.precioCambio.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.precioCambio.Location = new System.Drawing.Point(123, 28);
+            this.precioCambio.Location = new System.Drawing.Point(156, 30);
             this.precioCambio.Multiline = true;
             this.precioCambio.Name = "precioCambio";
             this.precioCambio.Size = new System.Drawing.Size(175, 28);
@@ -94,7 +94,7 @@
             this.cambiarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cambiarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cambiarBtn.ForeColor = System.Drawing.Color.LightGray;
-            this.cambiarBtn.Location = new System.Drawing.Point(208, 189);
+            this.cambiarBtn.Location = new System.Drawing.Point(222, 167);
             this.cambiarBtn.Name = "cambiarBtn";
             this.cambiarBtn.Size = new System.Drawing.Size(140, 40);
             this.cambiarBtn.TabIndex = 127;
@@ -111,7 +111,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(31, 189);
+            this.btnCancelar.Location = new System.Drawing.Point(45, 167);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(139, 40);
             this.btnCancelar.TabIndex = 128;
@@ -124,7 +124,7 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblError.Location = new System.Drawing.Point(43, 121);
+            this.lblError.Location = new System.Drawing.Point(76, 123);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 129;

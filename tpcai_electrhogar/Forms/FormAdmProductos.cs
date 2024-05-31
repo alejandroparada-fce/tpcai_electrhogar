@@ -78,7 +78,7 @@ namespace tpcai_electrhogar.Forms
             CargarLista();
         }
 
-        private void TraerProductosCategoria_Click(object sender, EventArgs e)
+        private void btnTraerProductosCategoria_Click(object sender, EventArgs e)
         {
             string mensajeError = "";
 
@@ -99,6 +99,7 @@ namespace tpcai_electrhogar.Forms
                 }
             }
         }
+
         private List<ProductoEnt> ObtenerListaProductosCategoria()
         {
             int idCategoria = int.Parse(categoria.Text);
@@ -190,6 +191,8 @@ ModuloLogueo.UsuarioAuntenticado.host);
                 MessageBox.Show("Debe de cargar la lista");
             }
         }
+
+        
     }
 }
     

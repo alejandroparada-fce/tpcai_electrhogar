@@ -55,6 +55,11 @@ namespace tpcai_electrhogar
                     else
                     {
                         MessageBox.Show("Cliente Creado");
+
+                        this.Hide();
+                        FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
+                        ModuloLogueo.UsuarioAuntenticado.host);
+                        modulosForm.Show();
                     }
                 }
                 catch (Exception ex)
@@ -69,6 +74,36 @@ namespace tpcai_electrhogar
         private void btnCancelarContrasena_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            FormUtils.MinimizarFormulario(this);
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            FormUtils.MaximizarFormulario(this);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            FormUtils.SalirAplicacion();
+        }
+
+        private void FormClienteRegistrar_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
         }
     }
 }

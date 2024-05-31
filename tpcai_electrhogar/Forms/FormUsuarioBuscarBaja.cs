@@ -110,5 +110,9 @@ ModuloLogueo.UsuarioAuntenticado.host);
             }
         }
 
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
     }
 }

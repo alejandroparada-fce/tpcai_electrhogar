@@ -101,5 +101,15 @@ namespace tpcai_electrhogar.Forms
 ModuloLogueo.UsuarioAuntenticado.host);
             modulosForm.Show();
         }
+
+        private void FormReporteProductosCategoria_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void lblReporte_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
     }
 }

@@ -46,5 +46,10 @@ namespace tpcai_electrhogar.Forms
         {
             FormUtils.MoverFormulario(this);
         }
+
+        private void lblReporte_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
     }
 }
