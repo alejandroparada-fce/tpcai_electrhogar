@@ -47,6 +47,12 @@ namespace PersistenciaWS
             intentosFallidos.Add(intento);
         }
 
+        //Agregar cambio de  contraseña 
+        public static void AgregarCambioContraseña(CambioContraseñaEnt cambioContraseña)
+        {
+            cambiosContraseña.Add(cambioContraseña);
+        }
+
         //Chequear si el usuario está lockeado
         public static bool ChequearBloqueo(string usuario)
         {

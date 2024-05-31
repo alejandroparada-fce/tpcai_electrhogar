@@ -47,10 +47,10 @@ namespace tpcai_electrhogar
                     lblError.Text = "El usuario ha sido bloqueado";
                     break;
                 case 2:
-                    FormUtils.CambiarFormulario(this, new FormCambiarContrasena());
+                    FormUtils.CambiarFormulario(this, new FormCambiarContrasena(txtUsuario.Text, txtPass.Text));
                     break;
                 case 3:
-                    FormUtils.CambiarFormulario(this, new FormCambiarContrasena());
+                    FormUtils.CambiarFormulario(this, new FormCambiarContrasena(txtUsuario.Text, txtPass.Text));
                     break;
                 case 4:
                     FormUtils.CambiarFormulario(this, new FormBienvenida());
