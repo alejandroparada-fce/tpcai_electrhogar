@@ -64,13 +64,14 @@ namespace PersistenciaWS
 
         }
 
-        public static void CambiarPassword(UsuarioEnt usuarioEnt)
+        public static void CambiarPassword(string nombreUsuario, string contraseña, string contraseñaNueva, out string error)
         {
+            error = null;
             String path = "/api/Usuario/CambiarContraseña";
             Dictionary<string, string> map = new Dictionary<string, string>();
-            map.Add("nombreUsuario", usuarioEnt.Nombre.ToString());
-            map.Add("contraseña", usuarioEnt.Contraseña.ToString());
-            map.Add("contraseñaNueva", usuarioEnt.ContraseñaNueva.ToString());
+            map.Add("nombreUsuario", nombreUsuario);
+            map.Add("contraseña", contraseña);
+            map.Add("contraseñaNueva", contraseñaNueva);
 
             var jsonRequest = JsonConvert.SerializeObject(map);
 
@@ -84,12 +85,12 @@ namespace PersistenciaWS
                 }
                 else
                 {
-                    Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
+                    error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception: {ex.Message}");
+                error = $"Exception: {ex.Message}";
             }
         }
         public static void ActivarUsuario(UsuarioEnt id)

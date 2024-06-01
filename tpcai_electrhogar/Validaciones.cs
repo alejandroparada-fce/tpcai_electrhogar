@@ -236,16 +236,23 @@ namespace tpcai_electrhogar
             mensajeError = null;
             return true;
         }
-        public static bool RepetirContraseña(string contraseña, string contraseñaRepetida, out string mensajeError)
+        public static bool RepetirContraseña(string contraseña, string contraseñaRepetida, string viejaContraseña, out string mensajeError)
         {
             if (!(contraseña == contraseñaRepetida))
             {
                 mensajeError = "Las contraseñas no coinciden";
                 return false;
             }
+            else if(contraseña == viejaContraseña)
+            {
+                mensajeError = "Esta contraseña ya ha sido utilizada";
+                return false;
+            }
             mensajeError = null;
             return true;
         }
+
+        
         public static bool Categorias(int numero, out string mensajeError)
         {
             if (!(numero == 1 || numero == 2 || numero == 3 || numero == 4 || numero == 5))

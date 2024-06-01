@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using tpcai_electrhogar.Forms;
+using tpcai_electrhogar.Negocio;
 
 namespace tpcai_electrhogar
 {
@@ -100,7 +101,7 @@ namespace tpcai_electrhogar
         private void btnCambioContrasena_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormCambiarContrasena cambiarContrasenaForm = new FormCambiarContrasena();
+            FormCambiarContrasena cambiarContrasenaForm = new FormCambiarContrasena(_username, ModuloLogueo.Pass);
             cambiarContrasenaForm.Show();
         }
 

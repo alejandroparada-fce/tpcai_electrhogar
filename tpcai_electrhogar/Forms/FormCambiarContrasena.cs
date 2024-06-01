@@ -42,31 +42,36 @@ namespace tpcai_electrhogar
 
         public string Username { get { return _username; } set { _username = value; } }
         public string Password { get { return _password; } set { _password = value; } }
-        public FormCambiarContrasena(string username, string contraseña)
+        public FormCambiarContrasena(string username, string password)
         {
             InitializeComponent();
             _username = username;
-            _password = contraseña;
+            _password = password;
         }
         private void btnGuardarContrasena_Click(object sender, EventArgs e)
         {
+            /*
             UsuarioEnt usuarioEnt = new UsuarioEnt();
             usuarioEnt.Nombre = _username;
             usuarioEnt.Contraseña = _password;
             usuarioEnt.ContraseñaNueva = contrasenaNueva.Text;
+            */
 
             string mensajeError = "";
             bool validar1 = Validaciones.ValidarContraseña(contrasenaNueva.Text, "'Contraseña Nueva'", 8, 15, out string mensajeError1);
-            bool validar2 = Validaciones.RepetirContraseña(contrasenaNueva.Text, repetirContrasena.Text, out string mensajeError2);
+            bool validar2 = Validaciones.RepetirContraseña(contrasenaNueva.Text, repetirContrasena.Text, Password, out string mensajeError2);
             mensajeError = mensajeError1 + "\n" + mensajeError2;
                 lblError.Text = mensajeError;
             if (validar1 & validar2)
             {
                 try
                 {
-                    ModuloUsuarios.CambiarPassword(usuarioEnt);
-                    //usuarioNegocio.ActivarUsuario();
-                    MessageBox.Show("Contraseña cambiada");
+                    ModuloUsuarios.CambiarPassword(Username, Password, contrasenaNueva.Text, out string error);
+                    DialogResult resultado = MessageBox.Show("Contraseña cambiada. Reinicie la aplicación y vuelva a loguearse.");
+                    if(resultado == DialogResult.OK)
+                    {
+                        FormUtils.SalirAplicacion();
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -78,10 +83,7 @@ namespace tpcai_electrhogar
 
         private void btnCancelarContrasena_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-ModuloLogueo.UsuarioAuntenticado.host);
-            modulosForm.Show();
+            FormUtils.CambiarFormulario(this, new FormLogin());
         }
 
         

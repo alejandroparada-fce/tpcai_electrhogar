@@ -50,6 +50,8 @@ namespace PersistenciaWS
         //Agregar cambio de  contraseña 
         public static void AgregarCambioContraseña(CambioContraseñaEnt cambioContraseña)
         {
+            //Primero borra referencias pasadas del usuario y luego agrega el nuevo cambio
+            cambiosContraseña.RemoveAll(x => x.NombreUsuario == cambioContraseña.NombreUsuario);
             cambiosContraseña.Add(cambioContraseña);
         }
 

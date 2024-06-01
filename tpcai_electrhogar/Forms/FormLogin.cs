@@ -24,16 +24,12 @@ namespace tpcai_electrhogar
         {
             int estadoAutenticacion = ModuloLogueo.Loguearse(txtUsuario.Text, txtPass.Text, "CAI20241");
 
-            /*
-            this.Hide();
-            FormBienvenida formBienvenida = new FormBienvenida();
-            formBienvenida.Show();
-            */
             
 
             switch (estadoAutenticacion)
             {
                 case 0:
+                    //Discrimino si no encontró al usuario o se cargó un valor por defecto
                     if (txtUsuario.Text == "Usuario" || txtUsuario.Text == "")
                     {
                         lblError.Text = "Debe ingresar un usuario";
@@ -53,9 +49,15 @@ namespace tpcai_electrhogar
                     FormUtils.CambiarFormulario(this, new FormCambiarContrasena(txtUsuario.Text, txtPass.Text));
                     break;
                 case 4:
+<<<<<<< Updated upstream
                     FormUtils.CambiarFormulario(this, new FormBienvenida(txtUsuario.Text));
+=======
+                    ModuloLogueo.Pass = txtPass.Text;
+                    FormUtils.CambiarFormulario(this, new FormBienvenida());
+>>>>>>> Stashed changes
                     break;
                 case 5:
+                    //Discrimino si la contraseña es inválida o se cargó un valor por defecto
                     if (txtPass.Text == "Contraseña" || txtPass.Text == "")
                     {
                         lblError.Text = "Debe ingresar una contraseña";
@@ -69,52 +71,7 @@ namespace tpcai_electrhogar
                     lblError.Text = "Debe ingresar un usuario y una contraseña";
                     break;
             }
-            /*
-            //this.Hide();
-            //ModulosForm modulos = new ModulosForm();
-            //modulos.Show();
 
-            // Constructor para enviar la información Nombre de Usuario al CambiarContrasenaForm
-            
-            ModuloLogueo.Loguearse(txtUsuario.Text, txtPass.Text, "CAI20241");
-            bool UsuarioPresente = ModuloLogueo.ExisteUsuario();
-            bool UsuarioAutenticado = ModuloLogueo.Autenticado();
-            bool cambioContraseña = ModuloLogueo.CambioContraseña();
-            bool usuarioBloqueado = ModuloLogueo.ChequearBloqueo(txtUsuario.Text);
-
-            if (txtUsuario.Text == "Usuario" || txtUsuario.Text == "Contraseña")
-            {
-                lblError.Text = "Debe ingresar un usuario y una contraseña";
-            }
-            else if (!UsuarioPresente)
-            {
-                lblError.Text = "No se encontró el usuario";
-            }
-            else if (usuarioBloqueado)
-            {
-                lblError.Text = "El usuario ha fallado tres veces en autenticarse. Usuario bloqueado.";
-            }
-            else if (!UsuarioAutenticado)
-            {
-                lblError.Text = "Contraseña errónea";
-            }
-            else if (cambioContraseña)
-            {
-                this.Hide();
-                FormCambiarContrasena cambiocontraseñaform = new FormCambiarContrasena(txtUsuario.Text, txtPass.Text);
-                cambiocontraseñaform.Show();
-                //FormUtils.CambiarFormulario(this, new CambiarContrasenaForm());
-            }
-            else if (!cambioContraseña & UsuarioAutenticado)
-            {
-                this.Hide();
-                FormMenuPrincipal modulosForm = new FormMenuPrincipal(txtUsuario.Text);
-                modulosForm.Show();
-            }
-            
-            //UsuarioNegocio.Prueba();
-
-            */
         }
 
         private void txtUsuario_Enter_1(object sender, EventArgs e)
