@@ -49,12 +49,8 @@ namespace tpcai_electrhogar
                     FormUtils.CambiarFormulario(this, new FormCambiarContrasena(txtUsuario.Text, txtPass.Text));
                     break;
                 case 4:
-<<<<<<< Updated upstream
-                    FormUtils.CambiarFormulario(this, new FormBienvenida(txtUsuario.Text));
-=======
                     ModuloLogueo.Pass = txtPass.Text;
-                    FormUtils.CambiarFormulario(this, new FormBienvenida());
->>>>>>> Stashed changes
+                    FormUtils.CambiarFormulario(this, new FormBienvenida(txtUsuario.Text));
                     break;
                 case 5:
                     //Discrimino si la contraseña es inválida o se cargó un valor por defecto
