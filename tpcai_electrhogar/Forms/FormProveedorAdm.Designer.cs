@@ -137,9 +137,9 @@
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblTitle.Location = new System.Drawing.Point(251, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(329, 38);
+            this.lblTitle.Size = new System.Drawing.Size(358, 38);
             this.lblTitle.TabIndex = 85;
-            this.lblTitle.Text = "Modificar Proveedor";
+            this.lblTitle.Text = "Administrar Proveedor";
             this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
             // lblNombre

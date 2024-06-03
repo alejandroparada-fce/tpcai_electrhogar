@@ -73,11 +73,6 @@ namespace tpcai_electrhogar.Forms
             FormUtils.SalirAplicacion();
         }
 
-        private void cargarProductosBtn_Click(object sender, EventArgs e)
-        {
-            CargarLista();
-        }
-
         private void btnTraerProductosCategoria_Click(object sender, EventArgs e)
         {
             string mensajeError = "";
@@ -114,6 +109,8 @@ namespace tpcai_electrhogar.Forms
             dgvProductos.Columns[3].HeaderText = "Fecha de Alta";
             dgvProductos.Columns[4].HeaderText = "Stock";
             dgvProductos.Columns[5].HeaderText = "Precio";
+            FormUtils.AjustarColumnas(dgvProductos);
+            FormUtils.AjustarFilas(dgvProductos);
             return listaProductosCategoria;
         }
         private void CargarListaCategoria()
@@ -192,7 +189,10 @@ namespace tpcai_electrhogar.Forms
             }
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CargarLista();
+        }
     }
 }
     

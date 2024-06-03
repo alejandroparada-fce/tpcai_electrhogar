@@ -42,11 +42,11 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.eliminarBtn = new System.Windows.Forms.Button();
             this.modificarBtn = new System.Windows.Forms.Button();
-            this.cargarProductosBtn = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.AgregarBtn = new System.Windows.Forms.Button();
             this.btnTraerProductosCategoria = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -62,14 +62,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 574);
+            this.panel1.Size = new System.Drawing.Size(250, 611);
             this.panel1.TabIndex = 106;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox1.Location = new System.Drawing.Point(62, 224);
+            this.pictureBox1.Location = new System.Drawing.Point(62, 241);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 129);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -79,10 +79,10 @@
             // dgvProductos
             // 
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Location = new System.Drawing.Point(283, 133);
+            this.dgvProductos.Location = new System.Drawing.Point(283, 176);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProductos.Size = new System.Drawing.Size(482, 284);
+            this.dgvProductos.Size = new System.Drawing.Size(583, 284);
             this.dgvProductos.TabIndex = 119;
             this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
             // 
@@ -114,7 +114,7 @@
             this.lblCredits.AutoSize = true;
             this.lblCredits.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCredits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblCredits.Location = new System.Drawing.Point(712, 527);
+            this.lblCredits.Location = new System.Drawing.Point(809, 570);
             this.lblCredits.Name = "lblCredits";
             this.lblCredits.Size = new System.Drawing.Size(78, 16);
             this.lblCredits.TabIndex = 115;
@@ -125,7 +125,7 @@
             this.lblVersion.AutoSize = true;
             this.lblVersion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblVersion.Location = new System.Drawing.Point(760, 543);
+            this.lblVersion.Location = new System.Drawing.Point(857, 586);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(30, 16);
             this.lblVersion.TabIndex = 116;
@@ -134,7 +134,7 @@
             // btnMaximizar
             // 
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(750, 15);
+            this.btnMaximizar.Location = new System.Drawing.Point(851, 12);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(15, 15);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -145,7 +145,7 @@
             // btnMinimizar
             // 
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(729, 15);
+            this.btnMinimizar.Location = new System.Drawing.Point(830, 12);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(15, 15);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -156,7 +156,7 @@
             // btnCerrar
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(771, 15);
+            this.btnCerrar.Location = new System.Drawing.Point(872, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(15, 15);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -169,7 +169,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(332, 15);
+            this.lblTitle.Location = new System.Drawing.Point(378, 12);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(353, 38);
             this.lblTitle.TabIndex = 111;
@@ -186,7 +186,7 @@
             this.eliminarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.eliminarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eliminarBtn.ForeColor = System.Drawing.Color.LightGray;
-            this.eliminarBtn.Location = new System.Drawing.Point(625, 452);
+            this.eliminarBtn.Location = new System.Drawing.Point(726, 484);
             this.eliminarBtn.Name = "eliminarBtn";
             this.eliminarBtn.Size = new System.Drawing.Size(140, 40);
             this.eliminarBtn.TabIndex = 121;
@@ -204,23 +204,13 @@
             this.modificarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.modificarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modificarBtn.ForeColor = System.Drawing.Color.LightGray;
-            this.modificarBtn.Location = new System.Drawing.Point(456, 452);
+            this.modificarBtn.Location = new System.Drawing.Point(504, 484);
             this.modificarBtn.Name = "modificarBtn";
             this.modificarBtn.Size = new System.Drawing.Size(140, 40);
             this.modificarBtn.TabIndex = 120;
             this.modificarBtn.Text = "Modificar";
             this.modificarBtn.UseVisualStyleBackColor = false;
             this.modificarBtn.Click += new System.EventHandler(this.modificarBtn_Click);
-            // 
-            // cargarProductosBtn
-            // 
-            this.cargarProductosBtn.Location = new System.Drawing.Point(286, 423);
-            this.cargarProductosBtn.Name = "cargarProductosBtn";
-            this.cargarProductosBtn.Size = new System.Drawing.Size(164, 23);
-            this.cargarProductosBtn.TabIndex = 122;
-            this.cargarProductosBtn.Text = "Cargar todos los productos";
-            this.cargarProductosBtn.UseVisualStyleBackColor = true;
-            this.cargarProductosBtn.Click += new System.EventHandler(this.cargarProductosBtn_Click);
             // 
             // lblError
             // 
@@ -240,7 +230,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(358, 512);
+            this.btnCancelar.Location = new System.Drawing.Point(394, 546);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(340, 40);
             this.btnCancelar.TabIndex = 125;
@@ -258,7 +248,7 @@
             this.AgregarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AgregarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgregarBtn.ForeColor = System.Drawing.Color.LightGray;
-            this.AgregarBtn.Location = new System.Drawing.Point(286, 452);
+            this.AgregarBtn.Location = new System.Drawing.Point(283, 484);
             this.AgregarBtn.Name = "AgregarBtn";
             this.AgregarBtn.Size = new System.Drawing.Size(140, 40);
             this.AgregarBtn.TabIndex = 126;
@@ -284,17 +274,35 @@
             this.btnTraerProductosCategoria.UseVisualStyleBackColor = false;
             this.btnTraerProductosCategoria.Click += new System.EventHandler(this.btnTraerProductosCategoria_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.LightGray;
+            this.button1.Location = new System.Drawing.Point(431, 130);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(284, 40);
+            this.button1.TabIndex = 128;
+            this.button1.Text = "Cargar todos los prodcutos";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormAdmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(800, 574);
+            this.ClientSize = new System.Drawing.Size(899, 611);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnTraerProductosCategoria);
             this.Controls.Add(this.AgregarBtn);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblError);
-            this.Controls.Add(this.cargarProductosBtn);
             this.Controls.Add(this.eliminarBtn);
             this.Controls.Add(this.modificarBtn);
             this.Controls.Add(this.dgvProductos);
@@ -338,10 +346,10 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button eliminarBtn;
         private System.Windows.Forms.Button modificarBtn;
-        private System.Windows.Forms.Button cargarProductosBtn;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button AgregarBtn;
         private System.Windows.Forms.Button btnTraerProductosCategoria;
+        private System.Windows.Forms.Button button1;
     }
 }
