@@ -276,7 +276,7 @@ namespace tpcai_electrhogar
         private void btnProveedorListar_Click(object sender, EventArgs e)
         {
                 this.Hide();
-                FormProveedorListar listarProveedorForm = new FormProveedorListar();
+                FormProveedorAdm listarProveedorForm = new FormProveedorAdm();
                 listarProveedorForm.Show();
         }
 

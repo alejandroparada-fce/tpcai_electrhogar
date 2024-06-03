@@ -25,9 +25,9 @@ namespace tpcai_electrhogar.Datos
 
 
         //Constructor para todos los atributos
-        public ProveedorAgregarEnt(string IdUsuario, string nombre, string apellido, string email, string cuit)
+        public ProveedorAgregarEnt(string idUsuario, string nombre, string apellido, string email, string cuit)
         {
-            this.IdUsuario = IdUsuario;
+            this.IdUsuario = idUsuario;
             this.Nombre = nombre;
             this.Apellido = apellido;
             this.Email = email;

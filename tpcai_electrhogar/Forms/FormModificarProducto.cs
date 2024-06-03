@@ -14,7 +14,7 @@ namespace tpcai_electrhogar.Forms
 {
     public partial class FormModificarProducto : Form
     {
-        private string mensajeError;
+        //private string mensajeError;
         private Guid idSeleccionada;
             public FormModificarProducto(Guid id)
         {

@@ -81,11 +81,11 @@
     <Compile Include="Forms\FormModificarProducto.Designer.cs">
       <DependentUpon>FormModificarProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormProveedorListar.cs">
+    <Compile Include="Forms\FormProveedorAdm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormProveedorListar.Designer.cs">
-      <DependentUpon>FormProveedorListar.cs</DependentUpon>
+    <Compile Include="Forms\FormProveedorAdm.Designer.cs">
+      <DependentUpon>FormProveedorAdm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormClienteRegistrar.cs">
       <SubType>Form</SubType>
@@ -211,8 +211,8 @@
     <EmbeddedResource Include="Forms\FormModificarProducto.resx">
       <DependentUpon>FormModificarProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormProveedorListar.resx">
-      <DependentUpon>FormProveedorListar.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormProveedorAdm.resx">
+      <DependentUpon>FormProveedorAdm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormClienteRegistrar.resx">
       <DependentUpon>FormClienteRegistrar.cs</DependentUpon>
