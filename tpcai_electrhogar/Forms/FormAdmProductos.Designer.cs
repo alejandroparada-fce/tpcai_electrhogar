@@ -79,10 +79,10 @@
             // dgvProductos
             // 
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Location = new System.Drawing.Point(283, 176);
+            this.dgvProductos.Location = new System.Drawing.Point(283, 183);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProductos.Size = new System.Drawing.Size(583, 284);
+            this.dgvProductos.Size = new System.Drawing.Size(562, 284);
             this.dgvProductos.TabIndex = 119;
             this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
             // 
@@ -90,12 +90,11 @@
             // 
             this.categoria.BackColor = System.Drawing.SystemColors.Window;
             this.categoria.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.categoria.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoria.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoria.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.categoria.Location = new System.Drawing.Point(400, 67);
-            this.categoria.Multiline = true;
+            this.categoria.Location = new System.Drawing.Point(397, 74);
             this.categoria.Name = "categoria";
-            this.categoria.Size = new System.Drawing.Size(183, 40);
+            this.categoria.Size = new System.Drawing.Size(183, 26);
             this.categoria.TabIndex = 118;
             // 
             // lbldUsuario
@@ -169,7 +168,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(378, 12);
+            this.lblTitle.Location = new System.Drawing.Point(387, 12);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(353, 38);
             this.lblTitle.TabIndex = 111;
@@ -186,7 +185,7 @@
             this.eliminarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.eliminarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eliminarBtn.ForeColor = System.Drawing.Color.LightGray;
-            this.eliminarBtn.Location = new System.Drawing.Point(726, 484);
+            this.eliminarBtn.Location = new System.Drawing.Point(705, 485);
             this.eliminarBtn.Name = "eliminarBtn";
             this.eliminarBtn.Size = new System.Drawing.Size(140, 40);
             this.eliminarBtn.TabIndex = 121;
@@ -204,7 +203,7 @@
             this.modificarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.modificarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modificarBtn.ForeColor = System.Drawing.Color.LightGray;
-            this.modificarBtn.Location = new System.Drawing.Point(504, 484);
+            this.modificarBtn.Location = new System.Drawing.Point(494, 485);
             this.modificarBtn.Name = "modificarBtn";
             this.modificarBtn.Size = new System.Drawing.Size(140, 40);
             this.modificarBtn.TabIndex = 120;
@@ -215,10 +214,11 @@
             // lblError
             // 
             this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblError.Location = new System.Drawing.Point(283, 101);
+            this.lblError.Location = new System.Drawing.Point(283, 106);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(0, 13);
+            this.lblError.Size = new System.Drawing.Size(0, 16);
             this.lblError.TabIndex = 124;
             // 
             // btnCancelar
@@ -230,7 +230,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(394, 546);
+            this.btnCancelar.Location = new System.Drawing.Point(394, 543);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(340, 40);
             this.btnCancelar.TabIndex = 125;
@@ -248,7 +248,7 @@
             this.AgregarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AgregarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgregarBtn.ForeColor = System.Drawing.Color.LightGray;
-            this.AgregarBtn.Location = new System.Drawing.Point(283, 484);
+            this.AgregarBtn.Location = new System.Drawing.Point(283, 485);
             this.AgregarBtn.Name = "AgregarBtn";
             this.AgregarBtn.Size = new System.Drawing.Size(140, 40);
             this.AgregarBtn.TabIndex = 126;

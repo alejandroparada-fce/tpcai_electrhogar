@@ -37,7 +37,7 @@ namespace tpcai_electrhogar
                    btnProductos.Enabled = false;
                    btnProveedores.Enabled = false;
                    btnReporteProductoMasVendidoPorCategoria.Enabled = false;
-                   btnReporteStock.Enabled = false;
+                   btnReporteStockCritico.Enabled = false;
                    btnVentaDevolucion.Enabled = false;
                    break;
                 //Se deshabilitan botones para Supervidores
@@ -87,17 +87,6 @@ namespace tpcai_electrhogar
             FormUtils.MoverFormulario(this);
         }
 
-        // Botonera para jugar con la navegación de los formularios hechos hasta el momento.
-        // Para arrancar desde la botoner y saltear el proceso de login y cambio de contraseña, comentar la linea: "Application.Run(new LoginForm());"
-        // en Progam.cs para que se inicie el programa desde ese formulario.
-
-        private void btnUsuarioRegistrar_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormUsuarioRegistrar registrarUsuariosForm = new FormUsuarioRegistrar();
-            registrarUsuariosForm.Show();
-        }
-
         private void btnCambioContrasena_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -105,70 +94,11 @@ namespace tpcai_electrhogar
             cambiarContrasenaForm.Show();
         }
 
-        private void btnProveedorRegistrar_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormProveedorRegistrar altaProveedorForm = new FormProveedorRegistrar();
-            altaProveedorForm.Show();
-        }
-
-        private void btnProveedorBaja_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormProveedorBaja bajaProveedorForm = new FormProveedorBaja();
-            bajaProveedorForm.Show();
-        }
-
-
-
-        private void btnProductoRegistrar_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormProductoRegistrar agregarProductoForm = new FormProductoRegistrar();
-            agregarProductoForm.Show();
-        }
-
-        private void btnVentaRegistrar_Click(object sender, EventArgs e)
-        {
-           this.Hide();
-           FormVentaRegistrar formVentaRegistrar = new FormVentaRegistrar();
-           formVentaRegistrar.Show();
-        }
-
-        private void btnClienteModificar_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormClienteListar listadoClienteForm = new FormClienteListar();
-            listadoClienteForm.Show();
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             this.Hide();
             FormLogin formLogin = new FormLogin();
             formLogin.Show();
-        }
-
-        private void btnProductoBaja_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormAdmProductos formProductoBaja = new FormAdmProductos();
-            formProductoBaja.Show();
-        }
-        private void btnVentaDevolucion_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormVentaDevolucion formVentaDevolucion = new FormVentaDevolucion();
-            formVentaDevolucion.Show();
-        }
-
-        private void btnUsuarioBaja_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormUsuarioBuscarBaja formUsuarioBuscarBaja = new FormUsuarioBuscarBaja();
-            formUsuarioBuscarBaja.Show();
- 
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
@@ -176,14 +106,14 @@ namespace tpcai_electrhogar
             btnUsuarioBaja.Visible = false;
             btnUsuarioModificar.Visible = false;
             btnUsuarioRegistrar.Visible = false;
-            btnReporteStock.Visible = false;
+            btnReporteStockCritico.Visible = false;
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
             btnProveedorRegistrar.Visible = false;
-            btnProveedorListar.Visible = false;
+            btnProveedorAdm.Visible = false;
             btnProveedorBaja.Visible = false;
-            btnProductoBaja.Visible = true;
-            btnClienteModificar.Visible = false;
+            btnProductoAdm.Visible = true;
+            btnClienteAdm.Visible = false;
             btnVentaRegistrar.Visible = false;
             btnVentaDevolucion.Visible = false;
         }
@@ -193,14 +123,14 @@ namespace tpcai_electrhogar
             btnUsuarioBaja.Visible = false;
             btnUsuarioModificar.Visible = false;
             btnUsuarioRegistrar.Visible = false;
-            btnReporteStock.Visible = false;
+            btnReporteStockCritico.Visible = false;
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
             btnProveedorRegistrar.Visible = false;
-            btnProveedorListar.Visible = false;
+            btnProveedorAdm.Visible = false;
             btnProveedorBaja.Visible = false;
-            btnProductoBaja.Visible = false;
-            btnClienteModificar.Visible = true;
+            btnProductoAdm.Visible = false;
+            btnClienteAdm.Visible = true;
             btnVentaRegistrar.Visible = false;
             btnVentaDevolucion.Visible = false;
         }
@@ -210,14 +140,14 @@ namespace tpcai_electrhogar
             btnUsuarioBaja.Visible = false;
             btnUsuarioModificar.Visible = false;
             btnUsuarioRegistrar.Visible = false;
-            btnReporteStock.Visible = false;
+            btnReporteStockCritico.Visible = false;
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
             btnProveedorRegistrar.Visible = false;
-            btnProveedorListar.Visible = false;
+            btnProveedorAdm.Visible = false;
             btnProveedorBaja.Visible = false;
-            btnProductoBaja.Visible = false;
-            btnClienteModificar.Visible = false;
+            btnProductoAdm.Visible = false;
+            btnClienteAdm.Visible = false;
             btnVentaRegistrar.Visible = true;
             btnVentaDevolucion.Visible = true;
         }
@@ -227,14 +157,14 @@ namespace tpcai_electrhogar
             btnUsuarioBaja.Visible = false;
             btnUsuarioModificar.Visible = false;
             btnUsuarioRegistrar.Visible = false;
-            btnReporteStock.Visible = false;
+            btnReporteStockCritico.Visible = false;
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
             btnProveedorRegistrar.Visible = true;
-            btnProveedorListar.Visible = true;
+            btnProveedorAdm.Visible = true;
             btnProveedorBaja.Visible = true;
-            btnProductoBaja.Visible = false;
-            btnClienteModificar.Visible = false;
+            btnProductoAdm.Visible = false;
+            btnClienteAdm.Visible = false;
             btnVentaRegistrar.Visible = false;
             btnVentaDevolucion.Visible = false;
         }
@@ -244,14 +174,14 @@ namespace tpcai_electrhogar
             btnUsuarioBaja.Visible = false;
             btnUsuarioModificar.Visible = false;
             btnUsuarioRegistrar.Visible = false;
-            btnReporteStock.Visible = true;
+            btnReporteStockCritico.Visible = true;
             btnReporteProductoMasVendidoPorCategoria.Visible = true;
             btnReporteVentasPorVendedor.Visible = true;
             btnProveedorRegistrar.Visible = false;
-            btnProveedorListar.Visible = false;
+            btnProveedorAdm.Visible = false;
             btnProveedorBaja.Visible = false;
-            btnProductoBaja.Visible = false;
-            btnClienteModificar.Visible = false;
+            btnProductoAdm.Visible = false;
+            btnClienteAdm.Visible = false;
             btnVentaRegistrar.Visible = false;
             btnVentaDevolucion.Visible = false;
         }
@@ -261,23 +191,110 @@ namespace tpcai_electrhogar
             btnUsuarioBaja.Visible = true;
             btnUsuarioModificar.Visible = true;
             btnUsuarioRegistrar.Visible = true;
-            btnReporteStock.Visible = false;
+            btnReporteStockCritico.Visible = false;
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
             btnProveedorRegistrar.Visible = false;
-            btnProveedorListar.Visible = false;
+            btnProveedorAdm.Visible = false;
             btnProveedorBaja.Visible = false;
-            btnProductoBaja.Visible = false;
-            btnClienteModificar.Visible = false;
+            btnProductoAdm.Visible = false;
+            btnClienteAdm.Visible = false;
             btnVentaRegistrar.Visible = false;
             btnVentaDevolucion.Visible = false;
         }
 
-        private void btnProveedorListar_Click(object sender, EventArgs e)
+        // Modulo Usuarios
+        private void btnUsuarioRegistrar_Click_1(object sender, EventArgs e)
         {
-                this.Hide();
-                FormProveedorAdm listarProveedorForm = new FormProveedorAdm();
-                listarProveedorForm.Show();
+            this.Hide();
+            FormUsuarioRegistrar registrarUsuariosForm = new FormUsuarioRegistrar();
+            registrarUsuariosForm.Show();
+        }
+
+        private void btnUsuarioBaja_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormUsuarioBuscarBaja formUsuarioBuscarBaja = new FormUsuarioBuscarBaja();
+            formUsuarioBuscarBaja.Show();
+        }
+
+        // ####### Modificar no lleva a nada, estaba solamente el boton.
+        private void btnUsuarioModificar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
+            ModuloLogueo.UsuarioAuntenticado.host);
+            modulosForm.Show();
+        }
+
+        // Modulo Clientes
+        private void btnClienteAdm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormClienteListar listadoClienteForm = new FormClienteListar();
+            listadoClienteForm.Show();
+        }
+
+
+        // Modulo Proveedores
+        private void btnProveedorRegistrar_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormProveedorRegistrar altaProveedorForm = new FormProveedorRegistrar();
+            altaProveedorForm.Show();
+        }
+        private void btnProveedorBaja_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormProveedorBaja bajaProveedorForm = new FormProveedorBaja();
+            bajaProveedorForm.Show();
+        }
+        private void btnProveedorAdm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormProveedorAdm admProveedorForm = new FormProveedorAdm();
+            admProveedorForm.Show();
+        }
+
+
+        // Modulo Productos
+        private void btnProductoRegistrar_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormProductoRegistrar agregarProductoForm = new FormProductoRegistrar();
+            agregarProductoForm.Show();
+        }
+
+        private void btnProductoAdm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormAdmProductos formProductoAdm = new FormAdmProductos();
+            formProductoAdm.Show();
+        }
+
+
+        // Modulo Ventas
+        private void btnVentaRegistrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormVentaRegistrar formVentaRegistrar = new FormVentaRegistrar();
+            formVentaRegistrar.Show();
+        }
+
+        private void btnVentaDevolucion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormVentaDevolucion formVentaDevolucion = new FormVentaDevolucion();
+            formVentaDevolucion.Show();
+        }
+
+
+        // Modulo Reportes
+        private void btnReporteVentasPorVendedor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormReporteVentasPorVendedor reporteVentasVendedor = new FormReporteVentasPorVendedor();
+            reporteVentasVendedor.Show();
         }
 
         private void btnReporteProductoMasVendidoPorCategoria_Click(object sender, EventArgs e)
@@ -287,12 +304,6 @@ namespace tpcai_electrhogar
             reporteProductos.Show();
         }
 
-        private void btnReporteVentasPorVendedor_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormReporteVentasPorVendedor reporteVentasVendedor = new FormReporteVentasPorVendedor();
-            reporteVentasVendedor.Show();
-        }
-        
+
     }
 }

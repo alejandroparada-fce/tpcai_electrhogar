@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenuPrincipal));
-            this.btnUsuarioRegistrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -39,28 +38,30 @@
             this.btnProductos = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.cerrarsesionBtn = new System.Windows.Forms.Button();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCambioContrasena = new System.Windows.Forms.Button();
-            this.btnUsuarioBaja = new System.Windows.Forms.Button();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.lblCredits = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.btnProductoAdm = new System.Windows.Forms.Button();
+            this.btnReporteStockCritico = new System.Windows.Forms.Button();
+            this.btnProveedorAdm = new System.Windows.Forms.Button();
+            this.btnClienteAdm = new System.Windows.Forms.Button();
             this.btnVentaRegistrar = new System.Windows.Forms.Button();
-            this.btnUsuarioModificar = new System.Windows.Forms.Button();
-            this.btnClienteModificar = new System.Windows.Forms.Button();
-            this.btnVentaDevolucion = new System.Windows.Forms.Button();
-            this.btnProveedorListar = new System.Windows.Forms.Button();
-            this.btnProveedorBaja = new System.Windows.Forms.Button();
+            this.btnUsuarioRegistrar = new System.Windows.Forms.Button();
             this.btnProveedorRegistrar = new System.Windows.Forms.Button();
-            this.btnReporteProductoMasVendidoPorCategoria = new System.Windows.Forms.Button();
+            this.btnProveedorBaja = new System.Windows.Forms.Button();
+            this.btnUsuarioBaja = new System.Windows.Forms.Button();
+            this.btnUsuarioModificar = new System.Windows.Forms.Button();
             this.btnReporteVentasPorVendedor = new System.Windows.Forms.Button();
-            this.btnReporteStock = new System.Windows.Forms.Button();
-            this.btnProductoBaja = new System.Windows.Forms.Button();
+            this.btnReporteProductoMasVendidoPorCategoria = new System.Windows.Forms.Button();
+            this.btnVentaDevolucion = new System.Windows.Forms.Button();
+            this.btnProductoRegistrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,17 +69,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnUsuarioRegistrar
-            // 
-            this.btnUsuarioRegistrar.Location = new System.Drawing.Point(393, 76);
-            this.btnUsuarioRegistrar.Name = "btnUsuarioRegistrar";
-            this.btnUsuarioRegistrar.Size = new System.Drawing.Size(230, 34);
-            this.btnUsuarioRegistrar.TabIndex = 0;
-            this.btnUsuarioRegistrar.Text = "Registrar Usuario";
-            this.btnUsuarioRegistrar.UseVisualStyleBackColor = true;
-            this.btnUsuarioRegistrar.Visible = false;
-            this.btnUsuarioRegistrar.Click += new System.EventHandler(this.btnUsuarioRegistrar_Click);
             // 
             // panel1
             // 
@@ -190,7 +180,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.lblUsername);
-            this.panel2.Controls.Add(this.cerrarsesionBtn);
+            this.panel2.Controls.Add(this.btnCerrarSesion);
             this.panel2.Controls.Add(this.lblUsuario);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btnCambioContrasena);
@@ -211,19 +201,19 @@
             this.lblUsername.Size = new System.Drawing.Size(0, 16);
             this.lblUsername.TabIndex = 8;
             // 
-            // cerrarsesionBtn
+            // btnCerrarSesion
             // 
-            this.cerrarsesionBtn.BackColor = System.Drawing.Color.Gainsboro;
-            this.cerrarsesionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cerrarsesionBtn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cerrarsesionBtn.ForeColor = System.Drawing.Color.Black;
-            this.cerrarsesionBtn.Location = new System.Drawing.Point(135, 67);
-            this.cerrarsesionBtn.Name = "cerrarsesionBtn";
-            this.cerrarsesionBtn.Size = new System.Drawing.Size(126, 27);
-            this.cerrarsesionBtn.TabIndex = 7;
-            this.cerrarsesionBtn.Text = "Cerrar sesión";
-            this.cerrarsesionBtn.UseVisualStyleBackColor = false;
-            this.cerrarsesionBtn.Click += new System.EventHandler(this.button1_Click);
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.Black;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(135, 67);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(126, 27);
+            this.btnCerrarSesion.TabIndex = 7;
+            this.btnCerrarSesion.Text = "Cerrar sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // lblUsuario
             // 
@@ -259,17 +249,6 @@
             this.btnCambioContrasena.Text = "Cambiar contraseña";
             this.btnCambioContrasena.UseVisualStyleBackColor = false;
             this.btnCambioContrasena.Click += new System.EventHandler(this.btnCambioContrasena_Click);
-            // 
-            // btnUsuarioBaja
-            // 
-            this.btnUsuarioBaja.Location = new System.Drawing.Point(393, 140);
-            this.btnUsuarioBaja.Name = "btnUsuarioBaja";
-            this.btnUsuarioBaja.Size = new System.Drawing.Size(230, 34);
-            this.btnUsuarioBaja.TabIndex = 3;
-            this.btnUsuarioBaja.Text = "Baja Usuario";
-            this.btnUsuarioBaja.UseVisualStyleBackColor = true;
-            this.btnUsuarioBaja.Visible = false;
-            this.btnUsuarioBaja.Click += new System.EventHandler(this.btnUsuarioBaja_Click);
             // 
             // btnMaximizar
             // 
@@ -338,124 +317,256 @@
             this.lblTitle.Text = "Electro Hogar";
             this.lblTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblTitle_MouseDown);
             // 
+            // btnProductoAdm
+            // 
+            this.btnProductoAdm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnProductoAdm.FlatAppearance.BorderSize = 0;
+            this.btnProductoAdm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnProductoAdm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnProductoAdm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductoAdm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductoAdm.ForeColor = System.Drawing.Color.LightGray;
+            this.btnProductoAdm.Location = new System.Drawing.Point(404, 180);
+            this.btnProductoAdm.Name = "btnProductoAdm";
+            this.btnProductoAdm.Size = new System.Drawing.Size(230, 34);
+            this.btnProductoAdm.TabIndex = 114;
+            this.btnProductoAdm.Text = "Administrar Productos";
+            this.btnProductoAdm.UseVisualStyleBackColor = false;
+            this.btnProductoAdm.Visible = false;
+            this.btnProductoAdm.Click += new System.EventHandler(this.btnProductoAdm_Click);
+            // 
+            // btnReporteStockCritico
+            // 
+            this.btnReporteStockCritico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnReporteStockCritico.FlatAppearance.BorderSize = 0;
+            this.btnReporteStockCritico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnReporteStockCritico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnReporteStockCritico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporteStockCritico.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteStockCritico.ForeColor = System.Drawing.Color.LightGray;
+            this.btnReporteStockCritico.Location = new System.Drawing.Point(404, 125);
+            this.btnReporteStockCritico.Name = "btnReporteStockCritico";
+            this.btnReporteStockCritico.Size = new System.Drawing.Size(230, 34);
+            this.btnReporteStockCritico.TabIndex = 115;
+            this.btnReporteStockCritico.Text = "Reporte Stock Crítico";
+            this.btnReporteStockCritico.UseVisualStyleBackColor = false;
+            this.btnReporteStockCritico.Visible = false;
+            // 
+            // btnProveedorAdm
+            // 
+            this.btnProveedorAdm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnProveedorAdm.FlatAppearance.BorderSize = 0;
+            this.btnProveedorAdm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnProveedorAdm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnProveedorAdm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedorAdm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedorAdm.ForeColor = System.Drawing.Color.LightGray;
+            this.btnProveedorAdm.Location = new System.Drawing.Point(404, 248);
+            this.btnProveedorAdm.Name = "btnProveedorAdm";
+            this.btnProveedorAdm.Size = new System.Drawing.Size(230, 34);
+            this.btnProveedorAdm.TabIndex = 116;
+            this.btnProveedorAdm.Text = "Administrar Proveedores";
+            this.btnProveedorAdm.UseVisualStyleBackColor = false;
+            this.btnProveedorAdm.Visible = false;
+            this.btnProveedorAdm.Click += new System.EventHandler(this.btnProveedorAdm_Click);
+            // 
+            // btnClienteAdm
+            // 
+            this.btnClienteAdm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnClienteAdm.FlatAppearance.BorderSize = 0;
+            this.btnClienteAdm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnClienteAdm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnClienteAdm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClienteAdm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClienteAdm.ForeColor = System.Drawing.Color.LightGray;
+            this.btnClienteAdm.Location = new System.Drawing.Point(404, 180);
+            this.btnClienteAdm.Name = "btnClienteAdm";
+            this.btnClienteAdm.Size = new System.Drawing.Size(230, 34);
+            this.btnClienteAdm.TabIndex = 117;
+            this.btnClienteAdm.Text = "AdministrarClientes";
+            this.btnClienteAdm.UseVisualStyleBackColor = false;
+            this.btnClienteAdm.Visible = false;
+            this.btnClienteAdm.Click += new System.EventHandler(this.btnClienteAdm_Click);
+            // 
             // btnVentaRegistrar
             // 
-            this.btnVentaRegistrar.Location = new System.Drawing.Point(393, 76);
+            this.btnVentaRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnVentaRegistrar.FlatAppearance.BorderSize = 0;
+            this.btnVentaRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnVentaRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnVentaRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVentaRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVentaRegistrar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnVentaRegistrar.Location = new System.Drawing.Point(404, 125);
             this.btnVentaRegistrar.Name = "btnVentaRegistrar";
             this.btnVentaRegistrar.Size = new System.Drawing.Size(230, 34);
-            this.btnVentaRegistrar.TabIndex = 80;
+            this.btnVentaRegistrar.TabIndex = 118;
             this.btnVentaRegistrar.Text = "Registrar Venta";
-            this.btnVentaRegistrar.UseVisualStyleBackColor = true;
+            this.btnVentaRegistrar.UseVisualStyleBackColor = false;
             this.btnVentaRegistrar.Visible = false;
             this.btnVentaRegistrar.Click += new System.EventHandler(this.btnVentaRegistrar_Click);
             // 
-            // btnUsuarioModificar
+            // btnUsuarioRegistrar
             // 
-            this.btnUsuarioModificar.Location = new System.Drawing.Point(393, 209);
-            this.btnUsuarioModificar.Name = "btnUsuarioModificar";
-            this.btnUsuarioModificar.Size = new System.Drawing.Size(230, 34);
-            this.btnUsuarioModificar.TabIndex = 81;
-            this.btnUsuarioModificar.Text = "Modificar Usuario";
-            this.btnUsuarioModificar.UseVisualStyleBackColor = true;
-            this.btnUsuarioModificar.Visible = false;
-            // 
-            // btnClienteModificar
-            // 
-            this.btnClienteModificar.Location = new System.Drawing.Point(393, 76);
-            this.btnClienteModificar.Name = "btnClienteModificar";
-            this.btnClienteModificar.Size = new System.Drawing.Size(230, 34);
-            this.btnClienteModificar.TabIndex = 83;
-            this.btnClienteModificar.Text = "Administrar Cliente";
-            this.btnClienteModificar.UseVisualStyleBackColor = true;
-            this.btnClienteModificar.Visible = false;
-            this.btnClienteModificar.Click += new System.EventHandler(this.btnClienteModificar_Click);
-            // 
-            // btnVentaDevolucion
-            // 
-            this.btnVentaDevolucion.Location = new System.Drawing.Point(393, 140);
-            this.btnVentaDevolucion.Name = "btnVentaDevolucion";
-            this.btnVentaDevolucion.Size = new System.Drawing.Size(230, 34);
-            this.btnVentaDevolucion.TabIndex = 84;
-            this.btnVentaDevolucion.Text = "Devolución Venta";
-            this.btnVentaDevolucion.UseVisualStyleBackColor = true;
-            this.btnVentaDevolucion.Visible = false;
-            this.btnVentaDevolucion.Click += new System.EventHandler(this.btnVentaDevolucion_Click);
-            // 
-            // btnProveedorListar
-            // 
-            this.btnProveedorListar.Location = new System.Drawing.Point(393, 209);
-            this.btnProveedorListar.Name = "btnProveedorListar";
-            this.btnProveedorListar.Size = new System.Drawing.Size(230, 34);
-            this.btnProveedorListar.TabIndex = 87;
-            this.btnProveedorListar.Text = "Listar Proveedor";
-            this.btnProveedorListar.UseVisualStyleBackColor = true;
-            this.btnProveedorListar.Visible = false;
-            this.btnProveedorListar.Click += new System.EventHandler(this.btnProveedorListar_Click);
-            // 
-            // btnProveedorBaja
-            // 
-            this.btnProveedorBaja.Location = new System.Drawing.Point(393, 140);
-            this.btnProveedorBaja.Name = "btnProveedorBaja";
-            this.btnProveedorBaja.Size = new System.Drawing.Size(230, 34);
-            this.btnProveedorBaja.TabIndex = 86;
-            this.btnProveedorBaja.Text = "Baja Proveedor";
-            this.btnProveedorBaja.UseVisualStyleBackColor = true;
-            this.btnProveedorBaja.Visible = false;
-            this.btnProveedorBaja.Click += new System.EventHandler(this.btnProveedorBaja_Click);
+            this.btnUsuarioRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnUsuarioRegistrar.FlatAppearance.BorderSize = 0;
+            this.btnUsuarioRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnUsuarioRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUsuarioRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarioRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarioRegistrar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnUsuarioRegistrar.Location = new System.Drawing.Point(404, 125);
+            this.btnUsuarioRegistrar.Name = "btnUsuarioRegistrar";
+            this.btnUsuarioRegistrar.Size = new System.Drawing.Size(230, 34);
+            this.btnUsuarioRegistrar.TabIndex = 119;
+            this.btnUsuarioRegistrar.Text = "Registrar Usuario";
+            this.btnUsuarioRegistrar.UseVisualStyleBackColor = false;
+            this.btnUsuarioRegistrar.Visible = false;
+            this.btnUsuarioRegistrar.Click += new System.EventHandler(this.btnUsuarioRegistrar_Click_1);
             // 
             // btnProveedorRegistrar
             // 
-            this.btnProveedorRegistrar.Location = new System.Drawing.Point(393, 76);
+            this.btnProveedorRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnProveedorRegistrar.FlatAppearance.BorderSize = 0;
+            this.btnProveedorRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnProveedorRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnProveedorRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedorRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedorRegistrar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnProveedorRegistrar.Location = new System.Drawing.Point(404, 125);
             this.btnProveedorRegistrar.Name = "btnProveedorRegistrar";
             this.btnProveedorRegistrar.Size = new System.Drawing.Size(230, 34);
-            this.btnProveedorRegistrar.TabIndex = 85;
+            this.btnProveedorRegistrar.TabIndex = 120;
             this.btnProveedorRegistrar.Text = "Registrar Proveedor";
-            this.btnProveedorRegistrar.UseVisualStyleBackColor = true;
+            this.btnProveedorRegistrar.UseVisualStyleBackColor = false;
             this.btnProveedorRegistrar.Visible = false;
-            this.btnProveedorRegistrar.Click += new System.EventHandler(this.btnProveedorRegistrar_Click);
+            this.btnProveedorRegistrar.Click += new System.EventHandler(this.btnProveedorRegistrar_Click_1);
             // 
-            // btnReporteProductoMasVendidoPorCategoria
+            // btnProveedorBaja
             // 
-            this.btnReporteProductoMasVendidoPorCategoria.Location = new System.Drawing.Point(393, 201);
-            this.btnReporteProductoMasVendidoPorCategoria.Name = "btnReporteProductoMasVendidoPorCategoria";
-            this.btnReporteProductoMasVendidoPorCategoria.Size = new System.Drawing.Size(230, 51);
-            this.btnReporteProductoMasVendidoPorCategoria.TabIndex = 90;
-            this.btnReporteProductoMasVendidoPorCategoria.Text = "Reporte Producto Mas Vendido Por Categoria";
-            this.btnReporteProductoMasVendidoPorCategoria.UseVisualStyleBackColor = true;
-            this.btnReporteProductoMasVendidoPorCategoria.Visible = false;
-            this.btnReporteProductoMasVendidoPorCategoria.Click += new System.EventHandler(this.btnReporteProductoMasVendidoPorCategoria_Click);
+            this.btnProveedorBaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnProveedorBaja.FlatAppearance.BorderSize = 0;
+            this.btnProveedorBaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnProveedorBaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnProveedorBaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedorBaja.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedorBaja.ForeColor = System.Drawing.Color.LightGray;
+            this.btnProveedorBaja.Location = new System.Drawing.Point(404, 180);
+            this.btnProveedorBaja.Name = "btnProveedorBaja";
+            this.btnProveedorBaja.Size = new System.Drawing.Size(230, 34);
+            this.btnProveedorBaja.TabIndex = 121;
+            this.btnProveedorBaja.Text = "Baja Proveedor";
+            this.btnProveedorBaja.UseVisualStyleBackColor = false;
+            this.btnProveedorBaja.Visible = false;
+            this.btnProveedorBaja.Click += new System.EventHandler(this.btnProveedorBaja_Click_1);
+            // 
+            // btnUsuarioBaja
+            // 
+            this.btnUsuarioBaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnUsuarioBaja.FlatAppearance.BorderSize = 0;
+            this.btnUsuarioBaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnUsuarioBaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUsuarioBaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarioBaja.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarioBaja.ForeColor = System.Drawing.Color.LightGray;
+            this.btnUsuarioBaja.Location = new System.Drawing.Point(404, 180);
+            this.btnUsuarioBaja.Name = "btnUsuarioBaja";
+            this.btnUsuarioBaja.Size = new System.Drawing.Size(230, 34);
+            this.btnUsuarioBaja.TabIndex = 122;
+            this.btnUsuarioBaja.Text = "Baja Usuario";
+            this.btnUsuarioBaja.UseVisualStyleBackColor = false;
+            this.btnUsuarioBaja.Visible = false;
+            this.btnUsuarioBaja.Click += new System.EventHandler(this.btnUsuarioBaja_Click_1);
+            // 
+            // btnUsuarioModificar
+            // 
+            this.btnUsuarioModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnUsuarioModificar.FlatAppearance.BorderSize = 0;
+            this.btnUsuarioModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnUsuarioModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUsuarioModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarioModificar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarioModificar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnUsuarioModificar.Location = new System.Drawing.Point(404, 248);
+            this.btnUsuarioModificar.Name = "btnUsuarioModificar";
+            this.btnUsuarioModificar.Size = new System.Drawing.Size(230, 34);
+            this.btnUsuarioModificar.TabIndex = 123;
+            this.btnUsuarioModificar.Text = "Modificar Usuario";
+            this.btnUsuarioModificar.UseVisualStyleBackColor = false;
+            this.btnUsuarioModificar.Visible = false;
+            this.btnUsuarioModificar.Click += new System.EventHandler(this.btnUsuarioModificar_Click);
             // 
             // btnReporteVentasPorVendedor
             // 
-            this.btnReporteVentasPorVendedor.Location = new System.Drawing.Point(393, 140);
+            this.btnReporteVentasPorVendedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnReporteVentasPorVendedor.FlatAppearance.BorderSize = 0;
+            this.btnReporteVentasPorVendedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnReporteVentasPorVendedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnReporteVentasPorVendedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporteVentasPorVendedor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteVentasPorVendedor.ForeColor = System.Drawing.Color.LightGray;
+            this.btnReporteVentasPorVendedor.Location = new System.Drawing.Point(404, 248);
             this.btnReporteVentasPorVendedor.Name = "btnReporteVentasPorVendedor";
             this.btnReporteVentasPorVendedor.Size = new System.Drawing.Size(230, 34);
-            this.btnReporteVentasPorVendedor.TabIndex = 89;
-            this.btnReporteVentasPorVendedor.Text = "Reporte Ventas por Vendedor";
-            this.btnReporteVentasPorVendedor.UseVisualStyleBackColor = true;
+            this.btnReporteVentasPorVendedor.TabIndex = 124;
+            this.btnReporteVentasPorVendedor.Text = "Reporte Por Vendedor";
+            this.btnReporteVentasPorVendedor.UseVisualStyleBackColor = false;
             this.btnReporteVentasPorVendedor.Visible = false;
             this.btnReporteVentasPorVendedor.Click += new System.EventHandler(this.btnReporteVentasPorVendedor_Click);
             // 
-            // btnReporteStock
+            // btnReporteProductoMasVendidoPorCategoria
             // 
-            this.btnReporteStock.Location = new System.Drawing.Point(393, 76);
-            this.btnReporteStock.Name = "btnReporteStock";
-            this.btnReporteStock.Size = new System.Drawing.Size(230, 34);
-            this.btnReporteStock.TabIndex = 88;
-            this.btnReporteStock.Text = "Reporte Stock Critico";
-            this.btnReporteStock.UseVisualStyleBackColor = true;
-            this.btnReporteStock.Visible = false;
+            this.btnReporteProductoMasVendidoPorCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnReporteProductoMasVendidoPorCategoria.FlatAppearance.BorderSize = 0;
+            this.btnReporteProductoMasVendidoPorCategoria.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnReporteProductoMasVendidoPorCategoria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnReporteProductoMasVendidoPorCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporteProductoMasVendidoPorCategoria.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteProductoMasVendidoPorCategoria.ForeColor = System.Drawing.Color.LightGray;
+            this.btnReporteProductoMasVendidoPorCategoria.Location = new System.Drawing.Point(404, 248);
+            this.btnReporteProductoMasVendidoPorCategoria.Name = "btnReporteProductoMasVendidoPorCategoria";
+            this.btnReporteProductoMasVendidoPorCategoria.Size = new System.Drawing.Size(230, 67);
+            this.btnReporteProductoMasVendidoPorCategoria.TabIndex = 125;
+            this.btnReporteProductoMasVendidoPorCategoria.Text = "Reporte Producto Más Vendido Por Categoría";
+            this.btnReporteProductoMasVendidoPorCategoria.UseVisualStyleBackColor = false;
+            this.btnReporteProductoMasVendidoPorCategoria.Visible = false;
+            this.btnReporteProductoMasVendidoPorCategoria.Click += new System.EventHandler(this.btnReporteProductoMasVendidoPorCategoria_Click);
             // 
-            // btnProductoBaja
+            // btnVentaDevolucion
             // 
-            this.btnProductoBaja.Location = new System.Drawing.Point(393, 76);
-            this.btnProductoBaja.Name = "btnProductoBaja";
-            this.btnProductoBaja.Size = new System.Drawing.Size(230, 34);
-            this.btnProductoBaja.TabIndex = 92;
-            this.btnProductoBaja.Text = "Administrar Producto";
-            this.btnProductoBaja.UseVisualStyleBackColor = true;
-            this.btnProductoBaja.Visible = false;
-            this.btnProductoBaja.Click += new System.EventHandler(this.btnProductoBaja_Click);
+            this.btnVentaDevolucion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnVentaDevolucion.FlatAppearance.BorderSize = 0;
+            this.btnVentaDevolucion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnVentaDevolucion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnVentaDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVentaDevolucion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVentaDevolucion.ForeColor = System.Drawing.Color.LightGray;
+            this.btnVentaDevolucion.Location = new System.Drawing.Point(404, 248);
+            this.btnVentaDevolucion.Name = "btnVentaDevolucion";
+            this.btnVentaDevolucion.Size = new System.Drawing.Size(230, 34);
+            this.btnVentaDevolucion.TabIndex = 126;
+            this.btnVentaDevolucion.Text = "Devolución Venta";
+            this.btnVentaDevolucion.UseVisualStyleBackColor = false;
+            this.btnVentaDevolucion.Visible = false;
+            this.btnVentaDevolucion.Click += new System.EventHandler(this.btnVentaDevolucion_Click);
+            // 
+            // btnProductoRegistrar
+            // 
+            this.btnProductoRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnProductoRegistrar.FlatAppearance.BorderSize = 0;
+            this.btnProductoRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnProductoRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnProductoRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductoRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductoRegistrar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnProductoRegistrar.Location = new System.Drawing.Point(404, 125);
+            this.btnProductoRegistrar.Name = "btnProductoRegistrar";
+            this.btnProductoRegistrar.Size = new System.Drawing.Size(230, 34);
+            this.btnProductoRegistrar.TabIndex = 127;
+            this.btnProductoRegistrar.Text = "Registrar Producto";
+            this.btnProductoRegistrar.UseVisualStyleBackColor = false;
+            this.btnProductoRegistrar.Visible = false;
+            this.btnProductoRegistrar.Click += new System.EventHandler(this.btnProductoRegistrar_Click_1);
             // 
             // FormMenuPrincipal
             // 
@@ -463,26 +574,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 340);
-            this.Controls.Add(this.btnProductoBaja);
+            this.Controls.Add(this.btnProductoRegistrar);
+            this.Controls.Add(this.btnVentaDevolucion);
             this.Controls.Add(this.btnReporteProductoMasVendidoPorCategoria);
             this.Controls.Add(this.btnReporteVentasPorVendedor);
-            this.Controls.Add(this.btnReporteStock);
-            this.Controls.Add(this.btnProveedorListar);
+            this.Controls.Add(this.btnUsuarioModificar);
+            this.Controls.Add(this.btnUsuarioBaja);
             this.Controls.Add(this.btnProveedorBaja);
             this.Controls.Add(this.btnProveedorRegistrar);
-            this.Controls.Add(this.btnVentaDevolucion);
-            this.Controls.Add(this.btnClienteModificar);
-            this.Controls.Add(this.btnUsuarioModificar);
+            this.Controls.Add(this.btnUsuarioRegistrar);
             this.Controls.Add(this.btnVentaRegistrar);
+            this.Controls.Add(this.btnClienteAdm);
+            this.Controls.Add(this.btnProveedorAdm);
+            this.Controls.Add(this.btnReporteStockCritico);
+            this.Controls.Add(this.btnProductoAdm);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnUsuarioBaja);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnUsuarioRegistrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMenuPrincipal";
@@ -502,11 +614,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnUsuarioRegistrar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCambioContrasena;
-        private System.Windows.Forms.Button btnUsuarioBaja;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Label lblUsuario;
@@ -522,18 +631,21 @@
         private System.Windows.Forms.Label lblCredits;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button btnVentaRegistrar;
-        private System.Windows.Forms.Button btnUsuarioModificar;
-        private System.Windows.Forms.Button btnClienteModificar;
-        private System.Windows.Forms.Button btnVentaDevolucion;
-        private System.Windows.Forms.Button btnProveedorListar;
-        private System.Windows.Forms.Button btnProveedorBaja;
-        private System.Windows.Forms.Button btnProveedorRegistrar;
-        private System.Windows.Forms.Button btnReporteProductoMasVendidoPorCategoria;
-        private System.Windows.Forms.Button btnReporteVentasPorVendedor;
-        private System.Windows.Forms.Button btnReporteStock;
-        private System.Windows.Forms.Button btnProductoBaja;
-        private System.Windows.Forms.Button cerrarsesionBtn;
+        private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Button btnProductoAdm;
+        private System.Windows.Forms.Button btnReporteStockCritico;
+        private System.Windows.Forms.Button btnProveedorAdm;
+        private System.Windows.Forms.Button btnClienteAdm;
+        private System.Windows.Forms.Button btnVentaRegistrar;
+        private System.Windows.Forms.Button btnUsuarioRegistrar;
+        private System.Windows.Forms.Button btnProveedorRegistrar;
+        private System.Windows.Forms.Button btnProveedorBaja;
+        private System.Windows.Forms.Button btnUsuarioBaja;
+        private System.Windows.Forms.Button btnUsuarioModificar;
+        private System.Windows.Forms.Button btnReporteVentasPorVendedor;
+        private System.Windows.Forms.Button btnReporteProductoMasVendidoPorCategoria;
+        private System.Windows.Forms.Button btnVentaDevolucion;
+        private System.Windows.Forms.Button btnProductoRegistrar;
     }
 }
