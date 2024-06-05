@@ -33,13 +33,6 @@ namespace tpcai_electrhogar.Forms
         }
 
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-ModuloLogueo.UsuarioAuntenticado.host);
-            modulosForm.Show();
-        }
 
         private void FormStockCritico_MouseDown(object sender, MouseEventArgs e)
         {
@@ -52,7 +45,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
             //Si la lsita contiene elementos emito un warning
             if (listaProductosCritico.Any())
             {
-                lblWarning.Text = "Hay Productos con stock Critico";
+                lblWarning.Text = "Hay Productos con Stock Critico";
             }
             dgvStockCritico.DataSource = listaProductosCritico;
             dgvStockCritico.Columns["Id"].Visible = false;
@@ -82,6 +75,14 @@ ModuloLogueo.UsuarioAuntenticado.host);
         private void lblTitle_MouseDown(object sender, MouseEventArgs e)
         {
             FormUtils.MoverFormulario(this);
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
+ModuloLogueo.UsuarioAuntenticado.host);
+            modulosForm.Show();
         }
     }
 }

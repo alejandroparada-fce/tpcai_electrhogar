@@ -37,6 +37,9 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.lblCredits = new System.Windows.Forms.Label();
+            this.lblVersion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReporteVentas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -48,11 +51,11 @@
             this.lblReporte.AutoSize = true;
             this.lblReporte.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblReporte.Location = new System.Drawing.Point(230, 65);
+            this.lblReporte.Location = new System.Drawing.Point(165, 12);
             this.lblReporte.Name = "lblReporte";
-            this.lblReporte.Size = new System.Drawing.Size(341, 38);
+            this.lblReporte.Size = new System.Drawing.Size(470, 38);
             this.lblReporte.TabIndex = 118;
-            this.lblReporte.Text = "Ventas por vendedor";
+            this.lblReporte.Text = "Reporte Ventas por vendedor";
             this.lblReporte.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblReporte_MouseDown);
             // 
             // dgvReporteVentas
@@ -78,13 +81,12 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvReporteVentas.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvReporteVentas.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvReporteVentas.Location = new System.Drawing.Point(0, 189);
+            this.dgvReporteVentas.Location = new System.Drawing.Point(0, 72);
             this.dgvReporteVentas.MultiSelect = false;
             this.dgvReporteVentas.Name = "dgvReporteVentas";
             this.dgvReporteVentas.ReadOnly = true;
             this.dgvReporteVentas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvReporteVentas.Size = new System.Drawing.Size(800, 261);
+            this.dgvReporteVentas.Size = new System.Drawing.Size(800, 224);
             this.dgvReporteVentas.TabIndex = 119;
             // 
             // btnMaximizar
@@ -120,12 +122,54 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // btnVolver
+            // 
+            this.btnVolver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnVolver.FlatAppearance.BorderSize = 0;
+            this.btnVolver.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnVolver.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVolver.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.ForeColor = System.Drawing.Color.LightGray;
+            this.btnVolver.Location = new System.Drawing.Point(618, 344);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(170, 40);
+            this.btnVolver.TabIndex = 135;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
+            // lblCredits
+            // 
+            this.lblCredits.AutoSize = true;
+            this.lblCredits.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCredits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblCredits.Location = new System.Drawing.Point(710, 410);
+            this.lblCredits.Name = "lblCredits";
+            this.lblCredits.Size = new System.Drawing.Size(78, 16);
+            this.lblCredits.TabIndex = 136;
+            this.lblCredits.Text = "G6 Softwares";
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblVersion.Location = new System.Drawing.Point(758, 426);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(30, 16);
+            this.lblVersion.TabIndex = 137;
+            this.lblVersion.Text = "v1.0";
+            // 
             // FormReporteVentasPorVendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblCredits);
+            this.Controls.Add(this.lblVersion);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
@@ -153,5 +197,8 @@
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Label lblCredits;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
