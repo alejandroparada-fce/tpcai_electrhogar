@@ -250,22 +250,31 @@
             // 
             // txtMontoParcial
             // 
+            this.txtMontoParcial.Enabled = false;
+            this.txtMontoParcial.HideSelection = false;
             this.txtMontoParcial.Location = new System.Drawing.Point(366, 383);
             this.txtMontoParcial.Name = "txtMontoParcial";
+            this.txtMontoParcial.ReadOnly = true;
             this.txtMontoParcial.Size = new System.Drawing.Size(100, 20);
             this.txtMontoParcial.TabIndex = 114;
             // 
             // txtDescuento
             // 
+            this.txtDescuento.Enabled = false;
+            this.txtDescuento.HideSelection = false;
             this.txtDescuento.Location = new System.Drawing.Point(400, 420);
             this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.ReadOnly = true;
             this.txtDescuento.Size = new System.Drawing.Size(100, 20);
             this.txtDescuento.TabIndex = 115;
             // 
             // txtMontoTotal
             // 
+            this.txtMontoTotal.Enabled = false;
+            this.txtMontoTotal.HideSelection = false;
             this.txtMontoTotal.Location = new System.Drawing.Point(382, 497);
             this.txtMontoTotal.Name = "txtMontoTotal";
+            this.txtMontoTotal.ReadOnly = true;
             this.txtMontoTotal.Size = new System.Drawing.Size(100, 20);
             this.txtMontoTotal.TabIndex = 116;
             // 
@@ -420,6 +429,7 @@
             // 
             this.checkElectro.AutoSize = true;
             this.checkElectro.BackColor = System.Drawing.Color.Black;
+            this.checkElectro.Enabled = false;
             this.checkElectro.ForeColor = System.Drawing.Color.Red;
             this.checkElectro.Location = new System.Drawing.Point(734, 402);
             this.checkElectro.Name = "checkElectro";
@@ -430,6 +440,7 @@
             // checkClienteNuevo
             // 
             this.checkClienteNuevo.AutoSize = true;
+            this.checkClienteNuevo.Enabled = false;
             this.checkClienteNuevo.Location = new System.Drawing.Point(734, 436);
             this.checkClienteNuevo.Name = "checkClienteNuevo";
             this.checkClienteNuevo.Size = new System.Drawing.Size(15, 14);
@@ -471,8 +482,11 @@
             // 
             // txtDescuentoCliente
             // 
+            this.txtDescuentoCliente.Enabled = false;
+            this.txtDescuentoCliente.HideSelection = false;
             this.txtDescuentoCliente.Location = new System.Drawing.Point(400, 461);
             this.txtDescuentoCliente.Name = "txtDescuentoCliente";
+            this.txtDescuentoCliente.ReadOnly = true;
             this.txtDescuentoCliente.Size = new System.Drawing.Size(100, 20);
             this.txtDescuentoCliente.TabIndex = 138;
             // 
