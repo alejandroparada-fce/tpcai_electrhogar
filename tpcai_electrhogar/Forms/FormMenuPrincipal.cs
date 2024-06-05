@@ -304,6 +304,11 @@ namespace tpcai_electrhogar
             reporteProductos.Show();
         }
 
-
+        private void btnReporteStockCritico_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormStockCritico reporteStockCritico = new FormStockCritico();
+            reporteStockCritico.Show();
+        }
     }
 }
