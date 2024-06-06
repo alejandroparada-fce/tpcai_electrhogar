@@ -48,8 +48,8 @@ namespace tpcai_electrhogar.Forms
         }
 
         public static string idUsuario = "d62f7493-c1aa-4183-ad87-a3a41c77629d";
-         
-           
+
+
 
         private void FiltrarLista()
         {
@@ -119,7 +119,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
             CalcularMonto();
         }
 
-           public void llenarDataGrid(ProductoVentaEnt producto)
+        public void llenarDataGrid(ProductoVentaEnt producto)
         {
             foreach (DataGridViewRow row in dgvProductos.Rows)
             {
@@ -139,7 +139,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
         {
             FormAgregarProducto formAgregarProducto = new FormAgregarProducto(this);
             formAgregarProducto.ShowDialog();
-           
+
 
         }
 
@@ -149,12 +149,12 @@ ModuloLogueo.UsuarioAuntenticado.host);
             {
                 foreach (DataGridViewRow row in dgvProductos.SelectedRows)
                 {
-                    
-                    if(!row.IsNewRow)
+
+                    if (!row.IsNewRow)
                     {
                         dgvProductos.Rows.Remove(row);
                     }
-                   
+
                 }
             }
             else
@@ -168,7 +168,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
             BorrarCelda();
             CalcularMonto();
             TildarOpciones();
-           
+
         }
         private bool ClienteNuevo(Guid idCliente)
         {
@@ -182,7 +182,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
             decimal electroHogar = 0;
             decimal descuentoElectro = 0;
             decimal descuentoCliente = 0;
-            decimal montoTotal = 0;         
+            decimal montoTotal = 0;
             ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
             Guid idCliente = clienteSeleccionado.id;
             List<VentaClienteEnt> listadoVentasCliente = ModuloVentas.ConsultarVentasCliente(idCliente, out string error);
@@ -193,20 +193,20 @@ ModuloLogueo.UsuarioAuntenticado.host);
             {
                 if (row.Cells["Precio"].Value != null && decimal.TryParse(row.Cells["Precio"].Value.ToString(), out decimal valor))
                     if (row.Cells["Cantidad"].Value != null && decimal.TryParse(row.Cells["Cantidad"].Value.ToString(), out decimal cantidad))
-                {                  
-                        
+                    {
+
                         suma = suma + (valor * cantidad);
 
-                    if (row.Cells["IdCategoria"].Value != null && int.TryParse(row.Cells["IdCategoria"].Value.ToString(), out int categoria))
-                    {
-                        if (categoria == 3)
-
+                        if (row.Cells["IdCategoria"].Value != null && int.TryParse(row.Cells["IdCategoria"].Value.ToString(), out int categoria))
                         {
-                            electroHogar = electroHogar + (valor * cantidad);
-                        }
+                            if (categoria == 3)
 
+                            {
+                                electroHogar = electroHogar + (valor * cantidad);
+                            }
+
+                        }
                     }
-                }
             }
 
             if (electroHogar > 100000)
@@ -215,7 +215,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
             }
 
             bool clienteNuevo = ClienteNuevo(idCliente);
-            
+
             if (clienteNuevo)
             {
                 descuentoCliente = (suma - descuentoElectro) * 0.05m;
@@ -233,30 +233,73 @@ ModuloLogueo.UsuarioAuntenticado.host);
         {
             checkElectro.Checked = !(txtDescuento.Text == "0");
 
-            
+
             checkClienteNuevo.Checked = !(txtDescuentoCliente.Text == "0");
         }
 
         private void btnRealizarVenta_Click(object sender, EventArgs e)
         {
-            ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
-            Guid idCliente = clienteSeleccionado.id;
-            Guid.TryParse(idUsuario, out Guid idUsuario2);
+           
 
-            foreach (DataGridViewRow row in dgvProductos.Rows)
-            { 
-                var idProd = row.Cells[0].Value?.ToString();
-                var cantidadProd = row.Cells[4].Value?.ToString();
-                Guid.TryParse(idProd, out Guid idProducto);
-                int.TryParse(cantidadProd, out int cantidad);
-                AltaVenta venta = new AltaVenta();
-                venta.idCliente = clienteSeleccionado.id;
-                venta.idUsuario = idUsuario2;
-                venta.idProducto = idProducto;
-                venta.Cantidad = cantidad;
+                bool hayProductos = false;
+                foreach (DataGridViewRow row in dgvProductos.Rows)
+                {
+                    if (row.Cells[0].Value != null && row.Cells[4].Value != null)
+                    {
+                        hayProductos = true;
+                        break;
+                    }
+                }
 
-                ModuloVentas.AgregarVenta(venta , out string error);
+                if (!hayProductos)
+                {
+                    MessageBox.Show("No hay productos agregados para vender.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
+                Guid idCliente = clienteSeleccionado.id;
+                Guid.TryParse(idUsuario, out Guid idUsuario2);
+
+                bool ventaExitosa = true;
+                string mensajeError = string.Empty;
+
+
+                foreach (DataGridViewRow row in dgvProductos.Rows)
+                {
+                    if (row.Cells[0].Value != null && row.Cells[4].Value != null)
+                    {
+                        var idProd = row.Cells[0].Value?.ToString();
+                        var cantidadProd = row.Cells[4].Value?.ToString();
+                        Guid.TryParse(idProd, out Guid idProducto);
+                        int.TryParse(cantidadProd, out int cantidad);
+
+                        AltaVenta venta = new AltaVenta();
+                        venta.idCliente = clienteSeleccionado.id;
+                        venta.idUsuario = idUsuario2;
+                        venta.idProducto = idProducto;
+                        venta.Cantidad = cantidad;
+
+                        ModuloVentas.AgregarVenta(venta, out string error);
+                        if (!string.IsNullOrEmpty(error))
+                        {
+                            ventaExitosa = false;
+                            mensajeError = error;
+                            break;
+                        }
+                    }
+
+                }
+
+                if (ventaExitosa)
+                {
+                    MessageBox.Show("La venta se realizó con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show($"Se produjo un error: {mensajeError}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
-        }
+        
     }
 }
