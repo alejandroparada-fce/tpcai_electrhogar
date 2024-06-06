@@ -20,6 +20,7 @@ namespace tpcai_electrhogar.Datos
         {
             NombreUsuario = nombreUsuario;
             Contraseña = contraseña;
+            _fecha = DateTime.Now;
         }
 
     }
