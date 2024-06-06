@@ -66,6 +66,10 @@ namespace tpcai_electrhogar.Forms
             bool validar1 = Validaciones.ValidarEntero(cantidadNumeric.Text, "'Stock'", 1, 2147483647, out int cantidad, out string mensajeError1);
             bool validar2 = Validaciones.CantidadMinima(cantidad, stock, out string mensajeError2);
             mensajeError = mensajeError1 + "\n" + mensajeError2;
+            if (cantidad > 0.75 * stock)
+            {
+                MessageBox.Show("El producto ingresara en Stock critico");
+            }
             if ((validar1 & validar2) == true)
             {
                 ProductoVentaEnt producto = new ProductoVentaEnt();
@@ -81,7 +85,13 @@ namespace tpcai_electrhogar.Forms
             {
                 lblError.Text = mensajeError;
             }
+            }
         }
     }
 
-}
+
+
+
+           
+
+

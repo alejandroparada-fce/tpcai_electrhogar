@@ -107,13 +107,19 @@ ModuloLogueo.UsuarioAuntenticado.host);
         {
             ClienteEnt clienteseleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
             Guid id = clienteseleccionado.id;
+            if (MessageBox.Show("¿Está seguro de dar de baja este cliente?", "¿Dar de baja al cliente?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                try
+                {
+                    ModuloClientes.EliminarCliente(id, out string error);                   
 
-                FormConfirmacion formConfirmacion = new FormConfirmacion(id);
-                formConfirmacion.ShowDialog();
-                this.Hide();
-                FormClienteListar listadoClientesForm = new FormClienteListar();
-                listadoClientesForm.Show();
-
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            FiltrarLista();
 
         }
 
