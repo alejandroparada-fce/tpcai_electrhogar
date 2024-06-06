@@ -310,5 +310,6 @@ namespace tpcai_electrhogar
             FormStockCritico reporteStockCritico = new FormStockCritico();
             reporteStockCritico.Show();
         }
+
     }
 }

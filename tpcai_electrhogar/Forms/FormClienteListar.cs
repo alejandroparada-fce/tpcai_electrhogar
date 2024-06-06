@@ -146,7 +146,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
         {
             this.Hide();
             FormClienteRegistrar formClienteRegistrar = new FormClienteRegistrar();
-            formClienteRegistrar.ShowDialog();
+            formClienteRegistrar.Show();
         }
 
     }

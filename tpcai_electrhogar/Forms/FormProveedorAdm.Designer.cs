@@ -313,7 +313,7 @@
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(176, 28);
             this.btnEliminar.TabIndex = 114;
-            this.btnEliminar.Text = "Eliminar cliente";
+            this.btnEliminar.Text = "Eliminar proveedor";
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
@@ -330,7 +330,7 @@
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(176, 28);
             this.btnAgregar.TabIndex = 113;
-            this.btnAgregar.Text = " Agregar cliente";
+            this.btnAgregar.Text = " Agregar proveedor";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
