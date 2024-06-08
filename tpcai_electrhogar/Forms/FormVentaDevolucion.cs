@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using tpcai_electrhogar.Datos;
+using tpcai_electrhogar.Forms;
 using tpcai_electrhogar.Negocio;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -99,18 +100,29 @@ namespace tpcai_electrhogar
         }
         private void btnDevolver_Click(object sender, EventArgs e)
         {
-            VentaClienteEnt ventaSeleccionada = (VentaClienteEnt)dgvVentas.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
-            Guid id = ventaSeleccionada.Id;
-            try
+            
+            if (dgvVentas.SelectedRows.Count > 0)
             {
-                ModuloVentas.DevolverVentas(id, out string error);
-                FiltrarListaVenta();
 
+                VentaClienteEnt ventaSeleccionada = (VentaClienteEnt)dgvVentas.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
+                Guid id = ventaSeleccionada.Id;
+                try
+                {
+                    ModuloVentas.DevolverVentas(id, out string error);
+                    FiltrarListaVenta();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Debe cargar la lista.");
             }
+
+           
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

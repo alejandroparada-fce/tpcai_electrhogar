@@ -57,7 +57,6 @@
             this.btnProveedorRegistrar = new System.Windows.Forms.Button();
             this.btnProveedorBaja = new System.Windows.Forms.Button();
             this.btnUsuarioBaja = new System.Windows.Forms.Button();
-            this.btnUsuarioModificar = new System.Windows.Forms.Button();
             this.btnReporteVentasPorVendedor = new System.Windows.Forms.Button();
             this.btnReporteProductoMasVendidoPorCategoria = new System.Windows.Forms.Button();
             this.btnVentaDevolucion = new System.Windows.Forms.Button();
@@ -363,7 +362,7 @@
             this.btnProveedorAdm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedorAdm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProveedorAdm.ForeColor = System.Drawing.Color.LightGray;
-            this.btnProveedorAdm.Location = new System.Drawing.Point(404, 231);
+            this.btnProveedorAdm.Location = new System.Drawing.Point(404, 165);
             this.btnProveedorAdm.Name = "btnProveedorAdm";
             this.btnProveedorAdm.Size = new System.Drawing.Size(230, 34);
             this.btnProveedorAdm.TabIndex = 116;
@@ -442,7 +441,6 @@
             this.btnProveedorRegistrar.Text = "Registrar Proveedor";
             this.btnProveedorRegistrar.UseVisualStyleBackColor = false;
             this.btnProveedorRegistrar.Visible = false;
-            this.btnProveedorRegistrar.Click += new System.EventHandler(this.btnProveedorRegistrar_Click_1);
             // 
             // btnProveedorBaja
             // 
@@ -453,7 +451,7 @@
             this.btnProveedorBaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedorBaja.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProveedorBaja.ForeColor = System.Drawing.Color.LightGray;
-            this.btnProveedorBaja.Location = new System.Drawing.Point(404, 168);
+            this.btnProveedorBaja.Location = new System.Drawing.Point(404, 106);
             this.btnProveedorBaja.Name = "btnProveedorBaja";
             this.btnProveedorBaja.Size = new System.Drawing.Size(230, 34);
             this.btnProveedorBaja.TabIndex = 121;
@@ -471,7 +469,7 @@
             this.btnUsuarioBaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsuarioBaja.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuarioBaja.ForeColor = System.Drawing.Color.LightGray;
-            this.btnUsuarioBaja.Location = new System.Drawing.Point(404, 168);
+            this.btnUsuarioBaja.Location = new System.Drawing.Point(404, 165);
             this.btnUsuarioBaja.Name = "btnUsuarioBaja";
             this.btnUsuarioBaja.Size = new System.Drawing.Size(230, 34);
             this.btnUsuarioBaja.TabIndex = 122;
@@ -479,24 +477,6 @@
             this.btnUsuarioBaja.UseVisualStyleBackColor = false;
             this.btnUsuarioBaja.Visible = false;
             this.btnUsuarioBaja.Click += new System.EventHandler(this.btnUsuarioBaja_Click_1);
-            // 
-            // btnUsuarioModificar
-            // 
-            this.btnUsuarioModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnUsuarioModificar.FlatAppearance.BorderSize = 0;
-            this.btnUsuarioModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnUsuarioModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnUsuarioModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarioModificar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarioModificar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnUsuarioModificar.Location = new System.Drawing.Point(404, 231);
-            this.btnUsuarioModificar.Name = "btnUsuarioModificar";
-            this.btnUsuarioModificar.Size = new System.Drawing.Size(230, 34);
-            this.btnUsuarioModificar.TabIndex = 123;
-            this.btnUsuarioModificar.Text = "Modificar Usuario";
-            this.btnUsuarioModificar.UseVisualStyleBackColor = false;
-            this.btnUsuarioModificar.Visible = false;
-            this.btnUsuarioModificar.Click += new System.EventHandler(this.btnUsuarioModificar_Click);
             // 
             // btnReporteVentasPorVendedor
             // 
@@ -525,7 +505,7 @@
             this.btnReporteProductoMasVendidoPorCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporteProductoMasVendidoPorCategoria.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteProductoMasVendidoPorCategoria.ForeColor = System.Drawing.Color.LightGray;
-            this.btnReporteProductoMasVendidoPorCategoria.Location = new System.Drawing.Point(404, 230);
+            this.btnReporteProductoMasVendidoPorCategoria.Location = new System.Drawing.Point(404, 248);
             this.btnReporteProductoMasVendidoPorCategoria.Name = "btnReporteProductoMasVendidoPorCategoria";
             this.btnReporteProductoMasVendidoPorCategoria.Size = new System.Drawing.Size(230, 67);
             this.btnReporteProductoMasVendidoPorCategoria.TabIndex = 125;
@@ -543,7 +523,7 @@
             this.btnVentaDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVentaDevolucion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVentaDevolucion.ForeColor = System.Drawing.Color.LightGray;
-            this.btnVentaDevolucion.Location = new System.Drawing.Point(404, 168);
+            this.btnVentaDevolucion.Location = new System.Drawing.Point(404, 165);
             this.btnVentaDevolucion.Name = "btnVentaDevolucion";
             this.btnVentaDevolucion.Size = new System.Drawing.Size(230, 34);
             this.btnVentaDevolucion.TabIndex = 126;
@@ -598,7 +578,6 @@
             this.Controls.Add(this.btnVentaDevolucion);
             this.Controls.Add(this.btnReporteProductoMasVendidoPorCategoria);
             this.Controls.Add(this.btnReporteVentasPorVendedor);
-            this.Controls.Add(this.btnUsuarioModificar);
             this.Controls.Add(this.btnUsuarioBaja);
             this.Controls.Add(this.btnProveedorBaja);
             this.Controls.Add(this.btnProveedorRegistrar);
@@ -662,7 +641,6 @@
         private System.Windows.Forms.Button btnProveedorRegistrar;
         private System.Windows.Forms.Button btnProveedorBaja;
         private System.Windows.Forms.Button btnUsuarioBaja;
-        private System.Windows.Forms.Button btnUsuarioModificar;
         private System.Windows.Forms.Button btnReporteVentasPorVendedor;
         private System.Windows.Forms.Button btnReporteProductoMasVendidoPorCategoria;
         private System.Windows.Forms.Button btnVentaDevolucion;

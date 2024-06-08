@@ -119,7 +119,7 @@
             // 
             this.lblError.AutoSize = true;
             this.lblError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblError.Location = new System.Drawing.Point(379, 554);
+            this.lblError.Location = new System.Drawing.Point(504, 378);
             this.lblError.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 19);
@@ -213,7 +213,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAgregar.Location = new System.Drawing.Point(819, 442);
+            this.btnAgregar.Location = new System.Drawing.Point(823, 496);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(197, 40);
             this.btnAgregar.TabIndex = 5;
@@ -263,7 +263,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(567, 442);
+            this.btnCancelar.Location = new System.Drawing.Point(567, 496);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(197, 40);
             this.btnCancelar.TabIndex = 0;

@@ -104,12 +104,10 @@ namespace tpcai_electrhogar
         private void btnProductos_Click(object sender, EventArgs e)
         {
             btnUsuarioBaja.Visible = false;
-            btnUsuarioModificar.Visible = false;
             btnUsuarioRegistrar.Visible = false;
             btnReporteStockCritico.Visible = false;
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
-            btnProveedorRegistrar.Visible = false;
             btnProveedorAdm.Visible = false;
             btnProveedorBaja.Visible = false;
             btnProductoAdm.Visible = true;
@@ -121,12 +119,10 @@ namespace tpcai_electrhogar
         private void btnClientes_Click(object sender, EventArgs e)
         {
             btnUsuarioBaja.Visible = false;
-            btnUsuarioModificar.Visible = false;
             btnUsuarioRegistrar.Visible = false;
             btnReporteStockCritico.Visible = false;
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
-            btnProveedorRegistrar.Visible = false;
             btnProveedorAdm.Visible = false;
             btnProveedorBaja.Visible = false;
             btnProductoAdm.Visible = false;
@@ -138,12 +134,10 @@ namespace tpcai_electrhogar
         private void btnVentas_Click(object sender, EventArgs e)
         {
             btnUsuarioBaja.Visible = false;
-            btnUsuarioModificar.Visible = false;
             btnUsuarioRegistrar.Visible = false;
             btnReporteStockCritico.Visible = false;
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
-            btnProveedorRegistrar.Visible = false;
             btnProveedorAdm.Visible = false;
             btnProveedorBaja.Visible = false;
             btnProductoAdm.Visible = false;
@@ -155,12 +149,10 @@ namespace tpcai_electrhogar
         private void btnProveedores_Click(object sender, EventArgs e)
         {
             btnUsuarioBaja.Visible = false;
-            btnUsuarioModificar.Visible = false;
             btnUsuarioRegistrar.Visible = false;
             btnReporteStockCritico.Visible = false;
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
-            btnProveedorRegistrar.Visible = true;
             btnProveedorAdm.Visible = true;
             btnProveedorBaja.Visible = true;
             btnProductoAdm.Visible = false;
@@ -172,12 +164,10 @@ namespace tpcai_electrhogar
         private void btnReportes_Click(object sender, EventArgs e)
         {
             btnUsuarioBaja.Visible = false;
-            btnUsuarioModificar.Visible = false;
             btnUsuarioRegistrar.Visible = false;
             btnReporteStockCritico.Visible = true;
             btnReporteProductoMasVendidoPorCategoria.Visible = true;
             btnReporteVentasPorVendedor.Visible = true;
-            btnProveedorRegistrar.Visible = false;
             btnProveedorAdm.Visible = false;
             btnProveedorBaja.Visible = false;
             btnProductoAdm.Visible = false;
@@ -189,12 +179,10 @@ namespace tpcai_electrhogar
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             btnUsuarioBaja.Visible = true;
-            btnUsuarioModificar.Visible = true;
             btnUsuarioRegistrar.Visible = true;
             btnReporteStockCritico.Visible = false;
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
-            btnProveedorRegistrar.Visible = false;
             btnProveedorAdm.Visible = false;
             btnProveedorBaja.Visible = false;
             btnProductoAdm.Visible = false;
@@ -218,14 +206,6 @@ namespace tpcai_electrhogar
             formUsuarioBuscarBaja.Show();
         }
 
-        // ####### Modificar no lleva a nada, estaba solamente el boton.
-        private void btnUsuarioModificar_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-            ModuloLogueo.UsuarioAuntenticado.host);
-            modulosForm.Show();
-        }
 
         // Modulo Clientes
         private void btnClienteAdm_Click(object sender, EventArgs e)
@@ -237,12 +217,6 @@ namespace tpcai_electrhogar
 
 
         // Modulo Proveedores
-        private void btnProveedorRegistrar_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            FormProveedorRegistrar altaProveedorForm = new FormProveedorRegistrar();
-            altaProveedorForm.Show();
-        }
         private void btnProveedorBaja_Click_1(object sender, EventArgs e)
         {
             this.Hide();

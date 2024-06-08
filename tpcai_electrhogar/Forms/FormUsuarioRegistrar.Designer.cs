@@ -91,7 +91,7 @@
             this.textBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxNombre.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNombre.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBoxNombre.Location = new System.Drawing.Point(264, 88);
+            this.textBoxNombre.Location = new System.Drawing.Point(264, 76);
             this.textBoxNombre.Multiline = true;
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(173, 23);
@@ -101,7 +101,7 @@
             // 
             this.textBoxApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxApellido.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxApellido.Location = new System.Drawing.Point(494, 88);
+            this.textBoxApellido.Location = new System.Drawing.Point(494, 76);
             this.textBoxApellido.Multiline = true;
             this.textBoxApellido.Name = "textBoxApellido";
             this.textBoxApellido.Size = new System.Drawing.Size(173, 23);
@@ -112,7 +112,7 @@
             this.textBoxDirección.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxDirección.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDirección.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDirección.Location = new System.Drawing.Point(264, 240);
+            this.textBoxDirección.Location = new System.Drawing.Point(264, 216);
             this.textBoxDirección.Multiline = true;
             this.textBoxDirección.Name = "textBoxDirección";
             this.textBoxDirección.Size = new System.Drawing.Size(403, 23);
@@ -123,7 +123,7 @@
             this.textBoxTelefono.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTelefono.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTelefono.Location = new System.Drawing.Point(264, 297);
+            this.textBoxTelefono.Location = new System.Drawing.Point(264, 266);
             this.textBoxTelefono.Multiline = true;
             this.textBoxTelefono.Name = "textBoxTelefono";
             this.textBoxTelefono.Size = new System.Drawing.Size(403, 23);
@@ -134,7 +134,7 @@
             this.textBoxMail.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxMail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxMail.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMail.Location = new System.Drawing.Point(264, 350);
+            this.textBoxMail.Location = new System.Drawing.Point(265, 319);
             this.textBoxMail.Multiline = true;
             this.textBoxMail.Name = "textBoxMail";
             this.textBoxMail.Size = new System.Drawing.Size(403, 23);
@@ -146,7 +146,7 @@
             this.dateNacimiento.CustomFormat = "";
             this.dateNacimiento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNacimiento.Location = new System.Drawing.Point(447, 184);
+            this.dateNacimiento.Location = new System.Drawing.Point(448, 165);
             this.dateNacimiento.MaxDate = new System.DateTime(2024, 3, 23, 0, 0, 0, 0);
             this.dateNacimiento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateNacimiento.Name = "dateNacimiento";
@@ -159,7 +159,7 @@
             this.lblFechaNacimiento.AutoSize = true;
             this.lblFechaNacimiento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblFechaNacimiento.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(261, 185);
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(262, 166);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
             this.lblFechaNacimiento.Size = new System.Drawing.Size(180, 19);
             this.lblFechaNacimiento.TabIndex = 9;
@@ -170,7 +170,7 @@
             this.textBoxDNI.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxDNI.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDNI.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDNI.Location = new System.Drawing.Point(264, 142);
+            this.textBoxDNI.Location = new System.Drawing.Point(264, 130);
             this.textBoxDNI.Multiline = true;
             this.textBoxDNI.Name = "textBoxDNI";
             this.textBoxDNI.Size = new System.Drawing.Size(403, 23);
@@ -185,7 +185,7 @@
             "Vendedor",
             "Supervisior",
             "Administrador"});
-            this.comboBoxPerfil.Location = new System.Drawing.Point(264, 448);
+            this.comboBoxPerfil.Location = new System.Drawing.Point(264, 412);
             this.comboBoxPerfil.Name = "comboBoxPerfil";
             this.comboBoxPerfil.Size = new System.Drawing.Size(403, 27);
             this.comboBoxPerfil.TabIndex = 9;
@@ -196,7 +196,7 @@
             this.textBoxNombreUsuario.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxNombreUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxNombreUsuario.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombreUsuario.Location = new System.Drawing.Point(264, 405);
+            this.textBoxNombreUsuario.Location = new System.Drawing.Point(265, 371);
             this.textBoxNombreUsuario.Multiline = true;
             this.textBoxNombreUsuario.Name = "textBoxNombreUsuario";
             this.textBoxNombreUsuario.Size = new System.Drawing.Size(403, 23);
@@ -207,7 +207,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Location = new System.Drawing.Point(261, 64);
+            this.lblNombre.Location = new System.Drawing.Point(261, 52);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(73, 19);
             this.lblNombre.TabIndex = 13;
@@ -218,7 +218,7 @@
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblApellido.ForeColor = System.Drawing.Color.Transparent;
-            this.lblApellido.Location = new System.Drawing.Point(491, 64);
+            this.lblApellido.Location = new System.Drawing.Point(491, 52);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(75, 19);
             this.lblApellido.TabIndex = 14;
@@ -229,7 +229,7 @@
             this.lblDNI.AutoSize = true;
             this.lblDNI.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblDNI.ForeColor = System.Drawing.Color.Transparent;
-            this.lblDNI.Location = new System.Drawing.Point(261, 118);
+            this.lblDNI.Location = new System.Drawing.Point(261, 106);
             this.lblDNI.Name = "lblDNI";
             this.lblDNI.Size = new System.Drawing.Size(37, 19);
             this.lblDNI.TabIndex = 15;
@@ -240,7 +240,7 @@
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblDireccion.ForeColor = System.Drawing.Color.Transparent;
-            this.lblDireccion.Location = new System.Drawing.Point(261, 214);
+            this.lblDireccion.Location = new System.Drawing.Point(262, 194);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(84, 19);
             this.lblDireccion.TabIndex = 16;
@@ -251,7 +251,7 @@
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblTelefono.ForeColor = System.Drawing.Color.Transparent;
-            this.lblTelefono.Location = new System.Drawing.Point(261, 273);
+            this.lblTelefono.Location = new System.Drawing.Point(261, 242);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(75, 19);
             this.lblTelefono.TabIndex = 17;
@@ -262,7 +262,7 @@
             this.lblMail.AutoSize = true;
             this.lblMail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblMail.ForeColor = System.Drawing.Color.Transparent;
-            this.lblMail.Location = new System.Drawing.Point(261, 323);
+            this.lblMail.Location = new System.Drawing.Point(262, 292);
             this.lblMail.Name = "lblMail";
             this.lblMail.Size = new System.Drawing.Size(156, 19);
             this.lblMail.TabIndex = 18;
@@ -273,7 +273,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.lblUsuario.ForeColor = System.Drawing.Color.Transparent;
-            this.lblUsuario.Location = new System.Drawing.Point(261, 379);
+            this.lblUsuario.Location = new System.Drawing.Point(262, 345);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(157, 19);
             this.lblUsuario.TabIndex = 19;
@@ -284,7 +284,7 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblError.Location = new System.Drawing.Point(261, 559);
+            this.lblError.Location = new System.Drawing.Point(261, 444);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 20;
@@ -311,7 +311,7 @@
             this.btnRegistrarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarUsuario.ForeColor = System.Drawing.Color.LightGray;
-            this.btnRegistrarUsuario.Location = new System.Drawing.Point(514, 497);
+            this.btnRegistrarUsuario.Location = new System.Drawing.Point(515, 548);
             this.btnRegistrarUsuario.Name = "btnRegistrarUsuario";
             this.btnRegistrarUsuario.Size = new System.Drawing.Size(153, 40);
             this.btnRegistrarUsuario.TabIndex = 0;
@@ -383,7 +383,7 @@
             this.btnCancelarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarContrasena.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarContrasena.Location = new System.Drawing.Point(264, 497);
+            this.btnCancelarContrasena.Location = new System.Drawing.Point(265, 548);
             this.btnCancelarContrasena.Name = "btnCancelarContrasena";
             this.btnCancelarContrasena.Size = new System.Drawing.Size(153, 40);
             this.btnCancelarContrasena.TabIndex = 124;

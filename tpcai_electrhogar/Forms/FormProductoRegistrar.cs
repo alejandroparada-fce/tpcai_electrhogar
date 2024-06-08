@@ -49,8 +49,8 @@ namespace tpcai_electrhogar
         {
             bool valido1 = Validaciones.ValidarCadena(nombreProducto.Text, "'Nombre'", 3, 30, out string mensajeError1);
             bool valido2 = Validaciones.ValidarEntero(CategoriaCombo.Text, "'Categoria'", -2147483647, 2147483647, out int idCategoria, out string mensajeError2);
-            bool valido3 = Validaciones.ValidarEnteroDouble(precioNumeric.Text, "Precio", 0, 2147483647, out double precio, out string mensajeError3);
-            bool valido4 = Validaciones.ValidarEntero(stockNumeric.Text, "'Stock'", -2147483647, 2147483647, out int stock, out string mensajeError4);
+            bool valido3 = Validaciones.ValidarEnteroDouble(precioNumeric.Text, "Precio", 1, 2147483647, out double precio, out string mensajeError3);
+            bool valido4 = Validaciones.ValidarEntero(stockNumeric.Text, "'Stock'", 1, 2147483647, out int stock, out string mensajeError4);
 
             mensajeError = mensajeError1 + "\n" + mensajeError2 + "\n" + mensajeError3 + "\n" + mensajeError4;
             lblError.Text = mensajeError;
