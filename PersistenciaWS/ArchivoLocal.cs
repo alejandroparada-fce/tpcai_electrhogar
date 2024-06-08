@@ -31,7 +31,7 @@ namespace PersistenciaWS
             //Si existe el fichero json se carga en una lista el contenido
             if (File.Exists("cambiosContraseña.json"))
             {
-                string contenidoCambioContraseñas = File.ReadAllText("cambiosContraseña");
+                string contenidoCambioContraseñas = File.ReadAllText("cambiosContraseña.json");
                 cambiosContraseña = JsonConvert.DeserializeObject<List<CambioContraseñaEnt>>(contenidoCambioContraseñas);
             }
             else
@@ -94,7 +94,7 @@ namespace PersistenciaWS
         public static void GrabarCambiosContraseña()
         {
             string contenidoCambioContraseñas = JsonConvert.SerializeObject(cambiosContraseña);
-            File.WriteAllText("CambiosContraseña", contenidoCambioContraseñas);
+            File.WriteAllText("cambiosContraseña.json", contenidoCambioContraseñas);
         }
     }
 }
