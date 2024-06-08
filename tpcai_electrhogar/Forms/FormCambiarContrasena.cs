@@ -60,9 +60,19 @@ namespace tpcai_electrhogar
             string mensajeError = "";
             bool validar1 = Validaciones.ValidarContraseña(contrasenaNueva.Text, "'Contraseña Nueva'", 8, 15, out string mensajeError1);
             bool validar2 = Validaciones.RepetirContraseña(contrasenaNueva.Text, repetirContrasena.Text, Password, out string mensajeError2);
+            int estadoAutenticacion = ModuloLogueo.Loguearse(_username, contrasenaActual.Text, "CAI20241");
+
             mensajeError = mensajeError1 + "\n" + mensajeError2;
+            if (estadoAutenticacion == 4)
+            {
                 lblError.Text = mensajeError;
-            if (validar1 & validar2)
+            }
+            else
+            {
+                lblError.Text = "Contraseña actual ingresada no es correcta.";
+            }
+
+            if (validar1 & validar2 & estadoAutenticacion == 4)
             {
                 try
                 {
@@ -86,7 +96,15 @@ namespace tpcai_electrhogar
             FormUtils.CambiarFormulario(this, new FormLogin());
         }
 
-        
+        private void contrasenaActual_Leave(object sender, EventArgs e)
+        {
+            FormUtils.LimpiarCampoContrasena(this, contrasenaActual, "Contraseña Actual");
+        }
+
+        private void contrasenaActual_Enter(object sender, EventArgs e)
+        {
+            FormUtils.LimpiarCampoContrasena(this, contrasenaActual, "Contraseña Actual"); 
+        }
 
         private void contrasenaNueva_Enter(object sender, EventArgs e)
         {
@@ -102,7 +120,7 @@ namespace tpcai_electrhogar
         {
             FormUtils.LimpiarCampoContrasena(this, repetirContrasena, "Repetir Contraseña Nueva");
         }
-
+        
         private void repetirContrasena_Leave(object sender, EventArgs e)
         {
             FormUtils.LimpiarCampoContrasena(this, repetirContrasena, "Repetir Contraseña Nueva");
@@ -125,9 +143,11 @@ namespace tpcai_electrhogar
 
         private void checkMostrarContrasena_CheckedChanged(object sender, EventArgs e)
         {
+            FormUtils.MostrarContrasena(this, contrasenaActual, checkMostrarContrasena.Checked);
             FormUtils.MostrarContrasena(this, contrasenaNueva, checkMostrarContrasena.Checked);
             FormUtils.MostrarContrasena(this, repetirContrasena, checkMostrarContrasena.Checked);
         }
+
 
     }
 }

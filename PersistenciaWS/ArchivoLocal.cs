@@ -71,7 +71,8 @@ namespace PersistenciaWS
         public static bool ChequearVencimiento(string usuario)
         {
             bool cambioExpirado = cambiosContraseña.Any(x => x.NombreUsuario == usuario && x.Fecha <= DateTime.Now.Date.Subtract(TimeSpan.FromDays(30)));
-            if (cambioExpirado )
+
+            if (cambioExpirado)
             {
                 return true;
             }
