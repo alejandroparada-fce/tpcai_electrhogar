@@ -137,8 +137,9 @@ ModuloLogueo.UsuarioAuntenticado.host);
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormAgregarProducto formAgregarProducto = new FormAgregarProducto(this);
-            formAgregarProducto.ShowDialog();
+            formAgregarProducto.Show();
 
 
         }

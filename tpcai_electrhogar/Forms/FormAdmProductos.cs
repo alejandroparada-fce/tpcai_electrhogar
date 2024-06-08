@@ -136,8 +136,9 @@ namespace tpcai_electrhogar.Forms
 
         private void AgregarBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormProductoRegistrar formProductoRegistrar = new FormProductoRegistrar();
-            formProductoRegistrar.ShowDialog();
+            formProductoRegistrar.Show();
         }
 
         private void modificarBtn_Click(object sender, EventArgs e)
@@ -149,6 +150,7 @@ namespace tpcai_electrhogar.Forms
                 {
                     ProductoEnt productoseleccionado = (ProductoEnt)dgvProductos.Rows[dgvProductos.CurrentCell.RowIndex].DataBoundItem;
                     Guid id = productoseleccionado.Id;
+                    //this.Hide();
                     FormModificarProducto formModificarProducto = new FormModificarProducto(id);
                     formModificarProducto.ShowDialog();
                 }

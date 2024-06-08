@@ -96,7 +96,7 @@
             this.cambiarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cambiarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cambiarBtn.ForeColor = System.Drawing.Color.LightGray;
-            this.cambiarBtn.Location = new System.Drawing.Point(222, 178);
+            this.cambiarBtn.Location = new System.Drawing.Point(222, 188);
             this.cambiarBtn.Name = "cambiarBtn";
             this.cambiarBtn.Size = new System.Drawing.Size(140, 40);
             this.cambiarBtn.TabIndex = 127;
@@ -113,7 +113,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(45, 178);
+            this.btnCancelar.Location = new System.Drawing.Point(43, 188);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(139, 40);
             this.btnCancelar.TabIndex = 128;
@@ -126,7 +126,7 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblError.Location = new System.Drawing.Point(76, 123);
+            this.lblError.Location = new System.Drawing.Point(66, 139);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 129;
@@ -147,7 +147,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.label1.Location = new System.Drawing.Point(76, 122);
+            this.label1.Location = new System.Drawing.Point(81, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(314, 16);
             this.label1.TabIndex = 131;

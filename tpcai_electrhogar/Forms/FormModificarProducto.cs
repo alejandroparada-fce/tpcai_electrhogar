@@ -25,6 +25,8 @@ namespace tpcai_electrhogar.Forms
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //FormAdmProductos formAdmProductos = new FormAdmProductos();
+            //formAdmProductos.Show();
         }
 
         private void cambiarBtn_Click(object sender, EventArgs e)
@@ -37,7 +39,7 @@ namespace tpcai_electrhogar.Forms
 
             bool validar1 = Validaciones.ValidarEntero(stockCambio.Text, "stock", -2147483647, 2147483647, out int precio, out string mensajeError1);
             bool validar2 = Validaciones.ValidarEnteroDouble(precioCambio.Text, "precio", 0, 2147483647, out double stock, out string mensajeError2);
-            mensajeError = mensajeError1;
+            mensajeError = mensajeError1 + "\n" + mensajeError2;
             lblError.Text = mensajeError;
             if (validar1 & validar2)
             {
@@ -45,6 +47,8 @@ namespace tpcai_electrhogar.Forms
                 {
                     ModuloProducto.ModificarProducto(precio, stock , id,  out string error);
                     this.Hide();
+                    //FormAdmProductos formAdmProductos = new FormAdmProductos();
+                    //formAdmProductos.Show();
                 }
 
                 catch (Exception ex)

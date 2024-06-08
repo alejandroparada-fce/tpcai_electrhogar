@@ -46,6 +46,7 @@ namespace tpcai_electrhogar.Forms
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
+            formVentaRegistrar.Show();
         }
 
         private void dgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -80,6 +81,8 @@ namespace tpcai_electrhogar.Forms
                 producto.stock = cantidad;
                 formVentaRegistrar.llenarDataGrid(producto);
                 this.Hide();
+                //FormVentaRegistrar formVentaRegistrar = new FormVentaRegistrar();
+                formVentaRegistrar.Show();
             }
             else
             {

@@ -54,9 +54,8 @@ namespace tpcai_electrhogar
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-            ModuloLogueo.UsuarioAuntenticado.host);
-            modulosForm.Show();
+            FormProveedorAdm formProveedorAdm = new FormProveedorAdm();
+            formProveedorAdm.Show();
         }
 
         private string mensajeError;
@@ -95,9 +94,8 @@ namespace tpcai_electrhogar
                         MessageBox.Show("Proveedor Agregado");
 
                         this.Hide();
-                        FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-                        ModuloLogueo.UsuarioAuntenticado.host);
-                        modulosForm.Show();
+                        FormProveedorAdm formProveedorAdm = new FormProveedorAdm();
+                        formProveedorAdm.Show();
                     }
                 }
                 catch (Exception ex)

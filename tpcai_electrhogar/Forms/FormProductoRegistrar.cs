@@ -64,6 +64,8 @@ namespace tpcai_electrhogar
                 {
                     ModuloProducto.AgregarProducto(idCategoria, idProveedor, nombreProducto.Text, precio, stock, out string error);
                     this.Hide();
+                    FormAdmProductos formAdmProductos = new FormAdmProductos();
+                    formAdmProductos.Show();
                     if (!string.IsNullOrEmpty(error))
                     {
                         MessageBox.Show(error);
@@ -113,7 +115,9 @@ namespace tpcai_electrhogar
 
         private void btnCancelarContrasena_Click(object sender, EventArgs e)
         {
-            this.Hide();          
+            this.Hide();
+            FormAdmProductos formAdmProductos = new FormAdmProductos();
+            formAdmProductos.Show();
         }
     }
 }
