@@ -21,28 +21,27 @@ namespace tpcai_electrhogar.Negocio
             return proveedorListar;
         }
 
-        public static void ProveedorBaja(Guid idUsuario, Guid idProveedor, out string error)
+        public static void ProveedorAgregar(string idUsuario, string nombre, string apellido, string email, string cuit, out string error)
         {
-            ServiceProveedor.ProveedorBaja(idUsuario, idProveedor, out error);
-        }
-
-        public static void ProveedorAgregar(string id, string nombre, string apellido, string email,  string cuit, out string error)
-        {
-            ProveedorAgregarEnt proveedor = new ProveedorAgregarEnt(id, nombre, apellido, email, cuit);
+            ProveedorAgregarEnt proveedor = new ProveedorAgregarEnt(idUsuario, nombre, apellido, email, cuit);
             error = null;
 
             ServiceProveedor.ProveedorAgregar(proveedor, out error);
         }
 
-        public static void ProveedorReactivar(Guid idUsuario,Guid idProveedor, out string error)
+        public static void ProveedorBaja(Guid idUsuario, Guid idProveedor, out string error)
+        {
+            ServiceProveedor.ProveedorBaja(idUsuario, idProveedor, out error);
+
+        }
+        public static void ProveedorReactivar(Guid idUsuario, Guid idProveedor, out string error)
         {
             ServiceProveedor.ProveedorReactivar(idUsuario, idProveedor, out error);
         }
 
-        public static void ProveedorModificar(Guid id, Guid idProveedor, string nombre, string apellido, string email, string cuit, out string error)
+        public static void ProveedorModificar(Guid idUsuario, Guid idProveedor, string nombre, string apellido, string email, string cuit, out string error)
         {
-            ServiceProveedor.ProveedorModificar(id, idProveedor, nombre, apellido, email, cuit, out error);
+            ServiceProveedor.ProveedorModificar(idUsuario, idProveedor, nombre, apellido, email, cuit, out error);
         }
     }
-
 }

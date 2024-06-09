@@ -86,29 +86,28 @@ namespace tpcai_electrhogar
             ProveedorEnt proveedorSeleccionado = (ProveedorEnt)dgvProveedor.Rows[dgvProveedor.CurrentCell.RowIndex].DataBoundItem;
 
             Guid idProveedorSeleccionado = proveedorSeleccionado.Id;
-            ModuloProveedor.ProveedorBaja(idUsuario, idProveedorSeleccionado, out string error);
-
-            //ProveedorEnt proveedorseleccionado = (ProveedorEnt)dgvProveedor.Rows[dgvProveedor.CurrentCell.RowIndex].DataBoundItem;
-            //Guid id = proveedorseleccionado.id;
-            //
-            //try
-            //{
-            //    ModuloProducto.EliminarProducto(id, out string error);
-            //    this.Hide();
-            //    FormAdmProductos formAdmProductos = new FormAdmProductos();
-            //    formAdmProductos.Show();
-            //
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
-
-            //FormConfirmacion formConfirmacion = new FormConfirmacion(id);
-            //formConfirmacion.ShowDialog();
-            //this.Hide();
-            //FormProveedorListar listadoClientesForm = new FormProveedorListar();
-            //listadoClientesForm.Show();
+            
+            
+            if (MessageBox.Show("¿Está seguro de dar de baja este proveedor?", "¿Dar de baja al proveedor?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                try
+                {
+                    ModuloProveedor.ProveedorBaja(idUsuario, idProveedorSeleccionado, out string error);
+                    if (string.IsNullOrEmpty(error))
+                    {
+                        dgvProveedor.DataSource = ModuloProveedor.ProveedorListar(out error);
+                        MessageBox.Show("Proveedor dado de baja");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Acción fallida");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -160,7 +159,34 @@ namespace tpcai_electrhogar
             registrarProveedorForm.Show();
         }
 
+        private void btnReactivar_Click(object sender, EventArgs e)
+        {
+            ProveedorEnt proveedorSeleccionado = (ProveedorEnt)dgvProveedor.Rows[dgvProveedor.CurrentCell.RowIndex].DataBoundItem;
 
+            Guid idProveedorSeleccionado = proveedorSeleccionado.Id;
+
+
+            if (MessageBox.Show("¿Está seguro que desea reactivar este proveedor?", "¿Reactivar al proveedor?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                try
+                {
+                    ModuloProveedor.ProveedorReactivar(idUsuario, idProveedorSeleccionado, out string error);
+                    if (string.IsNullOrEmpty(error))
+                    {
+                        dgvProveedor.DataSource = ModuloProveedor.ProveedorListar(out error);
+                        MessageBox.Show("Proveedor Reactivado");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Acción fallida");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
 

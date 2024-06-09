@@ -30,7 +30,6 @@ namespace tpcai_electrhogar.Negocio
             //Se chequea que exista el usuario, si esta bloqueado, si está vencido y si la contraseña coincide con la default
             if (!existeUsuario)
             {
-               
                 return 0;
             }
             else if (bloqueo)

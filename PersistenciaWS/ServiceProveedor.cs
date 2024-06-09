@@ -66,12 +66,11 @@ namespace PersistenciaWS
         public static void ProveedorBaja(Guid idUsuario, Guid idProveedor, out string error)
         {
             error = null;
-            String path = "/api/Proveedor/BajaProveedor?id=";
-            Dictionary<string, string> map = new Dictionary<string, string>();
-            //map.Add("idUsuario", idUsuario);
-            //map.Add("id", idProveedor);
-            map.Add("idUsuario", "70b37dc1-8fde-4840-be47-9ababd0ee7e5");
-            map.Add("id", "a5ca6a47-b30a-40e0-9277-e9dfb16f1a71");
+            String path = "/api/Proveedor/BajaProveedor";
+            Dictionary<string, Guid> map = new Dictionary<string, Guid>();
+            map.Add("id", idProveedor);
+            map.Add("idUsuario", idUsuario);
+            
 
             var jsonRequest = JsonConvert.SerializeObject(map);
 
@@ -90,13 +89,14 @@ namespace PersistenciaWS
             }
         }
 
-        public static void ProveedorReactivar(Guid id, Guid idUsuarioProveedor, out string error)
+        public static void ProveedorReactivar(Guid idUsuario, Guid idProveedor, out string error)
         {
             error = null;
             String path = "/api/Proveedor/ReactivarProveedor";
-            Dictionary<String, Guid> map = new Dictionary<string, Guid>();
-            map.Add("id", id);
-            map.Add("idUsuario", idUsuarioProveedor);
+            Dictionary<string, Guid> map = new Dictionary<string, Guid>();
+            map.Add("id", idProveedor);
+            map.Add("idUsuario", idUsuario);
+            
 
             var jsonRequest = JsonConvert.SerializeObject(map);
 

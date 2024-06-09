@@ -63,7 +63,7 @@ namespace tpcai_electrhogar
             int estadoAutenticacion = ModuloLogueo.Loguearse(_username, contrasenaActual.Text, "CAI20241");
 
             mensajeError = mensajeError1 + "\n" + mensajeError2;
-            if (estadoAutenticacion == 4)
+            if (estadoAutenticacion == 3 || estadoAutenticacion == 4)
             {
                 lblError.Text = mensajeError;
             }
@@ -72,7 +72,7 @@ namespace tpcai_electrhogar
                 lblError.Text = "Contraseña actual ingresada no es correcta.";
             }
 
-            if (validar1 & validar2 & estadoAutenticacion == 4)
+            if (validar1 & validar2 & (estadoAutenticacion == 3 || estadoAutenticacion == 4))
             {
                 try
                 {
