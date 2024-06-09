@@ -55,7 +55,6 @@
             this.btnVentaRegistrar = new System.Windows.Forms.Button();
             this.btnUsuarioRegistrar = new System.Windows.Forms.Button();
             this.btnProveedorRegistrar = new System.Windows.Forms.Button();
-            this.btnProveedorBaja = new System.Windows.Forms.Button();
             this.btnUsuarioBaja = new System.Windows.Forms.Button();
             this.btnReporteVentasPorVendedor = new System.Windows.Forms.Button();
             this.btnReporteProductoMasVendidoPorCategoria = new System.Windows.Forms.Button();
@@ -441,24 +440,7 @@
             this.btnProveedorRegistrar.Text = "Registrar Proveedor";
             this.btnProveedorRegistrar.UseVisualStyleBackColor = false;
             this.btnProveedorRegistrar.Visible = false;
-            // 
-            // btnProveedorBaja
-            // 
-            this.btnProveedorBaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnProveedorBaja.FlatAppearance.BorderSize = 0;
-            this.btnProveedorBaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnProveedorBaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnProveedorBaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProveedorBaja.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProveedorBaja.ForeColor = System.Drawing.Color.LightGray;
-            this.btnProveedorBaja.Location = new System.Drawing.Point(404, 106);
-            this.btnProveedorBaja.Name = "btnProveedorBaja";
-            this.btnProveedorBaja.Size = new System.Drawing.Size(230, 34);
-            this.btnProveedorBaja.TabIndex = 121;
-            this.btnProveedorBaja.Text = "Baja Proveedor";
-            this.btnProveedorBaja.UseVisualStyleBackColor = false;
-            this.btnProveedorBaja.Visible = false;
-            this.btnProveedorBaja.Click += new System.EventHandler(this.btnProveedorBaja_Click_1);
+            this.btnProveedorRegistrar.Click += new System.EventHandler(this.btnProveedorRegistrar_Click);
             // 
             // btnUsuarioBaja
             // 
@@ -505,7 +487,7 @@
             this.btnReporteProductoMasVendidoPorCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporteProductoMasVendidoPorCategoria.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporteProductoMasVendidoPorCategoria.ForeColor = System.Drawing.Color.LightGray;
-            this.btnReporteProductoMasVendidoPorCategoria.Location = new System.Drawing.Point(404, 248);
+            this.btnReporteProductoMasVendidoPorCategoria.Location = new System.Drawing.Point(404, 220);
             this.btnReporteProductoMasVendidoPorCategoria.Name = "btnReporteProductoMasVendidoPorCategoria";
             this.btnReporteProductoMasVendidoPorCategoria.Size = new System.Drawing.Size(230, 67);
             this.btnReporteProductoMasVendidoPorCategoria.TabIndex = 125;
@@ -541,7 +523,7 @@
             this.btnProductoRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductoRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductoRegistrar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnProductoRegistrar.Location = new System.Drawing.Point(404, 105);
+            this.btnProductoRegistrar.Location = new System.Drawing.Point(404, 106);
             this.btnProductoRegistrar.Name = "btnProductoRegistrar";
             this.btnProductoRegistrar.Size = new System.Drawing.Size(230, 34);
             this.btnProductoRegistrar.TabIndex = 127;
@@ -579,7 +561,6 @@
             this.Controls.Add(this.btnReporteProductoMasVendidoPorCategoria);
             this.Controls.Add(this.btnReporteVentasPorVendedor);
             this.Controls.Add(this.btnUsuarioBaja);
-            this.Controls.Add(this.btnProveedorBaja);
             this.Controls.Add(this.btnProveedorRegistrar);
             this.Controls.Add(this.btnUsuarioRegistrar);
             this.Controls.Add(this.btnVentaRegistrar);
@@ -639,7 +620,6 @@
         private System.Windows.Forms.Button btnVentaRegistrar;
         private System.Windows.Forms.Button btnUsuarioRegistrar;
         private System.Windows.Forms.Button btnProveedorRegistrar;
-        private System.Windows.Forms.Button btnProveedorBaja;
         private System.Windows.Forms.Button btnUsuarioBaja;
         private System.Windows.Forms.Button btnReporteVentasPorVendedor;
         private System.Windows.Forms.Button btnReporteProductoMasVendidoPorCategoria;

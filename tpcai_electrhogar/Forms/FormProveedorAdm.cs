@@ -135,19 +135,30 @@ namespace tpcai_electrhogar
             mensajeError = mensajeError1 + "\n" + mensajeError2 + "\n" + mensajeError3 + "\n" + mensajeError4;
             lblError.Text = mensajeError;
 
+
             if (valido1 & valido2 & valido3 & valido4)
             {
-                try
+                if (MessageBox.Show("¿Está seguro que desea modificar este proveedor?", "¿Modificar este proveedor?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    ModuloProveedor.ProveedorModificar(id, idProveedor, nombre, apellido, email, cuit, out string error);
-                    this.Hide();
-                    FormProveedorAdm listadoProveedorForm = new FormProveedorAdm();
-                    listadoProveedorForm.Show();
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
+                    try
+                    {
+                        ModuloProveedor.ProveedorModificar(id, idProveedor, nombre, apellido, email, cuit, out string error);
+                        if (string.IsNullOrEmpty(error))
+                        {
+                            this.Hide();
+                            FormProveedorAdm listadoProveedorForm = new FormProveedorAdm();
+                            listadoProveedorForm.Show();
+                            MessageBox.Show("Proveedor modificado exitosamente.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Acción fallida.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
             }
         }
@@ -178,7 +189,7 @@ namespace tpcai_electrhogar
                     }
                     else
                     {
-                        MessageBox.Show("Acción fallida");
+                        MessageBox.Show("Funcionalidad pendiente.");
                     }
                 }
                 catch (Exception ex)

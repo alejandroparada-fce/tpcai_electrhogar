@@ -120,8 +120,8 @@ namespace PersistenciaWS
             error = null;
             String path = "/api/Proveedor/ModificarProveedor";
             Dictionary<string, string> map = new Dictionary<string, string>();
-            map.Add("id", id.ToString());
-            map.Add("idUsuario", idUsuarioProveedor.ToString());
+            map.Add("id", idUsuarioProveedor.ToString());
+            map.Add("idUsuario", id.ToString());
             map.Add("nombre", nombre);
             map.Add("apellido", apellido);
             map.Add("email", email);

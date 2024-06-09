@@ -94,7 +94,7 @@
             this.categoria.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.categoria.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoria.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.categoria.Location = new System.Drawing.Point(397, 74);
+            this.categoria.Location = new System.Drawing.Point(468, 74);
             this.categoria.Name = "categoria";
             this.categoria.Size = new System.Drawing.Size(183, 26);
             this.categoria.TabIndex = 118;
@@ -104,7 +104,7 @@
             this.lbldUsuario.AutoSize = true;
             this.lbldUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldUsuario.ForeColor = System.Drawing.Color.Transparent;
-            this.lbldUsuario.Location = new System.Drawing.Point(279, 78);
+            this.lbldUsuario.Location = new System.Drawing.Point(350, 78);
             this.lbldUsuario.Name = "lbldUsuario";
             this.lbldUsuario.Size = new System.Drawing.Size(112, 19);
             this.lbldUsuario.TabIndex = 117;
@@ -218,7 +218,7 @@
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblError.Location = new System.Drawing.Point(283, 106);
+            this.lblError.Location = new System.Drawing.Point(354, 106);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 16);
             this.lblError.TabIndex = 124;
@@ -268,7 +268,7 @@
             this.btnTraerProductosCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTraerProductosCategoria.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTraerProductosCategoria.ForeColor = System.Drawing.Color.LightGray;
-            this.btnTraerProductosCategoria.Location = new System.Drawing.Point(594, 67);
+            this.btnTraerProductosCategoria.Location = new System.Drawing.Point(665, 67);
             this.btnTraerProductosCategoria.Name = "btnTraerProductosCategoria";
             this.btnTraerProductosCategoria.Size = new System.Drawing.Size(140, 40);
             this.btnTraerProductosCategoria.TabIndex = 127;

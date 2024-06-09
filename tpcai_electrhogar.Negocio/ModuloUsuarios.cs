@@ -37,7 +37,7 @@ namespace tpcai_electrhogar.Negocio
             ArchivoLocal.GrabarCambiosContraseña();
         }
 
-        public static List<UsuarioConsultaEnt> BuscararUsuarios(Guid idUsuario, string nombreUsuario, out string error)
+        public static List<UsuarioConsultaEnt> BuscarUsuarios(Guid idUsuario, string nombreUsuario, out string error)
         {
             List<UsuarioConsultaEnt> listaUsuarios = new List<UsuarioConsultaEnt>();
             listaUsuarios = ServiceUsuario.ListarUsuarios(idUsuario, out error);
@@ -45,17 +45,12 @@ namespace tpcai_electrhogar.Negocio
             return listaFiltrada;
         }
 
-        public static void DeshabilitarUsuario(Guid id, Guid idusuario, out string error)
+        public static void DeshabilitarUsuario(Guid id, Guid idUsuario, out string error)
         {
             error = null;
-            ServiceUsuario.EliminarUsuario(id, idusuario, out error);
+            ServiceUsuario.EliminarUsuario(id, idUsuario, out error);
         }
 
-        /*
-        public static void BajaUsuario(UsuarioEnt usuario)
-        {
-            usuario.BajaUsuario();
-        }
-        */
+
     }
 }

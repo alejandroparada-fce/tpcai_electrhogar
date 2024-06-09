@@ -21,7 +21,6 @@ namespace tpcai_electrhogar
             InitializeComponent();
         }
 
-
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             FormUtils.SalirAplicacion();
@@ -37,6 +36,28 @@ namespace tpcai_electrhogar
             FormUtils.MinimizarFormulario(this);
         }
 
+        private void CambiarContrasenaForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void checkMostrarContrasena_CheckedChanged(object sender, EventArgs e)
+        {
+            FormUtils.MostrarContrasena(this, contrasenaActual, checkMostrarContrasena.Checked);
+            FormUtils.MostrarContrasena(this, contrasenaNueva, checkMostrarContrasena.Checked);
+            FormUtils.MostrarContrasena(this, repetirContrasena, checkMostrarContrasena.Checked);
+        }
+
         private string _username;
         private string _password;
 
@@ -48,6 +69,7 @@ namespace tpcai_electrhogar
             _username = username;
             _password = password;
         }
+
         private void btnGuardarContrasena_Click(object sender, EventArgs e)
         {
             /*
@@ -125,29 +147,5 @@ namespace tpcai_electrhogar
         {
             FormUtils.LimpiarCampoContrasena(this, repetirContrasena, "Repetir Contraseña Nueva");
         }
-
-        private void CambiarContrasenaForm_MouseDown(object sender, MouseEventArgs e)
-        {
-            FormUtils.MoverFormulario(this);
-        }
-
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            FormUtils.MoverFormulario(this);
-        }
-
-        private void lblTitle_MouseDown(object sender, MouseEventArgs e)
-        {
-            FormUtils.MoverFormulario(this);
-        }
-
-        private void checkMostrarContrasena_CheckedChanged(object sender, EventArgs e)
-        {
-            FormUtils.MostrarContrasena(this, contrasenaActual, checkMostrarContrasena.Checked);
-            FormUtils.MostrarContrasena(this, contrasenaNueva, checkMostrarContrasena.Checked);
-            FormUtils.MostrarContrasena(this, repetirContrasena, checkMostrarContrasena.Checked);
-        }
-
-
     }
 }

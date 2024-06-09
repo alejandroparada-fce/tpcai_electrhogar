@@ -109,7 +109,7 @@ namespace tpcai_electrhogar
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
             btnProveedorAdm.Visible = false;
-            btnProveedorBaja.Visible = false;
+            btnProveedorRegistrar.Visible = false;
             btnProductoAdm.Visible = true;
             btnClienteAdm.Visible = false;
             btnVentaRegistrar.Visible = false;
@@ -124,7 +124,7 @@ namespace tpcai_electrhogar
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
             btnProveedorAdm.Visible = false;
-            btnProveedorBaja.Visible = false;
+            btnProveedorRegistrar.Visible = false;
             btnProductoAdm.Visible = false;
             btnClienteAdm.Visible = true;
             btnVentaRegistrar.Visible = false;
@@ -139,7 +139,7 @@ namespace tpcai_electrhogar
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
             btnProveedorAdm.Visible = false;
-            btnProveedorBaja.Visible = false;
+            btnProveedorRegistrar.Visible = false;
             btnProductoAdm.Visible = false;
             btnClienteAdm.Visible = false;
             btnVentaRegistrar.Visible = true;
@@ -154,7 +154,7 @@ namespace tpcai_electrhogar
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
             btnProveedorAdm.Visible = true;
-            btnProveedorBaja.Visible = true;
+            btnProveedorRegistrar.Visible = true;
             btnProductoAdm.Visible = false;
             btnClienteAdm.Visible = false;
             btnVentaRegistrar.Visible = false;
@@ -169,7 +169,7 @@ namespace tpcai_electrhogar
             btnReporteProductoMasVendidoPorCategoria.Visible = true;
             btnReporteVentasPorVendedor.Visible = true;
             btnProveedorAdm.Visible = false;
-            btnProveedorBaja.Visible = false;
+            btnProveedorRegistrar.Visible = false;
             btnProductoAdm.Visible = false;
             btnClienteAdm.Visible = false;
             btnVentaRegistrar.Visible = false;
@@ -184,7 +184,7 @@ namespace tpcai_electrhogar
             btnReporteProductoMasVendidoPorCategoria.Visible = false;
             btnReporteVentasPorVendedor.Visible = false;
             btnProveedorAdm.Visible = false;
-            btnProveedorBaja.Visible = false;
+            btnProveedorRegistrar.Visible = false;
             btnProductoAdm.Visible = false;
             btnClienteAdm.Visible = false;
             btnVentaRegistrar.Visible = false;
@@ -217,12 +217,14 @@ namespace tpcai_electrhogar
 
 
         // Modulo Proveedores
-        private void btnProveedorBaja_Click_1(object sender, EventArgs e)
+
+        private void btnProveedorRegistrar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormProveedorBaja bajaProveedorForm = new FormProveedorBaja();
-            bajaProveedorForm.Show();
+            FormProveedorRegistrar altaProveedorForm = new FormProveedorRegistrar();
+            altaProveedorForm.Show();
         }
+
         private void btnProveedorAdm_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -284,6 +286,7 @@ namespace tpcai_electrhogar
             FormStockCritico reporteStockCritico = new FormStockCritico();
             reporteStockCritico.Show();
         }
+
 
     }
 }

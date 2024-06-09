@@ -60,50 +60,6 @@ namespace tpcai_electrhogar.Negocio
                 ArchivoLocal.GrabarIntentosFallidos();
                 return 5;
             }
-
         }
-        
-
-        /*
-        public static bool ExisteUsuario()
-        {
-
-            return ModuloLogueo.logueo.ExisteUsuario;
-        }
-
-        public static bool Autenticado()
-        {
-            return ModuloLogueo.logueo.Autenticado;
-        }
-
-        public static bool CambioContraseña()
-        {
-
-            return ModuloLogueo.logueo.CambioContraseña;
-        }
-
-        public static bool ChequearBloqueo(string usuario)
-        {
-            int count = 0;
-            foreach (string usuarioFalla in LogueosFallidos)
-            {
-                if(usuario == usuarioFalla)
-                {
-                    count++;
-                }
-            }
-            if(count >= 3)
-            {
-                return true;
-            }
-            else 
-            { 
-                return false;
-            }
-
-
-        }
-
-        */
     }
 }

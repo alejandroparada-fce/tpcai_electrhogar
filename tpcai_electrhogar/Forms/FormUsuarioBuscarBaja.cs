@@ -59,7 +59,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            dgvUsuarios.DataSource = ModuloUsuarios.BuscararUsuarios(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), txtBuscar.Text, out string error);
+            dgvUsuarios.DataSource = ModuloUsuarios.BuscarUsuarios(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), txtBuscar.Text, out string error);
             dgvUsuarios.Columns["id"].Visible = false;
             dgvUsuarios.Columns[1].HeaderText = "Nombre";
             dgvUsuarios.Columns[2].HeaderText = "Apellido";
