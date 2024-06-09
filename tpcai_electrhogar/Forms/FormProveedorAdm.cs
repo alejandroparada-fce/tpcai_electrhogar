@@ -88,7 +88,7 @@ namespace tpcai_electrhogar
             Guid idProveedorSeleccionado = proveedorSeleccionado.Id;
             
             
-            if (MessageBox.Show("¿Está seguro de dar de baja este proveedor?", "¿Dar de baja al proveedor?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro que desea dar de baja este proveedor?", "¿Dar de baja al proveedor?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 try
                 {
@@ -96,11 +96,11 @@ namespace tpcai_electrhogar
                     if (string.IsNullOrEmpty(error))
                     {
                         dgvProveedor.DataSource = ModuloProveedor.ProveedorListar(out error);
-                        MessageBox.Show("Proveedor dado de baja");
+                        MessageBox.Show("Proveedor dado de baja.");
                     }
                     else
                     {
-                        MessageBox.Show("Acción fallida");
+                        MessageBox.Show("Funcionalidad inactiva.");
                     }
                 }
                 catch (Exception ex)

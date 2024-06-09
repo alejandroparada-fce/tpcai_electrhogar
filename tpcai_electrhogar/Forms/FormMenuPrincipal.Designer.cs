@@ -61,6 +61,7 @@
             this.btnVentaDevolucion = new System.Windows.Forms.Button();
             this.btnProductoRegistrar = new System.Windows.Forms.Button();
             this.btnVentasVendedor = new System.Windows.Forms.Button();
+            this.btnUsuarioActivar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -549,12 +550,31 @@
             this.btnVentasVendedor.UseVisualStyleBackColor = false;
             this.btnVentasVendedor.Visible = false;
             // 
+            // btnUsuarioActivar
+            // 
+            this.btnUsuarioActivar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnUsuarioActivar.FlatAppearance.BorderSize = 0;
+            this.btnUsuarioActivar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnUsuarioActivar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUsuarioActivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarioActivar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarioActivar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnUsuarioActivar.Location = new System.Drawing.Point(404, 220);
+            this.btnUsuarioActivar.Name = "btnUsuarioActivar";
+            this.btnUsuarioActivar.Size = new System.Drawing.Size(230, 34);
+            this.btnUsuarioActivar.TabIndex = 129;
+            this.btnUsuarioActivar.Text = "Activar Usuario";
+            this.btnUsuarioActivar.UseVisualStyleBackColor = false;
+            this.btnUsuarioActivar.Visible = false;
+            this.btnUsuarioActivar.Click += new System.EventHandler(this.btnUsuarioActivar_Click);
+            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 340);
+            this.Controls.Add(this.btnUsuarioActivar);
             this.Controls.Add(this.btnVentasVendedor);
             this.Controls.Add(this.btnProductoRegistrar);
             this.Controls.Add(this.btnVentaDevolucion);
@@ -626,5 +646,6 @@
         private System.Windows.Forms.Button btnVentaDevolucion;
         private System.Windows.Forms.Button btnProductoRegistrar;
         private System.Windows.Forms.Button btnVentasVendedor;
+        private System.Windows.Forms.Button btnUsuarioActivar;
     }
 }

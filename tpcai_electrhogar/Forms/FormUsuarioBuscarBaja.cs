@@ -53,7 +53,7 @@ namespace tpcai_electrhogar
         {
             this.Hide();
             FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-ModuloLogueo.UsuarioAuntenticado.host);
+            ModuloLogueo.UsuarioAuntenticado.host);
             modulosForm.Show();
         }
 
@@ -88,11 +88,14 @@ ModuloLogueo.UsuarioAuntenticado.host);
         {
             UsuarioConsultaEnt usuarioSeleccionado = (UsuarioConsultaEnt)dgvUsuarios.Rows[dgvUsuarios.CurrentCell.RowIndex].DataBoundItem;
             Guid id = usuarioSeleccionado.id;
+            string nombre = usuarioSeleccionado.nombre;
+            string apellido = usuarioSeleccionado.apellido;
+            string nombreUsuario = usuarioSeleccionado.nombreUsuario;
             if (MessageBox.Show("¿Está seguro de dar de baja este usuario?", "¿Dar de baja al usuario?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 try
                 {
-                    ModuloUsuarios.DeshabilitarUsuario(id, Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), out string error);
+                    ModuloUsuarios.DeshabilitarUsuario(id, Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), nombre, apellido, nombreUsuario, out string error);
                     if (string.IsNullOrEmpty(error))
                     {
                         dgvUsuarios.DataSource = ModuloUsuarios.ConsultarUsuarios(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), out error);

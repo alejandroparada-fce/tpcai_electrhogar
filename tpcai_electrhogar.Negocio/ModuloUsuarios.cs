@@ -45,12 +45,31 @@ namespace tpcai_electrhogar.Negocio
             return listaFiltrada;
         }
 
-        public static void DeshabilitarUsuario(Guid id, Guid idUsuario, out string error)
+        public static void DeshabilitarUsuario(Guid id, Guid idUsuario, string nombre, string apellido, string nombreUsuario, out string error)
         {
             error = null;
             ServiceUsuario.EliminarUsuario(id, idUsuario, out error);
+            UsuarioActivarEnt usuarioBaja = new UsuarioActivarEnt(id, nombre, apellido, nombreUsuario);
+            ArchivoLocal.AgregarUsuarioBaja(usuarioBaja);
+            ArchivoLocal.GrabarUsuariosBaja();
         }
 
+        public static void ActivarUsuario(Guid id, Guid idUsuario, string nombreUsuario, out string error)
+        {
+            error = null;
+            ServiceUsuario.ActivarUsuario(id, idUsuario, out error);
+            ArchivoLocal.BorrarUsuarioDesactivados(nombreUsuario);
+            ArchivoLocal.GrabarUsuariosBaja();
+        }
 
+        public static List<UsuarioActivarEnt> ConsultarUsuariosBaja()
+        {
+            return ArchivoLocal.ListarUsuariosBaja();
+        }
+
+        public static bool ConsultarUsuariosBajaLista()
+        {
+            return ArchivoLocal.UsuariosDesactivadosListaVacia();
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace PersistenciaWS
     {
         static List<IntentoFallidoEnt> intentosFallidos = new List<IntentoFallidoEnt>();
         static List<CambioContraseñaEnt> cambiosContraseña = new List<CambioContraseñaEnt>();
+        static List<UsuarioActivarEnt> usuariosBaja = new List<UsuarioActivarEnt>();
 
         //Siempre que se invoque a la clase se levantará el contenido de dos ficheros
         static ArchivoLocal()
@@ -39,6 +40,16 @@ namespace PersistenciaWS
                 cambiosContraseña = new List<CambioContraseñaEnt>();
             }
 
+            //Si existe el fichero json se carga en una lista el contenido
+            if (File.Exists("usuariosBaja.json"))
+            {
+                string contenidoUsuariosBaja = File.ReadAllText("usuariosBaja.json");
+                usuariosBaja = JsonConvert.DeserializeObject<List<UsuarioActivarEnt>>(contenidoUsuariosBaja);
+            }
+            else
+            {
+                usuariosBaja = new List<UsuarioActivarEnt>();
+            }
         }
 
         //Agregar usuario
@@ -53,6 +64,12 @@ namespace PersistenciaWS
             //Primero borra referencias pasadas del usuario y luego agrega el nuevo cambio
             cambiosContraseña.RemoveAll(x => x.NombreUsuario == cambioContraseña.NombreUsuario);
             cambiosContraseña.Add(cambioContraseña);
+        }
+
+        //Agregar usuario dado de baja
+        public static void AgregarUsuarioBaja(UsuarioActivarEnt usuarioBaja)
+        {
+            usuariosBaja.Add(usuarioBaja);
         }
 
         //Chequear si el usuario está lockeado
@@ -96,6 +113,32 @@ namespace PersistenciaWS
         {
             string contenidoCambioContraseñas = JsonConvert.SerializeObject(cambiosContraseña);
             File.WriteAllText("cambiosContraseña.json", contenidoCambioContraseñas);
+        }
+        public static void GrabarUsuariosBaja()
+        {
+            string contenidoUsuariosBaja = JsonConvert.SerializeObject(usuariosBaja);
+            File.WriteAllText("usuariosBaja.json", contenidoUsuariosBaja);
+        }
+
+        public static List<UsuarioActivarEnt> ListarUsuariosBaja()
+        {
+            return usuariosBaja;
+        }
+
+        public static void BorrarUsuarioDesactivados(string nombreUsuario)
+        {
+            usuariosBaja.RemoveAll(x => x.NombreUsuario == nombreUsuario);
+        }
+
+        public static bool UsuariosDesactivadosListaVacia()
+        {
+            int conteo = usuariosBaja.Count();
+
+            if (conteo == 0)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

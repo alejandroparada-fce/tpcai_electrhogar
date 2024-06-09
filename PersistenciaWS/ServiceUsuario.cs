@@ -93,11 +93,13 @@ namespace PersistenciaWS
                 error = $"Exception: {ex.Message}";
             }
         }
-        public static void ActivarUsuario(UsuarioEnt id)
+
+        public static void ActivarUsuario(Guid id, Guid idUsuario, out string error)
         {
+            error = null;
             String path = "/api/Usuario/ReactivarUsuario";
             Dictionary<string, string> map = new Dictionary<string, string>();
-            map.Add("idUsuario", id.ToString());
+            map.Add("idUsuario", idUsuario.ToString());
             map.Add("id", id.ToString());
 
             var jsonRequest = JsonConvert.SerializeObject(map);
@@ -138,14 +140,11 @@ namespace PersistenciaWS
                 {
                     error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
                 }
-
             }
             catch (Exception ex)
             {
                 error = ex.Message;
             }
-
-
         }
 
         public static bool Autenticacion(string nombreUsuario, string contraseña, out string respuesta)
@@ -179,6 +178,7 @@ namespace PersistenciaWS
             return false;
 
         }
+
         public static void prueba()
         {
             String path = "/api/Cliente/PatchCliente";

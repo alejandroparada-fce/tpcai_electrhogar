@@ -106,7 +106,7 @@ namespace tpcai_electrhogar.Forms
         {
             this.Hide();
             FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-ModuloLogueo.UsuarioAuntenticado.host);
+            ModuloLogueo.UsuarioAuntenticado.host);
             modulosForm.Show();
         }
 

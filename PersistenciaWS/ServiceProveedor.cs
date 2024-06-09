@@ -93,16 +93,16 @@ namespace PersistenciaWS
         {
             error = null;
             String path = "/api/Proveedor/ReactivarProveedor";
-            Dictionary<string, Guid> map = new Dictionary<string, Guid>();
-            map.Add("id", idProveedor);
-            map.Add("idUsuario", idUsuario);
-            
+            Dictionary<string, string> map = new Dictionary<string, string>();
+            map.Add("id", idProveedor.ToString());
+            map.Add("idUsuario", idUsuario.ToString());
+
 
             var jsonRequest = JsonConvert.SerializeObject(map);
 
             try
             {
-                HttpResponseMessage response = WebHelper.DeleteWithBody(path, jsonRequest);
+                HttpResponseMessage response = WebHelper.Patch(path, jsonRequest);
                 if (!response.IsSuccessStatusCode)
                 {
                     error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
