@@ -66,7 +66,7 @@ namespace PersistenciaWS
 
             return listadoProductosCategoria;
         }
-        public static void ModificarProducto(Guid id, String idUsuario, double precio, int stock, out string error)
+        public static void ModificarProducto(Guid id, Guid idUsuario, double precio, int stock, out string error)
         {
             error = null;
             String path = "/api/Producto/ModificarProducto";

@@ -40,13 +40,13 @@ namespace PersistenciaWS
             return listadoVentasCliente;
         }
 
-        public static void DevolverVentas(Guid id, String idUsuario, out string error)
+        public static void DevolverVentas(Guid id, Guid idUsuario, out string error)
         {
             error = null;
             String path = "/api/Venta/DevolverVenta";
             Dictionary<string, string> map = new Dictionary<string, string>();
             map.Add("id", id.ToString());
-            map.Add("idUsuario", idUsuario);       
+            map.Add("idUsuario", idUsuario.ToString());       
             var jsonRequest = JsonConvert.SerializeObject(map);
 
             try

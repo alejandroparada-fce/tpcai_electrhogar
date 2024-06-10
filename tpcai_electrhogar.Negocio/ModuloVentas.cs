@@ -13,7 +13,7 @@ namespace tpcai_electrhogar.Negocio
 {
     public static class ModuloVentas
     {
-        public static string idUsuario = "2355f8c3-bd38-48c9-8f5d-22c1f88a59d6";
+        public static Guid idUsuario = ModuloLogueo.UsuarioAuntenticado.id;
         public static List<VentaClienteEnt> ConsultarVentasCliente(Guid id, out string error)
         {
             List<VentaClienteEnt> listadoVentasCliente = new List<VentaClienteEnt>();

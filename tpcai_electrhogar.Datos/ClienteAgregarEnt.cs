@@ -8,7 +8,7 @@ namespace tpcai_electrhogar.Datos
 {
     public class ClienteAgregarEnt
     {
-        private string _idUsuario;
+        private Guid _idUsuario;
         private string _nombre;
         private string _apellido;
         private int _dni;
@@ -20,7 +20,7 @@ namespace tpcai_electrhogar.Datos
 
 
 
-        public string idUsuario { get { return _idUsuario; } set { _idUsuario = value; } }
+        public Guid idUsuario { get { return _idUsuario; } set { _idUsuario = value; } }
         public string nombre { get { return _nombre; } set { _nombre = value; } }
         public string apellido { get { return _apellido; } set { _apellido = value; } }
         public int dni { get { return _dni; } set { _dni = value; } }
@@ -31,7 +31,7 @@ namespace tpcai_electrhogar.Datos
         public string host { get { return _host; } set { _host = value; } }
 
 
-        public ClienteAgregarEnt(string idUsuario, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, string host)
+        public ClienteAgregarEnt(Guid idUsuario, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, string host)
         {
             this.idUsuario = idUsuario;
             this.nombre = nombre;

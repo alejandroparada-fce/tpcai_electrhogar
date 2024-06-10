@@ -11,7 +11,7 @@ namespace tpcai_electrhogar.Negocio
 {
     public static class ModuloProveedor
     {
-        public static Guid idUsuario = new Guid("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
+        public static Guid idUsuario = ModuloLogueo.UsuarioAuntenticado.id;
         public static Guid idProveedor = new Guid("8fc1b7c9-a59b-46b2-af97-1ac9d9b48773");
 
         public static List<ProveedorEnt> ProveedorListar(out string error)
