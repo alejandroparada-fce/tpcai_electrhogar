@@ -19,7 +19,6 @@ namespace tpcai_electrhogar
             InitializeComponent();
         }
 
-        public static string idUsuario = "70b37dc1-8fde-4840-be47-9ababd0ee7e5";
 
         private void FormProveedorAlta_MouseDown(object sender, MouseEventArgs e)
         {
@@ -83,7 +82,7 @@ namespace tpcai_electrhogar
 
                 try
                 {
-                    ModuloProveedor.ProveedorAgregar(idUsuario, nombre, apellido, email, cuit, out string error);
+                    ModuloProveedor.ProveedorAgregar(nombre, apellido, email, cuit, out string error);
 
                     if (!string.IsNullOrEmpty(error))
                     {

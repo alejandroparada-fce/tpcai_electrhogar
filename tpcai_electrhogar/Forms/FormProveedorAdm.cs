@@ -24,8 +24,7 @@ namespace tpcai_electrhogar
             ObtenerListaProveedor();
         }
         private string mensajeError;
-
-        public static Guid idUsuario = new Guid("70b37dc1-8fde-4840-be47-9ababd0ee7e5");
+       
         public static Guid idProveedor = new Guid("8fc1b7c9-a59b-46b2-af97-1ac9d9b48773");
 
 
@@ -92,7 +91,7 @@ namespace tpcai_electrhogar
             {
                 try
                 {
-                    ModuloProveedor.ProveedorBaja(idUsuario, idProveedorSeleccionado, out string error);
+                    ModuloProveedor.ProveedorBaja(idProveedorSeleccionado, out string error);
                     if (string.IsNullOrEmpty(error))
                     {
                         dgvProveedor.DataSource = ModuloProveedor.ProveedorListar(out error);
@@ -121,8 +120,7 @@ namespace tpcai_electrhogar
         private void btnModificar_Click(object sender, EventArgs e)
         {
             ProveedorEnt proveedorSeleccionado = (ProveedorEnt)dgvProveedor.Rows[dgvProveedor.CurrentCell.RowIndex].DataBoundItem;
-
-            Guid id = idUsuario;
+            
             Guid idProveedor = proveedorSeleccionado.Id;
             String nombre = txtNombre.Text;
             String apellido = txtApellido.Text;
@@ -142,7 +140,7 @@ namespace tpcai_electrhogar
                 {
                     try
                     {
-                        ModuloProveedor.ProveedorModificar(id, idProveedor, nombre, apellido, email, cuit, out string error);
+                        ModuloProveedor.ProveedorModificar(idProveedor, nombre, apellido, email, cuit, out string error);
                         if (string.IsNullOrEmpty(error))
                         {
                             this.Hide();
@@ -181,7 +179,7 @@ namespace tpcai_electrhogar
             {
                 try
                 {
-                    ModuloProveedor.ProveedorReactivar(idUsuario, idProveedorSeleccionado, out string error);
+                    ModuloProveedor.ProveedorReactivar(idProveedorSeleccionado, out string error);
                     if (string.IsNullOrEmpty(error))
                     {
                         dgvProveedor.DataSource = ModuloProveedor.ProveedorListar(out error);
