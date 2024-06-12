@@ -27,6 +27,7 @@ namespace tpcai_electrhogar.Negocio
             //Se toma una lista de todos los clientes
             List<ClienteEnt> listadoClientes = new List<ClienteEnt>();
             listadoClientes = ServiceCliente.ListarClientes(out string error1);
+            listadoClientes = listadoClientes.Where(p => p.host == "Grupo 6").ToList();
 
             //Se genera una lista de todas las ventas
             List<VentaClienteEnt> Ventas = new List<VentaClienteEnt>();
