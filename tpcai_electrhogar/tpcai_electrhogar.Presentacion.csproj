@@ -111,12 +111,6 @@
     <Compile Include="Forms\FormProveedorRegistrar.Designer.cs">
       <DependentUpon>FormProveedorRegistrar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormProveedorBaja.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormProveedorBaja.Designer.cs">
-      <DependentUpon>FormProveedorBaja.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormCambiarContrasena.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,9 +213,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormProveedorRegistrar.resx">
       <DependentUpon>FormProveedorRegistrar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormProveedorBaja.resx">
-      <DependentUpon>FormProveedorBaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormCambiarContrasena.resx">
       <DependentUpon>FormCambiarContrasena.cs</DependentUpon>

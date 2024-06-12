@@ -54,7 +54,7 @@ Se agrega panel dockeado a la izquierda (RGB 0,122,204).
             {
                 try
                 {
-                    ModuloUsuarios.AltaUsuario(Guid.Parse("39183378-db6a-455d-9e24-1fe028fdb306"), host, textBoxNombre.Text, textBoxApellido.Text, Int32.Parse(textBoxDNI.Text), textBoxDirección.Text, textBoxTelefono.Text, textBoxMail.Text, dateNacimiento.Value, textBoxNombreUsuario.Text, "CAI20241", out string error);
+                    ModuloUsuarios.AltaUsuario(host, textBoxNombre.Text, textBoxApellido.Text, Int32.Parse(textBoxDNI.Text), textBoxDirección.Text, textBoxTelefono.Text, textBoxMail.Text, dateNacimiento.Value, textBoxNombreUsuario.Text, "CAI20241", out string error);
                     if (!string.IsNullOrEmpty(error))
                     {
                         MessageBox.Show(error);

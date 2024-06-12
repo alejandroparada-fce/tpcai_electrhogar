@@ -93,7 +93,7 @@ namespace tpcai_electrhogar
                 {
                     try
                     {
-                        ModuloUsuarios.ActivarUsuario(id, Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), nombreUsuario, out string error);
+                        ModuloUsuarios.ActivarUsuario(id, nombreUsuario, out string error);
                         if (string.IsNullOrEmpty(error))
                         {
                             dgvUsuarios.DataSource = ModuloUsuarios.ConsultarUsuariosBaja();

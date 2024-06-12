@@ -18,7 +18,7 @@ namespace tpcai_electrhogar
         {
             InitializeComponent();
   
-            dgvUsuarios.DataSource = ModuloUsuarios.ConsultarUsuarios(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), out string error);
+            dgvUsuarios.DataSource = ModuloUsuarios.ConsultarUsuarios(out string error);
             dgvUsuarios.Columns["id"].Visible = false;
             dgvUsuarios.Columns[1].HeaderText = "Nombre";
             dgvUsuarios.Columns[2].HeaderText = "Apellido";
@@ -59,7 +59,7 @@ namespace tpcai_electrhogar
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            dgvUsuarios.DataSource = ModuloUsuarios.BuscarUsuarios(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), txtBuscar.Text, out string error);
+            dgvUsuarios.DataSource = ModuloUsuarios.BuscarUsuarios(txtBuscar.Text, out string error);
             dgvUsuarios.Columns["id"].Visible = false;
             dgvUsuarios.Columns[1].HeaderText = "Nombre";
             dgvUsuarios.Columns[2].HeaderText = "Apellido";
@@ -73,7 +73,7 @@ namespace tpcai_electrhogar
         {
             if (txtBuscar.Text == "")
             {
-                dgvUsuarios.DataSource = ModuloUsuarios.ConsultarUsuarios(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), out string error);
+                dgvUsuarios.DataSource = ModuloUsuarios.ConsultarUsuarios(out string error);
                 dgvUsuarios.Columns["id"].Visible = false;
                 dgvUsuarios.Columns[1].HeaderText = "Nombre";
                 dgvUsuarios.Columns[2].HeaderText = "Apellido";
@@ -95,10 +95,10 @@ namespace tpcai_electrhogar
             {
                 try
                 {
-                    ModuloUsuarios.DeshabilitarUsuario(id, Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), nombre, apellido, nombreUsuario, out string error);
+                    ModuloUsuarios.DeshabilitarUsuario(id, nombre, apellido, nombreUsuario, out string error);
                     if (string.IsNullOrEmpty(error))
                     {
-                        dgvUsuarios.DataSource = ModuloUsuarios.ConsultarUsuarios(Guid.Parse("70b37dc1-8fde-4840-be47-9ababd0ee7e5"), out error);
+                        dgvUsuarios.DataSource = ModuloUsuarios.ConsultarUsuarios(out error);
                         MessageBox.Show("Usuario dado de baja");
                     }
                     else

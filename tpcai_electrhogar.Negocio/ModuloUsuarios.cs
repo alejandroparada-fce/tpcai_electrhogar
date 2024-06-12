@@ -11,7 +11,8 @@ namespace tpcai_electrhogar.Negocio
 {
     public static class ModuloUsuarios
     {
-        public static void AltaUsuario(Guid idUsuario, int host, string nombre, string apellido, int dni,
+        public static Guid idUsuario = ModuloLogueo.UsuarioAuntenticado.id;
+        public static void AltaUsuario(int host, string nombre, string apellido, int dni,
             string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, string contraseña, out string error)
         {
             error = null;
@@ -22,7 +23,7 @@ namespace tpcai_electrhogar.Negocio
         }
 
 
-        public static List<UsuarioConsultaEnt> ConsultarUsuarios(Guid idUsuario, out string error)
+        public static List<UsuarioConsultaEnt> ConsultarUsuarios(out string error)
         {
             List<UsuarioConsultaEnt> listaUsuarios = new List<UsuarioConsultaEnt>();
             listaUsuarios = ServiceUsuario.ListarUsuarios(idUsuario, out error);
@@ -37,7 +38,7 @@ namespace tpcai_electrhogar.Negocio
             ArchivoLocal.GrabarCambiosContraseña();
         }
 
-        public static List<UsuarioConsultaEnt> BuscarUsuarios(Guid idUsuario, string nombreUsuario, out string error)
+        public static List<UsuarioConsultaEnt> BuscarUsuarios(string nombreUsuario, out string error)
         {
             List<UsuarioConsultaEnt> listaUsuarios = new List<UsuarioConsultaEnt>();
             listaUsuarios = ServiceUsuario.ListarUsuarios(idUsuario, out error);
@@ -45,7 +46,7 @@ namespace tpcai_electrhogar.Negocio
             return listaFiltrada;
         }
 
-        public static void DeshabilitarUsuario(Guid id, Guid idUsuario, string nombre, string apellido, string nombreUsuario, out string error)
+        public static void DeshabilitarUsuario(Guid id, string nombre, string apellido, string nombreUsuario, out string error)
         {
             error = null;
             ServiceUsuario.EliminarUsuario(id, idUsuario, out error);
@@ -54,7 +55,7 @@ namespace tpcai_electrhogar.Negocio
             ArchivoLocal.GrabarUsuariosBaja();
         }
 
-        public static void ActivarUsuario(Guid id, Guid idUsuario, string nombreUsuario, out string error)
+        public static void ActivarUsuario(Guid id, string nombreUsuario, out string error)
         {
             error = null;
             ServiceUsuario.ActivarUsuario(id, idUsuario, out error);
