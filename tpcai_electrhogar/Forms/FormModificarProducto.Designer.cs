@@ -38,6 +38,8 @@
             this.lblError = new System.Windows.Forms.Label();
             this.lblCredits = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // stockLbl
@@ -96,7 +98,7 @@
             this.cambiarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cambiarBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cambiarBtn.ForeColor = System.Drawing.Color.LightGray;
-            this.cambiarBtn.Location = new System.Drawing.Point(222, 188);
+            this.cambiarBtn.Location = new System.Drawing.Point(218, 165);
             this.cambiarBtn.Name = "cambiarBtn";
             this.cambiarBtn.Size = new System.Drawing.Size(140, 40);
             this.cambiarBtn.TabIndex = 127;
@@ -113,7 +115,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(43, 188);
+            this.btnCancelar.Location = new System.Drawing.Point(52, 165);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(139, 40);
             this.btnCancelar.TabIndex = 128;
@@ -153,12 +155,36 @@
             this.label1.TabIndex = 131;
             this.label1.Text = "* Incrementa/disminuye stock en base al valor ingresado";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.label2.Location = new System.Drawing.Point(317, 215);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 16);
+            this.label2.TabIndex = 132;
+            this.label2.Text = "G6 Softwares";
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblVersion.Location = new System.Drawing.Point(365, 231);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(30, 16);
+            this.lblVersion.TabIndex = 133;
+            this.lblVersion.Text = "v1.0";
+            // 
             // FormModificarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(407, 251);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.lblError);
@@ -188,5 +214,7 @@
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Label lblCredits;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblVersion;
     }
 }

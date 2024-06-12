@@ -36,6 +36,8 @@
             this.cantidadNumeric = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
+            this.lblCredits = new System.Windows.Forms.Label();
+            this.lblVersion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,7 +85,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAgregar.Location = new System.Drawing.Point(571, 383);
+            this.btnAgregar.Location = new System.Drawing.Point(571, 364);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(197, 40);
             this.btnAgregar.TabIndex = 122;
@@ -100,7 +102,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(296, 383);
+            this.btnCancelar.Location = new System.Drawing.Point(296, 364);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(197, 40);
             this.btnCancelar.TabIndex = 123;
@@ -135,12 +137,36 @@
             this.lblError.Size = new System.Drawing.Size(0, 13);
             this.lblError.TabIndex = 134;
             // 
+            // lblCredits
+            // 
+            this.lblCredits.AutoSize = true;
+            this.lblCredits.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCredits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblCredits.Location = new System.Drawing.Point(710, 410);
+            this.lblCredits.Name = "lblCredits";
+            this.lblCredits.Size = new System.Drawing.Size(78, 16);
+            this.lblCredits.TabIndex = 117;
+            this.lblCredits.Text = "G6 Softwares";
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblVersion.Location = new System.Drawing.Point(758, 426);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(30, 16);
+            this.lblVersion.TabIndex = 118;
+            this.lblVersion.Text = "v1.0";
+            // 
             // FormAgregarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblCredits);
+            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.cantidadNumeric);
             this.Controls.Add(this.label3);
@@ -170,5 +196,7 @@
         private System.Windows.Forms.NumericUpDown cantidadNumeric;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.Label lblCredits;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
