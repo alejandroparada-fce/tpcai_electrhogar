@@ -13,8 +13,6 @@ namespace tpcai_electrhogar.Datos
         private string _apellido;
         private string _email;
         private string _cuit;
-        //private DateTime _fechaAlta;
-        //private DateTime? _fechaBaja;
         
 
         public Guid Id { get { return _id; } set { _id = value; } }
@@ -22,8 +20,6 @@ namespace tpcai_electrhogar.Datos
         public string Apellido { get { return _apellido; } set { _apellido = value; } }
         public string Email { get { return _email; } set { _email = value; } }
         public string CUIT { get { return _cuit; } set { _cuit = value; } }
-        //public DateTime fechaAlta { get { return _fechaAlta; } set { _fechaAlta = value; } }
-        //public DateTime? fechaBaja { get { return _fechaBaja; } set { _fechaBaja = value; } }
 
         public ProveedorEnt(Guid id, string nombre, string apellido, string email, string cuit)
         {
@@ -32,8 +28,6 @@ namespace tpcai_electrhogar.Datos
             this.Apellido = apellido;
             this.Email = email;
             this.CUIT = cuit;
-            //this.fechaAlta = fechaAlta;
-            //this.fechaBaja = fechaBaja;
         }
     }
 }

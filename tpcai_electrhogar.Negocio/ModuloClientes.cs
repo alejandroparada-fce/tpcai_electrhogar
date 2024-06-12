@@ -19,7 +19,6 @@ namespace tpcai_electrhogar.Negocio
             listaClientes = ServiceCliente.ListarClientes(out error);
             return listaClientes;
         }
-        //Revisar Agregar Cliente
         public static void AgregarCliente( string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, out string error)
         {
            

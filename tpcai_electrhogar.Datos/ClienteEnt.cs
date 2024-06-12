@@ -8,6 +8,7 @@ namespace tpcai_electrhogar.Datos
 {
     public class ClienteEnt : ClienteBaseEnt
     {
+
         //private Guid _id;
         private string _nombre;
         private string _apellido;

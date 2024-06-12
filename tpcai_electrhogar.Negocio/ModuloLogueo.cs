@@ -14,8 +14,7 @@ namespace tpcai_electrhogar.Negocio
     {
         public static UsuarioConsultaEnt UsuarioAuntenticado = new UsuarioConsultaEnt();
         public static string Pass;
-        //public static List<string> LogueosFallidos = new List<string>();
-        //public LoginEnt = Loguearse(usuario, contraseña, contraseñaDefault);
+
 
 
         public static int Loguearse(string usuario, string contraseña, string contraseñaDefault)
