@@ -99,7 +99,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(115, 28);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Id";
+            this.textBox1.Text = "ID";
             // 
             // btnCancelar
             // 

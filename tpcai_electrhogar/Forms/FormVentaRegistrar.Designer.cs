@@ -155,7 +155,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(375, 12);
+            this.lblTitle.Location = new System.Drawing.Point(375, 7);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(251, 38);
             this.lblTitle.TabIndex = 100;
@@ -259,7 +259,7 @@
             // 
             this.txtMontoParcial.Enabled = false;
             this.txtMontoParcial.HideSelection = false;
-            this.txtMontoParcial.Location = new System.Drawing.Point(366, 383);
+            this.txtMontoParcial.Location = new System.Drawing.Point(399, 383);
             this.txtMontoParcial.Name = "txtMontoParcial";
             this.txtMontoParcial.ReadOnly = true;
             this.txtMontoParcial.Size = new System.Drawing.Size(100, 20);
@@ -269,7 +269,7 @@
             // 
             this.txtDescuento.Enabled = false;
             this.txtDescuento.HideSelection = false;
-            this.txtDescuento.Location = new System.Drawing.Point(400, 420);
+            this.txtDescuento.Location = new System.Drawing.Point(399, 420);
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.ReadOnly = true;
             this.txtDescuento.Size = new System.Drawing.Size(100, 20);
@@ -279,7 +279,7 @@
             // 
             this.txtMontoTotal.Enabled = false;
             this.txtMontoTotal.HideSelection = false;
-            this.txtMontoTotal.Location = new System.Drawing.Point(382, 497);
+            this.txtMontoTotal.Location = new System.Drawing.Point(399, 498);
             this.txtMontoTotal.Name = "txtMontoTotal";
             this.txtMontoTotal.ReadOnly = true;
             this.txtMontoTotal.Size = new System.Drawing.Size(100, 20);
@@ -407,7 +407,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminar.Location = new System.Drawing.Point(495, 344);
+            this.btnEliminar.Location = new System.Drawing.Point(519, 344);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(166, 30);
             this.btnEliminar.TabIndex = 131;
@@ -439,7 +439,7 @@
             this.checkElectro.BackColor = System.Drawing.Color.Black;
             this.checkElectro.Enabled = false;
             this.checkElectro.ForeColor = System.Drawing.Color.Red;
-            this.checkElectro.Location = new System.Drawing.Point(734, 402);
+            this.checkElectro.Location = new System.Drawing.Point(739, 415);
             this.checkElectro.Name = "checkElectro";
             this.checkElectro.Size = new System.Drawing.Size(15, 14);
             this.checkElectro.TabIndex = 133;
@@ -449,7 +449,7 @@
             // 
             this.checkClienteNuevo.AutoSize = true;
             this.checkClienteNuevo.Enabled = false;
-            this.checkClienteNuevo.Location = new System.Drawing.Point(734, 436);
+            this.checkClienteNuevo.Location = new System.Drawing.Point(739, 449);
             this.checkClienteNuevo.Name = "checkClienteNuevo";
             this.checkClienteNuevo.Size = new System.Drawing.Size(15, 14);
             this.checkClienteNuevo.TabIndex = 134;
@@ -460,7 +460,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(512, 398);
+            this.label1.Location = new System.Drawing.Point(517, 411);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(201, 19);
             this.label1.TabIndex = 135;
@@ -471,7 +471,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(512, 432);
+            this.label2.Location = new System.Drawing.Point(517, 445);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(211, 19);
             this.label2.TabIndex = 136;
@@ -492,7 +492,7 @@
             // 
             this.txtDescuentoCliente.Enabled = false;
             this.txtDescuentoCliente.HideSelection = false;
-            this.txtDescuentoCliente.Location = new System.Drawing.Point(400, 461);
+            this.txtDescuentoCliente.Location = new System.Drawing.Point(399, 461);
             this.txtDescuentoCliente.Name = "txtDescuentoCliente";
             this.txtDescuentoCliente.ReadOnly = true;
             this.txtDescuentoCliente.Size = new System.Drawing.Size(100, 20);

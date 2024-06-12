@@ -53,9 +53,9 @@
             this.lblReporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblReporte.Location = new System.Drawing.Point(165, 12);
             this.lblReporte.Name = "lblReporte";
-            this.lblReporte.Size = new System.Drawing.Size(470, 38);
+            this.lblReporte.Size = new System.Drawing.Size(474, 38);
             this.lblReporte.TabIndex = 118;
-            this.lblReporte.Text = "Reporte Ventas por vendedor";
+            this.lblReporte.Text = "Reporte Ventas por Vendedor";
             this.lblReporte.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lblReporte_MouseDown);
             // 
             // dgvReporteVentas

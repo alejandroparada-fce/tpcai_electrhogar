@@ -154,11 +154,11 @@
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Font = new System.Drawing.Font("MS Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.SystemColors.Window;
             this.lblCategoria.Location = new System.Drawing.Point(549, 76);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(68, 11);
+            this.lblCategoria.Size = new System.Drawing.Size(68, 12);
             this.lblCategoria.TabIndex = 134;
             this.lblCategoria.Text = "Categoría";
             // 
