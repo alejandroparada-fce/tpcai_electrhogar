@@ -75,7 +75,7 @@
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblError.ForeColor = System.Drawing.Color.DarkRed;
             this.lblError.Location = new System.Drawing.Point(303, 254);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(0, 13);
@@ -93,6 +93,7 @@
             this.checkMostrarContrasena.Text = "Mostrar Contraseña";
             this.checkMostrarContrasena.UseVisualStyleBackColor = true;
             this.checkMostrarContrasena.CheckedChanged += new System.EventHandler(this.checkMostrarContrasena_CheckedChanged);
+            this.checkMostrarContrasena.Enter += new System.EventHandler(this.checkMostrarContrasena_Enter);
             // 
             // lblCredits
             // 
@@ -184,7 +185,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.LightGray;
-            this.btnLogin.Location = new System.Drawing.Point(306, 217);
+            this.btnLogin.Location = new System.Drawing.Point(306, 202);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(360, 40);
             this.btnLogin.TabIndex = 0;

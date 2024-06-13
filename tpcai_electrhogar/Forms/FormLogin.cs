@@ -125,5 +125,9 @@ namespace tpcai_electrhogar
             FormUtils.MostrarContrasena(this, txtPass, checkMostrarContrasena.Checked);
         }
 
+        private void checkMostrarContrasena_Enter(object sender, EventArgs e)
+        {
+            FormUtils.MostrarContrasena(this, txtPass, checkMostrarContrasena.Checked);
+        }
     }
 }

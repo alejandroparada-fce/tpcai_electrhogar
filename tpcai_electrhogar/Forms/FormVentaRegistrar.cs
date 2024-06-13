@@ -47,7 +47,7 @@ namespace tpcai_electrhogar.Forms
 
         }
 
-        public static string idUsuario = "d62f7493-c1aa-4183-ad87-a3a41c77629d";
+        public static Guid idUsuario = ModuloLogueo.UsuarioAuntenticado.id;
 
 
 
@@ -57,6 +57,8 @@ namespace tpcai_electrhogar.Forms
             string host = "Grupo 6";
             List<ClienteEnt> clientesFiltrados = listaClientes.Where(p => p.host == host).ToList();
             MostrarClientesFiltrados(clientesFiltrados);
+            FormUtils.AjustarColumnas(dgvClientes);
+            FormUtils.AjustarFilas(dgvClientes);
         }
 
         private void MostrarClientesFiltrados(List<ClienteEnt> listaClientes)
@@ -108,15 +110,6 @@ namespace tpcai_electrhogar.Forms
             FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
             ModuloLogueo.UsuarioAuntenticado.host);
             modulosForm.Show();
-        }
-
-        private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
-            txtNombre.Text = clienteSeleccionado.nombre;
-            txtApellido.Text = clienteSeleccionado.apellido;
-            txtDNI.Text = clienteSeleccionado.dni.ToString();
-            CalcularMonto();
         }
 
         public void llenarDataGrid(ProductoVentaEnt producto)
@@ -259,7 +252,6 @@ namespace tpcai_electrhogar.Forms
                 }
                 ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
                 Guid idCliente = clienteSeleccionado.id;
-                Guid.TryParse(idUsuario, out Guid idUsuario2);
 
                 bool ventaExitosa = true;
                 string mensajeError = string.Empty;
@@ -276,7 +268,7 @@ namespace tpcai_electrhogar.Forms
 
                         AltaVenta venta = new AltaVenta();
                         venta.idCliente = clienteSeleccionado.id;
-                        venta.idUsuario = idUsuario2;
+                        venta.idUsuario = idUsuario;
                         venta.idProducto = idProducto;
                         venta.Cantidad = cantidad;
 
@@ -294,6 +286,8 @@ namespace tpcai_electrhogar.Forms
                 if (ventaExitosa)
                 {
                     MessageBox.Show("La venta se realizó con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgvProductos.Rows.Clear();
+
                 }
                 else
                 {
@@ -301,6 +295,15 @@ namespace tpcai_electrhogar.Forms
                 }
 
             }
-        
+
+
+        private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
+            txtNombre.Text = clienteSeleccionado.nombre;
+            txtApellido.Text = clienteSeleccionado.apellido;
+            txtDNI.Text = clienteSeleccionado.dni.ToString();
+            CalcularMonto();
+        }
     }
 }

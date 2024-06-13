@@ -46,14 +46,6 @@ namespace tpcai_electrhogar
             
         }
 
-        private void dgvProveedor_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            ProveedorEnt proveedorSeleccionado = (ProveedorEnt)dgvProveedor.Rows[dgvProveedor.CurrentCell.RowIndex].DataBoundItem;
-            txtNombre.Text = proveedorSeleccionado.Nombre;
-            txtApellido.Text = proveedorSeleccionado.Apellido;
-            txtEmail.Text = proveedorSeleccionado.Email;
-            txtCUIT.Text = proveedorSeleccionado.CUIT;
-        }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
@@ -195,6 +187,15 @@ namespace tpcai_electrhogar
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void dgvProveedor_SelectionChanged(object sender, EventArgs e)
+        {
+            ProveedorEnt proveedorSeleccionado = (ProveedorEnt)dgvProveedor.Rows[dgvProveedor.CurrentCell.RowIndex].DataBoundItem;
+            txtNombre.Text = proveedorSeleccionado.Nombre;
+            txtApellido.Text = proveedorSeleccionado.Apellido;
+            txtEmail.Text = proveedorSeleccionado.Email;
+            txtCUIT.Text = proveedorSeleccionado.CUIT;
         }
     }
 }

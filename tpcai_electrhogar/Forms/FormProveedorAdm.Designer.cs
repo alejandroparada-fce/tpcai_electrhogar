@@ -89,7 +89,7 @@
             this.dgvProveedor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProveedor.Size = new System.Drawing.Size(807, 209);
             this.dgvProveedor.TabIndex = 25;
-            this.dgvProveedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProveedor_CellContentClick);
+            this.dgvProveedor.SelectionChanged += new System.EventHandler(this.dgvProveedor_SelectionChanged);
             // 
             // btnCancelar
             // 
@@ -281,7 +281,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnEliminar.Location = new System.Drawing.Point(577, 188);
+            this.btnEliminar.Location = new System.Drawing.Point(598, 196);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(176, 28);
             this.btnEliminar.TabIndex = 114;
@@ -298,7 +298,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAgregar.Location = new System.Drawing.Point(577, 152);
+            this.btnAgregar.Location = new System.Drawing.Point(598, 160);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(176, 28);
             this.btnAgregar.TabIndex = 113;
@@ -314,8 +314,8 @@
             this.lblCredits.Name = "lblCredits";
             this.lblCredits.Size = new System.Drawing.Size(400, 41);
             this.lblCredits.TabIndex = 115;
-            this.lblCredits.Text = "* Click en el Id del proveedor para cargar los datos y modifique el que desee. Po" +
-    "r último presionar modificar.";
+            this.lblCredits.Text = "* Click en una fila para cargar los datos y modifique el que desee. Por último pr" +
+    "esionar modificar.";
             // 
             // btnReactivar
             // 
@@ -326,7 +326,7 @@
             this.btnReactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReactivar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReactivar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnReactivar.Location = new System.Drawing.Point(577, 224);
+            this.btnReactivar.Location = new System.Drawing.Point(598, 232);
             this.btnReactivar.Name = "btnReactivar";
             this.btnReactivar.Size = new System.Drawing.Size(176, 28);
             this.btnReactivar.TabIndex = 116;

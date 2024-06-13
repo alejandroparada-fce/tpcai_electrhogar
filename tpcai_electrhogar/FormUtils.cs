@@ -135,13 +135,18 @@ namespace tpcai_electrhogar
             int availableHeight = dgv.ClientSize.Height - dgv.ColumnHeadersHeight;
 
             // Calcula la altura promedio de las filas
-            int averageRowHeight = availableHeight / dgv.RowCount;
-
-            // Establece la altura de todas las filas para que ocupen el espacio disponible
-            foreach (DataGridViewRow row in dgv.Rows)
+            if(dgv.RowCount > 0)
             {
-                row.Height = averageRowHeight;
+                int averageRowHeight = availableHeight / dgv.RowCount;
+                
+                // Establece la altura de todas las filas para que ocupen el espacio disponible
+                foreach (DataGridViewRow row in dgv.Rows)
+                {
+                    row.Height = averageRowHeight;
+                }
+
             }
+
 
         }
     }

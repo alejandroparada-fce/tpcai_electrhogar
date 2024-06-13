@@ -58,13 +58,7 @@ namespace tpcai_electrhogar
             dgvClientes.DataSource = listaClientes;
         }
 
-        private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
-            direccionCambio.Text = clienteSeleccionado.direccion;
-            telefonoCambio.Text = clienteSeleccionado.telefono;
-            emailCambio.Text = clienteSeleccionado.email;
-        }
+
         private void btnModificarCliente_Click(object sender, EventArgs e)
         {
             ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
@@ -157,6 +151,13 @@ ModuloLogueo.UsuarioAuntenticado.host);
             formClienteRegistrar.Show();
         }
 
+        private void dgvClientes_SelectionChanged(object sender, EventArgs e)
+        {
+            ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
+            direccionCambio.Text = clienteSeleccionado.direccion;
+            telefonoCambio.Text = clienteSeleccionado.telefono;
+            emailCambio.Text = clienteSeleccionado.email;
+        }
     }
     }
 
