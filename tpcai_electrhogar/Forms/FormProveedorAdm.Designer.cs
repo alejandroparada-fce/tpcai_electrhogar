@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProveedorAdm));
             this.dgvProveedor = new System.Windows.Forms.DataGridView();
-            this.txtIdProveedor = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblError = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -47,7 +46,6 @@
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.lblCUIT = new System.Windows.Forms.Label();
             this.txtCUIT = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -92,17 +90,6 @@
             this.dgvProveedor.Size = new System.Drawing.Size(807, 209);
             this.dgvProveedor.TabIndex = 25;
             this.dgvProveedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProveedor_CellContentClick);
-            // 
-            // txtIdProveedor
-            // 
-            this.txtIdProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdProveedor.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtIdProveedor.Location = new System.Drawing.Point(548, 232);
-            this.txtIdProveedor.Multiline = true;
-            this.txtIdProveedor.Name = "txtIdProveedor";
-            this.txtIdProveedor.Size = new System.Drawing.Size(115, 28);
-            this.txtIdProveedor.TabIndex = 8;
-            this.txtIdProveedor.Text = "ID";
             // 
             // btnCancelar
             // 
@@ -262,22 +249,6 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnBuscar.Location = new System.Drawing.Point(669, 232);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(121, 28);
-            this.btnBuscar.TabIndex = 9;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
             // lblCUIT
             // 
             this.lblCUIT.AutoSize = true;
@@ -310,7 +281,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnEliminar.Location = new System.Drawing.Point(590, 145);
+            this.btnEliminar.Location = new System.Drawing.Point(577, 188);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(176, 28);
             this.btnEliminar.TabIndex = 114;
@@ -327,7 +298,7 @@
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnAgregar.Location = new System.Drawing.Point(590, 109);
+            this.btnAgregar.Location = new System.Drawing.Point(577, 152);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(176, 28);
             this.btnAgregar.TabIndex = 113;
@@ -355,7 +326,7 @@
             this.btnReactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReactivar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReactivar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnReactivar.Location = new System.Drawing.Point(590, 181);
+            this.btnReactivar.Location = new System.Drawing.Point(577, 224);
             this.btnReactivar.Name = "btnReactivar";
             this.btnReactivar.Size = new System.Drawing.Size(176, 28);
             this.btnReactivar.TabIndex = 116;
@@ -375,7 +346,6 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lblCUIT);
             this.Controls.Add(this.txtCUIT);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnMaximizar);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
@@ -389,7 +359,6 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.txtIdProveedor);
             this.Controls.Add(this.dgvProveedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -409,7 +378,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvProveedor;
-        private System.Windows.Forms.TextBox txtIdProveedor;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblError;
         private System.Windows.Forms.Label lblTitle;
@@ -423,7 +391,6 @@
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label lblCUIT;
         private System.Windows.Forms.TextBox txtCUIT;
         private System.Windows.Forms.Button btnEliminar;
