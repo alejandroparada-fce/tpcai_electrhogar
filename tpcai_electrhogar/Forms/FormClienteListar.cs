@@ -48,6 +48,8 @@ namespace tpcai_electrhogar
             dgvClientes.Columns[8].HeaderText = "Dirección";
             dgvClientes.Columns[9].HeaderText = "Teléfono";
             dgvClientes.Columns[10].HeaderText = "Email";
+            FormUtils.AjustarColumnas(dgvClientes);
+            FormUtils.AjustarFilas(dgvClientes);
             return listaClientes;
         }
         private void MostrarClientesFiltrados(List<ClienteEnt> listaClientes)

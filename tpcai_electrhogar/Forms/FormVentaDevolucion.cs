@@ -45,6 +45,8 @@ namespace tpcai_electrhogar
             dgvClientes.Columns[0].HeaderText = "Nombre";
             dgvClientes.Columns[1].HeaderText = "Apellido";
             dgvClientes.Columns[6].HeaderText = "DNI";
+            FormUtils.AjustarColumnas(dgvClientes);
+            FormUtils.AjustarFilas(dgvClientes);
             return listaClientes;
         }
         private void MostrarClientesFiltrados(List<ClienteEnt> listaClientes)
@@ -79,6 +81,8 @@ namespace tpcai_electrhogar
             dgvVentas.Columns[0].HeaderText = "Id";
             dgvVentas.Columns[1].HeaderText = "Cantidad";
             dgvVentas.Columns[2].HeaderText = "Fecha Alta";
+            FormUtils.AjustarColumnas(dgvClientes);
+            FormUtils.AjustarFilas(dgvClientes);
             return listadoVentasCliente;
         }
 
