@@ -60,7 +60,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(193, 98);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(121, 28);
-            this.btnBuscar.TabIndex = 128;
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
@@ -69,7 +69,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(101, 9);
+            this.lblTitle.Location = new System.Drawing.Point(128, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(391, 38);
             this.lblTitle.TabIndex = 117;
@@ -98,7 +98,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(78, 179);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(233, 30);
-            this.btnCancelar.TabIndex = 112;
+            this.btnCancelar.TabIndex = 0;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -111,7 +111,7 @@
             this.txtBuscar.Multiline = true;
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(115, 28);
-            this.txtBuscar.TabIndex = 111;
+            this.txtBuscar.TabIndex = 2;
             // 
             // dgvUsuarios
             // 
@@ -190,7 +190,7 @@
             this.btnActivar.Location = new System.Drawing.Point(335, 179);
             this.btnActivar.Name = "btnActivar";
             this.btnActivar.Size = new System.Drawing.Size(233, 30);
-            this.btnActivar.TabIndex = 129;
+            this.btnActivar.TabIndex = 3;
             this.btnActivar.Text = "Activar";
             this.btnActivar.UseVisualStyleBackColor = false;
             this.btnActivar.Click += new System.EventHandler(this.btnActivar_Click);
@@ -214,6 +214,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormUsuarioActivar";
+            this.Opacity = 0.95D;
             this.Text = "ListarBuscarUsuarios";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ListarBuscarUsuarios_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();

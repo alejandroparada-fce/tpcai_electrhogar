@@ -363,7 +363,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormProveedorAdm";
-            this.Opacity = 0.9D;
+            this.Opacity = 0.95D;
             this.Text = "ListadoClientesForm";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormClienteListar_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedor)).EndInit();

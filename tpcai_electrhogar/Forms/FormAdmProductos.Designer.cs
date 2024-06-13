@@ -97,7 +97,7 @@
             this.categoria.Location = new System.Drawing.Point(468, 74);
             this.categoria.Name = "categoria";
             this.categoria.Size = new System.Drawing.Size(183, 26);
-            this.categoria.TabIndex = 118;
+            this.categoria.TabIndex = 1;
             // 
             // lbldUsuario
             // 
@@ -190,7 +190,7 @@
             this.eliminarBtn.Location = new System.Drawing.Point(705, 485);
             this.eliminarBtn.Name = "eliminarBtn";
             this.eliminarBtn.Size = new System.Drawing.Size(140, 40);
-            this.eliminarBtn.TabIndex = 121;
+            this.eliminarBtn.TabIndex = 6;
             this.eliminarBtn.Text = "Eliminar";
             this.eliminarBtn.UseVisualStyleBackColor = false;
             this.eliminarBtn.Click += new System.EventHandler(this.eliminarBtn_Click);
@@ -208,7 +208,7 @@
             this.modificarBtn.Location = new System.Drawing.Point(494, 485);
             this.modificarBtn.Name = "modificarBtn";
             this.modificarBtn.Size = new System.Drawing.Size(140, 40);
-            this.modificarBtn.TabIndex = 120;
+            this.modificarBtn.TabIndex = 5;
             this.modificarBtn.Text = "Modificar";
             this.modificarBtn.UseVisualStyleBackColor = false;
             this.modificarBtn.Click += new System.EventHandler(this.modificarBtn_Click);
@@ -235,7 +235,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(394, 543);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(340, 40);
-            this.btnCancelar.TabIndex = 125;
+            this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -253,7 +253,7 @@
             this.AgregarBtn.Location = new System.Drawing.Point(283, 485);
             this.AgregarBtn.Name = "AgregarBtn";
             this.AgregarBtn.Size = new System.Drawing.Size(140, 40);
-            this.AgregarBtn.TabIndex = 126;
+            this.AgregarBtn.TabIndex = 4;
             this.AgregarBtn.Text = "Agregar";
             this.AgregarBtn.UseVisualStyleBackColor = false;
             this.AgregarBtn.Click += new System.EventHandler(this.AgregarBtn_Click);
@@ -271,7 +271,7 @@
             this.btnTraerProductosCategoria.Location = new System.Drawing.Point(665, 67);
             this.btnTraerProductosCategoria.Name = "btnTraerProductosCategoria";
             this.btnTraerProductosCategoria.Size = new System.Drawing.Size(140, 40);
-            this.btnTraerProductosCategoria.TabIndex = 127;
+            this.btnTraerProductosCategoria.TabIndex = 2;
             this.btnTraerProductosCategoria.Text = "Traer Productos";
             this.btnTraerProductosCategoria.UseVisualStyleBackColor = false;
             this.btnTraerProductosCategoria.Click += new System.EventHandler(this.btnTraerProductosCategoria_Click);
@@ -289,7 +289,7 @@
             this.button1.Location = new System.Drawing.Point(431, 130);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(284, 40);
-            this.button1.TabIndex = 128;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Cargar todos los prodcutos";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -320,6 +320,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAdmProductos";
+            this.Opacity = 0.95D;
             this.Text = "FormProductoBaja";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormProductoBaja_MouseDown);
             this.panel1.ResumeLayout(false);

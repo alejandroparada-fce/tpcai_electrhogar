@@ -148,7 +148,7 @@
             this.cmbCategorias.Location = new System.Drawing.Point(630, 70);
             this.cmbCategorias.Name = "cmbCategorias";
             this.cmbCategorias.Size = new System.Drawing.Size(121, 21);
-            this.cmbCategorias.TabIndex = 133;
+            this.cmbCategorias.TabIndex = 1;
             this.cmbCategorias.SelectedIndexChanged += new System.EventHandler(this.cmbCategorias_SelectedIndexChanged);
             // 
             // lblCategoria
@@ -174,7 +174,7 @@
             this.btnVolver.Location = new System.Drawing.Point(618, 360);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(170, 40);
-            this.btnVolver.TabIndex = 136;
+            this.btnVolver.TabIndex = 0;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);

@@ -197,7 +197,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormModificarProducto";
-            this.Opacity = 0.9D;
+            this.Opacity = 0.95D;
             this.Text = "FormModificarProducto";
             this.ResumeLayout(false);
             this.PerformLayout();

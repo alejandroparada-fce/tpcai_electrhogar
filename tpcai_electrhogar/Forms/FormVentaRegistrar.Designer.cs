@@ -235,7 +235,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ReadOnly = true;
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 110;
+            this.txtNombre.TabIndex = 1;
             // 
             // txtApellido
             // 
@@ -244,7 +244,7 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.ReadOnly = true;
             this.txtApellido.Size = new System.Drawing.Size(100, 20);
-            this.txtApellido.TabIndex = 111;
+            this.txtApellido.TabIndex = 2;
             // 
             // txtDNI
             // 
@@ -253,7 +253,7 @@
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.ReadOnly = true;
             this.txtDNI.Size = new System.Drawing.Size(100, 20);
-            this.txtDNI.TabIndex = 112;
+            this.txtDNI.TabIndex = 3;
             // 
             // txtMontoParcial
             // 
@@ -263,7 +263,7 @@
             this.txtMontoParcial.Name = "txtMontoParcial";
             this.txtMontoParcial.ReadOnly = true;
             this.txtMontoParcial.Size = new System.Drawing.Size(100, 20);
-            this.txtMontoParcial.TabIndex = 114;
+            this.txtMontoParcial.TabIndex = 6;
             // 
             // txtDescuento
             // 
@@ -273,7 +273,7 @@
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.ReadOnly = true;
             this.txtDescuento.Size = new System.Drawing.Size(100, 20);
-            this.txtDescuento.TabIndex = 115;
+            this.txtDescuento.TabIndex = 7;
             // 
             // txtMontoTotal
             // 
@@ -283,7 +283,7 @@
             this.txtMontoTotal.Name = "txtMontoTotal";
             this.txtMontoTotal.ReadOnly = true;
             this.txtMontoTotal.Size = new System.Drawing.Size(100, 20);
-            this.txtMontoTotal.TabIndex = 116;
+            this.txtMontoTotal.TabIndex = 9;
             // 
             // lblCredits
             // 
@@ -352,7 +352,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(516, 498);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(110, 30);
-            this.btnCancelar.TabIndex = 122;
+            this.btnCancelar.TabIndex = 0;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -393,7 +393,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(700, 344);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(156, 30);
-            this.btnAgregar.TabIndex = 130;
+            this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = "Agregar Producto";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -410,7 +410,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(519, 344);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(166, 30);
-            this.btnEliminar.TabIndex = 131;
+            this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar Producto";
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -428,7 +428,7 @@
             this.btnRealizarVenta.Location = new System.Drawing.Point(650, 498);
             this.btnRealizarVenta.Name = "btnRealizarVenta";
             this.btnRealizarVenta.Size = new System.Drawing.Size(110, 30);
-            this.btnRealizarVenta.TabIndex = 132;
+            this.btnRealizarVenta.TabIndex = 10;
             this.btnRealizarVenta.Text = "Comprar";
             this.btnRealizarVenta.UseVisualStyleBackColor = false;
             this.btnRealizarVenta.Click += new System.EventHandler(this.btnRealizarVenta_Click);
@@ -496,7 +496,7 @@
             this.txtDescuentoCliente.Name = "txtDescuentoCliente";
             this.txtDescuentoCliente.ReadOnly = true;
             this.txtDescuentoCliente.Size = new System.Drawing.Size(100, 20);
-            this.txtDescuentoCliente.TabIndex = 138;
+            this.txtDescuentoCliente.TabIndex = 8;
             // 
             // FormVentaRegistrar
             // 
@@ -539,6 +539,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormVentaRegistrar";
+            this.Opacity = 0.95D;
             this.Text = "FormVentaRegistrar";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormVentaRegistrar_MouseDown);
             this.panel1.ResumeLayout(false);

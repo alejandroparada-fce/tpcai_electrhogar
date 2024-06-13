@@ -210,7 +210,7 @@
             this.btnCerrarSesion.Location = new System.Drawing.Point(135, 67);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(126, 27);
-            this.btnCerrarSesion.TabIndex = 7;
+            this.btnCerrarSesion.TabIndex = 8;
             this.btnCerrarSesion.Text = "Cerrar sesión";
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
@@ -245,7 +245,7 @@
             this.btnCambioContrasena.Location = new System.Drawing.Point(3, 67);
             this.btnCambioContrasena.Name = "btnCambioContrasena";
             this.btnCambioContrasena.Size = new System.Drawing.Size(126, 27);
-            this.btnCambioContrasena.TabIndex = 2;
+            this.btnCambioContrasena.TabIndex = 7;
             this.btnCambioContrasena.Text = "Cambiar contraseña";
             this.btnCambioContrasena.UseVisualStyleBackColor = false;
             this.btnCambioContrasena.Click += new System.EventHandler(this.btnCambioContrasena_Click);
@@ -598,7 +598,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMenuPrincipal";
-            this.Opacity = 0.9D;
+            this.Opacity = 0.95D;
             this.Text = "ModulosForm";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ModulosForm_MouseDown);
             this.panel1.ResumeLayout(false);

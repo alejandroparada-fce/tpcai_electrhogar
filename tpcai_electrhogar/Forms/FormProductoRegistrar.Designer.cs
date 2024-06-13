@@ -89,7 +89,7 @@
             // 
             // nombreProducto
             // 
-            this.nombreProducto.Location = new System.Drawing.Point(676, 79);
+            this.nombreProducto.Location = new System.Drawing.Point(786, 78);
             this.nombreProducto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.nombreProducto.Name = "nombreProducto";
             this.nombreProducto.Size = new System.Drawing.Size(116, 21);
@@ -104,7 +104,7 @@
             "3",
             "4",
             "5"});
-            this.CategoriaCombo.Location = new System.Drawing.Point(676, 120);
+            this.CategoriaCombo.Location = new System.Drawing.Point(786, 119);
             this.CategoriaCombo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CategoriaCombo.Name = "CategoriaCombo";
             this.CategoriaCombo.Size = new System.Drawing.Size(116, 21);
@@ -112,7 +112,7 @@
             // 
             // stockNumeric
             // 
-            this.stockNumeric.Location = new System.Drawing.Point(676, 203);
+            this.stockNumeric.Location = new System.Drawing.Point(786, 202);
             this.stockNumeric.Name = "stockNumeric";
             this.stockNumeric.Size = new System.Drawing.Size(115, 21);
             this.stockNumeric.TabIndex = 9;
@@ -122,7 +122,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(578, 81);
+            this.label1.Location = new System.Drawing.Point(688, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 19);
             this.label1.TabIndex = 10;
@@ -133,7 +133,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(578, 120);
+            this.label2.Location = new System.Drawing.Point(688, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 19);
             this.label2.TabIndex = 11;
@@ -144,7 +144,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.label3.ForeColor = System.Drawing.SystemColors.Window;
-            this.label3.Location = new System.Drawing.Point(578, 161);
+            this.label3.Location = new System.Drawing.Point(688, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 19);
             this.label3.TabIndex = 12;
@@ -155,7 +155,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic);
             this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(580, 203);
+            this.label4.Location = new System.Drawing.Point(690, 202);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 19);
             this.label4.TabIndex = 13;
@@ -166,7 +166,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblTitle.Location = new System.Drawing.Point(344, 9);
+            this.lblTitle.Location = new System.Drawing.Point(402, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(297, 38);
             this.lblTitle.TabIndex = 87;
@@ -178,7 +178,7 @@
             this.lblCredits.AutoSize = true;
             this.lblCredits.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCredits.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblCredits.Location = new System.Drawing.Point(725, 427);
+            this.lblCredits.Location = new System.Drawing.Point(834, 427);
             this.lblCredits.Name = "lblCredits";
             this.lblCredits.Size = new System.Drawing.Size(78, 16);
             this.lblCredits.TabIndex = 89;
@@ -189,7 +189,7 @@
             this.lblVersion.AutoSize = true;
             this.lblVersion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblVersion.Location = new System.Drawing.Point(773, 443);
+            this.lblVersion.Location = new System.Drawing.Point(882, 443);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(30, 16);
             this.lblVersion.TabIndex = 90;
@@ -198,7 +198,7 @@
             // btnMaximizar
             // 
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(767, 12);
+            this.btnMaximizar.Location = new System.Drawing.Point(876, 12);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(15, 15);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -209,7 +209,7 @@
             // btnMinimizar
             // 
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(746, 12);
+            this.btnMinimizar.Location = new System.Drawing.Point(855, 12);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(15, 15);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -220,7 +220,7 @@
             // btnCerrar
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(788, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(897, 12);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(15, 15);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -238,7 +238,7 @@
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnRegistrar.Location = new System.Drawing.Point(584, 251);
+            this.btnRegistrar.Location = new System.Drawing.Point(724, 252);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(167, 40);
             this.btnRegistrar.TabIndex = 95;
@@ -255,7 +255,7 @@
             this.btnCancelarContrasena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarContrasena.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarContrasena.Location = new System.Drawing.Point(584, 317);
+            this.btnCancelarContrasena.Location = new System.Drawing.Point(724, 318);
             this.btnCancelarContrasena.Name = "btnCancelarContrasena";
             this.btnCancelarContrasena.Size = new System.Drawing.Size(167, 40);
             this.btnCancelarContrasena.TabIndex = 96;
@@ -291,7 +291,7 @@
             this.dgvProveedor.Name = "dgvProveedor";
             this.dgvProveedor.ReadOnly = true;
             this.dgvProveedor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProveedor.Size = new System.Drawing.Size(335, 276);
+            this.dgvProveedor.Size = new System.Drawing.Size(460, 276);
             this.dgvProveedor.TabIndex = 97;
             this.dgvProveedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProveedor_CellContentClick);
             // 
@@ -318,7 +318,7 @@
             // 
             // precioNumeric
             // 
-            this.precioNumeric.Location = new System.Drawing.Point(676, 161);
+            this.precioNumeric.Location = new System.Drawing.Point(786, 160);
             this.precioNumeric.Name = "precioNumeric";
             this.precioNumeric.Size = new System.Drawing.Size(115, 21);
             this.precioNumeric.TabIndex = 131;
@@ -328,7 +328,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(815, 468);
+            this.ClientSize = new System.Drawing.Size(924, 468);
             this.Controls.Add(this.precioNumeric);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.label5);

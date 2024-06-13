@@ -242,7 +242,7 @@
             this.checkMostrarContrasena.Location = new System.Drawing.Point(614, 301);
             this.checkMostrarContrasena.Name = "checkMostrarContrasena";
             this.checkMostrarContrasena.Size = new System.Drawing.Size(154, 20);
-            this.checkMostrarContrasena.TabIndex = 106;
+            this.checkMostrarContrasena.TabIndex = 107;
             this.checkMostrarContrasena.Text = "Mostrar Contraseña";
             this.checkMostrarContrasena.UseVisualStyleBackColor = true;
             this.checkMostrarContrasena.CheckedChanged += new System.EventHandler(this.checkMostrarContrasena_CheckedChanged);
@@ -256,7 +256,7 @@
             this.contrasenaActual.Location = new System.Drawing.Point(259, 83);
             this.contrasenaActual.Name = "contrasenaActual";
             this.contrasenaActual.Size = new System.Drawing.Size(360, 20);
-            this.contrasenaActual.TabIndex = 107;
+            this.contrasenaActual.TabIndex = 1;
             this.contrasenaActual.Text = "Contraseña Actual";
             this.contrasenaActual.Enter += new System.EventHandler(this.contrasenaActual_Enter);
             this.contrasenaActual.Leave += new System.EventHandler(this.contrasenaActual_Leave);

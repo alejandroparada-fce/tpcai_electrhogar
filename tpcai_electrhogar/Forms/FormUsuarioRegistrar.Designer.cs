@@ -314,7 +314,7 @@
             this.btnRegistrarUsuario.Location = new System.Drawing.Point(515, 548);
             this.btnRegistrarUsuario.Name = "btnRegistrarUsuario";
             this.btnRegistrarUsuario.Size = new System.Drawing.Size(153, 40);
-            this.btnRegistrarUsuario.TabIndex = 0;
+            this.btnRegistrarUsuario.TabIndex = 10;
             this.btnRegistrarUsuario.Text = "Registrar";
             this.btnRegistrarUsuario.UseVisualStyleBackColor = false;
             this.btnRegistrarUsuario.Click += new System.EventHandler(this.btnRegistrarUsuario_Click);
@@ -386,7 +386,7 @@
             this.btnCancelarContrasena.Location = new System.Drawing.Point(265, 548);
             this.btnCancelarContrasena.Name = "btnCancelarContrasena";
             this.btnCancelarContrasena.Size = new System.Drawing.Size(153, 40);
-            this.btnCancelarContrasena.TabIndex = 124;
+            this.btnCancelarContrasena.TabIndex = 0;
             this.btnCancelarContrasena.Text = "Cancelar";
             this.btnCancelarContrasena.UseVisualStyleBackColor = false;
             this.btnCancelarContrasena.Click += new System.EventHandler(this.btnCancelarContrasena_Click);

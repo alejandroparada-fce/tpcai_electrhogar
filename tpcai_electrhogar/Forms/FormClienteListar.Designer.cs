@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClienteListar));
             this.dgvClientes = new System.Windows.Forms.DataGridView();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -57,27 +57,27 @@
             // 
             // dgvClientes
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.dgvClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dgvClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClientes.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvClientes.DefaultCellStyle = dataGridViewCellStyle12;
             this.dgvClientes.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvClientes.Location = new System.Drawing.Point(0, 245);
             this.dgvClientes.MultiSelect = false;
@@ -100,7 +100,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(12, 208);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(262, 30);
-            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.TabIndex = 0;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelarContrasena_Click);
@@ -148,7 +148,7 @@
             this.direccionCambio.Multiline = true;
             this.direccionCambio.Name = "direccionCambio";
             this.direccionCambio.Size = new System.Drawing.Size(175, 28);
-            this.direccionCambio.TabIndex = 83;
+            this.direccionCambio.TabIndex = 1;
             // 
             // telefonoLbl
             // 
@@ -171,7 +171,7 @@
             this.telefonoCambio.Multiline = true;
             this.telefonoCambio.Name = "telefonoCambio";
             this.telefonoCambio.Size = new System.Drawing.Size(175, 28);
-            this.telefonoCambio.TabIndex = 86;
+            this.telefonoCambio.TabIndex = 2;
             // 
             // emailLbl
             // 
@@ -194,7 +194,7 @@
             this.emailCambio.Multiline = true;
             this.emailCambio.Name = "emailCambio";
             this.emailCambio.Size = new System.Drawing.Size(175, 28);
-            this.emailCambio.TabIndex = 88;
+            this.emailCambio.TabIndex = 3;
             // 
             // btnModificarCliente
             // 
@@ -208,7 +208,7 @@
             this.btnModificarCliente.Location = new System.Drawing.Point(289, 73);
             this.btnModificarCliente.Name = "btnModificarCliente";
             this.btnModificarCliente.Size = new System.Drawing.Size(163, 28);
-            this.btnModificarCliente.TabIndex = 90;
+            this.btnModificarCliente.TabIndex = 4;
             this.btnModificarCliente.Text = "Modificar cliente";
             this.btnModificarCliente.UseVisualStyleBackColor = false;
             this.btnModificarCliente.Click += new System.EventHandler(this.btnModificarCliente_Click);
@@ -225,7 +225,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(402, 203);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(176, 28);
-            this.btnAgregar.TabIndex = 91;
+            this.btnAgregar.TabIndex = 5;
             this.btnAgregar.Text = " Agregar cliente";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -242,7 +242,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(596, 203);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(176, 28);
-            this.btnEliminar.TabIndex = 92;
+            this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = "Eliminar cliente";
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -317,7 +317,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormClienteListar";
-            this.Opacity = 0.9D;
+            this.Opacity = 0.95D;
             this.Text = "ListadoClientesForm";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormClienteListar_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();

@@ -250,7 +250,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::tpcai_electrhogar.Properties.Resources.Electro_Hogar_80x102;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 190);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 190);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 129);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -384,7 +384,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormClienteRegistrar";
-            this.Opacity = 0.9D;
+            this.Opacity = 0.95D;
             this.Text = "FormClienteAgregar";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormClienteRegistrar_MouseDown);
             this.panel1.ResumeLayout(false);

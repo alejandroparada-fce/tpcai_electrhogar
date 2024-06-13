@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgregarProducto));
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -88,7 +89,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(571, 364);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(197, 40);
-            this.btnAgregar.TabIndex = 122;
+            this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar Producto";
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -105,7 +106,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(296, 364);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(197, 40);
-            this.btnCancelar.TabIndex = 123;
+            this.btnCancelar.TabIndex = 0;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -115,7 +116,7 @@
             this.cantidadNumeric.Location = new System.Drawing.Point(390, 313);
             this.cantidadNumeric.Name = "cantidadNumeric";
             this.cantidadNumeric.Size = new System.Drawing.Size(115, 20);
-            this.cantidadNumeric.TabIndex = 133;
+            this.cantidadNumeric.TabIndex = 1;
             // 
             // label3
             // 
@@ -175,7 +176,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvProductos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAgregarProducto";
+            this.Opacity = 0.95D;
             this.Text = "FormAgregarProducto";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.panel1.ResumeLayout(false);
