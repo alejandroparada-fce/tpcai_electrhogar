@@ -25,7 +25,6 @@ namespace tpcai_electrhogar
         }
         private string mensajeError;
        
-        public static Guid idProveedor = new Guid("8fc1b7c9-a59b-46b2-af97-1ac9d9b48773");
 
 
         private List<ProveedorEnt> ObtenerListaProveedor()
@@ -34,7 +33,7 @@ namespace tpcai_electrhogar
             var bindingList = new BindingList<ProveedorEnt>(listaProveedor);
             var source = new BindingSource(bindingList, null);
             dgvProveedor.DataSource = source;
-            dgvProveedor.Columns["id"].Visible = true;
+            dgvProveedor.Columns["id"].Visible = false;
             //dgvProveedor.Columns[1].HeaderText = "Id";
             dgvProveedor.Columns[1].HeaderText = "Nombre";
             dgvProveedor.Columns[2].HeaderText = "Apellido";

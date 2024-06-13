@@ -99,8 +99,16 @@ namespace tpcai_electrhogar
 
         private void dgvVentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            VentaClienteEnt ventaSeleccionada = (VentaClienteEnt)dgvVentas.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
-            Guid id = ventaSeleccionada.Id;
+            try
+            {
+
+                VentaClienteEnt ventaSeleccionada = (VentaClienteEnt)dgvVentas.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
+                Guid id = ventaSeleccionada.Id;
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void btnDevolver_Click(object sender, EventArgs e)
         {
