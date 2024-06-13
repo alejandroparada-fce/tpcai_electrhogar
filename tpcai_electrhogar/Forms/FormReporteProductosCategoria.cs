@@ -86,7 +86,7 @@ namespace tpcai_electrhogar.Forms
 
         private void btnMaximizar_Click_1(object sender, EventArgs e)
         {
-            FormUtils.MinimizarFormulario(this);
+            FormUtils.MaximizarFormulario(this);
         }
 
         private void btnMinimizar_Click_1(object sender, EventArgs e)

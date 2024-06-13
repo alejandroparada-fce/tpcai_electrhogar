@@ -32,13 +32,6 @@ namespace tpcai_electrhogar.Forms
             FormUtils.AjustarFilas(dgvStockCritico);
         }
 
-
-
-        private void FormStockCritico_MouseDown(object sender, MouseEventArgs e)
-        {
-            FormUtils.MoverFormulario(this);
-        }
-
         private void cmbCategorias_SelectedIndexChanged(object sender, EventArgs e)
         {
             List<ProductoEnt> listaProductosCritico = ModuloProducto.ReporteStockCritico(cmbCategorias.SelectedIndex, out string error);
@@ -73,6 +66,11 @@ namespace tpcai_electrhogar.Forms
         }
 
         private void lblTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormUtils.MoverFormulario(this);
+        }
+
+        private void FormStockCritico_MouseDown(object sender, MouseEventArgs e)
         {
             FormUtils.MoverFormulario(this);
         }

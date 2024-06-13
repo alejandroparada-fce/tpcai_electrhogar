@@ -11,55 +11,7 @@ namespace tpcai_electrhogar
 {
     internal static class Validaciones
     {
-        public static bool ValidaVaciosFormulario(Form formulario,  out string mensajeError)
-        {
-            /*El método recorre todos los controles del formulario y chequea que
-            los textbox tengan un mínimo y un máximo de longitud.
-             */
-
-            string mensajeError1 = null;
-            string mensajeError2 = null;
-
-            foreach (Control item in formulario.Controls)
-            {
-                try
-                {
-                    if (item is TextBox)
-                    {
-  
-                        if (item.Text == null || item.Text.Length < 3)
-                        {
-                            mensajeError1 = "Debe ingresar al menos 3 caracteres ";
-                        }
-
-                        if (item.Text.Length > 10)
-                        {
-                            mensajeError2 = "El ingreso debe ser menor o igual a 10 caracteres";
-
-                        }
-                    }
-
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-
-            mensajeError = mensajeError1 + '\n' + mensajeError2;
-            if (string.IsNullOrEmpty(mensajeError))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-        }
-
-
+        
         //Valida cantidad de caracteres en cadenas de texto
         public static bool ValidarCadena(string ingreso, string campo, int? minCaracteres, int? maxCaracteres, out string mensajeError)
         {
@@ -165,27 +117,7 @@ namespace tpcai_electrhogar
 
             mensajeError = null;
             return true;
-        }
-
-        
-        public static bool ValidarUsuario(string ingreso, string campoUsuario,  int? minCaracteres, int? maxCaracteres, string nombre, string apellido, string usuario, out string mensajeError)
-        {
-            string mensajeError1;
-            string mensajeError2;
-
-            bool ValCadena = ValidarCadena(ingreso, campoUsuario,  minCaracteres, maxCaracteres, out mensajeError1);
-            bool ValidPatUsr = ValidarPatronUsuario(nombre, apellido, usuario, out mensajeError2);
-            
-            if(!ValCadena||!ValidPatUsr)
-            {
-                mensajeError = mensajeError1 + "\n" + mensajeError2;
-                return false;
-            }
-
-            mensajeError = null;
-            return true;
-        } 
-        
+        }       
 
         //Valida requisito de mayúsculas y números en contraseña
         private static bool ValidarReqContraseña(string contraseñaIngresada, out string mensajeError)
@@ -246,18 +178,6 @@ namespace tpcai_electrhogar
             else if(contraseña == viejaContraseña)
             {
                 mensajeError = "Esta contraseña ya ha sido utilizada";
-                return false;
-            }
-            mensajeError = null;
-            return true;
-        }
-
-        
-        public static bool Categorias(int numero, out string mensajeError)
-        {
-            if (!(numero == 1 || numero == 2 || numero == 3 || numero == 4 || numero == 5))
-            {
-                mensajeError = "La Categoria debe ser un numero entre el 1 y el 5";
                 return false;
             }
             mensajeError = null;

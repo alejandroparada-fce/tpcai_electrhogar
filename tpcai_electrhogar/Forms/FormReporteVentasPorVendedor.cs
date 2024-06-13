@@ -34,7 +34,7 @@ namespace tpcai_electrhogar.Forms
 
         private void btnMaximizar_Click(object sender, EventArgs e)
         {
-            FormUtils.MinimizarFormulario(this);
+            FormUtils.MaximizarFormulario(this);
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

@@ -72,8 +72,6 @@ namespace tpcai_electrhogar.Forms
             List<ClienteEnt> listaClientes = ObtenerListaClientes();
         }
 
-
-
         private void FormVentaRegistrar_MouseDown(object sender, MouseEventArgs e)
         {
             FormUtils.MoverFormulario(this);

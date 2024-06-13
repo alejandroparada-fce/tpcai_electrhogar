@@ -25,8 +25,6 @@ namespace tpcai_electrhogar.Forms
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //FormAdmProductos formAdmProductos = new FormAdmProductos();
-            //formAdmProductos.Show();
         }
 
         private void cambiarBtn_Click(object sender, EventArgs e)
@@ -47,8 +45,6 @@ namespace tpcai_electrhogar.Forms
                 {
                     ModuloProducto.ModificarProducto(precio, stock , id,  out string error);
                     this.Hide();
-                    //FormAdmProductos formAdmProductos = new FormAdmProductos();
-                    //formAdmProductos.Show();
                 }
 
                 catch (Exception ex)
