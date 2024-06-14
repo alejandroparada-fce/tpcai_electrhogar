@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using tpcai_electrhogar.Datos;
+using tpcai_electrhogar.Forms;
 using tpcai_electrhogar.Negocio;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -95,28 +96,34 @@ namespace tpcai_electrhogar
         {
             this.Hide();
             FormMenuPrincipal modulosForm = new FormMenuPrincipal(ModuloLogueo.UsuarioAuntenticado.nombreUsuario,
-ModuloLogueo.UsuarioAuntenticado.host);
+            ModuloLogueo.UsuarioAuntenticado.host);
             modulosForm.Show();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            ClienteEnt clienteseleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
-            Guid id = clienteseleccionado.id;
-            if (MessageBox.Show("¿Está seguro de dar de baja este cliente?", "¿Dar de baja al cliente?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (dgvClientes.SelectedRows.Count > 0)
             {
-                try
+                ClienteEnt clienteseleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
+                Guid id = clienteseleccionado.id;
+                if (MessageBox.Show("¿Está seguro de dar de baja este cliente?", "¿Dar de baja al cliente?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    ModuloClientes.EliminarCliente(id, out string error);                   
+                    try
+                    {
+                        ModuloClientes.EliminarCliente(id, out string error);
 
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                FiltrarLista();
             }
-            FiltrarLista();
-
+            else
+            {
+                MessageBox.Show("No hay clientes que eliminar");
+            }
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -153,10 +160,28 @@ ModuloLogueo.UsuarioAuntenticado.host);
 
         private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
-            direccionCambio.Text = clienteSeleccionado.direccion;
-            telefonoCambio.Text = clienteSeleccionado.telefono;
-            emailCambio.Text = clienteSeleccionado.email;
+            if (dgvClientes.CurrentCell == null || dgvClientes.CurrentCell.RowIndex < 0)
+            {
+                // No hay una celda actual seleccionada o el índice de fila no es válido.
+                return;
+            }
+
+            var selectedRow = dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex];
+            var clienteSeleccionado = selectedRow.DataBoundItem as ClienteEnt;
+
+            if (clienteSeleccionado != null)
+            {
+                direccionCambio.Text = clienteSeleccionado.direccion;
+                telefonoCambio.Text = clienteSeleccionado.telefono;
+                emailCambio.Text = clienteSeleccionado.email;
+            }
+            else
+            {
+                // Opcional: maneja el caso en que DataBoundItem sea null.
+                direccionCambio.Text = string.Empty;
+                telefonoCambio.Text = string.Empty;
+                emailCambio.Text = string.Empty;
+            }
         }
     }
     }
