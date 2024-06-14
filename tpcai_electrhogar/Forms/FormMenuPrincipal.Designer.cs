@@ -54,12 +54,10 @@
             this.btnClienteAdm = new System.Windows.Forms.Button();
             this.btnVentaRegistrar = new System.Windows.Forms.Button();
             this.btnUsuarioRegistrar = new System.Windows.Forms.Button();
-            this.btnProveedorRegistrar = new System.Windows.Forms.Button();
             this.btnUsuarioBaja = new System.Windows.Forms.Button();
             this.btnReporteVentasPorVendedor = new System.Windows.Forms.Button();
             this.btnReporteProductoMasVendidoPorCategoria = new System.Windows.Forms.Button();
             this.btnVentaDevolucion = new System.Windows.Forms.Button();
-            this.btnProductoRegistrar = new System.Windows.Forms.Button();
             this.btnVentasVendedor = new System.Windows.Forms.Button();
             this.btnUsuarioActivar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -425,24 +423,6 @@
             this.btnUsuarioRegistrar.Visible = false;
             this.btnUsuarioRegistrar.Click += new System.EventHandler(this.btnUsuarioRegistrar_Click_1);
             // 
-            // btnProveedorRegistrar
-            // 
-            this.btnProveedorRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnProveedorRegistrar.FlatAppearance.BorderSize = 0;
-            this.btnProveedorRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnProveedorRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnProveedorRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProveedorRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProveedorRegistrar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnProveedorRegistrar.Location = new System.Drawing.Point(404, 105);
-            this.btnProveedorRegistrar.Name = "btnProveedorRegistrar";
-            this.btnProveedorRegistrar.Size = new System.Drawing.Size(230, 34);
-            this.btnProveedorRegistrar.TabIndex = 120;
-            this.btnProveedorRegistrar.Text = "Registrar Proveedor";
-            this.btnProveedorRegistrar.UseVisualStyleBackColor = false;
-            this.btnProveedorRegistrar.Visible = false;
-            this.btnProveedorRegistrar.Click += new System.EventHandler(this.btnProveedorRegistrar_Click);
-            // 
             // btnUsuarioBaja
             // 
             this.btnUsuarioBaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -515,24 +495,6 @@
             this.btnVentaDevolucion.Visible = false;
             this.btnVentaDevolucion.Click += new System.EventHandler(this.btnVentaDevolucion_Click);
             // 
-            // btnProductoRegistrar
-            // 
-            this.btnProductoRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnProductoRegistrar.FlatAppearance.BorderSize = 0;
-            this.btnProductoRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnProductoRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnProductoRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductoRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductoRegistrar.ForeColor = System.Drawing.Color.LightGray;
-            this.btnProductoRegistrar.Location = new System.Drawing.Point(404, 106);
-            this.btnProductoRegistrar.Name = "btnProductoRegistrar";
-            this.btnProductoRegistrar.Size = new System.Drawing.Size(230, 34);
-            this.btnProductoRegistrar.TabIndex = 127;
-            this.btnProductoRegistrar.Text = "Registrar Producto";
-            this.btnProductoRegistrar.UseVisualStyleBackColor = false;
-            this.btnProductoRegistrar.Visible = false;
-            this.btnProductoRegistrar.Click += new System.EventHandler(this.btnProductoRegistrar_Click_1);
-            // 
             // btnVentasVendedor
             // 
             this.btnVentasVendedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
@@ -576,12 +538,10 @@
             this.ClientSize = new System.Drawing.Size(780, 340);
             this.Controls.Add(this.btnUsuarioActivar);
             this.Controls.Add(this.btnVentasVendedor);
-            this.Controls.Add(this.btnProductoRegistrar);
             this.Controls.Add(this.btnVentaDevolucion);
             this.Controls.Add(this.btnReporteProductoMasVendidoPorCategoria);
             this.Controls.Add(this.btnReporteVentasPorVendedor);
             this.Controls.Add(this.btnUsuarioBaja);
-            this.Controls.Add(this.btnProveedorRegistrar);
             this.Controls.Add(this.btnUsuarioRegistrar);
             this.Controls.Add(this.btnVentaRegistrar);
             this.Controls.Add(this.btnClienteAdm);
@@ -639,12 +599,10 @@
         private System.Windows.Forms.Button btnClienteAdm;
         private System.Windows.Forms.Button btnVentaRegistrar;
         private System.Windows.Forms.Button btnUsuarioRegistrar;
-        private System.Windows.Forms.Button btnProveedorRegistrar;
         private System.Windows.Forms.Button btnUsuarioBaja;
         private System.Windows.Forms.Button btnReporteVentasPorVendedor;
         private System.Windows.Forms.Button btnReporteProductoMasVendidoPorCategoria;
         private System.Windows.Forms.Button btnVentaDevolucion;
-        private System.Windows.Forms.Button btnProductoRegistrar;
         private System.Windows.Forms.Button btnVentasVendedor;
         private System.Windows.Forms.Button btnUsuarioActivar;
     }

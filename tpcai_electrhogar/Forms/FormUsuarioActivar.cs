@@ -19,7 +19,7 @@ namespace tpcai_electrhogar
             InitializeComponent();
 
             dgvUsuarios.DataSource = ModuloUsuarios.ConsultarUsuariosBaja();
-            dgvUsuarios.Columns["id"].Visible = true;
+            dgvUsuarios.Columns["id"].Visible = false;
             //dgvUsuarios.Columns[1].HeaderText = "Nombre";
             //dgvUsuarios.Columns[2].HeaderText = "Apellido";
             //dgvUsuarios.Columns[3].HeaderText = "Nombre de Usuario";

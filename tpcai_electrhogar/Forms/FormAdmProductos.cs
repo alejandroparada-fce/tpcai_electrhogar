@@ -110,7 +110,6 @@ namespace tpcai_electrhogar.Forms
             dgvProductos.Columns[4].HeaderText = "Stock";
             dgvProductos.Columns[5].HeaderText = "Precio";
             FormUtils.AjustarColumnas(dgvProductos);
-            //FormUtils.AjustarFilas(dgvProductos);
             return listaProductosCategoria;
         }
         private void CargarListaCategoria()
