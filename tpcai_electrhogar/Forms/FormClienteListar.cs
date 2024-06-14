@@ -151,7 +151,7 @@ ModuloLogueo.UsuarioAuntenticado.host);
             formClienteRegistrar.Show();
         }
 
-        private void dgvClientes_SelectionChanged(object sender, EventArgs e)
+        private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             ClienteEnt clienteSeleccionado = (ClienteEnt)dgvClientes.Rows[dgvClientes.CurrentCell.RowIndex].DataBoundItem;
             direccionCambio.Text = clienteSeleccionado.direccion;
